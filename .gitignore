@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# other
+*~
+*.swp
+*.bak
+cache/
+output/
+state_data.json
+.doit.db
+
