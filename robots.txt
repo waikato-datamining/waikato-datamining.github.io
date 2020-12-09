@@ -1,0 +1,4 @@
+Sitemap: https://waikato-datamining.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: waikato-datamining.github.io
