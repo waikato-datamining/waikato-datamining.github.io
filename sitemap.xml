@@ -15,15 +15,19 @@
  </url>
  <url>
   <loc>https://waikato-datamining.github.io/archive.html</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://waikato-datamining.github.io/categories/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://waikato-datamining.github.io/categories/cat_docker/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://waikato-datamining.github.io/categories/cat_library/</loc>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://waikato-datamining.github.io/categories/release/</loc>
@@ -55,7 +59,7 @@
  </url>
  <url>
   <loc>https://waikato-datamining.github.io/news/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://waikato-datamining.github.io/news/2020-06-02-mmdetection-docker/</loc>
@@ -72,6 +76,10 @@
  <url>
   <loc>https://waikato-datamining.github.io/news/2020-08-25-keras-image-segmentation-docker/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://waikato-datamining.github.io/news/2020-12-13-simple-file-poller/</loc>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://waikato-datamining.github.io/people/</loc>

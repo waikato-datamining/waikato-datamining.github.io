@@ -10,8 +10,12 @@
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://waikato-datamining.github.io/categories/cat_library.xml</loc>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://waikato-datamining.github.io/categories/release.xml</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://waikato-datamining.github.io/galleries/rss.xml</loc>
@@ -19,10 +23,10 @@
  </sitemap>
  <sitemap>
   <loc>https://waikato-datamining.github.io/rss.xml</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://waikato-datamining.github.io/sitemap.xml</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
+  <lastmod>2020-12-12T20:57:00Z</lastmod>
  </sitemap>
 </sitemapindex>
