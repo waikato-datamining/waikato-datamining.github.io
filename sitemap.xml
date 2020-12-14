@@ -6,91 +6,91 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://waikato-datamining.github.io/</loc>
+  <loc>https://www.data-mining.co.nz/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/2020/</loc>
+  <loc>https://www.data-mining.co.nz/2020/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/archive.html</loc>
+  <loc>https://www.data-mining.co.nz/archive.html</loc>
+  <lastmod>2020-12-14T23:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/categories/</loc>
   <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/categories/</loc>
+  <loc>https://www.data-mining.co.nz/categories/cat_docker/</loc>
+  <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/categories/cat_library/</loc>
   <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/categories/cat_docker/</loc>
+  <loc>https://www.data-mining.co.nz/categories/release/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/categories/cat_library/</loc>
+  <loc>https://www.data-mining.co.nz/clients/</loc>
+  <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/contact/</loc>
+  <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/expertise/</loc>
+  <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/galleries/</loc>
+  <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/listings/</loc>
+  <lastmod>2020-12-09T01:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/listings/.gitignore.html</loc>
+  <lastmod>2020-12-14T23:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/news/</loc>
   <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/categories/release/</loc>
+  <loc>https://www.data-mining.co.nz/news/2020-06-02-mmdetection-docker/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/clients/</loc>
+  <loc>https://www.data-mining.co.nz/news/2020-07-03-deepspeech-docker/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/contact/</loc>
+  <loc>https://www.data-mining.co.nz/news/2020-08-14-pytorch-docker/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/expertise/</loc>
+  <loc>https://www.data-mining.co.nz/news/2020-08-25-keras-image-segmentation-docker/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/galleries/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/listings/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/listings/.gitignore.html</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/news/</loc>
+  <loc>https://www.data-mining.co.nz/news/2020-12-13-simple-file-poller/</loc>
   <lastmod>2020-12-12T20:57:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/news/2020-06-02-mmdetection-docker/</loc>
+  <loc>https://www.data-mining.co.nz/people/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/news/2020-07-03-deepspeech-docker/</loc>
+  <loc>https://www.data-mining.co.nz/software/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
  <url>
-  <loc>https://waikato-datamining.github.io/news/2020-08-14-pytorch-docker/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/news/2020-08-25-keras-image-segmentation-docker/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/news/2020-12-13-simple-file-poller/</loc>
-  <lastmod>2020-12-12T20:57:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/people/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/software/</loc>
-  <lastmod>2020-12-09T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://waikato-datamining.github.io/what-we-offer/</loc>
+  <loc>https://www.data-mining.co.nz/what-we-offer/</loc>
   <lastmod>2020-12-09T01:59:00Z</lastmod>
  </url>
 </urlset>
