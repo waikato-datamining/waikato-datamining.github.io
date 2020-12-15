@@ -31,6 +31,8 @@ using [Nikola](https://getnikola.com/).
 * Content is written in [reStructured Text](http://docutils.sourceforge.net/rst.html)
 * Pages are located in `pages`
 * News items (aka blog posts) are located in `posts`; should have a date prefix in the name
+* `files/CNAME` contains `www.data-mining.co.nz` domain in order to deploy the `CNAME` file for github
+* The nikola source is on branch `src`, the generated code is on `master`
 
 
 ## Deploy to Github
