@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://www.data-mining.co.nz/archive.html</loc>
-  <lastmod>2021-01-29T04:40:00Z</lastmod>
+  <lastmod>2021-04-16T02:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.data-mining.co.nz/categories/</loc>
@@ -63,7 +63,7 @@
  </url>
  <url>
   <loc>https://www.data-mining.co.nz/news/</loc>
-  <lastmod>2021-01-29T04:40:00Z</lastmod>
+  <lastmod>2021-04-16T02:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.data-mining.co.nz/news/2020-06-02-mmdetection-docker/</loc>
@@ -96,6 +96,14 @@
  <url>
   <loc>https://www.data-mining.co.nz/news/2021-01-28-detectron2-docker/</loc>
   <lastmod>2021-01-29T04:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/news/2021-04-12-detectron2-docker/</loc>
+  <lastmod>2021-04-16T02:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.data-mining.co.nz/news/2021-04-16-simple-confusion-matrix/</loc>
+  <lastmod>2021-04-16T02:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.data-mining.co.nz/people/</loc>
