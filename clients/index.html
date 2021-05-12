@@ -8,7 +8,7 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://www.data-mining.co.nz/clients/">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Waikato">
 <meta property="og:site_name" content="Data mining">
@@ -24,10 +24,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://www.data-mining.co.nz/">
+        <a class="navbar-brand" href="../">
 
             <span id="blog-title">Data mining</span>
         </a>
@@ -94,11 +95,6 @@ navbar-dark bg-dark
     </div>
     <div class=".col-md-4">
       <div class="card">
-        <a href="https://www.esr.cri.nz/" target="_blank"><img src="../images/client_esr.jpg" class="card-img-top" alt="ESR Logo"></a>
-      </div>
-    </div>
-    <div class=".col-md-4">
-      <div class="card">
         <a href="https://www.eurofins.com/agro" target="_blank"><img src="../images/client_eurofins_agro.jpg" class="card-img-top" alt="Eurofins Agro Logo"></a>
       </div>
     </div>
@@ -135,9 +131,7 @@ navbar-dark bg-dark
         <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

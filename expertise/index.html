@@ -8,7 +8,7 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://www.data-mining.co.nz/expertise/">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Waikato">
 <meta property="og:site_name" content="Data mining">
@@ -26,10 +26,11 @@ properties of plant and soil samples, using spect">
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://www.data-mining.co.nz/">
+        <a class="navbar-brand" href="../">
 
             <span id="blog-title">Data mining</span>
         </a>
@@ -81,25 +82,20 @@ navbar-dark bg-dark
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<div class="section" id="spectral-data-analysis">
-<h2>Spectral data analysis</h2>
+<section id="spectral-data-analysis"><h2>Spectral data analysis</h2>
 <p>Over the last fifteen years, we have developed and deployed software that takes advantage of machine learning models to predict
 properties of plant and soil samples, using spectra from various instruments: near-infrared (<a class="reference external" href="https://en.wikipedia.org/wiki/Near-infrared_spectroscopy">NIR</a>), mid-infrared (MIR), laser-incuded breakdown spectroscopy (<a class="reference external" href="https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy">LIBS</a>) and X-ray fluorescence (<a class="reference external" href="https://en.wikipedia.org/wiki/X-ray_fluorescence">XRF</a>).</p>
 <p>For decades, many organizations have relied on global methods like partial least squares regression(<a class="reference external" href="https://en.wikipedia.org/wiki/Partial_least_squares_regression">PLS</a>) for their modeling. However, global methods do not perform well with complex data derived
 from, for instance, soil samples. From the start, our software took advantage of locally weighted learning, achieving much better results.</p>
 <p>In recent years, we have been able to push the boundaries even further, by adopting advanced modeling techniques using <a class="reference external" href="https://en.wikipedia.org/wiki/Deep_learning">deep learning</a>.</p>
-<img alt="Comparison of methods" src="../images/methods.png">
-</div>
-<div class="section" id="image-processing">
-<h2>Image processing</h2>
+<img alt="Comparison of methods" src="../images/methods.png"></section><section id="image-processing"><h2>Image processing</h2>
 <p>With the advent of  frameworks like <a class="reference external" href="https://en.wikipedia.org/wiki/TensorFlow">Tensorflow</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/PyTorch">PyTorch</a>, deep learning techniques became more accessible. Many cutting edge algorithms and libraries have complex dependencies that not only interfer with each other, but also change frequently. These libraries are often geared towards academic experimentation and not production-ready. By employing containerization offered by <a class="reference external" href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> and custom extensions, we are able to deploy these framework in production environments (for training and inference).</p>
 <p>We have experience in the following areas:</p>
 <ul class="simple">
 <li><p>image classification</p></li>
 <li><p>object detection</p></li>
 <li><p>image segmentation</p></li>
-</ul>
-</div>
+</ul></section>
 </div>
     </div>
     
@@ -116,9 +112,7 @@ from, for instance, soil samples. From the start, our software took advantage of
         <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

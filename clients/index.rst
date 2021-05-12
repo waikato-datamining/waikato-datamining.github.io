@@ -25,11 +25,6 @@ Below are some of our clients that we are working with:
        </div>
        <div class=".col-md-4">
          <div class="card">
-           <a href="https://www.esr.cri.nz/" target="_blank"><img src="../images/client_esr.jpg" class="card-img-top" alt="ESR Logo"></a>
-         </div>   
-       </div>
-       <div class=".col-md-4">
-         <div class="card">
            <a href="https://www.eurofins.com/agro" target="_blank"><img src="../images/client_eurofins_agro.jpg" class="card-img-top" alt="Eurofins Agro Logo"></a>
          </div>   
        </div>
