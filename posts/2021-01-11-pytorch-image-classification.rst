@@ -14,7 +14,7 @@ Today, a new library for performing image classification has made its debut:
 The library is based on the PyTorch example code for `imagenet <https://github.com/pytorch/examples/tree/master/imagenet>`__.
 For ResNet-based networks, you can finetune pretrained models on your own data rather than
 just using the imagenet dataset. In addition, you can make predictions (single and batch/continuous), output information 
-on built models, export trained models to `TorchScript <https://pytorch.org/docs/stable/jit.html>`__.
+on built models and export trained models to `TorchScript <https://pytorch.org/docs/stable/jit.html>`__.
 
 The library is also available via Docker images, one for `GPU-based <https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0>`__ machines and one for `CPU-only ones <https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0_cpu>`__. However, the latter one should only be used for inference and not training, as it is simply too slow.
 
