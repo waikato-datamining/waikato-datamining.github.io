@@ -27,7 +27,7 @@ In recent years, we have been able to push the boundaries even further, by adopt
 Image processing
 ================
 
-With the advent of  frameworks like `Tensorflow <https://en.wikipedia.org/wiki/TensorFlow>`__ and `PyTorch <https://en.wikipedia.org/wiki/PyTorch>`__, deep learning techniques became more accessible. Many cutting edge algorithms and libraries have complex dependencies that not only interfer with each other, but also change frequently. These libraries are often geared towards academic experimentation and not production-ready. By employing containerization offered by `Docker <https://en.wikipedia.org/wiki/Docker_(software)>`__ and custom extensions, we are able to deploy these framework in production environments (for training and inference).
+With the advent of  frameworks like `Tensorflow <https://en.wikipedia.org/wiki/TensorFlow>`__ and `PyTorch <https://en.wikipedia.org/wiki/PyTorch>`__, deep learning techniques became more accessible. Many cutting edge algorithms and libraries have complex dependencies that not only interfer with each other, but also change frequently. These libraries are often geared towards academic experimentation and not production-ready. By employing containerization offered by `Docker <https://en.wikipedia.org/wiki/Docker_(software)>`__ and custom extensions, we are able to deploy these frameworks in production environments (for training and inference).
 
 We have experience in the following areas:
 

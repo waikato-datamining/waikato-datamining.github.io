@@ -16,7 +16,7 @@ an optimized framework for data stream learning, which has become very popular i
 community.
 
 Since the mid 2000s, the **Applied Machine Learning Group** has been active in the commercial space,
-offering not only general machine learning consulting, but also software for processing spectral 
+offering not only general machine learning consulting, but also software for processing spectral data 
 (managing data, building models, making predictions, tying into business processes). During that
 time, in order to prototype machine learning applications faster, the `ADAMS <https://adams.cms.waikato.ac.nz/>`__
 framework was born. ADAMS consists of more powerful data science tools than WEKA had to offer and

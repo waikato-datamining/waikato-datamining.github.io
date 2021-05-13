@@ -26,4 +26,4 @@ A non-exhaustive list of our open-source software:
 
 * `wai-spectralio <https://github.com/waikato-datamining/wai-spectralio/>`__ - Python library for reading/writing spectral data in various file formats
 
-For all of our projects, please visit out `Github <https://github.com/waikato-datamining/>`__ organization.
+For all of our projects, please visit our `Github <https://github.com/waikato-datamining/>`__ organization.
