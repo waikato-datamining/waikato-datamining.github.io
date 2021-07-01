@@ -146,8 +146,11 @@ NAVIGATION_LINKS = {
           ("https://adams-advisor.cms.waikato.ac.nz/", "Calibration advice"),
           ), "Services"),
         ((
-          ("/people/", "People"),
           ("/software/", "Software"),
+          ("/docker-for-data-scientists/", "Docker for Data Scientists"),
+          ), "Resources"),
+        ((
+          ("/people/", "People"),
           ("/clients/", "Clients"),
           ("/contact/", "Contact"),
           ), "About"),
