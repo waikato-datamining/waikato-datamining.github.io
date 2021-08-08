@@ -2,7 +2,7 @@
 .. slug: software
 .. date: 2019-10-01 10:00:00 UTC+12:00
 .. tags: 
-.. category: 
+.. category: software
 .. link: 
 .. description: 
 .. type: text
