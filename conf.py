@@ -143,6 +143,7 @@ NAVIGATION_LINKS = {
         ("/expertise/", "Expertise"),
         ((
           ("/what-we-offer/", "What we offer"),
+          ("/s3000/", "S3000"),
           ("https://adams-advisor.cms.waikato.ac.nz/", "Calibration advice"),
           ), "Services"),
         ((
