@@ -148,6 +148,7 @@ NAVIGATION_LINKS = {
         ((
           ("/software/", "Software"),
           ("/docker-for-data-scientists/", "Docker for Data Scientists"),
+          ("/docker-images/", "Docker images"),
           ), "Resources"),
         ((
           ("/people/", "People"),
