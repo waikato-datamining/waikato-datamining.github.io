@@ -33,4 +33,5 @@ We have experience in the following areas:
 
 * image classification
 * object detection
+* instance segmentation
 * image segmentation
