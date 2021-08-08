@@ -1,6 +1,6 @@
 .. title: Contact
 .. slug: contact
-.. date: 2019-10-01 10:00:00 UTC
+.. date: 2019-10-01 10:00:00 UTC+12:00
 .. tags: 
 .. category: 
 .. link: 
