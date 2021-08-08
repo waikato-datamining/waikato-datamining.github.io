@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docker images | Data mining</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
+<link rel="canonical" href="https://www.data-mining.co.nz/docker-images/">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Waikato">
+<meta property="og:site_name" content="Data mining">
+<meta property="og:title" content="Docker images">
+<meta property="og:url" content="https://www.data-mining.co.nz/docker-images/">
+<meta property="og:description" content="For our own projects, we make a lot of use of Docker, to better manage
+the varying (and often clashing) requirements for CUDA and Python libraries. We not only offer a quick
+introduction to docker for">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-08-09T10:00:00+12:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../">
+
+            <span id="blog-title">Data mining</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../news/" class="nav-link">News</a>
+                </li>
+<li class="nav-item">
+<a href="../expertise/" class="nav-link">Expertise</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu">
+                    <a href="../what-we-offer/" class="dropdown-item">What we offer</a>
+                    <a href="https://adams-advisor.cms.waikato.ac.nz/" class="dropdown-item">Calibration advice</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <div class="dropdown-menu">
+                    <a href="../software/" class="dropdown-item">Software</a>
+                    <a href="../docker-for-data-scientists/" class="dropdown-item">Docker for Data Scientists</a>
+                    <a href="." class="dropdown-item active">Docker images <span class="sr-only">(active)</span></a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu">
+                    <a href="../people/" class="dropdown-item">People</a>
+                    <a href="../clients/" class="dropdown-item">Clients</a>
+                    <a href="../contact/" class="dropdown-item">Contact</a>
+            </div>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Docker images</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>For our own projects, we make a lot of use of <a class="reference external" href="https://www.docker.com/">Docker</a>, to better manage
+the varying (and often clashing) requirements for CUDA and Python libraries. We not only offer a quick
+introduction to <a class="reference external" href="https://www.data-mining.co.nz/docker-for-data-scientists/">docker for data scientists</a>,
+but we also make (most of) our Docker images freely available (see below).</p>
+<section id="registry"><h2>Registry</h2>
+<p>In order to access these images, you need to log in our in-house registry using <strong>public</strong> credentials:</p>
+<p><code class="docutils literal">docker login <span class="pre">-u</span> public <span class="pre">-p</span> public <span class="pre">public.aml-repo.cms.waikato.ac.nz:443</span></code></p>
+</section><section id="image-classification"><h2>Image classification</h2>
+<ul>
+<li>
+<p>PyTorch (using our <a class="reference external" href="https://pypi.org/project/wai.pytorchimageclass/">wai.pytorchimageclass</a> Python library)</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0">PyTorch 1.6.0, CUDA 10.1</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/image-classification:1.6</span></code></p>
+</li>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0_cpu">PyTorch 1.6.0, CPU</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/image-classification:1.6_cpu</span></code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Tensorflow (using our <a class="reference external" href="https://pypi.org/project/wai.tfimageclass/">wai.tfimageclass</a> Python library)</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14">Tensorflow 1.14, CUDA 10.0</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image_classification:1.14</span></code></p>
+</li>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14_cpu">Tensorflow 1.14, CPU</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image_classification:1.14_cpu</span></code></p>
+</li>
+</ul>
+</li>
+</ul></section><section id="object-detection"><h2>Object detection</h2>
+<ul>
+<li>
+<p>PyTorch/MMDetection</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/tree/master/2020-03-01">MMDetection 2020-03-01, PyTorch 1.3 and CUDA 10.1</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2020-03-01</span></code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Tensorflow</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31">Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/object_detection:1.14.0_2019-08-31</span></code></p>
+</li>
+</ul>
+</li>
+</ul></section><section id="image-segmentation"><h2>Image segmentation</h2>
+<ul>
+<li>
+<p>Tensorflow/Keras</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras/1.14.0_0.3.0">Tensorflow 1.14, image-segmentation-keras 0.3.0, CUDA 10.0</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image-segmentation-keras:1.14.0_0.3.0</span></code></p>
+</li>
+</ul>
+</li>
+</ul></section><section id="instance-segmentation"><h2>Instance segmentation</h2>
+<ul>
+<li>
+<p>PyTorch/Detectron2</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.3">Detectron2 0.3, PyTorch 1.6, CUDA 10.1</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.3</span></code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>PyTorch/YOLACT++</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/yolact/tree/master/yolactpp-2020-02-11">YOLACT++ 2020-02-11, PyTorch 1.2, CUDA 10.0</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/yolact/yolactpp:2020-02-11</span></code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Tensorflow/Object Detection API</p>
+<ul>
+<li>
+<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31">Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0</a></p>
+<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/object_detection:1.14.0_2019-08-31</span></code></p>
+</li>
+</ul>
+</li>
+</ul></section>
+</div>
+    </div>
+    
+
+</article><!--End of body content--><footer id="footer">
+            Contents © 2021         <a href="mailto:fracpete@waikato.ac.nz">University of Waikato</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
