@@ -1,8 +1,8 @@
 .. title: Docker images
 .. slug: docker-images
 .. date: 2021-08-09 10:00:00 UTC+12:00
-.. tags: 
-.. category: 
+.. tags: docker
+.. category: software
 .. link: 
 .. description: 
 .. type: text
