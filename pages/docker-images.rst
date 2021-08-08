@@ -75,11 +75,17 @@ Image segmentation
 Instance segmentation
 ---------------------
 
-* PyTorch
+* PyTorch/Detectron2
 
   * `Detectron2 0.3, PyTorch 1.6, CUDA 10.1 <https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.3>`__
 
     ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.3``
+
+* PyTorch/YOLACT++
+
+  * `YOLACT++ 2020-02-11, PyTorch 1.2, CUDA 10.0 <https://github.com/waikato-datamining/yolact/tree/master/yolactpp-2020-02-11>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/yolact/yolactpp:2020-02-11``
 
 * Tensorflow/Object Detection API
 
