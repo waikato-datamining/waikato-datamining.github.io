@@ -1,6 +1,6 @@
 .. title: Docker images
 .. slug: docker-images
-.. date: 2021-08-09 10:00:00 UTC+12:00
+.. date: 2021-09-27 16:47:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -55,6 +55,14 @@ Object detection
 
     ``public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2020-03-01``
 
+  * `MMDetection 2.16.0, PyTorch 1.6 and CUDA 10.1 <https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2.16.0``
+
+  * `MMDetection 2.16.0, PyTorch 1.9 and CUDA 11.1 <https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0_cuda11.1>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2.16.0_cuda11.1``
+
 * Tensorflow
 
   * `Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31>`__
@@ -80,6 +88,10 @@ Instance segmentation
   * `Detectron2 0.3, PyTorch 1.6, CUDA 10.1 <https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.3>`__
 
     ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.3``
+
+  * `Detectron2 0.5, PyTorch 1.9, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.5>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.5``
 
 * PyTorch/YOLACT++
 
