@@ -1,6 +1,6 @@
 .. title: Docker images
 .. slug: docker-images
-.. date: 2021-09-27 16:47:00 UTC+13:00
+.. date: 2021-10-06 16:03:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -45,6 +45,16 @@ Image classification
 
     ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image_classification:1.14_cpu``
 
+* Tensorflow (using our `wai.tflite_model_maker <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker>`__ Python library)
+
+  * `2.4.3, CUDA 11.0 <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3>`__
+
+    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3`
+
+  * `2.4.3, CPU <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu>`__
+
+    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu`
+
 
 Object detection
 ----------------
@@ -68,6 +78,16 @@ Object detection
   * `Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31>`__
 
     ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/object_detection:1.14.0_2019-08-31``
+
+* Tensorflow (using our `wai.tflite_model_maker <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker>`__ Python library)
+
+  * `2.4.3, CUDA 11.0 <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3>`__
+
+    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3`
+
+  * `2.4.3, CPU <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu>`__
+
+    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu`
 
 
 Image segmentation
