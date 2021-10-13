@@ -49,11 +49,11 @@ Image classification
 
   * `2.4.3, CUDA 11.0 <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3>`__
 
-    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3`
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3``
 
   * `2.4.3, CPU <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu>`__
 
-    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu`
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu``
 
 
 Object detection
