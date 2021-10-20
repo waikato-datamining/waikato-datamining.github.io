@@ -1,6 +1,6 @@
 .. title: Docker images
 .. slug: docker-images
-.. date: 2021-10-06 16:03:00 UTC+13:00
+.. date: 2021-10-20 16:03:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -83,11 +83,11 @@ Object detection
 
   * `2.4.3, CUDA 11.0 <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3>`__
 
-    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3`
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3``
 
   * `2.4.3, CPU <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu>`__
 
-    `public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu`
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu``
 
 
 Image segmentation
