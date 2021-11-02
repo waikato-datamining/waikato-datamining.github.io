@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2021 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 02 Nov 2021 00:58:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>tflite model maker tools</title><link>https://www.data-mining.co.nz/news/2021-10-06-tflite-model-maker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;div&gt;&lt;p&gt;Tensorflow made the &lt;a class="reference external" href="https://www.tensorflow.org/lite/guide/model_maker"&gt;tflite model maker&lt;/a&gt; available a while go,
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2021 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 02 Nov 2021 01:47:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>video-frame-selector library released</title><link>https://www.data-mining.co.nz/news/2021-11-02-video-frame-selector/</link><dc:creator>University of Waikato</dc:creator><description>&lt;div&gt;&lt;p&gt;Release 0.0.8 of the &lt;strong&gt;video-frame-selector&lt;/strong&gt; Python 3 library is now available:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/video-frame-selector"&gt;github.com/waikato-datamining/video-frame-selector&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It includes some bug-fixes relating to the the Redis support and it now can
+iterate over images in a directory as well (not just processing video or webcam feed).&lt;/p&gt;&lt;/div&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2021-11-02-video-frame-selector/</guid><pubDate>Tue, 02 Nov 2021 00:55:00 GMT</pubDate></item><item><title>tflite model maker tools</title><link>https://www.data-mining.co.nz/news/2021-10-06-tflite-model-maker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;div&gt;&lt;p&gt;Tensorflow made the &lt;a class="reference external" href="https://www.tensorflow.org/lite/guide/model_maker"&gt;tflite model maker&lt;/a&gt; available a while go,
 which (according to the project website) &lt;em&gt;simplifies the process of training a TensorFlow Lite model using custom
 dataset. It uses transfer learning to reduce the amount of training data required and shorten the training time.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;But instead of falling back on scripting Python again, we pulled code from the their example notebooks into
@@ -57,31 +60,4 @@ on built models and export trained models to &lt;a class="reference external" hr
 &lt;p&gt;While it is easy with opencv to open files and webcams, there is no
 point in writing the same code over and over again. This is where
 the &lt;em&gt;video-frame-processor&lt;/em&gt; library comes in, allowing you to
-concentrate on the &lt;em&gt;processing&lt;/em&gt; of the frames from the video source.&lt;/p&gt;&lt;/div&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2021-01-05-video-frame-processor/</guid><pubDate>Tue, 05 Jan 2021 01:01:00 GMT</pubDate></item><item><title>simple-file-poller library released</title><link>https://www.data-mining.co.nz/news/2020-12-13-simple-file-poller/</link><dc:creator>University of Waikato</dc:creator><description>&lt;div&gt;&lt;p&gt;The &lt;strong&gt;simple-file-poller&lt;/strong&gt; Python 3 library has been released this week:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/simple-file-poller"&gt;github.com/waikato-datamining/simple-file-poller&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This library is aimed at Python projects that perform continuous processing
-of files, e.g., deep learning models that locate objects in images. These
-projects typically pick up files from one directory, make predictions,
-write the output in some format to another directory and then either
-move the input files to the output directory or simply delete them.&lt;/p&gt;
-&lt;p&gt;Instead of having to write this code for polling and moving over and over
-again, the &lt;strong&gt;simple-file-poller&lt;/strong&gt; library allows you to plug in your
-file processing code via a function that you supply to a &lt;strong&gt;Poller&lt;/strong&gt;
-object. Furthermore, you can also supply a function that can check whether
-files are valid and can be processed (e.g., image files).&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;Poller&lt;/strong&gt; class supports two polling modes: time-based and watchdog-based.
-The former waits for a specified number of seconds between polls (if there
-were no files present). This simple approach can be used when the file
-processing is not time critical. The latter approach watches the input directory
-for files being created and then reacts to that immediately. This approach
-allows for very low latency processing, especially useful for processing
-pipelines.&lt;/p&gt;
-&lt;p&gt;Another feature is the ability to write any output to a temporary directory
-first, before moving it into the output directory. This avoids race conditions
-with other processes that further process the generated output files, as the
-files are guaranteed to have been fully written.&lt;/p&gt;
-&lt;p&gt;The following frameworks make use of the &lt;strong&gt;simple-file-poller&lt;/strong&gt; now (and more will follow):&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras"&gt;image-segmentation-keras&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmdetection"&gt;mmdetection&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2020-12-13-simple-file-poller/</guid><pubDate>Sat, 12 Dec 2020 20:43:00 GMT</pubDate></item></channel></rss>
+concentrate on the &lt;em&gt;processing&lt;/em&gt; of the frames from the video source.&lt;/p&gt;&lt;/div&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2021-01-05-video-frame-processor/</guid><pubDate>Tue, 05 Jan 2021 01:01:00 GMT</pubDate></item></channel></rss>
