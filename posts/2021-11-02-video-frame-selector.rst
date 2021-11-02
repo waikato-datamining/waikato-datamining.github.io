@@ -1,6 +1,6 @@
 .. title: video-frame-selector library released
 .. slug: 2021-11-02-video-frame-selector
-.. date: 2021-11-02 13:55:00 UTC+12:00
+.. date: 2021-11-02 13:55:00 UTC+13:00
 .. tags: release
 .. category: library
 .. link: 
