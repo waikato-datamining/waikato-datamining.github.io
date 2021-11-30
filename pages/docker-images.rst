@@ -1,6 +1,6 @@
 .. title: Docker images
 .. slug: docker-images
-.. date: 2021-10-20 16:03:00 UTC+13:00
+.. date: 2021-11-30 16:34:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -72,6 +72,10 @@ Object detection
   * `MMDetection 2.16.0, PyTorch 1.9 and CUDA 11.1 <https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0_cuda11.1>`__
 
     ``public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2.16.0_cuda11.1``
+
+  * `MMDetection 2.18.1, PyTorch 1.9 and CUDA 11.1 <https://github.com/waikato-datamining/mmdetection/blob/master/2.18.1_cuda11.1>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2.18.1_cuda11.1``
 
 * Tensorflow
 
