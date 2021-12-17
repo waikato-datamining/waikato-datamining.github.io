@@ -18,7 +18,7 @@
 the varying (and often clashing) requirements for CUDA and Python libraries. We not only offer a quick
 introduction to docker for">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2021-11-30T16:34:00+13:00">
+<meta property="article:published_time" content="2021-12-17T15:50:00+13:00">
 <meta property="article:tag" content="docker">
 </head>
 <body>
@@ -94,141 +94,11 @@ bg-dark
 <p>For our own projects, we make a lot of use of <a class="reference external" href="https://www.docker.com/">Docker</a>, to better manage
 the varying (and often clashing) requirements for CUDA and Python libraries. We not only offer a quick
 introduction to <a class="reference external" href="https://www.data-mining.co.nz/docker-for-data-scientists/">docker for data scientists</a>,
-but we also make (most of) our Docker images freely available (see below).</p>
-<section id="registry"><h2>Registry</h2>
-<p>In order to access these images, you need to log in our in-house registry using <strong>public</strong> credentials:</p>
-<p><code class="docutils literal">docker login <span class="pre">-u</span> public <span class="pre">-p</span> public <span class="pre">public.aml-repo.cms.waikato.ac.nz:443</span></code></p>
-</section><section id="image-classification"><h2>Image classification</h2>
-<ul>
-<li>
-<p>PyTorch (using our <a class="reference external" href="https://pypi.org/project/wai.pytorchimageclass/">wai.pytorchimageclass</a> Python library)</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0">PyTorch 1.6.0, CUDA 10.1</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/image-classification:1.6</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0_cpu">PyTorch 1.6.0, CPU</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/image-classification:1.6_cpu</span></code></p>
-</li>
+but we also make (most of) our Docker images freely available. You can obtain the images from two sources:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="../docker-images-inhouse/">In-house Registry</a></p></li>
+<li><p><a class="reference external" href="../docker-images-dockerhub/">Docker Hub</a></p></li>
 </ul>
-</li>
-<li>
-<p>Tensorflow (using our <a class="reference external" href="https://pypi.org/project/wai.tfimageclass/">wai.tfimageclass</a> Python library)</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14">Tensorflow 1.14, CUDA 10.0</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image_classification:1.14</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14_cpu">Tensorflow 1.14, CPU</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image_classification:1.14_cpu</span></code></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Tensorflow (using our <a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker">wai.tflite_model_maker</a> Python library)</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3">2.4.3, CUDA 11.0</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu">2.4.3, CPU</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu</span></code></p>
-</li>
-</ul>
-</li>
-</ul></section><section id="object-detection"><h2>Object detection</h2>
-<ul>
-<li>
-<p>PyTorch/MMDetection</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/tree/master/2020-03-01">MMDetection 2020-03-01, PyTorch 1.3 and CUDA 10.1</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2020-03-01</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0">MMDetection 2.16.0, PyTorch 1.6 and CUDA 10.1</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2.16.0</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0_cuda11.1">MMDetection 2.16.0, PyTorch 1.9 and CUDA 11.1</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2.16.0_cuda11.1</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.18.1_cuda11.1">MMDetection 2.18.1, PyTorch 1.9 and CUDA 11.1</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:2.18.1_cuda11.1</span></code></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Tensorflow</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31">Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/object_detection:1.14.0_2019-08-31</span></code></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Tensorflow (using our <a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker">wai.tflite_model_maker</a> Python library)</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3">2.4.3, CUDA 11.0</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu">2.4.3, CPU</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu</span></code></p>
-</li>
-</ul>
-</li>
-</ul></section><section id="image-segmentation"><h2>Image segmentation</h2>
-<ul>
-<li>
-<p>Tensorflow/Keras</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras/1.14.0_0.3.0">Tensorflow 1.14, image-segmentation-keras 0.3.0, CUDA 10.0</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image-segmentation-keras:1.14.0_0.3.0</span></code></p>
-</li>
-</ul>
-</li>
-</ul></section><section id="instance-segmentation"><h2>Instance segmentation</h2>
-<ul>
-<li>
-<p>PyTorch/Detectron2</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.3">Detectron2 0.3, PyTorch 1.6, CUDA 10.1</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.3</span></code></p>
-</li>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.5">Detectron2 0.5, PyTorch 1.9, CUDA 11.1</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.5</span></code></p>
-</li>
-</ul>
-</li>
-<li>
-<p>PyTorch/YOLACT++</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/yolact/tree/master/yolactpp-2020-02-11">YOLACT++ 2020-02-11, PyTorch 1.2, CUDA 10.0</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/yolact/yolactpp:2020-02-11</span></code></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Tensorflow/Object Detection API</p>
-<ul>
-<li>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31">Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0</a></p>
-<p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/object_detection:1.14.0_2019-08-31</span></code></p>
-</li>
-</ul>
-</li>
-</ul></section>
 </div>
     </div>
     
