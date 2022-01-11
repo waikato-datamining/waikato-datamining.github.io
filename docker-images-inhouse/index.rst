@@ -26,21 +26,21 @@ Image classification
 
   * `PyTorch 1.6.0, CUDA 10.1 <https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0>`__
 
-    ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/image-classification:1.6``
+    ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-image-classification:1.6``
 
   * `PyTorch 1.6.0, CPU <https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0_cpu>`__
 
-    ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/image-classification:1.6_cpu``
+    ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-image-classification:1.6_cpu``
 
 * Tensorflow (using our `wai.tfimageclass <https://pypi.org/project/wai.tfimageclass/>`__ Python library)
 
   * `Tensorflow 1.14, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14>`__
 
-    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image_classification:1.14``
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_image_classification:1.14``
 
   * `Tensorflow 1.14, CPU <https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14_cpu>`__
 
-    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image_classification:1.14_cpu``
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_image_classification:1.14_cpu``
 
 * Tensorflow (using our `wai.tflite_model_maker <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker>`__ Python library)
 
@@ -86,7 +86,7 @@ Object detection
 
   * `Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31>`__
 
-    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/object_detection:1.14.0_2019-08-31``
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_object_detection:1.14.0_2019-08-31``
 
 * Tensorflow (using our `wai.tflite_model_maker <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker>`__ Python library)
 
@@ -132,5 +132,5 @@ Instance segmentation
 
   * `Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31>`__
 
-    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/object_detection:1.14.0_2019-08-31``
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_object_detection:1.14.0_2019-08-31``
 
