@@ -90,7 +90,7 @@ Object detection
 
     ``waikatodatamining/tflite_model_maker:2.4.3_cpu``
 
-* Yolov5
+* PyTorch/Yolov5
 
   * `Yolov5 2022-01-21, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-01-21_cuda11.1>`__
 
