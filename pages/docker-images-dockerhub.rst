@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2021-12-17 15:50:00 UTC+13:00
+.. date: 2022-05-13 11:50:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -91,6 +91,10 @@ Object detection
     ``waikatodatamining/tflite_model_maker:2.4.3_cpu``
 
 * PyTorch/Yolov5
+
+  * `Yolov5 2022-01-21, CPU <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-01-21_cpu>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-01-21_cpu``
 
   * `Yolov5 2022-01-21, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-01-21_cuda11.1>`__
 
