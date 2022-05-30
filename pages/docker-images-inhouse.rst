@@ -132,6 +132,10 @@ Instance segmentation
 
     ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.5``
 
+  * `Detectron2 0.6, PyTorch 1.9, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.6>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.6``
+
 * PyTorch/YOLACT++
 
   * `YOLACT++ 2020-02-11, PyTorch 1.2, CUDA 10.0 <https://github.com/waikato-datamining/yolact/tree/master/yolactpp-2020-02-11>`__
