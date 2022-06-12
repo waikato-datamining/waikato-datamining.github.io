@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2022-05-31 13:40:00 UTC+12:00
+.. date: 2022-06-10 13:40:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -114,9 +114,15 @@ Image segmentation
 
 * Tensorflow/Keras
 
-  * `Tensorflow 1.14, image-segmentation-keras 0.3.0, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras/1.14.0_0.3.0>`__
+  * `image-segmentation-keras 0.3.0, Tensorflow 1.14, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras/1.14.0_0.3.0>`__
 
     ``waikatodatamining/image-segmentation-keras:1.14.0_0.3.0``
+
+* PyTorch
+
+  * `Segmentation Models 0.2.1, PyTorch 1.9.0, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/segmentation_models/0.2.1>`__
+
+    ``waikatodatamining//segmentation_models:0.2.1``
 
 
 Instance segmentation
