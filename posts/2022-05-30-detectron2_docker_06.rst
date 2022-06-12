@@ -1,6 +1,6 @@
 .. title: Detectron2 0.6 Docker image available
-.. slug: 2022-05-22-detectron2-docker
-.. date: 2022-05-22 14:40:00 UTC+12:00
+.. slug: 2022-05-30-detectron2-docker
+.. date: 2022-05-30 14:40:00 UTC+12:00
 .. tags: release
 .. category: docker
 .. link: 
