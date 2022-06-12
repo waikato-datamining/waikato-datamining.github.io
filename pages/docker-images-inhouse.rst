@@ -1,6 +1,6 @@
 .. title: In-house Docker images
 .. slug: docker-images-inhouse
-.. date: 2022-05-31 13:40:00 UTC+12:00
+.. date: 2022-06-10 13:40:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
