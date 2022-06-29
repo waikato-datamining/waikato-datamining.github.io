@@ -84,7 +84,23 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-06-10-segmentation-models/" class="u-url">Segmentation Models 0.2.1 Docker image available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-06-30-mmsegmentation/" class="u-url">MMSegmentation 0.25.0 Docker image available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2022-06-30-mmsegmentation/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-06-30T10:12:00+12:00" itemprop="datePublished" title="2022-06-30 10:12">2022-06-30 10:12</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Docker images for building (and using) image segmentation models using the PyTorch-based framework
+<a class="reference external" href="https://github.com/open-mmlab/mmsegmentation">MMSegmentation</a> (version 0.25.0) is available:</p>
+<p>More information on the Docker images is available from Github:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation">https://github.com/waikato-datamining/mmsegmentation</a></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-06-10-segmentation-models/" class="u-url">Segmentation Models 0.2.1 Docker image available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -250,27 +266,6 @@ framework, using the 2.16.0 release of MMDetection (code base as of 2021-08-31):
 <p>This image supersedes the 0.4 version, as that image was never used in production.</p>
 <p><strong>Update</strong></p>
 <p>The image now uses CUDA 11.1, which allows the image to be run on the 3xxx series of Nvidia graphics cards.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2021-08-03-video-frame-selector/" class="u-url">video-frame-selector library released</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2021-08-03-video-frame-selector/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-08-03T11:20:00+12:00" itemprop="datePublished" title="2021-08-03 11:20">2021-08-03 11:20</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>The <strong>video-frame-selector</strong> Python 3 library is now available:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/video-frame-selector">github.com/waikato-datamining/video-frame-selector</a></p>
-<p>With this library you can present frames obtained from video files or a webcam to an image analysis framework,
-such as <a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2">detectron2</a>, and react to the
-generated predictions. For instance, you might want to trawl through a video from a trail camera and generate
-either JPG images or a shortened video that contains <strong>only</strong> the frames that show actual animal. Or you might
-only look for a specific animal, rather than all of them (e.g., only NZ pests such as rats or stoats).
-Frames that are to be kept can also be cropped to the smallest area that encompasses all the detected bounding
-boxes (you can enforce a margin around the cropped content and/or a minimum width/height).</p>
     </div>
     </article>
 </div>
