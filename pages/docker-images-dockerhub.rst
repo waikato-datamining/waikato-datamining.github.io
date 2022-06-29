@@ -124,6 +124,14 @@ Image segmentation
 
     ``waikatodatamining//segmentation_models:0.2.1``
 
+  * `MMSegmentation 0.25.0, PyTorch 1.9 and CUDA 11.1 <https://github.com/waikato-datamining/mmsegmentation/blob/master/0.25.0_cuda11.1>`__
+
+    ``waikatodatamining/mmsegmentation:0.25.0_cuda11.1``
+
+  * `MMSegmentation 0.25.0, PyTorch 1.9 and CPU <https://github.com/waikato-datamining/mmsegmentation/blob/master/0.25.0_cpu>`__
+
+    ``waikatodatamining/mmsegmentation:0.25.0_cpu``
+
 
 Instance segmentation
 ---------------------
