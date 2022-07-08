@@ -1,6 +1,6 @@
 .. title: In-house Docker images
 .. slug: docker-images-inhouse
-.. date: 2022-06-10 13:40:00 UTC+12:00
+.. date: 2022-07-08 19:20:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -31,6 +31,16 @@ Image classification
   * `PyTorch 1.6.0, CPU <https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0_cpu>`__
 
     ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-image-classification:1.6_cpu``
+
+* PyTorch/MMClassification
+
+  * `MMClassification 0.23.1, PyTorch 1.9 and CUDA 11.1 <https://github.com/waikato-datamining/mmclassification/blob/master/0.23.1_cuda11.1>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmclassification:0.23.1_cuda11.1``
+
+  * `MMClassification 0.23.1, PyTorch 1.9 and CPU <https://github.com/waikato-datamining/mmclassification/blob/master/0.23.1_cpu>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmclassification:0.23.1_cpu``
 
 * Tensorflow (using our `wai.tfimageclass <https://pypi.org/project/wai.tfimageclass/>`__ Python library)
 
