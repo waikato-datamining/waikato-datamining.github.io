@@ -84,6 +84,14 @@ Object detection
 
     ``waikatodatamining/mmdetection:2.18.1_cpu``
 
+  * `MMDetection 2.24.1, PyTorch 1.9 and CUDA 11.1 <https://github.com/waikato-datamining/mmdetection/blob/master/2.24.1_cuda11.1>`__
+
+    ``waikatodatamining/mmdetection:2.24.1_cuda11.1``
+
+  * `MMDetection 2.24.1, PyTorch 1.9 and CPU <https://github.com/waikato-datamining/mmdetection/blob/master/2.24.1_cpu>`__
+
+    ``waikatodatamining/mmdetection:2.24.1_cpu``
+
 * Tensorflow
 
   * `Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0 <https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31>`__
