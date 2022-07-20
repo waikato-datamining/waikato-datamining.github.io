@@ -1,3 +1,2 @@
-nikola<8.2
+nikola
 ghp-import2
-yapsy<=1.12.0
