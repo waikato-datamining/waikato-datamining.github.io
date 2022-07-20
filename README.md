@@ -30,7 +30,7 @@ Currently, a [github action](https://github.com/waikato-datamining/waikato-datam
 
   ```
   . venv/bin/activate
-  pip install nikola ghp-import2
+  pip install -r requirements.txt
   ```
 
 ### Adding content
