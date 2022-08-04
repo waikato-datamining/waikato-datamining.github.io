@@ -55,6 +55,7 @@ bg-dark
                     <a href="../software/" class="dropdown-item">Software</a>
                     <a href="../docker-for-data-scientists/" class="dropdown-item">Docker for Data Scientists</a>
                     <a href="../docker-images/" class="dropdown-item">Docker images</a>
+                    <a href="../applied-deep-learning/" class="dropdown-item">Applied Deep Learning</a>
             </div>
             </li>
 <li class="nav-item dropdown">
@@ -85,7 +86,31 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2021-09-27-mmdetection-docker/" class="u-url">MMDetection 2.16.0 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2021-10-06-tflite-model-maker/" class="u-url">tflite model maker tools</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2021-10-06-tflite-model-maker/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-10-06T16:02:00+13:00" itemprop="datePublished" title="2021-10-06 16:02">2021-10-06 16:02</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Tensorflow made the <a class="reference external" href="https://www.tensorflow.org/lite/guide/model_maker">tflite model maker</a> available a while go,
+which (according to the project website) <em>simplifies the process of training a TensorFlow Lite model using custom
+dataset. It uses transfer learning to reduce the amount of training data required and shorten the training time.</em></p>
+<p>But instead of falling back on scripting Python again, we pulled code from the their example notebooks into
+a library that offers command-line utilies and published it on <a class="reference external" href="https://pypi.org/">PyPI</a> to avoid having to
+write Python code over and over again for every new problem/dataset. It also makes it easy to create docker
+images from it, making it highly reusable.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker">tflite_model_maker project page</a></p></li>
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3">GPU docker image</a></p></li>
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu">CPU docker image</a></p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2021-09-27-mmdetection-docker/" class="u-url">MMDetection 2.16.0 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato

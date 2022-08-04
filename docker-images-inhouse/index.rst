@@ -18,6 +18,11 @@ due to using a reverse proxy):
 
 ``public.aml-repo.cms.waikato.ac.nz:443/``
 
+For some of the frameworks, we have tutorials available on how to use them in practice. This includes data
+preparation, training and making predictions.
+
+`https://www.data-mining.co.nz/applied-deeplearning/ <https://www.data-mining.co.nz/applied-deeplearning/>`__
+
 
 Image classification
 --------------------

@@ -8,7 +8,8 @@
 .. type: text
 
 
-The following images are available from `Docker Hub <https://hub.docker.com/u/waikatodatamining>`__:
+The following images are available from `Docker Hub <https://hub.docker.com/u/waikatodatamining>`__
+(`tutorial <https://www.data-mining.co.nz/applied-deeplearning/>`__):
 
 
 Image classification

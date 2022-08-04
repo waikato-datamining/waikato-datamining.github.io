@@ -54,6 +54,7 @@ bg-dark
                     <a href="../software/" class="dropdown-item">Software</a>
                     <a href="../docker-for-data-scientists/" class="dropdown-item">Docker for Data Scientists</a>
                     <a href="../docker-images/" class="dropdown-item">Docker images</a>
+                    <a href="../applied-deep-learning/" class="dropdown-item">Applied Deep Learning</a>
             </div>
             </li>
 <li class="nav-item dropdown">
@@ -84,7 +85,30 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-07-22-mmdetection-docker/" class="u-url">MMDetection 2.24.1 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-08-04-applied-deep-learning/" class="u-url">Applied Deep Learning resource available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2022-08-04-applied-deep-learning/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-08-04T12:10:00+12:00" itemprop="datePublished" title="2022-08-04 12:10">2022-08-04 12:10</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new resources for learning how to use our Docker images is now available (also available from the menu):</p>
+<p><a class="reference external" href="https://www.data-mining.co.nz/applied-deeplearning/">https://www.data-mining.co.nz/applied-deeplearning/</a></p>
+<p>In these tutorials, you learn how to prepare the data, adapt configuration files, train a model and make
+predictions with a model.</p>
+<p>At this stage, it covers the following domains:</p>
+<ul class="simple">
+<li><p>image classification</p></li>
+<li><p>image segmentation</p></li>
+<li><p>instance segmentation</p></li>
+<li><p>object detection</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-07-22-mmdetection-docker/" class="u-url">MMDetection 2.24.1 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -240,30 +264,6 @@ framework, using the 2.18.1 release of MMDetection (code base as of 2021-11-16):
 <p>It includes some bug-fixes relating to the the Redis support and it now can
 iterate over images in a directory as well (not just processing video or webcam feed).</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2021-10-06-tflite-model-maker/" class="u-url">tflite model maker tools</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2021-10-06-tflite-model-maker/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-10-06T16:02:00+13:00" itemprop="datePublished" title="2021-10-06 16:02">2021-10-06 16:02</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Tensorflow made the <a class="reference external" href="https://www.tensorflow.org/lite/guide/model_maker">tflite model maker</a> available a while go,
-which (according to the project website) <em>simplifies the process of training a TensorFlow Lite model using custom
-dataset. It uses transfer learning to reduce the amount of training data required and shorten the training time.</em></p>
-<p>But instead of falling back on scripting Python again, we pulled code from the their example notebooks into
-a library that offers command-line utilies and published it on <a class="reference external" href="https://pypi.org/">PyPI</a> to avoid having to
-write Python code over and over again for every new problem/dataset. It also makes it easy to create docker
-images from it, making it highly reusable.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker">tflite_model_maker project page</a></p></li>
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3">GPU docker image</a></p></li>
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu">CPU docker image</a></p></li>
-</ul>
-</div>
     </article>
 </div>
 
