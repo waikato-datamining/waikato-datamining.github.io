@@ -19,4 +19,4 @@ but we also make (most of) our Docker images freely available. You can obtain th
 For some of the frameworks, we have tutorials available on how to use them in practice. This includes data
 preparation, training and making predictions.
 
-`https://www.data-mining.co.nz/applied-deeplearning/ <https://www.data-mining.co.nz/applied-deeplearning/>`__
+`https://www.data-mining.co.nz/applied-deep-learning/ <https://www.data-mining.co.nz/applied-deep-learning/>`__
