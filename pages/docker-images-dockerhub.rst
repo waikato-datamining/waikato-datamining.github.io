@@ -9,7 +9,7 @@
 
 
 The following images are available from `Docker Hub <https://hub.docker.com/u/waikatodatamining>`__
-(`tutorial <https://www.data-mining.co.nz/applied-deeplearning/>`__):
+(`tutorial <https://www.data-mining.co.nz/applied-deep-learning/>`__):
 
 
 Image classification

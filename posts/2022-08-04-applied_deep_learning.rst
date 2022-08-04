@@ -10,7 +10,7 @@
 
 A new resources for learning how to use our Docker images is now available (also available from the menu):
 
-`https://www.data-mining.co.nz/applied-deeplearning/ <https://www.data-mining.co.nz/applied-deeplearning/>`__
+`https://www.data-mining.co.nz/applied-deep-learning/ <https://www.data-mining.co.nz/applied-deep-learning/>`__
 
 In these tutorials, you learn how to prepare the data, adapt configuration files, train a model and make
 predictions with a model.
