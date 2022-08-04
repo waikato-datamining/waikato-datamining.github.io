@@ -1,6 +1,6 @@
 .. title: Docker images
 .. slug: docker-images
-.. date: 2021-12-17 15:50:00 UTC+13:00
+.. date: 2022-08-04 12:10:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -15,3 +15,8 @@ but we also make (most of) our Docker images freely available. You can obtain th
 
 * `In-house Registry <link://slug/docker-images-inhouse>`__
 * `Docker Hub <link://slug/docker-images-dockerhub>`__
+
+For some of the frameworks, we have tutorials available on how to use them in practice. This includes data
+preparation, training and making predictions.
+
+`https://www.data-mining.co.nz/applied-deeplearning/ <https://www.data-mining.co.nz/applied-deeplearning/>`__
