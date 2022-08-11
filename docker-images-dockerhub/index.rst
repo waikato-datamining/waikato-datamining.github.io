@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2022-07-08 19:20:00 UTC+12:00
+.. date: 2022-08-11 16:43:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -54,6 +54,16 @@ Image classification
   * `2.4.3, CPU <https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu>`__
 
     ``waikatodatamining/tflite_model_maker:2.4.3_cpu``
+
+* Tensorflow (using the `make_image_classifier <https://github.com/tensorflow/hub/tree/master/tensorflow_hub/tools/make_image_classifier>`__ Python library)
+
+  * `2.9.1, CUDA 11.1 <https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cuda11.1>`__
+
+    ``waikatodatamining/tf_image_classification2:2.9.1_cuda11.1``
+
+  * `2.9.1, CPU <https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cpu>`__
+
+    ``waikatodatamining/tf_image_classification2:2.9.1_cpu``
 
 
 Object detection
