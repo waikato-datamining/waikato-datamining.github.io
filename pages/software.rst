@@ -1,6 +1,6 @@
 .. title: Software
 .. slug: software
-.. date: 2022-07-28 10:05:00 UTC+12:00
+.. date: 2022-09-01 10:05:00 UTC+12:00
 .. tags: 
 .. category: software
 .. link: 
@@ -17,7 +17,7 @@ A non-exhaustive list of our open-source software:
   - `Java <https://github.com/waikato-datamining/matrix-algorithms/>`__
   - `Python <https://github.com/waikato-datamining/py-matrix-algorithms/>`__
 
-* Customizations and Docker images for Deep learning frameworks
+* Customizations and Docker images for Deep learning frameworks, e.g.:
 
   - `MMClassification <https://github.com/waikato-datamining/mmclassification/>`__
   - `MMDetection <https://github.com/waikato-datamining/mmdetection/>`__
