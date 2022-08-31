@@ -203,3 +203,17 @@ Instance segmentation
 
     ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_object_detection:1.14.0_2019-08-31``
 
+
+
+Speech-to-text (STT)
+--------------------
+
+* Coqui STT
+
+  * `Coqui STT 1.3.0, CUDA 11.0 <https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.3.0_cuda11.0>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_coqui_stt:1.3.0_cuda11.0``
+
+  * `Coqui STT 1.3.0, CPU <https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.3.0_cpu>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_coqui_stt:1.3.0_cpu``
