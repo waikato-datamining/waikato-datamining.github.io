@@ -159,6 +159,10 @@ Image segmentation
 
     ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image-segmentation-keras:1.14.0_0.3.0``
 
+  * `image-segmentation-keras 0.3.0, Tensorflow 2.4.1, CUDA 11.0 <https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras/2.4.1_0.3.0>`__
+
+    ``public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image-segmentation-keras:2.4.1_0.3.0``
+
 * PyTorch
 
   * `Segmentation Models 0.2.1, PyTorch 1.9.0, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/segmentation_models/0.2.1>`__
