@@ -11,7 +11,7 @@
 A new Docker image is now available for speech-to-text using `Coqui STT <https://github.com/coqui-ai/STT>`__
 1.4.0 and TensorFlow 1.15.5 on top of CUDA 11.6:
 
-`CUDA 11.6 <https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.4.0_cuda11.6>`__
+`github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.4.0_cuda11.6 <https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.4.0_cuda11.6>`__
 
 Check out the new *Applied Deep Learning* tutorial on how to use it:
 
