@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2022-08-11 16:43:00 UTC+12:00
+.. date: 2022-09-30 13:13:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -136,6 +136,14 @@ Object detection
   * `Yolov5 2022-05-31, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-05-31_cuda11.1>`__
 
     ``waikatodatamining/pytorch-yolov5:2022-05-31_cuda11.1``
+
+  * `Yolov5 2022-09-29, CPU <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-09-29_cpu>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-09-29_cpu``
+
+  * `Yolov5 2022-09-29, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-09-29_cuda11.1>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-09-29_cuda11.1``
 
 
 Image segmentation
