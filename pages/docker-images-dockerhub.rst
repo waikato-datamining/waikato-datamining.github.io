@@ -145,6 +145,16 @@ Object detection
 
     ``waikatodatamining/pytorch-yolov5:2022-09-29_cuda11.1``
 
+* PyTorch/Yolov7
+
+  * `Yolov7 2022-10-08, CPU <https://github.com/waikato-datamining/pytorch/tree/master/yolov7/2022-10-08_cpu>`__
+
+    ``waikatodatamining/pytorch-yolov7:2022-10-08_cpu``
+
+  * `Yolov7 2022-10-08, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/yolov7/2022-10-08_cuda11.1>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-10-08_cuda11.1``
+
 
 Image segmentation
 ------------------
