@@ -145,6 +145,14 @@ Object detection
 
     ``waikatodatamining/pytorch-yolov5:2022-09-29_cuda11.1``
 
+  * `Yolov5 2022-11-05, CPU <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cpu>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-11-05_cpu``
+
+  * `Yolov5 2022-11-05, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cuda11.1>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-11-05_cuda11.1``
+
 * PyTorch/Yolov7
 
   * `Yolov7 2022-10-08, CPU <https://github.com/waikato-datamining/pytorch/tree/master/yolov7/2022-10-08_cpu>`__
@@ -206,6 +214,16 @@ Instance segmentation
   * `YOLACT++ 2020-02-11, PyTorch 1.2, CUDA 10.0 <https://github.com/waikato-datamining/yolact/tree/master/yolactpp-2020-02-11>`__
 
     ``waikatodatamining/yolactpp:2020-02-11``
+
+* PyTorch/Yolov5
+
+  * `Yolov5 2022-11-05, CPU <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cpu>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-11-05_cpu``
+
+  * `Yolov5 2022-11-05, CUDA 11.1 <https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cuda11.1>`__
+
+    ``waikatodatamining/pytorch-yolov5:2022-11-05_cuda11.1``
 
 * Tensorflow/Object Detection API
 
