@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2021-08-09 11:00:00 UTC+12:00
+.. date: 2022-12-16 10:00:00 UTC+13:00
 .. tags: 
 .. category: software
 .. link: 
@@ -34,3 +34,4 @@ benefits:
 * unlimited number of import tasks
 * ability to add custom tasks via external ADAMS workflows
 * scripting support via `Groovy <https://groovy-lang.org/>`__
+* data fusion support (e.g., for NIR+XRF)
