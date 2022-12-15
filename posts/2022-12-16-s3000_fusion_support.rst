@@ -1,6 +1,6 @@
 .. title: Yolov5 Docker images available
 .. slug: 2022-12-16-s3000-fusion-support
-.. date: 2022-12-16 10::00 UTC+13:00
+.. date: 2022-12-16 10:30:00 UTC+13:00
 .. tags: release
 .. category: software
 .. link: 
