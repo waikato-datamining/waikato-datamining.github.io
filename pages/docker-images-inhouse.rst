@@ -59,6 +59,14 @@ preparation, training and making predictions.
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.23.1_cpu">MMClassification 0.23.1, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmclassification:0.23.1_cpu</span></code></p>
               </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.25.0_cuda11.1">MMClassification 0.25.0, PyTorch 1.9 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmclassification:0.25.0_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.25.0_cpu">MMClassification 0.25.0, PyTorch 1.9 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmclassification:0.25.0_cpu</span></code></p>
+              </li>
             </ul>
           </li>
           <li>
