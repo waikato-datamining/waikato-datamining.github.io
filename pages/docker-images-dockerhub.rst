@@ -148,6 +148,14 @@ preparation, training and making predictions.
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.24.1_cpu">MMDetection 2.24.1, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.24.1_cpu</span></code></p>
               </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.27.0_cuda11.1">MMDetection 2.27.0, PyTorch 1.9 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.27.0_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.27.0_cpu">MMDetection 2.27.0, PyTorch 1.9 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.27.0_cpu</span></code></p>
+              </li>
             </ul>
           </li>
           <li>
