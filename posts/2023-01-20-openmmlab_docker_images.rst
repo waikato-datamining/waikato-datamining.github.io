@@ -14,7 +14,7 @@ use libaries from the `OpenMMLab <https://github.com/open-mmlab>`__ group:
 * MMSegmentation 0.30.0 (CPU and CUDA 11.1)
 * MMDetection 2.27.0 (CPU and CUDA 11.1)
 
-All frameworks now offer a script (`*_onnx`) to export a PyTorch model to ONNX.
+All frameworks now offer a script (`mmcls/mmseg/mmdet_onnx`) to export a PyTorch model to ONNX.
 
 MMDetection now also allows you to select the CUDA device to train on rather
 than just always using the first available GPU.
