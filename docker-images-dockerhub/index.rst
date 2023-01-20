@@ -52,6 +52,14 @@ preparation, training and making predictions.
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.23.1_cpu">MMClassification 0.23.1, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmclassification:0.23.1_cpu</span></code></p>
               </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.25.0_cuda11.1">MMClassification 0.25.0, PyTorch 1.9 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmclassification:0.25.0_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.25.0_cpu">MMClassification 0.25.0, PyTorch 1.9 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmclassification:0.25.0_cpu</span></code></p>
+              </li>
             </ul>
           </li>
           <li>
@@ -139,6 +147,14 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.24.1_cpu">MMDetection 2.24.1, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.24.1_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.27.0_cuda11.1">MMDetection 2.27.0, PyTorch 1.9 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.27.0_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.27.0_cpu">MMDetection 2.27.0, PyTorch 1.9 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.27.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -253,6 +269,14 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.25.0_cpu">MMSegmentation 0.25.0, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.25.0_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.30.0_cuda11.1">MMSegmentation 0.30.0, PyTorch 1.9 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.30.0_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.30.0_cpu">MMSegmentation 0.30.0, PyTorch 1.9 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.30.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
