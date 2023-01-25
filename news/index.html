@@ -85,7 +85,33 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-01-20-openmmlab-docker-images/" class="u-url">OpenMMLab Docker images</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-01-25-opex-support-expanded/" class="u-url">OPEX support expanded</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2023-01-25-opex-support-expanded/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-01-25T16:45:00+13:00" itemprop="datePublished" title="2023-01-25 16:45">2023-01-25 16:45</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Historically, our object detection frameworks have been outputting predictions in a
+<a class="reference external" href="https://github.com/waikato-ufdl/wai-annotations-roi">CSV-based format</a> when
+doing predictions that involved file-polling (a format that was originally derived from
+<a class="reference external" href="https://learn.microsoft.com/en-us/cognitive-toolkit/">CNTK</a>). Recent additions
+of frameworks (and all Redis-based predictions), however, are using the
+<a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format">OPEX format</a>
+instead (a JSON-based format). In order to standardize the output of our Docker
+images further, the following images now offer outputting the predictions in OPEX format
+as well:</p>
+<ul class="simple">
+<li><p>MMDetection 2.27.0 (CPU and CUDA 11.1)</p></li>
+<li><p>Detectron2 0.6</p></li>
+<li><p>Yolov7 2022-10-08 (CPU and CUDA 11.1)</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-01-20-openmmlab-docker-images/" class="u-url">OpenMMLab Docker images</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -296,29 +322,6 @@ Python library is employed.</p>
 <p>A tutorial on how to use these Docker images is available as well:</p>
 <p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_classification/tf2_make_image_classifier/">https://www.data-mining.co.nz/applied-deep-learning/image_classification/tf2_make_image_classifier/</a></p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-08-04-applied-deep-learning/" class="u-url">Applied Deep Learning resource available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2022-08-04-applied-deep-learning/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-08-04T12:10:00+12:00" itemprop="datePublished" title="2022-08-04 12:10">2022-08-04 12:10</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>A new resources for learning how to use our Docker images is now available (also available from the menu):</p>
-<p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/">https://www.data-mining.co.nz/applied-deep-learning/</a></p>
-<p>In these tutorials, you learn how to prepare the data, adapt configuration files, train a model and make
-predictions with a model.</p>
-<p>At this stage, it covers the following domains:</p>
-<ul class="simple">
-<li><p>image classification</p></li>
-<li><p>image segmentation</p></li>
-<li><p>instance segmentation</p></li>
-<li><p>object detection</p></li>
-</ul>
-</div>
     </article>
 </div>
 
