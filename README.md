@@ -43,7 +43,7 @@ Currently, a [github action](https://github.com/waikato-datamining/waikato-datam
 * The nikola source is on branch `src`, the generated code is on `master`
 
 
-### Deploy to Github
+### Deploy to Github (manual)
 
 * [general notes](https://pages.gitlab.io/nikola/stories/handbook/#deploying-to-github)
 * commit/push changes
@@ -51,6 +51,7 @@ Currently, a [github action](https://github.com/waikato-datamining/waikato-datam
 
   ```
   . venv/bin/activate
+  git pull
   nikola clean
   nikola build
   nikola github_deploy
