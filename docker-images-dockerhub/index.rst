@@ -20,6 +20,11 @@ preparation, training and making predictions.
 .. raw:: html
 
     <p>Click on one of the domain buttons to see the relevant frameworks and images:</p>
+
+    <!-- -------------------- -->
+    <!-- image classification -->
+    <!-- -------------------- -->
+
     <p>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#image-classification" aria-expanded="false" aria-controls="image-classification">
         Image classification
@@ -104,6 +109,10 @@ preparation, training and making predictions.
         </ul>
       </div>
     </div>
+
+    <!-- ---------------- -->
+    <!-- object detection -->
+    <!-- ---------------- -->
 
     <p>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#object-detection" aria-expanded="false" aria-controls="object-detection">
@@ -234,6 +243,10 @@ preparation, training and making predictions.
       </div>
     </div>
 
+    <!-- ------------------ -->
+    <!-- image segmentation -->
+    <!-- ------------------ -->
+
     <p>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#image-segmentation" aria-expanded="false" aria-controls="image-segmentation">
         Image segmentation
@@ -278,11 +291,23 @@ preparation, training and making predictions.
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.30.0_cpu">MMSegmentation 0.30.0, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.30.0_cpu</span></code></p>
               </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr/0.1.2_cuda11.1">DEXTR 0.1.2, PyTorch 1.10.0 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-dextr:0.1.2_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr/0.1.2_cpu">DEXTR 0.1.2, PyTorch 1.9.1 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-dextr:0.1.2_cpu</span></code></p>
+              </li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
+
+    <!-- --------------------- -->
+    <!-- instance segmentation -->
+    <!-- --------------------- -->
 
     <p>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#instance-segmentation" aria-expanded="false" aria-controls="instance-segmentation">
@@ -343,6 +368,10 @@ preparation, training and making predictions.
         </ul>
       </div>
     </div>
+
+    <!-- -------------------- -->
+    <!-- speech-to-text (STT) -->
+    <!-- -------------------- -->
 
     <p>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#speech-to-text" aria-expanded="false" aria-controls="speech-to-text">

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 25 Jan 2023 03:55:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OPEX support expanded</title><link>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Historically, our object detection frameworks have been outputting predictions in a
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 24 Feb 2023 01:56:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>DEXTR Docker images available</title><link>https://www.data-mining.co.nz/news/2023-02-24-opex-support-expanded/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/Britefury/dextr"&gt;DEXTR&lt;/a&gt; (Deep Extreme Cut) are now available.&lt;/p&gt;
+&lt;p&gt;DEXTR is a great tool for aiding a human annotating images for image segmentation, as it can determine
+a relatively good outline of an object based on just four extreme points. Pre-trained models are available,
+but custom ones (for specific domains) can be trained as well.&lt;/p&gt;
+&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr"&gt;github.com/waikato-datamining/pytorch/tree/master/dextr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The names for the images are as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-dextr:0.1.2_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-dextr:0.1.2_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-02-24-opex-support-expanded/</guid><pubDate>Fri, 24 Feb 2023 01:35:00 GMT</pubDate></item><item><title>OPEX support expanded</title><link>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Historically, our object detection frameworks have been outputting predictions in a
 &lt;a class="reference external" href="https://github.com/waikato-ufdl/wai-annotations-roi"&gt;CSV-based format&lt;/a&gt; when
 doing predictions that involved file-polling (a format that was originally derived from
 &lt;a class="reference external" href="https://learn.microsoft.com/en-us/cognitive-toolkit/"&gt;CNTK&lt;/a&gt;). Recent additions
@@ -91,13 +111,4 @@ using TensorFlow 1.15.2:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.3.0_cuda11.0"&gt;CUDA 11.0&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/coqui/stt/1.15.2_0.10.0a10_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-08-31-coqui_stt/</guid><pubDate>Wed, 31 Aug 2022 04:43:00 GMT</pubDate></item><item><title>Tensorflow 2.9.1 image classification Docker images available</title><link>https://www.data-mining.co.nz/news/2022-08-11-tf2_image_classification/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images are now available for the &lt;a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2"&gt;TensorFlow 2&lt;/a&gt;
-image classification, using the 2.9.1 release of TensorFlow:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cuda11.1"&gt;CUDA 11.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For training the models, the &lt;a class="reference external" href="https://github.com/tensorflow/hub/tree/master/tensorflow_hub/tools/make_image_classifier"&gt;make_image_classifier&lt;/a&gt;
-Python library is employed.&lt;/p&gt;
-&lt;p&gt;A tutorial on how to use these Docker images is available as well:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_classification/tf2_make_image_classifier/"&gt;https://www.data-mining.co.nz/applied-deep-learning/image_classification/tf2_make_image_classifier/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-08-11-tf2_image_classification/</guid><pubDate>Thu, 11 Aug 2022 04:43:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-08-31-coqui_stt/</guid><pubDate>Wed, 31 Aug 2022 04:43:00 GMT</pubDate></item></channel></rss>

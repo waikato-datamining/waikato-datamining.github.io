@@ -85,7 +85,42 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-01-25-opex-support-expanded/" class="u-url">OPEX support expanded</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-02-24-opex-support-expanded/" class="u-url">DEXTR Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2023-02-24-opex-support-expanded/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-02-24T14:35:00+13:00" itemprop="datePublished" title="2023-02-24 14:35">2023-02-24 14:35</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Docker images for <a class="reference external" href="https://github.com/Britefury/dextr">DEXTR</a> (Deep Extreme Cut) are now available.</p>
+<p>DEXTR is a great tool for aiding a human annotating images for image segmentation, as it can determine
+a relatively good outline of an object based on just four extreme points. Pre-trained models are available,
+but custom ones (for specific domains) can be trained as well.</p>
+<p>The code used by the docker images is available from here:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr">github.com/waikato-datamining/pytorch/tree/master/dextr</a></p>
+<p>The names for the images are as follows:</p>
+<ul class="simple">
+<li>
+<p>In-house registry:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cuda11.1</span></code></p></li>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cpu</span></code></p></li>
+</ul>
+</li>
+<li>
+<p>Docker hub:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-dextr:0.1.2_cuda11.1</span></code></p></li>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-dextr:0.1.2_cpu</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-01-25-opex-support-expanded/" class="u-url">OPEX support expanded</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -300,28 +335,6 @@ using TensorFlow 1.15.2:</p>
 <li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/coqui/stt/1.15.2_0.10.0a10_cpu">CPU</a></p></li>
 </ul>
 </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-08-11-tf2_image_classification/" class="u-url">Tensorflow 2.9.1 image classification Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2022-08-11-tf2_image_classification/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-08-11T16:43:00+12:00" itemprop="datePublished" title="2022-08-11 16:43">2022-08-11 16:43</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Docker images are now available for the <a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2">TensorFlow 2</a>
-image classification, using the 2.9.1 release of TensorFlow:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cuda11.1">CUDA 11.1</a></p></li>
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cpu">CPU</a></p></li>
-</ul>
-<p>For training the models, the <a class="reference external" href="https://github.com/tensorflow/hub/tree/master/tensorflow_hub/tools/make_image_classifier">make_image_classifier</a>
-Python library is employed.</p>
-<p>A tutorial on how to use these Docker images is available as well:</p>
-<p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_classification/tf2_make_image_classifier/">https://www.data-mining.co.nz/applied-deep-learning/image_classification/tf2_make_image_classifier/</a></p>
-    </div>
     </article>
 </div>
 
