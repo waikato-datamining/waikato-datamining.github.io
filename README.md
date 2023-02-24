@@ -51,6 +51,8 @@ Currently, a [github action](https://github.com/waikato-datamining/waikato-datam
 
   ```
   . venv/bin/activate
+  nikola clean
+  nikola build
   nikola github_deploy
   ```
 
