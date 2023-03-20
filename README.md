@@ -30,7 +30,7 @@ Currently, a [github action](https://github.com/waikato-datamining/waikato-datam
 
   ```
   . venv/bin/activate
-  pip install -r requirements.txt
+  pip install -r local_requirements.txt
   ```
 
 ### Adding content
