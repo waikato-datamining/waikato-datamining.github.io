@@ -235,7 +235,7 @@ preparation, training and making predictions.
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov7/2022-10-08_cuda11.1">Yolov7 2022-10-08, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-10-08_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov7:2022-10-08_cuda11.1</span></code></p>
               </li>
             </ul>
           </li>
