@@ -306,6 +306,14 @@ preparation, training and making predictions.
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr/0.1.2_cpu">DEXTR 0.1.2, PyTorch 1.9.1 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cpu</span></code></p>
               </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything/2023-04-16_cuda11.1">Segment-Anything Model 2023-04-16, PyTorch 1.9.1 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything/2023-04-16_cpu">Segment-Anything Model 2023-04-16, PyTorch 1.9.1 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu</span></code></p>
+              </li>
             </ul>
           </li>
         </ul>
