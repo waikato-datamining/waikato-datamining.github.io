@@ -1,5 +1,5 @@
 .. title: DEXTR Docker images available
-.. slug: 2023-02-24-opex-support-expanded
+.. slug: 2023-02-24-dextr-docker
 .. date: 2023-02-24 14:35:00 UTC+13:00
 .. tags: release
 .. category: docker
@@ -17,7 +17,7 @@ The code used by the docker images is available from here:
 
 `github.com/waikato-datamining/pytorch/tree/master/dextr <https://github.com/waikato-datamining/pytorch/tree/master/dextr>`__
 
-The names for the images are as follows:
+The tags for the images are as follows:
 
 * In-house registry:
 

@@ -85,7 +85,41 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-03-01-opex47-library-released/" class="u-url">opex4j library released</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-04-20-sam-docker/" class="u-url">Segment-Anything Model Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2023-04-20-sam-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-04-20T14:35:00+13:00" itemprop="datePublished" title="2023-04-20 14:35">2023-04-20 14:35</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Docker images for <a class="reference external" href="https://ai.facebook.com/research/publications/segment-anything/">Segment-Anything Model</a> (SAM) are now available.</p>
+<p>SAM is a great tool for aiding a human annotating images for image segmentation or object detection, as it can determine
+a relatively good outline of an object based on either a point or a box. Only pre-trained models are available.</p>
+<p>The code used by the docker images is available from here:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything">github.com/waikato-datamining/pytorch/tree/master/segment-anything</a></p>
+<p>The tags for the images are as follows:</p>
+<ul class="simple">
+<li>
+<p>In-house registry:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.1</span></code></p></li>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu</span></code></p></li>
+</ul>
+</li>
+<li>
+<p>Docker hub:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-sam:2023-04-16_cuda11.1</span></code></p></li>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-sam:2023-04-16_cpu</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-03-01-opex47-library-released/" class="u-url">opex4j library released</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -102,13 +136,13 @@ in some of our Docker images. So far, there was only language support available 
 With today's release of <a class="reference external" href="https://github.com/waikato-datamining/opex4j">opex4j</a>, there is
 now a Java library for this exchange format available as well.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-02-24-opex-support-expanded/" class="u-url">DEXTR Docker images available</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-02-24-dextr-docker/" class="u-url">DEXTR Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
             </span></p>
             <p class="dateline">
-            <a href="2023-02-24-opex-support-expanded/" rel="bookmark">
+            <a href="2023-02-24-dextr-docker/" rel="bookmark">
             <time class="published dt-published" datetime="2023-02-24T14:35:00+13:00" itemprop="datePublished" title="2023-02-24 14:35">2023-02-24 14:35</time></a>
             </p>
         </div>
@@ -119,7 +153,7 @@ a relatively good outline of an object based on just four extreme points. Pre-tr
 but custom ones (for specific domains) can be trained as well.</p>
 <p>The code used by the docker images is available from here:</p>
 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr">github.com/waikato-datamining/pytorch/tree/master/dextr</a></p>
-<p>The names for the images are as follows:</p>
+<p>The tags for the images are as follows:</p>
 <ul class="simple">
 <li>
 <p>In-house registry:</p>
@@ -216,7 +250,7 @@ and <a class="reference external" href="https://en.wikipedia.org/wiki/X-ray_fluo
 Apart from using a newer codebase, these images now support instance segmentation as well, not just object detection.</p>
 <p>The code used by the docker images is available from here:</p>
 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5">github.com/waikato-datamining/pytorch/tree/master/yolov5</a></p>
-<p>The names for the images are as follows:</p>
+<p>The tags for the images are as follows:</p>
 <ul class="simple">
 <li>
 <p>In-house registry:</p>
@@ -250,7 +284,7 @@ Apart from using a newer codebase, these images now support instance segmentatio
     <p>Docker images for the <a class="reference external" href="https://github.com/WongKinYiu/yolov7">Yolov7</a> code base are now available.</p>
 <p>The code used by the docker images is available from here:</p>
 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov7">github.com/waikato-datamining/pytorch/tree/master/yolov7</a></p>
-<p>The names for the images are as follows:</p>
+<p>The tags for the images are as follows:</p>
 <ul class="simple">
 <li>
 <p>In-house registry:</p>
@@ -284,7 +318,7 @@ Apart from using a newer codebase, these images now support instance segmentatio
     <p>Docker images for the latest <a class="reference external" href="https://github.com/ultralytics/yolov5">Yolov5</a> code base are now available.</p>
 <p>The code used by the docker images is available from here:</p>
 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5">github.com/waikato-datamining/pytorch/tree/master/yolov5</a></p>
-<p>The names for the images are as follows:</p>
+<p>The tags for the images are as follows:</p>
 <ul class="simple">
 <li>
 <p>In-house registry:</p>
@@ -318,21 +352,6 @@ Apart from using a newer codebase, these images now support instance segmentatio
 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.4.0_cuda11.6">github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.4.0_cuda11.6</a></p>
 <p>Check out the new <em>Applied Deep Learning</em> tutorial on how to use it:</p>
 <p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/speech_to_text/coqui_stt/">www.data-mining.co.nz/applied-deep-learning/speech_to_text/coqui_stt/</a></p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-09-01-keras-image-segmentation-docker/" class="u-url">Keras image segmentation Docker image available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2022-09-01-keras-image-segmentation-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-09-01T15:55:00+12:00" itemprop="datePublished" title="2022-09-01 15:55">2022-09-01 15:55</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>A new Docker image of the <em>Keras image segmentation</em> frameworks is available, now using TensorFlow 2.4.1 and Keras 2.4.3.</p>
-<p>More information on the Docker image is available from Github:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras">github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras</a></p>
     </div>
     </article>
 </div>
