@@ -1,5 +1,5 @@
 .. title: DEXTR Docker images available
-.. slug: 2023-02-24-opex-support-expanded
+.. slug: 2023-02-24-dextr-docker
 .. date: 2023-02-24 14:35:00 UTC+13:00
 .. tags: release
 .. category: docker
