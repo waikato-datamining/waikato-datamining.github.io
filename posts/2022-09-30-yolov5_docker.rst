@@ -14,7 +14,7 @@ The code used by the docker images is available from here:
 
 `github.com/waikato-datamining/pytorch/tree/master/yolov5 <https://github.com/waikato-datamining/pytorch/tree/master/yolov5>`__
 
-The names for the images are as follows:
+The tags for the images are as follows:
 
 * In-house registry:
 
