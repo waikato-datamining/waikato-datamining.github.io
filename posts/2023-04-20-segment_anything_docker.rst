@@ -1,6 +1,6 @@
 .. title: Segment-Anything Model Docker images available
 .. slug: 2023-04-20-sam-docker
-.. date: 2023-04-20 14:35:00 UTC+13:00
+.. date: 2023-05-01 13:16:00 UTC+13:00
 .. tags: release
 .. category: docker
 .. link: 
@@ -20,10 +20,10 @@ The tags for the images are as follows:
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.1``
+  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.6``
   * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu``
 
 * Docker hub:
 
-  * ``waikatodatamining/pytorch-sam:2023-04-16_cuda11.1``
+  * ``waikatodatamining/pytorch-sam:2023-04-16_cuda11.6``
   * ``waikatodatamining/pytorch-sam:2023-04-16_cpu``
