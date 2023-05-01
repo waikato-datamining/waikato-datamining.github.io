@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 20 Apr 2023 03:51:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Segment-Anything Model Docker images available</title><link>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://ai.facebook.com/research/publications/segment-anything/"&gt;Segment-Anything Model&lt;/a&gt; (SAM) are now available.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 01 May 2023 01:57:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Segment-Anything Model Docker images available</title><link>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://ai.facebook.com/research/publications/segment-anything/"&gt;Segment-Anything Model&lt;/a&gt; (SAM) are now available.&lt;/p&gt;
 &lt;p&gt;SAM is a great tool for aiding a human annotating images for image segmentation or object detection, as it can determine
 a relatively good outline of an object based on either a point or a box. Only pre-trained models are available.&lt;/p&gt;
 &lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
@@ -8,17 +8,17 @@ a relatively good outline of an object based on either a point or a box. Only pr
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam:2023-04-16_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam:2023-04-16_cuda11.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam:2023-04-16_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</guid><pubDate>Thu, 20 Apr 2023 01:35:00 GMT</pubDate></item><item><title>opex4j library released</title><link>https://www.data-mining.co.nz/news/2023-03-01-opex47-library-released/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/"&gt;Recently&lt;/a&gt;, we extended the support
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</guid><pubDate>Mon, 01 May 2023 00:16:00 GMT</pubDate></item><item><title>opex4j library released</title><link>https://www.data-mining.co.nz/news/2023-03-01-opex47-library-released/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/"&gt;Recently&lt;/a&gt;, we extended the support
 for the &lt;a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format"&gt;OPEX format&lt;/a&gt;
 in some of our Docker images. So far, there was only language support available for Python.
 With today's release of &lt;a class="reference external" href="https://github.com/waikato-datamining/opex4j"&gt;opex4j&lt;/a&gt;, there is
