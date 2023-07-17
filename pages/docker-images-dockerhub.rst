@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2023-01-17 08:55:00 UTC+13:00
+.. date: 2023-07-18 10:12:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -290,6 +290,14 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.30.0_cpu">MMSegmentation 0.30.0, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.30.0_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/1.1.0_cuda11.1">MMSegmentation 1.1.0, PyTorch 1.9 and CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:1.1.0_cuda11.1</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/1.1.0_cpu">MMSegmentation 1.1.0, PyTorch 1.9 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:1.1.0_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr/0.1.2_cuda11.1">DEXTR 0.1.2, PyTorch 1.10.0 and CUDA 11.1</a></p>
