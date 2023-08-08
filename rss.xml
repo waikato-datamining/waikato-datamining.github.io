@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 17 Jul 2023 22:59:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>MMSegmentation 1.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for building (and using) image segmentation models using the PyTorch-based framework
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 08 Aug 2023 23:50:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Redis-related Docker image updates</title><link>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-datamining/redis-docker-harness"&gt;redis-docker-harness&lt;/a&gt;
+Python library, which is used by a lot of our Docker images, has received a number of updates
+(at time of writing, the version of the library in use is 0.0.4):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;ability to specify a password for the Redis server&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;specify the timeout parameter for the the Redis client, with larger timeouts resulting in
+lower CPU load (the default is now 0.01 instead of 0.001)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unfortunately, this required re-releasing the most recent images of the following frameworks:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;detectron2&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mmdetection&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mmsegmentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;yolov5&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;yolov7&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Segment Anything (SAM)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;DEXTR&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The images kept their version number, you just need to pull them again, or use &lt;cite&gt;--pull ALWAYS&lt;/cite&gt;
+in conjunction with &lt;cite&gt;docker run&lt;/cite&gt;.&lt;/p&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</guid><pubDate>Tue, 08 Aug 2023 23:41:00 GMT</pubDate></item><item><title>MMSegmentation 1.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for building (and using) image segmentation models using the PyTorch-based framework
 &lt;a class="reference external" href="https://github.com/open-mmlab/mmsegmentation"&gt;MMSegmentation&lt;/a&gt; (version 1.1.0) are now available:&lt;/p&gt;
 &lt;p&gt;More information on the Docker images is available from Github:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation"&gt;https://github.com/waikato-datamining/mmsegmentation&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</guid><pubDate>Mon, 17 Jul 2023 22:12:00 GMT</pubDate></item><item><title>Segment-Anything Model Docker images available</title><link>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://ai.facebook.com/research/publications/segment-anything/"&gt;Segment-Anything Model&lt;/a&gt; (SAM) are now available.&lt;/p&gt;
@@ -109,21 +128,4 @@ Apart from using a newer codebase, these images now support instance segmentatio
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A tutorial is available as well:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolov7/"&gt;www.data-mining.co.nz/applied-deep-learning/object_detection/yolov7/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-11-21-yolov7-docker/</guid><pubDate>Mon, 21 Nov 2022 02:33:00 GMT</pubDate></item><item><title>Yolov5 Docker images available</title><link>https://www.data-mining.co.nz/news/2022-09-30-yolov5-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for the latest &lt;a class="reference external" href="https://github.com/ultralytics/yolov5"&gt;Yolov5&lt;/a&gt; code base are now available.&lt;/p&gt;
-&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5"&gt;github.com/waikato-datamining/pytorch/tree/master/yolov5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-09-29_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-09-29_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolov5:2022-09-29_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolov5:2022-09-29_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-09-30-yolov5-docker/</guid><pubDate>Fri, 30 Sep 2022 00:03:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolov7/"&gt;www.data-mining.co.nz/applied-deep-learning/object_detection/yolov7/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-11-21-yolov7-docker/</guid><pubDate>Mon, 21 Nov 2022 02:33:00 GMT</pubDate></item></channel></rss>

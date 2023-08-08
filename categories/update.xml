@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about update)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/update.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 08 Aug 2023 23:50:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Redis-related Docker image updates</title><link>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-datamining/redis-docker-harness"&gt;redis-docker-harness&lt;/a&gt;
+Python library, which is used by a lot of our Docker images, has received a number of updates
+(at time of writing, the version of the library in use is 0.0.4):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;ability to specify a password for the Redis server&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;specify the timeout parameter for the the Redis client, with larger timeouts resulting in
+lower CPU load (the default is now 0.01 instead of 0.001)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unfortunately, this required re-releasing the most recent images of the following frameworks:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;detectron2&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mmdetection&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mmsegmentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;yolov5&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;yolov7&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Segment Anything (SAM)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;DEXTR&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The images kept their version number, you just need to pull them again, or use &lt;cite&gt;--pull ALWAYS&lt;/cite&gt;
+in conjunction with &lt;cite&gt;docker run&lt;/cite&gt;.&lt;/p&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</guid><pubDate>Tue, 08 Aug 2023 23:41:00 GMT</pubDate></item></channel></rss>

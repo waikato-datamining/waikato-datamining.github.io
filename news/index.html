@@ -85,7 +85,39 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-07-18-mmsegmentation/" class="u-url">MMSegmentation 1.1.0 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-08-09-redis_updates/" class="u-url">Redis-related Docker image updates</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2023-08-09-redis_updates/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-08-09T11:41:00+12:00" itemprop="datePublished" title="2023-08-09 11:41">2023-08-09 11:41</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>The <a class="reference external" href="https://github.com/waikato-datamining/redis-docker-harness">redis-docker-harness</a>
+Python library, which is used by a lot of our Docker images, has received a number of updates
+(at time of writing, the version of the library in use is 0.0.4):</p>
+<ul class="simple">
+<li><p>ability to specify a password for the Redis server</p></li>
+<li><p>specify the timeout parameter for the the Redis client, with larger timeouts resulting in
+lower CPU load (the default is now 0.01 instead of 0.001)</p></li>
+</ul>
+<p>Unfortunately, this required re-releasing the most recent images of the following frameworks:</p>
+<ul class="simple">
+<li><p>detectron2</p></li>
+<li><p>mmdetection</p></li>
+<li><p>mmsegmentation</p></li>
+<li><p>yolov5</p></li>
+<li><p>yolov7</p></li>
+<li><p>Segment Anything (SAM)</p></li>
+<li><p>DEXTR</p></li>
+</ul>
+<p>The images kept their version number, you just need to pull them again, or use <cite>--pull ALWAYS</cite>
+in conjunction with <cite>docker run</cite>.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-07-18-mmsegmentation/" class="u-url">MMSegmentation 1.1.0 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -320,38 +352,6 @@ Apart from using a newer codebase, these images now support instance segmentatio
 <p>A tutorial is available as well:</p>
 <p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolov7/">www.data-mining.co.nz/applied-deep-learning/object_detection/yolov7/</a></p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022-09-30-yolov5-docker/" class="u-url">Yolov5 Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2022-09-30-yolov5-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-09-30T13:03:00+13:00" itemprop="datePublished" title="2022-09-30 13:03">2022-09-30 13:03</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Docker images for the latest <a class="reference external" href="https://github.com/ultralytics/yolov5">Yolov5</a> code base are now available.</p>
-<p>The code used by the docker images is available from here:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5">github.com/waikato-datamining/pytorch/tree/master/yolov5</a></p>
-<p>The tags for the images are as follows:</p>
-<ul class="simple">
-<li>
-<p>In-house registry:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-09-29_cuda11.1</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-09-29_cpu</span></code></p></li>
-</ul>
-</li>
-<li>
-<p>Docker hub:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-09-29_cuda11.1</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-09-29_cpu</span></code></p></li>
-</ul>
-</li>
-</ul>
-</div>
     </article>
 </div>
 
