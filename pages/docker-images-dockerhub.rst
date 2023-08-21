@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2023-07-18 10:12:00 UTC+12:00
+.. date: 2023-08-21 16:39:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -378,6 +378,31 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31">Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/tf_object_detection:1.14.0_2019-08-31</span></code></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- --------------------------- -->
+    <!-- large language models (LLM) -->
+    <!-- --------------------------- -->
+
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#speech-to-text" aria-expanded="false" aria-controls="speech-to-text">
+        Large language models (LLM)
+      </button>
+    </p>
+    <div class="collapse" id="speech-to-text">
+      <div class="card card-body">
+        <ul>
+          <li>
+            <p>Falcontune</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/huggingface_transformers/4.31.0_cuda11.7_falcontune_20230618">Falcontune 20230618, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618</span></code></p>
               </li>
             </ul>
           </li>
