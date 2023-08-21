@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 08 Aug 2023 23:50:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Redis-related Docker image updates</title><link>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-datamining/redis-docker-harness"&gt;redis-docker-harness&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 21 Aug 2023 04:45:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Falcontune Docker images available</title><link>https://www.data-mining.co.nz/news/2023-08-21-falcontune-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/rmihaylov/falcontune"&gt;falcontune&lt;/a&gt; library for fine-tuning and using Falcon 7B/40B
+models (which is based on the &lt;a class="reference external" href="https://github.com/huggingface/transformers"&gt;Hugging Face transformers library&lt;/a&gt;)
+is now available via the following docker images:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2023-08-21-falcontune-docker/</guid><pubDate>Mon, 21 Aug 2023 04:39:00 GMT</pubDate></item><item><title>Redis-related Docker image updates</title><link>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-datamining/redis-docker-harness"&gt;redis-docker-harness&lt;/a&gt;
 Python library, which is used by a lot of our Docker images, has received a number of updates
 (at time of writing, the version of the library in use is 0.0.4):&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -138,8 +152,4 @@ Apart from using a newer codebase, these images now support instance segmentatio
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolov5:2022-09-29_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-09-30-yolov5-docker/</guid><pubDate>Fri, 30 Sep 2022 00:03:00 GMT</pubDate></item><item><title>Coqui STT 1.4.0 (speech-to-text)</title><link>https://www.data-mining.co.nz/news/2022-09-15-coqui_stt/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;A new Docker image is now available for speech-to-text using &lt;a class="reference external" href="https://github.com/coqui-ai/STT"&gt;Coqui STT&lt;/a&gt;
-1.4.0 and TensorFlow 1.15.5 on top of CUDA 11.6:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.4.0_cuda11.6"&gt;github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.4.0_cuda11.6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Check out the new &lt;em&gt;Applied Deep Learning&lt;/em&gt; tutorial on how to use it:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/speech_to_text/coqui_stt/"&gt;www.data-mining.co.nz/applied-deep-learning/speech_to_text/coqui_stt/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-09-15-coqui_stt/</guid><pubDate>Thu, 15 Sep 2022 01:19:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2022-09-30-yolov5-docker/</guid><pubDate>Fri, 30 Sep 2022 00:03:00 GMT</pubDate></item></channel></rss>
