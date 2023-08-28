@@ -1,7 +1,7 @@
 .. title: Falcontune Docker images available
 .. slug: 2023-08-21-falcontune-docker
 .. date: 2023-08-21 16:39:00 UTC+12:00
-.. tags: update
+.. tags: release
 .. category: docker
 .. link: 
 .. description: 
