@@ -1,6 +1,6 @@
 .. title: In-house Docker images
 .. slug: docker-images-inhouse
-.. date: 2023-08-21 16:39:00 UTC+12:00
+.. date: 2023-08-28 15:16:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -321,6 +321,14 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything/2023-04-16_cpu">Segment-Anything Model 2023-04-16, PyTorch 1.9.1 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything-hq/2023-08-17_cuda11.6">Segment-Anything in High Quality 2023-08-17, PyTorch 1.13.0 and CUDA 11.6</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam-hq:2023-08-17_cuda11.6</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything-hq/2023-08-17_cpu">Segment-Anything in High Quality 2023-08-17, PyTorch 1.9.1 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam-hq:2023-08-17_cpu</span></code></p>
               </li>
             </ul>
           </li>
