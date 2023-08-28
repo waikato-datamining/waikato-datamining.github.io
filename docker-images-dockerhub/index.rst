@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2023-08-28 15:16:00 UTC+12:00
+.. date: 2023-08-28 15:53:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -411,6 +411,15 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/huggingface_transformers/4.31.0_cuda11.7_falcontune_20230618">Falcontune 20230618, CUDA 11.7</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618</span></code></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>finetune-gpt2xl</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/huggingface_transformers/4.7.0_cuda11.1_finetune-gpt2xl_20220924">finetune-gpt2xl 20220924, CUDA 11.1</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-huggingface-transformers:4.7.0_cuda11.1_finetune-gpt2xl_20220924</span></code></p>
               </li>
             </ul>
           </li>
