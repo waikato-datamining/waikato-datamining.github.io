@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2023-08-28 15:53:00 UTC+12:00
+.. date: 2023-09-01 16:56:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -164,6 +164,14 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.27.0_cpu">MMDetection 2.27.0, PyTorch 1.9 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.27.0_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/3.1.0_cuda11.3">MMDetection 3.1.0, PyTorch 1.12 and CUDA 11.3</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:3.1.0_cuda11.3</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/3.1.0_cpu">MMDetection 3.1.0, PyTorch 1.12 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:3.1.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
