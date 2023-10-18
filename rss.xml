@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 18 Oct 2023 22:11:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>MMDetection 3.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-09-01-mmdetection-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;New Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmdetection"&gt;MMDetection&lt;/a&gt; object detection
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 18 Oct 2023 22:15:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>LLM organization on Github</title><link>https://www.data-mining.co.nz/news/2023-10-19-llm-on-github/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;We have launched a new Github organization to house all our libraries and Docker images around
+large language models (LLMs):&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm"&gt;https://github.com/waikato-llm&lt;/a&gt;&lt;/p&gt;</description><category>github</category><guid>https://www.data-mining.co.nz/news/2023-10-19-llm-on-github/</guid><pubDate>Wed, 18 Oct 2023 21:56:00 GMT</pubDate></item><item><title>MMDetection 3.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-09-01-mmdetection-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;New Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmdetection"&gt;MMDetection&lt;/a&gt; object detection
 framework, using the 3.1.0 release of MMDetection (code base as of 2023-06-30):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmdetection/tree/master/3.1.0_cuda11.3"&gt;CUDA 11.3&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -116,17 +118,4 @@ but custom ones (for specific domains) can be trained as well.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-dextr:0.1.2_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-02-24-dextr-docker/</guid><pubDate>Fri, 24 Feb 2023 01:35:00 GMT</pubDate></item><item><title>OPEX support expanded</title><link>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Historically, our object detection frameworks have been outputting predictions in a
-&lt;a class="reference external" href="https://github.com/waikato-ufdl/wai-annotations-roi"&gt;CSV-based format&lt;/a&gt; when
-doing predictions that involved file-polling (a format that was originally derived from
-&lt;a class="reference external" href="https://learn.microsoft.com/en-us/cognitive-toolkit/"&gt;CNTK&lt;/a&gt;). Recent additions
-of frameworks (and all Redis-based predictions), however, are using the
-&lt;a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format"&gt;OPEX format&lt;/a&gt;
-instead (a JSON-based format). In order to standardize the output of our Docker
-images further, the following images now offer outputting the predictions in OPEX format
-as well:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;MMDetection 2.27.0 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Detectron2 0.6&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Yolov7 2022-10-08 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</guid><pubDate>Wed, 25 Jan 2023 03:45:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-02-24-dextr-docker/</guid><pubDate>Fri, 24 Feb 2023 01:35:00 GMT</pubDate></item></channel></rss>
