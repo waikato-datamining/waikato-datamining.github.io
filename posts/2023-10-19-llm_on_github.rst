@@ -1,6 +1,6 @@
 .. title: LLM organization on Github
 .. slug: 2023-10-19-llm-on-github
-.. date: 2023-10-19 10:56:00 UTC+12:00
+.. date: 2023-10-19 10:56:00 UTC+13:00
 .. tags: github
 .. category:
 .. link: 
