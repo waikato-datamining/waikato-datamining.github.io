@@ -9,7 +9,7 @@
 
 The `falcontune <https://github.com/rmihaylov/falcontune>`__ library for fine-tuning and using Falcon 7B/40B
 models (which is based on the `Hugging Face transformers library <https://github.com/huggingface/transformers>`__)
-is now available via the following `docker images <https://github.com/waikato-datamining/pytorch/tree/master/huggingface_transformers/4.31.0_cuda11.7_falcontune_20230618>`__:
+is now available via the following `docker images <https://github.com/waikato-datamining/huggingface_transformers/tree/master/4.31.0_cuda11.7_falcontune_20230618>`__:
 
 * In-house registry:
 
