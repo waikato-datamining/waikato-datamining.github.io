@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 18 Oct 2023 22:15:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>LLM organization on Github</title><link>https://www.data-mining.co.nz/news/2023-10-19-llm-on-github/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;We have launched a new Github organization to house all our libraries and Docker images around
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 26 Oct 2023 20:53:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Over the last couple of months, we have been working on a little command-line tool that
+allows you to convert LLM datasets from one format into another, appropriately called
+&lt;cite&gt;llm-dataset-converter&lt;/cite&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;https://github.com/waikato-llm/llm-dataset-converter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With the first release (0.0.1), you can not only load data from and save to in various formats
+(csv/tsv, text, json, jsonlines, parquet). The tool lets you define pipelines using the following format:&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;reader [filter [filter ...]] [writer]&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Each component in the pipeline comes with its own set of command-line parameters. You can even &lt;em&gt;tee&lt;/em&gt; off
+records and process them differently (e.g., writing the same data to different output formats).&lt;/p&gt;
+&lt;p&gt;The library also has other tools, for downloading files or datasets from huggingface or combining text files.&lt;/p&gt;
+&lt;p&gt;In order to make building such pipeline-oriented tools simpler to develop, we created a base library
+that manages the handling of plugins (and, if necessary, their compatibility) called &lt;cite&gt;seppl&lt;/cite&gt;
+(&lt;em&gt;Simple Entry Point PipeLines&lt;/em&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/seppl"&gt;https://github.com/waikato-datamining/seppl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thanks to seppl, the llm-dataset-converter library can be easily extended with additional modules, as it uses
+a dynamic approach to locating plugins: you only need to define in what modules to look for what superclass
+(like &lt;cite&gt;Reader&lt;/cite&gt;, &lt;cite&gt;Filter&lt;/cite&gt;, &lt;cite&gt;Writer&lt;/cite&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</guid><pubDate>Thu, 26 Oct 2023 20:47:00 GMT</pubDate></item><item><title>LLM organization on Github</title><link>https://www.data-mining.co.nz/news/2023-10-19-llm-on-github/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;We have launched a new Github organization to house all our libraries and Docker images around
 large language models (LLMs):&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm"&gt;https://github.com/waikato-llm&lt;/a&gt;&lt;/p&gt;</description><category>github</category><guid>https://www.data-mining.co.nz/news/2023-10-19-llm-on-github/</guid><pubDate>Wed, 18 Oct 2023 21:56:00 GMT</pubDate></item><item><title>MMDetection 3.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-09-01-mmdetection-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;New Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmdetection"&gt;MMDetection&lt;/a&gt; object detection
 framework, using the 3.1.0 release of MMDetection (code base as of 2023-06-30):&lt;/p&gt;
@@ -98,24 +114,4 @@ a relatively good outline of an object based on either a point or a box. Only pr
 for the &lt;a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format"&gt;OPEX format&lt;/a&gt;
 in some of our Docker images. So far, there was only language support available for Python.
 With today's release of &lt;a class="reference external" href="https://github.com/waikato-datamining/opex4j"&gt;opex4j&lt;/a&gt;, there is
-now a Java library for this exchange format available as well.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-03-01-opex47-library-released/</guid><pubDate>Tue, 28 Feb 2023 23:45:00 GMT</pubDate></item><item><title>DEXTR Docker images available</title><link>https://www.data-mining.co.nz/news/2023-02-24-dextr-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/Britefury/dextr"&gt;DEXTR&lt;/a&gt; (Deep Extreme Cut) are now available.&lt;/p&gt;
-&lt;p&gt;DEXTR is a great tool for aiding a human annotating images for image segmentation, as it can determine
-a relatively good outline of an object based on just four extreme points. Pre-trained models are available,
-but custom ones (for specific domains) can be trained as well.&lt;/p&gt;
-&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr"&gt;github.com/waikato-datamining/pytorch/tree/master/dextr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-dextr:0.1.2_cuda11.1&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-dextr:0.1.2_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-02-24-dextr-docker/</guid><pubDate>Fri, 24 Feb 2023 01:35:00 GMT</pubDate></item></channel></rss>
+now a Java library for this exchange format available as well.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-03-01-opex47-library-released/</guid><pubDate>Tue, 28 Feb 2023 23:45:00 GMT</pubDate></item></channel></rss>

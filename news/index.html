@@ -85,7 +85,36 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-10-19-llm-on-github/" class="u-url">LLM organization on Github</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-10-27-ldc-release/" class="u-url">llm-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2023-10-27-ldc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-10-27T09:47:00+13:00" itemprop="datePublished" title="2023-10-27 09:47">2023-10-27 09:47</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Over the last couple of months, we have been working on a little command-line tool that
+allows you to convert LLM datasets from one format into another, appropriately called
+<cite>llm-dataset-converter</cite>:</p>
+<p><a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">https://github.com/waikato-llm/llm-dataset-converter</a></p>
+<p>With the first release (0.0.1), you can not only load data from and save to in various formats
+(csv/tsv, text, json, jsonlines, parquet). The tool lets you define pipelines using the following format:</p>
+<p><cite>reader [filter [filter ...]] [writer]</cite></p>
+<p>Each component in the pipeline comes with its own set of command-line parameters. You can even <em>tee</em> off
+records and process them differently (e.g., writing the same data to different output formats).</p>
+<p>The library also has other tools, for downloading files or datasets from huggingface or combining text files.</p>
+<p>In order to make building such pipeline-oriented tools simpler to develop, we created a base library
+that manages the handling of plugins (and, if necessary, their compatibility) called <cite>seppl</cite>
+(<em>Simple Entry Point PipeLines</em>):</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/seppl">https://github.com/waikato-datamining/seppl</a></p>
+<p>Thanks to seppl, the llm-dataset-converter library can be easily extended with additional modules, as it uses
+a dynamic approach to locating plugins: you only need to define in what modules to look for what superclass
+(like <cite>Reader</cite>, <cite>Filter</cite>, <cite>Writer</cite>).</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-10-19-llm-on-github/" class="u-url">LLM organization on Github</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -309,41 +338,6 @@ in some of our Docker images. So far, there was only language support available 
 With today's release of <a class="reference external" href="https://github.com/waikato-datamining/opex4j">opex4j</a>, there is
 now a Java library for this exchange format available as well.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-02-24-dextr-docker/" class="u-url">DEXTR Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2023-02-24-dextr-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-02-24T14:35:00+13:00" itemprop="datePublished" title="2023-02-24 14:35">2023-02-24 14:35</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Docker images for <a class="reference external" href="https://github.com/Britefury/dextr">DEXTR</a> (Deep Extreme Cut) are now available.</p>
-<p>DEXTR is a great tool for aiding a human annotating images for image segmentation, as it can determine
-a relatively good outline of an object based on just four extreme points. Pre-trained models are available,
-but custom ones (for specific domains) can be trained as well.</p>
-<p>The code used by the docker images is available from here:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr">github.com/waikato-datamining/pytorch/tree/master/dextr</a></p>
-<p>The tags for the images are as follows:</p>
-<ul class="simple">
-<li>
-<p>In-house registry:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cuda11.1</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cpu</span></code></p></li>
-</ul>
-</li>
-<li>
-<p>Docker hub:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-dextr:0.1.2_cuda11.1</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-dextr:0.1.2_cpu</span></code></p></li>
-</ul>
-</li>
-</ul>
-</div>
     </article>
 </div>
 

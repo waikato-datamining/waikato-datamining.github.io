@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 18 Oct 2023 22:15:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>MMDetection 3.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-09-01-mmdetection-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;New Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmdetection"&gt;MMDetection&lt;/a&gt; object detection
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 26 Oct 2023 20:53:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Over the last couple of months, we have been working on a little command-line tool that
+allows you to convert LLM datasets from one format into another, appropriately called
+&lt;cite&gt;llm-dataset-converter&lt;/cite&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;https://github.com/waikato-llm/llm-dataset-converter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With the first release (0.0.1), you can not only load data from and save to in various formats
+(csv/tsv, text, json, jsonlines, parquet). The tool lets you define pipelines using the following format:&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;reader [filter [filter ...]] [writer]&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Each component in the pipeline comes with its own set of command-line parameters. You can even &lt;em&gt;tee&lt;/em&gt; off
+records and process them differently (e.g., writing the same data to different output formats).&lt;/p&gt;
+&lt;p&gt;The library also has other tools, for downloading files or datasets from huggingface or combining text files.&lt;/p&gt;
+&lt;p&gt;In order to make building such pipeline-oriented tools simpler to develop, we created a base library
+that manages the handling of plugins (and, if necessary, their compatibility) called &lt;cite&gt;seppl&lt;/cite&gt;
+(&lt;em&gt;Simple Entry Point PipeLines&lt;/em&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/seppl"&gt;https://github.com/waikato-datamining/seppl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thanks to seppl, the llm-dataset-converter library can be easily extended with additional modules, as it uses
+a dynamic approach to locating plugins: you only need to define in what modules to look for what superclass
+(like &lt;cite&gt;Reader&lt;/cite&gt;, &lt;cite&gt;Filter&lt;/cite&gt;, &lt;cite&gt;Writer&lt;/cite&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</guid><pubDate>Thu, 26 Oct 2023 20:47:00 GMT</pubDate></item><item><title>MMDetection 3.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-09-01-mmdetection-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;New Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmdetection"&gt;MMDetection&lt;/a&gt; object detection
 framework, using the 3.1.0 release of MMDetection (code base as of 2023-06-30):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmdetection/tree/master/3.1.0_cuda11.3"&gt;CUDA 11.3&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -110,13 +126,4 @@ as well:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;MMDetection 2.27.0 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Detectron2 0.6&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Yolov7 2022-10-08 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</guid><pubDate>Wed, 25 Jan 2023 03:45:00 GMT</pubDate></item><item><title>OpenMMLab Docker images</title><link>https://www.data-mining.co.nz/news/2023-01-20-openmmlab-docker-images/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;New year, new docker images! This time, we have refreshed our docker images that
-use libaries from the &lt;a class="reference external" href="https://github.com/open-mmlab"&gt;OpenMMLab&lt;/a&gt; group:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;MMClassification 0.25.0 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;MMSegmentation 0.30.0 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;MMDetection 2.27.0 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All frameworks now offer a script (&lt;cite&gt;mmcls/mmseg/mmdet_onnx&lt;/cite&gt;) to export a PyTorch model to ONNX.&lt;/p&gt;
-&lt;p&gt;MMDetection now also allows you to select the CUDA device to train on rather
-than just always using the first available GPU.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-01-20-openmmlab-docker-images/</guid><pubDate>Fri, 20 Jan 2023 00:30:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</guid><pubDate>Wed, 25 Jan 2023 03:45:00 GMT</pubDate></item></channel></rss>
