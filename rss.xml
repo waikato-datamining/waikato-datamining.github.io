@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 26 Oct 2023 20:53:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Over the last couple of months, we have been working on a little command-line tool that
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 03 Nov 2023 01:11:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>gifr release</title><link>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;A lot of our Docker images allow the user to make predictions in two ways: using simple
+file-polling or via a &lt;a class="reference external" href="https://redis.io/"&gt;Redis&lt;/a&gt; backend. File-polling is great for
+testing, but unsuitable for a production system due to wear-and-tear on SSDs.&lt;/p&gt;
+&lt;p&gt;Initially, I developed a really simple library for sending and receiving data via Redis,
+called &lt;em&gt;simple-redis-helper&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/fracpete/simple-redis-helper"&gt;https://github.com/fracpete/simple-redis-helper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With this library you get some command-line tools for broadcasting, listening, etc. Sufficient
+for someone who is comfortable with the command-line (or especially when logged in remotely
+via terminal), but not so great for your clients.&lt;/p&gt;
+&lt;p&gt;Now, there is the brilliant &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; library that was specifically
+developed for such scenarios: to create easy to use and great looking interfaces for your machine
+learning models.&lt;/p&gt;
+&lt;p&gt;The last couple of days, I have put together a new library that is tailored to our Docker images
+called &lt;em&gt;gifr&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/gifr"&gt;https://github.com/waikato-datamining/gifr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With the first release, the following types of models are supported:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;image classification&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;image segmentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;object detection/instance segmentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;text generation&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</guid><pubDate>Fri, 03 Nov 2023 01:00:00 GMT</pubDate></item><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Over the last couple of months, we have been working on a little command-line tool that
 allows you to convert LLM datasets from one format into another, appropriately called
 &lt;cite&gt;llm-dataset-converter&lt;/cite&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;https://github.com/waikato-llm/llm-dataset-converter&lt;/a&gt;&lt;/p&gt;
@@ -110,8 +131,4 @@ a relatively good outline of an object based on either a point or a box. Only pr
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam:2023-04-16_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</guid><pubDate>Mon, 01 May 2023 00:16:00 GMT</pubDate></item><item><title>opex4j library released</title><link>https://www.data-mining.co.nz/news/2023-03-01-opex47-library-released/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/"&gt;Recently&lt;/a&gt;, we extended the support
-for the &lt;a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format"&gt;OPEX format&lt;/a&gt;
-in some of our Docker images. So far, there was only language support available for Python.
-With today's release of &lt;a class="reference external" href="https://github.com/waikato-datamining/opex4j"&gt;opex4j&lt;/a&gt;, there is
-now a Java library for this exchange format available as well.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-03-01-opex47-library-released/</guid><pubDate>Tue, 28 Feb 2023 23:45:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</guid><pubDate>Mon, 01 May 2023 00:16:00 GMT</pubDate></item></channel></rss>
