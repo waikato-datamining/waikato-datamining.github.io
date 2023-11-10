@@ -9,7 +9,7 @@
 
 Llama-2, despite `not actually being open-source as advertised <https://blog.opensource.org/metas-llama-2-license-is-not-open-source/>`__,
 is a very powerful large language model (LLM), which can also be fine-tuned with custom data. With
-version `v0.0.3 <https://github.com/waikato-llm/llm-dataset-converter/tree/v0.0.3>`__
+version `v0.0.3 <https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.0.3>`__
 of our `llm-dataset-converter <https://github.com/waikato-llm/llm-dataset-converter>`__ Python library,
 it is now possible to generate data in `jsonlines <https://jsonlines.org/>`__ format that the new
 `Docker images <https://github.com/waikato-llm/huggingface_transformers/tree/master/4.31.0_cuda11.7_llama2>`__
