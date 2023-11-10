@@ -85,7 +85,42 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-03-gifr-release/" class="u-url">gifr release</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-10-llama2-docker/" class="u-url">Llama-2 Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2023-11-10-llama2-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-11-10T16:33:00+13:00" itemprop="datePublished" title="2023-11-10 16:33">2023-11-10 16:33</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Llama-2, despite <a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/">not actually being open-source as advertised</a>,
+is a very powerful large language model (LLM), which can also be fine-tuned with custom data. With
+version <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/tree/v0.0.3">v0.0.3</a>
+of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> Python library,
+it is now possible to generate data in <a class="reference external" href="https://jsonlines.org/">jsonlines</a> format that the new
+<a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/master/4.31.0_cuda11.7_llama2">Docker images</a>
+for Llama-2 can consume:</p>
+<ul class="simple">
+<li>
+<p>In-house registry:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2</span></code></p></li>
+</ul>
+</li>
+<li>
+<p>Docker hub:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>Of course, you can use these Docker images in conjunction with our <a class="reference external" href="2023-11-03-gifr-release/">gifr</a>
+Python library for <a class="reference external" href="https://www.gradio.app/">gradio</a> interfaces as well (<cite>gifr-textgen</cite>).</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-03-gifr-release/" class="u-url">gifr release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -321,40 +356,6 @@ in conjunction with <cite>docker run</cite>.</p>
 <p>More information on the Docker images is available from Github:</p>
 <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation">https://github.com/waikato-datamining/mmsegmentation</a></p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-04-20-sam-docker/" class="u-url">Segment-Anything Model Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2023-04-20-sam-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-05-01T13:16:00+13:00" itemprop="datePublished" title="2023-05-01 13:16">2023-05-01 13:16</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Docker images for <a class="reference external" href="https://ai.facebook.com/research/publications/segment-anything/">Segment-Anything Model</a> (SAM) are now available.</p>
-<p>SAM is a great tool for aiding a human annotating images for image segmentation or object detection, as it can determine
-a relatively good outline of an object based on either a point or a box. Only pre-trained models are available.</p>
-<p>The code used by the docker images is available from here:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything">github.com/waikato-datamining/pytorch/tree/master/segment-anything</a></p>
-<p>The tags for the images are as follows:</p>
-<ul class="simple">
-<li>
-<p>In-house registry:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.6</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu</span></code></p></li>
-</ul>
-</li>
-<li>
-<p>Docker hub:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-sam:2023-04-16_cuda11.6</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-sam:2023-04-16_cpu</span></code></p></li>
-</ul>
-</li>
-</ul>
-</div>
     </article>
 </div>
 
