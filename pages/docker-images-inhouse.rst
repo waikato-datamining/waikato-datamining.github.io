@@ -1,6 +1,6 @@
 .. title: In-house Docker images
 .. slug: docker-images-inhouse
-.. date: 2023-09-01 16:56:00 UTC+12:00
+.. date: 2024-02-14 12:0:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -479,3 +479,29 @@ preparation, training and making predictions.
         </ul>
       </div>
     </div>
+
+    <!-- ------------------- -->
+    <!-- text classification -->
+    <!-- ------------------- -->
+
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#text-classification" aria-expanded="false" aria-controls="text-classification">
+        Text classification
+      </button>
+    </p>
+    <div class="collapse" id="text-classification">
+      <div class="card card-body">
+        <ul>
+          <li>
+            <p>Huggingface</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/main/4.36.0_cuda11.7_classification">Huggingface 4.36.0, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification</span></code></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
