@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 13 Feb 2024 23:09:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Llama-2 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Llama-2, despite &lt;a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/"&gt;not actually being open-source as advertised&lt;/a&gt;,
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 15 Feb 2024 03:49:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Text classification support</title><link>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Large language models (LLMs) for chatbots are all the rage at the moment, but there is plenty of scope of simpler
+tasks like text classification. Requiring less resources and being a lot faster is nice as well.&lt;/p&gt;
+&lt;p&gt;We turned the &lt;a class="reference external" href="https://huggingface.co/docs/transformers/v4.36.1/en/tasks/sequence_classification"&gt;HuggingFace example&lt;/a&gt;
+for sequence classification into a docker image to make it easy for building such classification models.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our &lt;a class="reference external" href="https://github.com/waikato-datamining/gifr"&gt;gifr&lt;/a&gt;
+Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; received an interface for text
+classification (&lt;cite&gt;gifr-textclass&lt;/cite&gt;) in version 0.0.3.&lt;/p&gt;
+&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; library
+obtained native support for text classification formats with version 0.1.1.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</guid><pubDate>Thu, 15 Feb 2024 03:46:00 GMT</pubDate></item><item><title>Llama-2 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Llama-2, despite &lt;a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/"&gt;not actually being open-source as advertised&lt;/a&gt;,
 is a very powerful large language model (LLM), which can also be fine-tuned with custom data. With
 version &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.0.3"&gt;v0.0.3&lt;/a&gt;
 of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; Python library,
@@ -132,17 +152,4 @@ but custom ones (for specific domains) can be trained as well.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-dextr:0.1.2_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-02-24-dextr-docker/</guid><pubDate>Fri, 24 Feb 2023 01:35:00 GMT</pubDate></item><item><title>OPEX support expanded</title><link>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Historically, our object detection frameworks have been outputting predictions in a
-&lt;a class="reference external" href="https://github.com/waikato-ufdl/wai-annotations-roi"&gt;CSV-based format&lt;/a&gt; when
-doing predictions that involved file-polling (a format that was originally derived from
-&lt;a class="reference external" href="https://learn.microsoft.com/en-us/cognitive-toolkit/"&gt;CNTK&lt;/a&gt;). Recent additions
-of frameworks (and all Redis-based predictions), however, are using the
-&lt;a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format"&gt;OPEX format&lt;/a&gt;
-instead (a JSON-based format). In order to standardize the output of our Docker
-images further, the following images now offer outputting the predictions in OPEX format
-as well:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;MMDetection 2.27.0 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Detectron2 0.6&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Yolov7 2022-10-08 (CPU and CUDA 11.1)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-01-25-opex-support-expanded/</guid><pubDate>Wed, 25 Jan 2023 03:45:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-02-24-dextr-docker/</guid><pubDate>Fri, 24 Feb 2023 01:35:00 GMT</pubDate></item></channel></rss>

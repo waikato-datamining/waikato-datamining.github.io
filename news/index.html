@@ -11,7 +11,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://www.data-mining.co.nz/news/">
-<link rel="next" href="index-4.html" type="text/html">
+<link rel="next" href="index-5.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -85,7 +85,42 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-10-llama2-docker/" class="u-url">Llama-2 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-02-15-text-classification-support/" class="u-url">Text classification support</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2024-02-15-text-classification-support/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-02-15T16:46:00+13:00" itemprop="datePublished" title="2024-02-15 16:46">2024-02-15 16:46</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Large language models (LLMs) for chatbots are all the rage at the moment, but there is plenty of scope of simpler
+tasks like text classification. Requiring less resources and being a lot faster is nice as well.</p>
+<p>We turned the <a class="reference external" href="https://huggingface.co/docs/transformers/v4.36.1/en/tasks/sequence_classification">HuggingFace example</a>
+for sequence classification into a docker image to make it easy for building such classification models.</p>
+<ul class="simple">
+<li>
+<p>In-house registry:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification</span></code></p></li>
+</ul>
+</li>
+<li>
+<p>Docker hub:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>Our <a class="reference external" href="https://github.com/waikato-datamining/gifr">gifr</a>
+Python library for <a class="reference external" href="https://www.gradio.app/">gradio</a> received an interface for text
+classification (<cite>gifr-textclass</cite>) in version 0.0.3.</p>
+<p>The <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> library
+obtained native support for text classification formats with version 0.1.1.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-10-llama2-docker/" class="u-url">Llama-2 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -340,27 +375,11 @@ lower CPU load (the default is now 0.01 instead of 0.001)</p></li>
 <p>The images kept their version number, you just need to pull them again, or use <cite>--pull ALWAYS</cite>
 in conjunction with <cite>docker run</cite>.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-07-18-mmsegmentation/" class="u-url">MMSegmentation 1.1.0 Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2023-07-18-mmsegmentation/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-07-18T10:12:00+12:00" itemprop="datePublished" title="2023-07-18 10:12">2023-07-18 10:12</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Docker images for building (and using) image segmentation models using the PyTorch-based framework
-<a class="reference external" href="https://github.com/open-mmlab/mmsegmentation">MMSegmentation</a> (version 1.1.0) are now available:</p>
-<p>More information on the Docker images is available from Github:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation">https://github.com/waikato-datamining/mmsegmentation</a></p>
-    </div>
     </article>
 </div>
 
         <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-4.html" rel="next">Older posts</a></li>
+<li class="next"><a href="index-5.html" rel="next">Older posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer">
             Contents © 2024         <a href="mailto:fracpete@waikato.ac.nz">University of Waikato</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         

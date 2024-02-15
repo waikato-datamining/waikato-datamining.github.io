@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 13 Feb 2024 23:09:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Llama-2 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Llama-2, despite &lt;a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/"&gt;not actually being open-source as advertised&lt;/a&gt;,
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 15 Feb 2024 03:49:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Text classification support</title><link>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Large language models (LLMs) for chatbots are all the rage at the moment, but there is plenty of scope of simpler
+tasks like text classification. Requiring less resources and being a lot faster is nice as well.&lt;/p&gt;
+&lt;p&gt;We turned the &lt;a class="reference external" href="https://huggingface.co/docs/transformers/v4.36.1/en/tasks/sequence_classification"&gt;HuggingFace example&lt;/a&gt;
+for sequence classification into a docker image to make it easy for building such classification models.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our &lt;a class="reference external" href="https://github.com/waikato-datamining/gifr"&gt;gifr&lt;/a&gt;
+Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; received an interface for text
+classification (&lt;cite&gt;gifr-textclass&lt;/cite&gt;) in version 0.0.3.&lt;/p&gt;
+&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; library
+obtained native support for text classification formats with version 0.1.1.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</guid><pubDate>Thu, 15 Feb 2024 03:46:00 GMT</pubDate></item><item><title>Llama-2 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Llama-2, despite &lt;a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/"&gt;not actually being open-source as advertised&lt;/a&gt;,
 is a very powerful large language model (LLM), which can also be fine-tuned with custom data. With
 version &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.0.3"&gt;v0.0.3&lt;/a&gt;
 of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; Python library,
@@ -129,7 +149,4 @@ lower CPU load (the default is now 0.01 instead of 0.001)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;DEXTR&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The images kept their version number, you just need to pull them again, or use &lt;cite&gt;--pull ALWAYS&lt;/cite&gt;
-in conjunction with &lt;cite&gt;docker run&lt;/cite&gt;.&lt;/p&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</guid><pubDate>Tue, 08 Aug 2023 23:41:00 GMT</pubDate></item><item><title>MMSegmentation 1.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for building (and using) image segmentation models using the PyTorch-based framework
-&lt;a class="reference external" href="https://github.com/open-mmlab/mmsegmentation"&gt;MMSegmentation&lt;/a&gt; (version 1.1.0) are now available:&lt;/p&gt;
-&lt;p&gt;More information on the Docker images is available from Github:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation"&gt;https://github.com/waikato-datamining/mmsegmentation&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</guid><pubDate>Mon, 17 Jul 2023 22:12:00 GMT</pubDate></item></channel></rss>
+in conjunction with &lt;cite&gt;docker run&lt;/cite&gt;.&lt;/p&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</guid><pubDate>Tue, 08 Aug 2023 23:41:00 GMT</pubDate></item></channel></rss>
