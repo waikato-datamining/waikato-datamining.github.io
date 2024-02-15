@@ -136,4 +136,5 @@ cache/
 output/
 state_data.json
 .doit.db
-
+.idea/
+*.iml
