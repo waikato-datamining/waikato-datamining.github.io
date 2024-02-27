@@ -440,6 +440,15 @@ preparation, training and making predictions.
               </li>
             </ul>
           </li>
+          <li>
+            <p>XTuner</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-llm/xtuner/tree/main/2024-02-19_cuda11.7">XTuner 2024-02-19, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
