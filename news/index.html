@@ -85,7 +85,44 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-02-15-text-classification-support/" class="u-url">Text classification support</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-02-27-xtuner-docker/" class="u-url">XTuner Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2024-02-27-xtuner-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-02-27T16:40:00+13:00" itemprop="datePublished" title="2024-02-27 16:40">2024-02-27 16:40</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p><a class="reference external" href="https://github.com/InternLM/xtuner">XTuner</a> is an efficient, flexible and full-featured toolkit for fine-tuning
+large models (InternLM, Llama, Baichuan, Qwen, ChatGLM) and released under the Apache 2.0 license. The advantage
+of this framework is that it is not tied down to a specific LLM architecture, but supports multiple ones out of the box.
+With the just released version <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.2.0">v0.2.0</a>
+of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> Python library,
+you can read and write the XTuner JSON format (and apply the usual filtering, of course).</p>
+<p>Here are the newly added image tags:</p>
+<ul class="simple">
+<li>
+<p>In-house registry:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p></li>
+</ul>
+</li>
+<li>
+<p>Docker hub:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>Of course, you can use these Docker images in conjunction with our <a class="reference external" href="2023-11-03-gifr-release/">gifr</a>
+Python library for <a class="reference external" href="https://www.gradio.app/">gradio</a> interfaces as well (<cite>gifr-textgen</cite>). Just now we released
+version 0.0.4 of the library, which is more flexible in regards to text generation: it can now support send and receive
+the conversation history and also parse JSON responses.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-02-15-text-classification-support/" class="u-url">Text classification support</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -343,38 +380,6 @@ is now available via the following <a class="reference external" href="https://g
 </li>
 </ul>
 </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-08-09-redis_updates/" class="u-url">Redis-related Docker image updates</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2023-08-09-redis_updates/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-08-09T11:41:00+12:00" itemprop="datePublished" title="2023-08-09 11:41">2023-08-09 11:41</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>The <a class="reference external" href="https://github.com/waikato-datamining/redis-docker-harness">redis-docker-harness</a>
-Python library, which is used by a lot of our Docker images, has received a number of updates
-(at time of writing, the version of the library in use is 0.0.4):</p>
-<ul class="simple">
-<li><p>ability to specify a password for the Redis server</p></li>
-<li><p>specify the timeout parameter for the the Redis client, with larger timeouts resulting in
-lower CPU load (the default is now 0.01 instead of 0.001)</p></li>
-</ul>
-<p>Unfortunately, this required re-releasing the most recent images of the following frameworks:</p>
-<ul class="simple">
-<li><p>detectron2</p></li>
-<li><p>mmdetection</p></li>
-<li><p>mmsegmentation</p></li>
-<li><p>yolov5</p></li>
-<li><p>yolov7</p></li>
-<li><p>Segment Anything (SAM)</p></li>
-<li><p>DEXTR</p></li>
-</ul>
-<p>The images kept their version number, you just need to pull them again, or use <cite>--pull ALWAYS</cite>
-in conjunction with <cite>docker run</cite>.</p>
-    </div>
     </article>
 </div>
 

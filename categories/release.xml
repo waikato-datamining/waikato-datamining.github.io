@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 15 Feb 2024 03:49:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Text classification support</title><link>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Large language models (LLMs) for chatbots are all the rage at the moment, but there is plenty of scope of simpler
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 27 Feb 2024 03:44:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>XTuner Docker images available</title><link>https://www.data-mining.co.nz/news/2024-02-27-xtuner-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://github.com/InternLM/xtuner"&gt;XTuner&lt;/a&gt; is an efficient, flexible and full-featured toolkit for fine-tuning
+large models (InternLM, Llama, Baichuan, Qwen, ChatGLM) and released under the Apache 2.0 license. The advantage
+of this framework is that it is not tied down to a specific LLM architecture, but supports multiple ones out of the box.
+With the just released version &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.2.0"&gt;v0.2.0&lt;/a&gt;
+of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; Python library,
+you can read and write the XTuner JSON format (and apply the usual filtering, of course).&lt;/p&gt;
+&lt;p&gt;Here are the newly added image tags:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:2024-02-19_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-xtuner:2024-02-19_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, you can use these Docker images in conjunction with our &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-11-03-gifr-release/"&gt;gifr&lt;/a&gt;
+Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; interfaces as well (&lt;cite&gt;gifr-textgen&lt;/cite&gt;). Just now we released
+version 0.0.4 of the library, which is more flexible in regards to text generation: it can now support send and receive
+the conversation history and also parse JSON responses.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-27-xtuner-docker/</guid><pubDate>Tue, 27 Feb 2024 03:40:00 GMT</pubDate></item><item><title>Text classification support</title><link>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Large language models (LLMs) for chatbots are all the rage at the moment, but there is plenty of scope of simpler
 tasks like text classification. Requiring less resources and being a lot faster is nice as well.&lt;/p&gt;
 &lt;p&gt;We turned the &lt;a class="reference external" href="https://huggingface.co/docs/transformers/v4.36.1/en/tasks/sequence_classification"&gt;HuggingFace example&lt;/a&gt;
 for sequence classification into a docker image to make it easy for building such classification models.&lt;/p&gt;
@@ -131,23 +153,4 @@ is now available via the following &lt;a class="reference external" href="https:
 &lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-21-falcontune-docker/</guid><pubDate>Mon, 21 Aug 2023 04:39:00 GMT</pubDate></item><item><title>MMSegmentation 1.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for building (and using) image segmentation models using the PyTorch-based framework
 &lt;a class="reference external" href="https://github.com/open-mmlab/mmsegmentation"&gt;MMSegmentation&lt;/a&gt; (version 1.1.0) are now available:&lt;/p&gt;
 &lt;p&gt;More information on the Docker images is available from Github:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation"&gt;https://github.com/waikato-datamining/mmsegmentation&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</guid><pubDate>Mon, 17 Jul 2023 22:12:00 GMT</pubDate></item><item><title>Segment-Anything Model Docker images available</title><link>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://ai.facebook.com/research/publications/segment-anything/"&gt;Segment-Anything Model&lt;/a&gt; (SAM) are now available.&lt;/p&gt;
-&lt;p&gt;SAM is a great tool for aiding a human annotating images for image segmentation or object detection, as it can determine
-a relatively good outline of an object based on either a point or a box. Only pre-trained models are available.&lt;/p&gt;
-&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything"&gt;github.com/waikato-datamining/pytorch/tree/master/segment-anything&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam:2023-04-16_cuda11.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam:2023-04-16_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-04-20-sam-docker/</guid><pubDate>Mon, 01 May 2023 00:16:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation"&gt;https://github.com/waikato-datamining/mmsegmentation&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-07-18-mmsegmentation/</guid><pubDate>Mon, 17 Jul 2023 22:12:00 GMT</pubDate></item></channel></rss>
