@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2024-02-14 12:0:00 UTC+13:00
+.. date: 2024-04-22 11:27:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -459,6 +459,14 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/xtuner/tree/main/2024-02-19_cuda11.7">XTuner 2024-02-19, CUDA 11.7</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-llm/xtuner/tree/main/0.1.15_cuda11.7">XTuner 0.1.15, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-xtuner:0.1.15_cuda11.7</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-llm/xtuner/tree/main/0.1.18_cuda11.7">XTuner 0.1.18, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-xtuner:0.1.18_cuda11.7</span></code></p>
               </li>
             </ul>
           </li>

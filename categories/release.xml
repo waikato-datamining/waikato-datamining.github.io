@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 13 Mar 2024 23:04:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>MMPretrain 1.2.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2024-03-14-mmpretrain-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmpretrain"&gt;MMPretrain&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Apr 2024 23:33:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>XTuner Docker images available</title><link>https://www.data-mining.co.nz/news/2024-04-22-xtuner-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/InternLM/xtuner"&gt;XTuner&lt;/a&gt; 0.1.18 are now available:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:0.1.18_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-xtuner:0.1.18_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;XTuner 0.1.18 now supports the just released llama-3 models (e.g.,
+&lt;a class="reference external" href="https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct"&gt;Meta-Llama-3-8B-Instruct&lt;/a&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-04-22-xtuner-docker/</guid><pubDate>Sun, 21 Apr 2024 23:27:00 GMT</pubDate></item><item><title>MMPretrain 1.2.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2024-03-14-mmpretrain-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmpretrain"&gt;MMPretrain&lt;/a&gt;
 framework, using the 1.2.0 release of MMPretrain (code base as of 2024-01-05):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/tree/master/1.2.0_cuda11.1"&gt;CUDA 11.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -142,18 +156,4 @@ a relatively good outline of an object based on either a point or a box. Only pr
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam-hq:2023-08-17_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-28-sam-hq-docker/</guid><pubDate>Mon, 28 Aug 2023 03:16:00 GMT</pubDate></item><item><title>Falcontune Docker images available</title><link>https://www.data-mining.co.nz/news/2023-08-21-falcontune-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/rmihaylov/falcontune"&gt;falcontune&lt;/a&gt; library for fine-tuning and using Falcon 7B/40B
-models (which is based on the &lt;a class="reference external" href="https://github.com/huggingface/transformers"&gt;Hugging Face transformers library&lt;/a&gt;)
-is now available via the following &lt;a class="reference external" href="https://github.com/waikato-datamining/huggingface_transformers/tree/master/4.31.0_cuda11.7_falcontune_20230618"&gt;docker images&lt;/a&gt;:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-21-falcontune-docker/</guid><pubDate>Mon, 21 Aug 2023 04:39:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-28-sam-hq-docker/</guid><pubDate>Mon, 28 Aug 2023 03:16:00 GMT</pubDate></item></channel></rss>
