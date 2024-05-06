@@ -151,6 +151,7 @@ NAVIGATION_LINKS = {
           ("/docker-for-data-scientists/", "Docker for Data Scientists"),
           ("/docker-images/", "Docker images"),
           ("/applied-deep-learning/", "Applied Deep Learning"),
+          ("/image-dataset-converter-examples/", "image-dataset-converter examples"),
           ), "Resources"),
         ((
           ("/people/", "People"),
