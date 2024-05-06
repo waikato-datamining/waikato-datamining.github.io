@@ -1,5 +1,5 @@
-.. title: llm-dataset-converter release
-.. slug: 2024-05-06-ldc-release
+.. title: image-dataset-converter release
+.. slug: 2024-05-06-idc-release
 .. date: 2024-05-06 16:12:00 UTC+12:00
 .. tags: release
 .. category: software
