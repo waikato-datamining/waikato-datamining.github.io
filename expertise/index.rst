@@ -20,7 +20,6 @@ from, for instance, soil samples. From the start, our software took advantage of
 In recent years, we have been able to push the boundaries even further, by adopting advanced modeling techniques using `deep learning <https://en.wikipedia.org/wiki/Deep_learning>`__.
 
 .. image:: /images/methods.png
-   :scale: 25
    :alt: Comparison of methods
 
 
