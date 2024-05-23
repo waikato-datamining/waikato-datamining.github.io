@@ -18,5 +18,4 @@ Former members:
 
 
 .. image:: /images/team.jpg
-   :scale: 25
    :alt: The team members
