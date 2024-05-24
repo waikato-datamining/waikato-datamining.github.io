@@ -152,6 +152,7 @@ NAVIGATION_LINKS = {
           ("/docker-images/", "Docker images"),
           ("/applied-deep-learning/", "Applied Deep Learning"),
           ("/image-dataset-converter-examples/", "image-dataset-converter examples"),
+          ("https://spectral-datasets.github.io/", "Spectral datasets"),
           ), "Resources"),
         ((
           ("/people/", "People"),
