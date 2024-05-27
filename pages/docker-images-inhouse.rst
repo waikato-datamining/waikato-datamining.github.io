@@ -494,15 +494,15 @@ preparation, training and making predictions.
       <div class="card card-body">
         <ul>
           <li>
-            <p>Coqui STT</p>
+            <p>OpenAI Whisper</p>
             <ul>
               <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.3.0_cuda11.0">Coqui STT 1.3.0, CUDA 11.0</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_coqui_stt:1.3.0_cuda11.0</span></code></p>
+                <p><a class="reference external" href="https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cuda12.1">Faster Whisper 1.0.2, CUDA 12.1</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/python-faster-whisper:1.0.2_cuda12.1</span></code></p>
               </li>
               <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/blob/master/coqui/stt/1.3.0_cpu">Coqui STT 1.3.0, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_coqui_stt:1.3.0_cpu</span></code></p>
+                <p><a class="reference external" href="https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cpu">Faster Whisper 1.0.2, CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/python-faster-whisper:1.0.2_cpu</span></code></p>
               </li>
             </ul>
           </li>
