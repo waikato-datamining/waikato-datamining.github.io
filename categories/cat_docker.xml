@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 24 May 2024 02:27:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>XTuner Docker images available</title><link>https://www.data-mining.co.nz/news/2024-04-22-xtuner-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/InternLM/xtuner"&gt;XTuner&lt;/a&gt; 0.1.18 are now available:&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 27 May 2024 20:38:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Faster Whisper 1.0.2 (speech-to-text)</title><link>https://www.data-mining.co.nz/news/2024-05-28-faster-whisper/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;New Docker images are now available for speech-to-text using &lt;a class="reference external" href="https://github.com/SYSTRAN/faster-whisper"&gt;Faster Whisper&lt;/a&gt; 1.0.2:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cuda12.1"&gt;https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cuda12.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cpu"&gt;https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cpu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Faster Whisper is a reimplementation of OpenAI's Whisper library with some &lt;a class="reference external" href="https://github.com/SYSTRAN/faster-whisper#benchmark"&gt;dramatic speed ups&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With the release of these images, the Coqui STT images have been retired (just like the &lt;a class="reference external" href="https://github.com/coqui-ai/STT/blob/main/README.rst"&gt;Coqui STT project itself&lt;/a&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-05-28-faster-whisper/</guid><pubDate>Mon, 27 May 2024 20:29:00 GMT</pubDate></item><item><title>XTuner Docker images available</title><link>https://www.data-mining.co.nz/news/2024-04-22-xtuner-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/InternLM/xtuner"&gt;XTuner&lt;/a&gt; 0.1.18 are now available:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
 &lt;ul&gt;
@@ -133,23 +137,4 @@ is now available via the following &lt;a class="reference external" href="https:
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-21-falcontune-docker/</guid><pubDate>Mon, 21 Aug 2023 04:39:00 GMT</pubDate></item><item><title>Redis-related Docker image updates</title><link>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-datamining/redis-docker-harness"&gt;redis-docker-harness&lt;/a&gt;
-Python library, which is used by a lot of our Docker images, has received a number of updates
-(at time of writing, the version of the library in use is 0.0.4):&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;ability to specify a password for the Redis server&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;specify the timeout parameter for the the Redis client, with larger timeouts resulting in
-lower CPU load (the default is now 0.01 instead of 0.001)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Unfortunately, this required re-releasing the most recent images of the following frameworks:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;detectron2&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;mmdetection&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;mmsegmentation&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;yolov5&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;yolov7&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Segment Anything (SAM)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;DEXTR&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The images kept their version number, you just need to pull them again, or use &lt;cite&gt;--pull ALWAYS&lt;/cite&gt;
-in conjunction with &lt;cite&gt;docker run&lt;/cite&gt;.&lt;/p&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2023-08-09-redis_updates/</guid><pubDate>Tue, 08 Aug 2023 23:41:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-21-falcontune-docker/</guid><pubDate>Mon, 21 Aug 2023 04:39:00 GMT</pubDate></item></channel></rss>
