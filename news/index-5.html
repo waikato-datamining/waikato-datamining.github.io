@@ -88,7 +88,41 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-10-27-ldc-release/" class="u-url">llm-dataset-converter release</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-03-gifr-release/" class="u-url">gifr release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2023-11-03-gifr-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-11-03T14:00:00+13:00" itemprop="datePublished" title="2023-11-03 14:00">2023-11-03 14:00</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A lot of our Docker images allow the user to make predictions in two ways: using simple
+file-polling or via a <a class="reference external" href="https://redis.io/">Redis</a> backend. File-polling is great for
+testing, but unsuitable for a production system due to wear-and-tear on SSDs.</p>
+<p>Initially, I developed a really simple library for sending and receiving data via Redis,
+called <em>simple-redis-helper</em>:</p>
+<p><a class="reference external" href="https://github.com/fracpete/simple-redis-helper">https://github.com/fracpete/simple-redis-helper</a></p>
+<p>With this library you get some command-line tools for broadcasting, listening, etc. Sufficient
+for someone who is comfortable with the command-line (or especially when logged in remotely
+via terminal), but not so great for your clients.</p>
+<p>Now, there is the brilliant <a class="reference external" href="https://www.gradio.app/">gradio</a> library that was specifically
+developed for such scenarios: to create easy to use and great looking interfaces for your machine
+learning models.</p>
+<p>The last couple of days, I have put together a new library that is tailored to our Docker images
+called <em>gifr</em>:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/gifr">https://github.com/waikato-datamining/gifr</a></p>
+<p>With the first release, the following types of models are supported:</p>
+<ul class="simple">
+<li><p>image classification</p></li>
+<li><p>image segmentation</p></li>
+<li><p>object detection/instance segmentation</p></li>
+<li><p>text generation</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-10-27-ldc-release/" class="u-url">llm-dataset-converter release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato

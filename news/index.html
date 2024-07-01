@@ -87,7 +87,44 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-06-18-fast-opex/" class="u-url">fast-opex released</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-02-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2024-07-02-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-07-02T09:56:00+12:00" itemprop="datePublished" title="2024-07-02 09:56">2024-07-02 09:56</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Out <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter">image-dataset-converter</a> library keeps evolving
+and, apart from fixing bugs, we also keep adding useful stuff.</p>
+<p>The version of the <cite>image-dataset-converter-all</cite> library stands now at <strong>0.0.3</strong>.</p>
+<p>Since version 0.0.2 the following changes occurred:</p>
+<ul>
+<li>
+<p>image-dataset-converter (core library):</p>
+<blockquote>
+<ul class="simple">
+<li><p>switched to the <cite>fast-opex</cite> library</p></li>
+<li><p>helper method <cite>from_indexedpng</cite> was using incorrect label index (off by 1)</p></li>
+<li><p><cite>Data.save_image</cite> method now ensures that source/target files exist before calling <cite>os.path.samefile</cite></p></li>
+<li><p>requiring seppl&gt;=0.2.6 now</p></li>
+<li><p>readers now support default globs, allowing the user to just specify directories as input (and the default glob gets appended)</p></li>
+<li><p>the <cite>to-yolo-od</cite> writer now has an option for predefined labels (for enforcing label order)</p></li>
+<li><p>the <cite>to-yolo-od</cite> writer now stores the labels/labels_cvs files in the respective output folders rather than using an absolute file name</p></li>
+<li><p>the bluechannel/grayscale/indexed-png image segmentation readers/writers can use a value other than 0 now for the background</p></li>
+<li><p><cite>split</cite> filter has been renamed to <cite>split-records</cite></p></li>
+</ul>
+</blockquote>
+</li>
+<li><p>image-dataset-converter-imgaug: added <cite>find-contours</cite> filter for turning blobs in image segmentation annotations into object detection polygons.</p></li>
+<li><p>image-dataset-converter-imgvis:  added <cite>add-center-overlay-od</cite> overlay filter</p></li>
+<li><p>image-dataset-converter-pdf (new module): adds support for PDF, like extracting images from PDF and compiling PDF from images</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-06-18-fast-opex/" class="u-url">fast-opex released</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -319,40 +356,6 @@ for Llama-2 can consume:</p>
 <p>Of course, you can use these Docker images in conjunction with our <a class="reference external" href="2023-11-03-gifr-release/">gifr</a>
 Python library for <a class="reference external" href="https://www.gradio.app/">gradio</a> interfaces as well (<cite>gifr-textgen</cite>).</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-03-gifr-release/" class="u-url">gifr release</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2023-11-03-gifr-release/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-11-03T14:00:00+13:00" itemprop="datePublished" title="2023-11-03 14:00">2023-11-03 14:00</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>A lot of our Docker images allow the user to make predictions in two ways: using simple
-file-polling or via a <a class="reference external" href="https://redis.io/">Redis</a> backend. File-polling is great for
-testing, but unsuitable for a production system due to wear-and-tear on SSDs.</p>
-<p>Initially, I developed a really simple library for sending and receiving data via Redis,
-called <em>simple-redis-helper</em>:</p>
-<p><a class="reference external" href="https://github.com/fracpete/simple-redis-helper">https://github.com/fracpete/simple-redis-helper</a></p>
-<p>With this library you get some command-line tools for broadcasting, listening, etc. Sufficient
-for someone who is comfortable with the command-line (or especially when logged in remotely
-via terminal), but not so great for your clients.</p>
-<p>Now, there is the brilliant <a class="reference external" href="https://www.gradio.app/">gradio</a> library that was specifically
-developed for such scenarios: to create easy to use and great looking interfaces for your machine
-learning models.</p>
-<p>The last couple of days, I have put together a new library that is tailored to our Docker images
-called <em>gifr</em>:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/gifr">https://github.com/waikato-datamining/gifr</a></p>
-<p>With the first release, the following types of models are supported:</p>
-<ul class="simple">
-<li><p>image classification</p></li>
-<li><p>image segmentation</p></li>
-<li><p>object detection/instance segmentation</p></li>
-<li><p>text generation</p></li>
-</ul>
-</div>
     </article>
 </div>
 

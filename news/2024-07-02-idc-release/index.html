@@ -4,23 +4,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>fast-opex released | Data mining</title>
+<title>image-dataset-converter release | Data mining</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
-<link rel="canonical" href="https://www.data-mining.co.nz/news/2024-06-18-fast-opex/">
+<link rel="canonical" href="https://www.data-mining.co.nz/news/2024-07-02-idc-release/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Waikato">
-<link rel="prev" href="../2024-05-28-faster-whisper/" title="Faster Whisper 1.0.2 (speech-to-text)" type="text/html">
-<link rel="next" href="../2024-07-02-idc-release/" title="image-dataset-converter release" type="text/html">
+<link rel="prev" href="../2024-06-18-fast-opex/" title="fast-opex released" type="text/html">
 <meta property="og:site_name" content="Data mining">
-<meta property="og:title" content="fast-opex released">
-<meta property="og:url" content="https://www.data-mining.co.nz/news/2024-06-18-fast-opex/">
-<meta property="og:description" content="The OPEX (Object Predictions EXchange)
-format features heavily in our docker images for storing/broadcasting predictions. However, last week I noticed
-that it incurs quite a significant speed penalty ">
+<meta property="og:title" content="image-dataset-converter release">
+<meta property="og:url" content="https://www.data-mining.co.nz/news/2024-07-02-idc-release/">
+<meta property="og:description" content="Out image-dataset-converter library keeps evolving
+and, apart from fixing bugs, we also keep adding useful stuff.
+The version of the image-dataset-converter-all library stands now at 0.0.3.
+Since vers">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2024-06-18T16:51:00+12:00">
+<meta property="article:published_time" content="2024-07-02T09:56:00+12:00">
 <meta property="article:tag" content="release">
 </head>
 <body>
@@ -90,7 +90,7 @@ bg-dark
         
         
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">fast-opex released</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">image-dataset-converter release</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
@@ -98,7 +98,7 @@ bg-dark
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
-            <time class="published dt-published" datetime="2024-06-18T16:51:00+12:00" itemprop="datePublished" title="2024-06-18 16:51">2024-06-18 16:51</time></a>
+            <time class="published dt-published" datetime="2024-07-02T09:56:00+12:00" itemprop="datePublished" title="2024-07-02 09:56">2024-07-02 09:56</time></a>
             </p>
             
 
@@ -106,27 +106,38 @@ bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>The OPEX (<a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format">Object Predictions EXchange</a>)
-format features heavily in our docker images for storing/broadcasting predictions. However, last week I noticed
-that it incurs quite a significant speed penalty due to its use of JSON schema under the hood.
-Since we want to be as fast as possible at prediction time, I sat down and rewrote the library using very basic
-(but fast) checks and released it under the name <strong>fast-opex</strong>. The new library works as a drop-in replacement, i.e.,
-you only have to switch from installing <strong>opex</strong> to <strong>fast-opex</strong>.</p>
-<p>To further speed things up, the new library can take advantage of the blazingly fast
-<a class="reference external" href="https://github.com/ijl/orjson">orjson</a> JSON library. The orjson library only needs to be present in the
-environment and it will be used automatically.</p>
-<p>If you are interested in a speed comparison, then head over to the following repository:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/opex-comparison">https://github.com/waikato-datamining/opex-comparison</a></p>
-    </div>
+    <p>Out <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter">image-dataset-converter</a> library keeps evolving
+and, apart from fixing bugs, we also keep adding useful stuff.</p>
+<p>The version of the <cite>image-dataset-converter-all</cite> library stands now at <strong>0.0.3</strong>.</p>
+<p>Since version 0.0.2 the following changes occurred:</p>
+<ul>
+<li>
+<p>image-dataset-converter (core library):</p>
+<blockquote>
+<ul class="simple">
+<li><p>switched to the <cite>fast-opex</cite> library</p></li>
+<li><p>helper method <cite>from_indexedpng</cite> was using incorrect label index (off by 1)</p></li>
+<li><p><cite>Data.save_image</cite> method now ensures that source/target files exist before calling <cite>os.path.samefile</cite></p></li>
+<li><p>requiring seppl&gt;=0.2.6 now</p></li>
+<li><p>readers now support default globs, allowing the user to just specify directories as input (and the default glob gets appended)</p></li>
+<li><p>the <cite>to-yolo-od</cite> writer now has an option for predefined labels (for enforcing label order)</p></li>
+<li><p>the <cite>to-yolo-od</cite> writer now stores the labels/labels_cvs files in the respective output folders rather than using an absolute file name</p></li>
+<li><p>the bluechannel/grayscale/indexed-png image segmentation readers/writers can use a value other than 0 now for the background</p></li>
+<li><p><cite>split</cite> filter has been renamed to <cite>split-records</cite></p></li>
+</ul>
+</blockquote>
+</li>
+<li><p>image-dataset-converter-imgaug: added <cite>find-contours</cite> filter for turning blobs in image segmentation annotations into object detection polygons.</p></li>
+<li><p>image-dataset-converter-imgvis:  added <cite>add-center-overlay-od</cite> overlay filter</p></li>
+<li><p>image-dataset-converter-pdf (new module): adds support for PDF, like extracting images from PDF and compiling PDF from images</p></li>
+</ul>
+</div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/release/" rel="tag">release</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../2024-05-28-faster-whisper/" rel="prev" title="Faster Whisper 1.0.2 (speech-to-text)">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../2024-07-02-idc-release/" rel="next" title="image-dataset-converter release">Next post</a>
+                <a href="../2024-06-18-fast-opex/" rel="prev" title="fast-opex released">Previous post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2024         <a href="mailto:fracpete@waikato.ac.nz">University of Waikato</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         

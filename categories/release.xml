@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 18 Jun 2024 05:01:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>fast-opex released</title><link>https://www.data-mining.co.nz/news/2024-06-18-fast-opex/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The OPEX (&lt;a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format"&gt;Object Predictions EXchange&lt;/a&gt;)
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 01 Jul 2024 22:10:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-07-02-idc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Out &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter"&gt;image-dataset-converter&lt;/a&gt; library keeps evolving
+and, apart from fixing bugs, we also keep adding useful stuff.&lt;/p&gt;
+&lt;p&gt;The version of the &lt;cite&gt;image-dataset-converter-all&lt;/cite&gt; library stands now at &lt;strong&gt;0.0.3&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Since version 0.0.2 the following changes occurred:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;image-dataset-converter (core library):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;switched to the &lt;cite&gt;fast-opex&lt;/cite&gt; library&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;helper method &lt;cite&gt;from_indexedpng&lt;/cite&gt; was using incorrect label index (off by 1)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;cite&gt;Data.save_image&lt;/cite&gt; method now ensures that source/target files exist before calling &lt;cite&gt;os.path.samefile&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;requiring seppl&amp;gt;=0.2.6 now&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;readers now support default globs, allowing the user to just specify directories as input (and the default glob gets appended)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the &lt;cite&gt;to-yolo-od&lt;/cite&gt; writer now has an option for predefined labels (for enforcing label order)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the &lt;cite&gt;to-yolo-od&lt;/cite&gt; writer now stores the labels/labels_cvs files in the respective output folders rather than using an absolute file name&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the bluechannel/grayscale/indexed-png image segmentation readers/writers can use a value other than 0 now for the background&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;cite&gt;split&lt;/cite&gt; filter has been renamed to &lt;cite&gt;split-records&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;image-dataset-converter-imgaug: added &lt;cite&gt;find-contours&lt;/cite&gt; filter for turning blobs in image segmentation annotations into object detection polygons.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;image-dataset-converter-imgvis:  added &lt;cite&gt;add-center-overlay-od&lt;/cite&gt; overlay filter&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;image-dataset-converter-pdf (new module): adds support for PDF, like extracting images from PDF and compiling PDF from images&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-02-idc-release/</guid><pubDate>Mon, 01 Jul 2024 21:56:00 GMT</pubDate></item><item><title>fast-opex released</title><link>https://www.data-mining.co.nz/news/2024-06-18-fast-opex/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;The OPEX (&lt;a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format"&gt;Object Predictions EXchange&lt;/a&gt;)
 format features heavily in our docker images for storing/broadcasting predictions. However, last week I noticed
 that it incurs quite a significant speed penalty due to its use of JSON schema under the hood.
 Since we want to be as fast as possible at prediction time, I sat down and rewrote the library using very basic
@@ -106,25 +129,4 @@ for Llama-2 can consume:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Of course, you can use these Docker images in conjunction with our &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-11-03-gifr-release/"&gt;gifr&lt;/a&gt;
-Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; interfaces as well (&lt;cite&gt;gifr-textgen&lt;/cite&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</guid><pubDate>Fri, 10 Nov 2023 03:33:00 GMT</pubDate></item><item><title>gifr release</title><link>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;A lot of our Docker images allow the user to make predictions in two ways: using simple
-file-polling or via a &lt;a class="reference external" href="https://redis.io/"&gt;Redis&lt;/a&gt; backend. File-polling is great for
-testing, but unsuitable for a production system due to wear-and-tear on SSDs.&lt;/p&gt;
-&lt;p&gt;Initially, I developed a really simple library for sending and receiving data via Redis,
-called &lt;em&gt;simple-redis-helper&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/fracpete/simple-redis-helper"&gt;https://github.com/fracpete/simple-redis-helper&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;With this library you get some command-line tools for broadcasting, listening, etc. Sufficient
-for someone who is comfortable with the command-line (or especially when logged in remotely
-via terminal), but not so great for your clients.&lt;/p&gt;
-&lt;p&gt;Now, there is the brilliant &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; library that was specifically
-developed for such scenarios: to create easy to use and great looking interfaces for your machine
-learning models.&lt;/p&gt;
-&lt;p&gt;The last couple of days, I have put together a new library that is tailored to our Docker images
-called &lt;em&gt;gifr&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/gifr"&gt;https://github.com/waikato-datamining/gifr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;With the first release, the following types of models are supported:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;image classification&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;image segmentation&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;object detection/instance segmentation&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;text generation&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</guid><pubDate>Fri, 03 Nov 2023 01:00:00 GMT</pubDate></item></channel></rss>
+Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; interfaces as well (&lt;cite&gt;gifr-textgen&lt;/cite&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</guid><pubDate>Fri, 10 Nov 2023 03:33:00 GMT</pubDate></item></channel></rss>
