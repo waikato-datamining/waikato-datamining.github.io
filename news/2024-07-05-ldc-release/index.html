@@ -4,13 +4,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posts about software | Data mining</title>
+<title>llm-dataset-converter release | Data mining</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
-<link rel="canonical" href="https://www.data-mining.co.nz/categories/cat_software/">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS for category software" hreflang="en" href="../cat_software.xml">
+<link rel="canonical" href="https://www.data-mining.co.nz/news/2024-07-05-ldc-release/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Waikato">
+<link rel="prev" href="../2024-07-02-idc-release/" title="image-dataset-converter release" type="text/html">
+<link rel="next" href="../2024-07-05-adc-release/" title="audio-dataset-converter release" type="text/html">
+<meta property="og:site_name" content="Data mining">
+<meta property="og:title" content="llm-dataset-converter release">
+<meta property="og:url" content="https://www.data-mining.co.nz/news/2024-07-05-ldc-release/">
+<meta property="og:description" content="Version 0.2.4 of our llm-dataset-converter library is now available.
+This release is a only minor release, mainly fixing batch processing and offering default globs for readers.
+The support for defaul">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-07-05T13:02:00+12:00">
+<meta property="article:tag" content="release">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -33,7 +44,7 @@ bg-dark
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="navbar-nav mr-auto">
 <li class="nav-item">
-<a href="../../news/" class="nav-link">News</a>
+<a href="../" class="nav-link">News</a>
                 </li>
 <li class="nav-item">
 <a href="../../expertise/" class="nav-link">Expertise</a>
@@ -79,56 +90,40 @@ bg-dark
         
         
         
-<article class="tagpage"><header><h1>Posts about software</h1>
-        <div class="metadata">
-            
-                <p class="feedlink">
-                        
-            <a href="../cat_software.xml" hreflang="en" type="application/rss+xml">RSS feed</a>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">llm-dataset-converter release</a></h1>
 
-                </p>
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2024-07-05T13:02:00+12:00" itemprop="datePublished" title="2024-07-05 13:02">2024-07-05 13:02</time></a>
+            </p>
+            
 
         </div>
         
 
-    </header><ul class="postlist">
-<li>
-<time class="listdate" datetime="2024-07-05T13:07:00+12:00" title="2024-07-05 13:07">2024-07-05 13:07</time><a href="../../news/2024-07-05-adc-release/" class="listtitle">audio-dataset-converter release</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2024-07-05T13:02:00+12:00" title="2024-07-05 13:02">2024-07-05 13:02</time><a href="../../news/2024-07-05-ldc-release/" class="listtitle">llm-dataset-converter release</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2024-07-02T09:56:00+12:00" title="2024-07-02 09:56">2024-07-02 09:56</time><a href="../../news/2024-07-02-idc-release/" class="listtitle">image-dataset-converter release</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2024-06-18T16:51:00+12:00" title="2024-06-18 16:51">2024-06-18 16:51</time><a href="../../news/2024-06-18-fast-opex/" class="listtitle">fast-opex released</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2024-05-06T16:12:00+12:00" title="2024-05-06 16:12">2024-05-06 16:12</time><a href="../../news/2024-05-06-idc-release/" class="listtitle">image-dataset-converter release</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2024-05-06T13:36:00+12:00" title="2024-05-06 13:36">2024-05-06 13:36</time><a href="../../news/2024-05-06-ldc-release/" class="listtitle">llm-dataset-converter release</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2023-11-03T14:00:00+13:00" title="2023-11-03 14:00">2023-11-03 14:00</time><a href="../../news/2023-11-03-gifr-release/" class="listtitle">gifr release</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2023-10-27T09:47:00+13:00" title="2023-10-27 09:47">2023-10-27 09:47</time><a href="../../news/2023-10-27-ldc-release/" class="listtitle">llm-dataset-converter release</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2023-03-01T12:45:00+13:00" title="2023-03-01 12:45">2023-03-01 12:45</time><a href="../../news/2023-03-01-opex47-library-released/" class="listtitle">opex4j library released</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2022-12-16T10:30:00+13:00" title="2022-12-16 10:30">2022-12-16 10:30</time><a href="../../news/2022-12-16-s3000-fusion-support/" class="listtitle">S3000 fusion support</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2021-12-03T15:30:00+13:00" title="2021-12-03 15:30">2021-12-03 15:30</time><a href="../../news/2021-12-03-adams-release/" class="listtitle">ADAMS 21.12.0 released</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2021-01-07T13:30:00+13:00" title="2021-01-07 13:30">2021-01-07 13:30</time><a href="../../news/2021-01-07-adams-release/" class="listtitle">ADAMS 21.1.0 released</a><a></a>
-</li>
-        </ul></article><!--End of body content--><footer id="footer">
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Version 0.2.4 of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> library is now available.</p>
+<p>This release is a only minor release, mainly fixing batch processing and offering default globs for readers.
+The support for default globs means that the user only has to supply the directory, i.e., in a bash shell it is no
+longer required to double quote the input to avoid bash expansion. Additional libraries had support for default globs
+added as well where appropriate.</p>
+<p>The <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all">llm-dataset-converter-all</a> meta-library now stands at version 0.0.2.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/release/" rel="tag">release</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2024-07-02-idc-release/" rel="prev" title="image-dataset-converter release">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2024-07-05-adc-release/" rel="next" title="audio-dataset-converter release">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2024         <a href="mailto:fracpete@waikato.ac.nz">University of Waikato</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
             

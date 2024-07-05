@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 01 Jul 2024 22:10:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-07-02-idc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Out &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter"&gt;image-dataset-converter&lt;/a&gt; library keeps evolving
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial data mining activity at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 05 Jul 2024 01:15:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>audio-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-07-05-adc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Today marks the first public release of our &lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter"&gt;audio-dataset-converter&lt;/a&gt;
+library and it various additional dependent libraries.
+Just like &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter"&gt;image-dataset-converter&lt;/a&gt;,
+it has its origins in the &lt;a class="reference external" href="https://github.com/waikato-ufdl/wai-annotations"&gt;wai.annotations&lt;/a&gt; library.&lt;/p&gt;
+&lt;p&gt;Of course, there is also a meta-library that combines all the libraries:
+&lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter-all"&gt;audio-dataset-converter-all&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Check out the examples site:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://waikato-llm.github.io/audio-dataset-converter-examples/"&gt;https://waikato-llm.github.io/audio-dataset-converter-examples/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-05-adc-release/</guid><pubDate>Fri, 05 Jul 2024 01:07:00 GMT</pubDate></item><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-07-05-ldc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Version 0.2.4 of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; library is now available.&lt;/p&gt;
+&lt;p&gt;This release is a only minor release, mainly fixing batch processing and offering default globs for readers.
+The support for default globs means that the user only has to supply the directory, i.e., in a bash shell it is no
+longer required to double quote the input to avoid bash expansion. Additional libraries had support for default globs
+added as well where appropriate.&lt;/p&gt;
+&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all"&gt;llm-dataset-converter-all&lt;/a&gt; meta-library now stands at version 0.0.2.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-05-ldc-release/</guid><pubDate>Fri, 05 Jul 2024 01:02:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-07-02-idc-release/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Out &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter"&gt;image-dataset-converter&lt;/a&gt; library keeps evolving
 and, apart from fixing bugs, we also keep adding useful stuff.&lt;/p&gt;
 &lt;p&gt;The version of the &lt;cite&gt;image-dataset-converter-all&lt;/cite&gt; library stands now at &lt;strong&gt;0.0.3&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Since version 0.0.2 the following changes occurred:&lt;/p&gt;
@@ -89,44 +101,4 @@ you can read and write the XTuner JSON format (and apply the usual filtering, of
 &lt;p&gt;Of course, you can use these Docker images in conjunction with our &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-11-03-gifr-release/"&gt;gifr&lt;/a&gt;
 Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; interfaces as well (&lt;cite&gt;gifr-textgen&lt;/cite&gt;). Just now we released
 version 0.0.4 of the library, which is more flexible in regards to text generation: it can now support send and receive
-the conversation history and also parse JSON responses.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-27-xtuner-docker/</guid><pubDate>Tue, 27 Feb 2024 03:40:00 GMT</pubDate></item><item><title>Text classification support</title><link>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Large language models (LLMs) for chatbots are all the rage at the moment, but there is plenty of scope of simpler
-tasks like text classification. Requiring less resources and being a lot faster is nice as well.&lt;/p&gt;
-&lt;p&gt;We turned the &lt;a class="reference external" href="https://huggingface.co/docs/transformers/v4.36.1/en/tasks/sequence_classification"&gt;HuggingFace example&lt;/a&gt;
-for sequence classification into a docker image to make it easy for building such classification models.&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Our &lt;a class="reference external" href="https://github.com/waikato-datamining/gifr"&gt;gifr&lt;/a&gt;
-Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; received an interface for text
-classification (&lt;cite&gt;gifr-textclass&lt;/cite&gt;) in version 0.0.3.&lt;/p&gt;
-&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; library
-obtained native support for text classification formats with version 0.1.1.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</guid><pubDate>Thu, 15 Feb 2024 03:46:00 GMT</pubDate></item><item><title>Llama-2 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</link><dc:creator>University of Waikato</dc:creator><description>&lt;p&gt;Llama-2, despite &lt;a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/"&gt;not actually being open-source as advertised&lt;/a&gt;,
-is a very powerful large language model (LLM), which can also be fine-tuned with custom data. With
-version &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.0.3"&gt;v0.0.3&lt;/a&gt;
-of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; Python library,
-it is now possible to generate data in &lt;a class="reference external" href="https://jsonlines.org/"&gt;jsonlines&lt;/a&gt; format that the new
-&lt;a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/master/4.31.0_cuda11.7_llama2"&gt;Docker images&lt;/a&gt;
-for Llama-2 can consume:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Of course, you can use these Docker images in conjunction with our &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-11-03-gifr-release/"&gt;gifr&lt;/a&gt;
-Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; interfaces as well (&lt;cite&gt;gifr-textgen&lt;/cite&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</guid><pubDate>Fri, 10 Nov 2023 03:33:00 GMT</pubDate></item></channel></rss>
+the conversation history and also parse JSON responses.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-27-xtuner-docker/</guid><pubDate>Tue, 27 Feb 2024 03:40:00 GMT</pubDate></item></channel></rss>

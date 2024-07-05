@@ -11,7 +11,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://www.data-mining.co.nz/news/">
-<link rel="next" href="index-5.html" type="text/html">
+<link rel="next" href="index-6.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -87,7 +87,45 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-02-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-05-adc-release/" class="u-url">audio-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2024-07-05-adc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-07-05T13:07:00+12:00" itemprop="datePublished" title="2024-07-05 13:07">2024-07-05 13:07</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Today marks the first public release of our <a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter">audio-dataset-converter</a>
+library and it various additional dependent libraries.
+Just like <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter">image-dataset-converter</a>,
+it has its origins in the <a class="reference external" href="https://github.com/waikato-ufdl/wai-annotations">wai.annotations</a> library.</p>
+<p>Of course, there is also a meta-library that combines all the libraries:
+<a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter-all">audio-dataset-converter-all</a></p>
+<p>Check out the examples site:</p>
+<p><a class="reference external" href="https://waikato-llm.github.io/audio-dataset-converter-examples/">https://waikato-llm.github.io/audio-dataset-converter-examples/</a></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-05-ldc-release/" class="u-url">llm-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2024-07-05-ldc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-07-05T13:02:00+12:00" itemprop="datePublished" title="2024-07-05 13:02">2024-07-05 13:02</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Version 0.2.4 of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> library is now available.</p>
+<p>This release is a only minor release, mainly fixing batch processing and offering default globs for readers.
+The support for default globs means that the user only has to supply the directory, i.e., in a bash shell it is no
+longer required to double quote the input to avoid bash expansion. Additional libraries had support for default globs
+added as well where appropriate.</p>
+<p>The <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all">llm-dataset-converter-all</a> meta-library now stands at version 0.0.2.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-02-idc-release/" class="u-url">image-dataset-converter release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -286,81 +324,11 @@ Python library for <a class="reference external" href="https://www.gradio.app/">
 version 0.0.4 of the library, which is more flexible in regards to text generation: it can now support send and receive
 the conversation history and also parse JSON responses.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-02-15-text-classification-support/" class="u-url">Text classification support</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2024-02-15-text-classification-support/" rel="bookmark">
-            <time class="published dt-published" datetime="2024-02-15T16:46:00+13:00" itemprop="datePublished" title="2024-02-15 16:46">2024-02-15 16:46</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Large language models (LLMs) for chatbots are all the rage at the moment, but there is plenty of scope of simpler
-tasks like text classification. Requiring less resources and being a lot faster is nice as well.</p>
-<p>We turned the <a class="reference external" href="https://huggingface.co/docs/transformers/v4.36.1/en/tasks/sequence_classification">HuggingFace example</a>
-for sequence classification into a docker image to make it easy for building such classification models.</p>
-<ul class="simple">
-<li>
-<p>In-house registry:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification</span></code></p></li>
-</ul>
-</li>
-<li>
-<p>Docker hub:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification</span></code></p></li>
-</ul>
-</li>
-</ul>
-<p>Our <a class="reference external" href="https://github.com/waikato-datamining/gifr">gifr</a>
-Python library for <a class="reference external" href="https://www.gradio.app/">gradio</a> received an interface for text
-classification (<cite>gifr-textclass</cite>) in version 0.0.3.</p>
-<p>The <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> library
-obtained native support for text classification formats with version 0.1.1.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023-11-10-llama2-docker/" class="u-url">Llama-2 Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2023-11-10-llama2-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-11-10T16:33:00+13:00" itemprop="datePublished" title="2023-11-10 16:33">2023-11-10 16:33</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Llama-2, despite <a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/">not actually being open-source as advertised</a>,
-is a very powerful large language model (LLM), which can also be fine-tuned with custom data. With
-version <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.0.3">v0.0.3</a>
-of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> Python library,
-it is now possible to generate data in <a class="reference external" href="https://jsonlines.org/">jsonlines</a> format that the new
-<a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/master/4.31.0_cuda11.7_llama2">Docker images</a>
-for Llama-2 can consume:</p>
-<ul class="simple">
-<li>
-<p>In-house registry:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2</span></code></p></li>
-</ul>
-</li>
-<li>
-<p>Docker hub:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2</span></code></p></li>
-</ul>
-</li>
-</ul>
-<p>Of course, you can use these Docker images in conjunction with our <a class="reference external" href="2023-11-03-gifr-release/">gifr</a>
-Python library for <a class="reference external" href="https://www.gradio.app/">gradio</a> interfaces as well (<cite>gifr-textgen</cite>).</p>
-    </div>
     </article>
 </div>
 
         <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-5.html" rel="next">Older posts</a></li>
+<li class="next"><a href="index-6.html" rel="next">Older posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer">
             Contents © 2024         <a href="mailto:fracpete@waikato.ac.nz">University of Waikato</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
