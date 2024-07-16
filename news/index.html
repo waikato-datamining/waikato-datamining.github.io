@@ -89,7 +89,41 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-05-adc-release/" class="u-url">audio-dataset-converter release</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-16-yolov10-docker/" class="u-url">Yolov10 Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2024-07-16-yolov10-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-07-16T14:51:00+12:00" itemprop="datePublished" title="2024-07-16 14:51">2024-07-16 14:51</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Docker images for the latest <a class="reference external" href="https://github.com/THU-MIG/yolov10">Yolov10</a> code base are now available.</p>
+<p>The code used by the docker images is available from here:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10">github.com/waikato-datamining/pytorch/tree/master/yolov10</a></p>
+<p>The tags for the images are as follows:</p>
+<ul class="simple">
+<li>
+<p>In-house registry:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov10:2024-06-23_cuda11.7</span></code></p></li>
+<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-11-05_cpu</span></code></p></li>
+</ul>
+</li>
+<li>
+<p>Docker hub:</p>
+<ul>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov10:2024-06-23_cuda11.7</span></code></p></li>
+<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-11-05_cpu</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>The tutorial on <em>object detection</em> is available from here:</p>
+<p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/">www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/</a></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-05-adc-release/" class="u-url">audio-dataset-converter release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 University of Waikato
@@ -288,43 +322,6 @@ framework, using the 1.2.0 release of MMPretrain (code base as of 2024-01-05):</
 <li><p><a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/tree/master/1.2.0_cpu">CPU</a></p></li>
 </ul>
 <p><strong>NB:</strong> MMPretrain is the successor of MMClassification, which can be used for image classification.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-02-27-xtuner-docker/" class="u-url">XTuner Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2024-02-27-xtuner-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2024-02-27T16:40:00+13:00" itemprop="datePublished" title="2024-02-27 16:40">2024-02-27 16:40</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p><a class="reference external" href="https://github.com/InternLM/xtuner">XTuner</a> is an efficient, flexible and full-featured toolkit for fine-tuning
-large models (InternLM, Llama, Baichuan, Qwen, ChatGLM) and released under the Apache 2.0 license. The advantage
-of this framework is that it is not tied down to a specific LLM architecture, but supports multiple ones out of the box.
-With the just released version <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.2.0">v0.2.0</a>
-of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm-dataset-converter</a> Python library,
-you can read and write the XTuner JSON format (and apply the usual filtering, of course).</p>
-<p>Here are the newly added image tags:</p>
-<ul class="simple">
-<li>
-<p>In-house registry:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p></li>
-</ul>
-</li>
-<li>
-<p>Docker hub:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p></li>
-</ul>
-</li>
-</ul>
-<p>Of course, you can use these Docker images in conjunction with our <a class="reference external" href="2023-11-03-gifr-release/">gifr</a>
-Python library for <a class="reference external" href="https://www.gradio.app/">gradio</a> interfaces as well (<cite>gifr-textgen</cite>). Just now we released
-version 0.0.4 of the library, which is more flexible in regards to text generation: it can now support send and receive
-the conversation history and also parse JSON responses.</p>
     </div>
     </article>
 </div>

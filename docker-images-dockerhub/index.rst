@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2024-04-22 11:27:00 UTC+12:00
+.. date: 2024-07-16 14:52:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -257,6 +257,19 @@ preparation, training and making predictions.
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov7/2022-10-08_cuda11.1">Yolov7 2022-10-08, CUDA 11.1</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov7:2022-10-08_cuda11.1</span></code></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>PyTorch/Yolov10</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10/2024-06-23_cpu">Yolov10 2024-06-23, CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov10:2024-06-23_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10/2024-06-23_cuda11.7">Yolov10 2024-06-23, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov10:2024-06-23_cuda11.1</span></code></p>
               </li>
             </ul>
           </li>
