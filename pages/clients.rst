@@ -1,6 +1,6 @@
 .. title: Clients
 .. slug: clients
-.. date: 2019-10-01 10:00:00 UTC+12:00
+.. date: 2024-09-02 14:07:00 UTC+12:00
 .. tags: 
 .. category: 
 .. link: 
@@ -22,6 +22,11 @@ Below are some of our clients that we are working with:
          <div class="card">
            <a href="https://www.ravensdown.co.nz/services/testing" target="_blank"><img src="../images/client_arl.png" class="card-img-top" alt="ARL Logo"></a>
          </div>   
+       </div>
+       <div class=".col-md-4">
+         <div class="card">
+           <a href="http://www.c3.co.nz/" target="_blank"><img src="../images/client_c3.jpg" class="card-img-top" alt="C3 Logo"></a>
+         </div>
        </div>
        <div class=".col-md-4">
          <div class="card">
