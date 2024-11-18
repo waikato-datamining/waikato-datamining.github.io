@@ -30,6 +30,9 @@ weighted learning, achieving much better results.
 In recent years, we have been able to push the boundaries even further, by adopting
 advanced modeling techniques using `deep learning <https://en.wikipedia.org/wiki/Deep_learning>`__.
 
+Our commercial `S3000 software <link://slug/s3000>`__ can not only be used for building models
+on your data, but also for integrating into your business processes.
+
 
 Image processing
 ================
