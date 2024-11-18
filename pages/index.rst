@@ -1,6 +1,6 @@
 .. title: Welcome
 .. slug: index
-.. date: 2024-11-19 09:20:00 UTC+12:00
+.. date: 2024-11-19 09:20:00 UTC+13:00
 .. tags: 
 .. category: 
 .. link: 

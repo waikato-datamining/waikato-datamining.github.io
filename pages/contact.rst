@@ -1,6 +1,6 @@
 .. title: Contact
 .. slug: contact
-.. date: 2024-11-19 10:17:00 UTC+12:00
+.. date: 2024-11-19 10:17:00 UTC+13:00
 .. tags: 
 .. category: 
 .. link: 
