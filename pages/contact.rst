@@ -1,6 +1,6 @@
 .. title: Contact
 .. slug: contact
-.. date: 2019-10-01 10:00:00 UTC+12:00
+.. date: 2024-11-19 10:17:00 UTC+12:00
 .. tags: 
 .. category: 
 .. link: 
@@ -13,8 +13,9 @@ contact `Simon Lovatt <https://www.waikato.ac.nz/research-enterprise/our-people/
 Director of Research & Enterprise here at the University of Waikato. Then we
 can organise a meeting and discuss things in more detail.
 
-We are located in `G-Block <https://www.waikato.ac.nz/contacts/map/?G>`__ (2nd
-floor), just off the roundabout on Hillcrest Road.
+We are located on the Hamilton campus of the University of Waikato
+(`G-Block <https://www.waikato.ac.nz/about/campus/campus-maps/?G>`__, 2nd floor, G.2.19),
+just off the roundabout on Hillcrest Road.
 
 .. raw:: html
 
