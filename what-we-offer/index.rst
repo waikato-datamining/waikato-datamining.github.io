@@ -13,13 +13,21 @@ Here is a short overview of the range of services that we offer:
 
 * **Consulting**
 
-  - Performing investigative data analysis studies of your data
-  - Supporting scientists using advanced data mining modelling techniques
+  * Performing investigative data analysis studies of your data
+  * Supporting scientists using advanced data mining modelling techniques
+
+.. raw:: html
+
+   <br/>
 
 * **Commercial applications**
 
-  - Integrating data mining into your business processes
-  - Turning research ideas into commercial applications with funding through `Callaghan Innovation <http://www.callaghaninnovation.govt.nz/>`__
+  * Integrating data mining into your business processes
+  * Turning research ideas into commercial applications with funding through `Callaghan Innovation <http://www.callaghaninnovation.govt.nz/>`__
+
+.. raw:: html
+
+   <br/>
 
 * **Research opportunities**
 

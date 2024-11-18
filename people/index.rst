@@ -1,15 +1,15 @@
 .. title: People
 .. slug: people
-.. date: 2023-05-02 21:00:00 UTC+12:00
+.. date: 2024-11-19 09:30:00 UTC+12:00
 .. tags: 
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 
-* `Pro Vice Chancellor Geoffrey Holmes <https://www.cms.waikato.ac.nz/people/geoff>`__
-* `Dale Fletcher <https://www.cms.waikato.ac.nz/people/dale>`__
-* `Peter Reutemann <https://www.cms.waikato.ac.nz/people/fracpete>`__
+* `Pro Vice Chancellor Geoffrey Holmes <https://profiles.waikato.ac.nz/geoffrey.holmes>`__
+* `Dale Fletcher <https://profiles.waikato.ac.nz/dale.fletcher>`__
+* `Peter Reutemann <https://profiles.waikato.ac.nz/peter.reutemann>`__
 
 Former members:
 

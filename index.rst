@@ -1,11 +1,16 @@
 .. title: Welcome
 .. slug: index
-.. date: 2019-10-01 10:00:00 UTC+12:00
+.. date: 2024-11-19 09:20:00 UTC+12:00
 .. tags: 
 .. category: 
 .. link: 
 .. description: 
 .. type: text
+
+.. image:: /images/uow.jpg
+   :height: 100px
+   :alt: University of Waikato crest
+   :align: right
 
 The `Machine Learning Group <https://www.cs.waikato.ac.nz/ml/>`__ at the `University of Waikato <https://www.cs.waikato.ac.nz/>`__ 
 helped shape the open-source community in the machine learning space with its well-known machine 
