@@ -14,7 +14,7 @@ Here is a short overview of the range of services that we offer:
 * **Consulting**
 
   * Performing investigative data analysis studies of your data
-  * Supporting scientists using advanced modelling techniques
+  * Supporting scientists using advanced modeling techniques
 
 .. raw:: html
 
