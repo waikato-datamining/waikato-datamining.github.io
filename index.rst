@@ -1,6 +1,6 @@
 .. title: Welcome
 .. slug: index
-.. date: 2024-11-19 09:20:00 UTC+13:00
+.. date: 2024-11-20 10:37:00 UTC+13:00
 .. tags: 
 .. category: 
 .. link: 
@@ -28,5 +28,5 @@ framework was born. ADAMS consists of more powerful data science tools than WEKA
 a workflow engine for automating machine learning tasks that can be integrated into business processes.
 
 Artificial Intelligence (AI), or to be more precise `Deep Learning <https://en.wikipedia.org/wiki/Deep_learning>`__, 
-has been adopted as another tool for solving challenging problems successfully across data domains (e..g, spectral data, image processing).
+has been adopted as another tool for solving challenging problems successfully across data domains (e.g., spectral data, image processing).
 Deep Learning techniques can complement more traditional machine learning ones and we choose the most appropriate one based on the constraints of a project.
