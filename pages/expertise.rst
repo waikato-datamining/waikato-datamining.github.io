@@ -1,6 +1,6 @@
 .. title: Expertise
 .. slug: expertise
-.. date: 2024-11-19 09:30:00 UTC+13:00
+.. date: 2024-11-20 10:34:00 UTC+13:00
 .. tags: 
 .. category: 
 .. link: 
@@ -34,6 +34,27 @@ Our commercial `S3000 software <link://slug/s3000>`__ can not only be used for b
 on your data, but also for integrating into your business processes.
 
 
+Hyperspectral imaging
+=====================
+
+.. thumbnail:: /images/happy_viewer.png
+   :alt: Viewer interface of the HAPPy tools
+   :align: right
+
+The last few years, we have been expanding our expertise to hyperspectral imaging (`HSI <https://en.wikipedia.org/wiki/Hyperspectral_imaging>`__)
+as well. After the `School of Engineering <https://www.waikato.ac.nz/about/faculties-schools/engineering/>`__
+purchased a `hyperspectral camera <https://hsi.eng.waikato.ac.nz/hardware/>`__, we developed a Python-based
+suite of tools called `HAPPy <https://hsi.eng.waikato.ac.nz/happy/>`__ (*Hyperspectral Application Platform in Python*)
+for annotating and processing their data.
+
+On the one hand, the suite contains graphical tools that allow viewing of the captured data, as
+well as annotating the images (either using polygons or on a pixel-level). On the other hand, you
+have the ability to define and run command-line pipelines over your data to allow for repeatable
+data conversions and model building (using `scikit-learn <https://scikit-learn.org/>`__ or
+`Keras <https://keras.io/>`__).
+
+
+
 Image processing
 ================
 
@@ -49,7 +70,7 @@ geared towards academic experimentation and not production-ready. By employing c
 offered by `Docker <https://en.wikipedia.org/wiki/Docker_(software)>`__ and custom extensions,
 we are able to deploy these frameworks in production environments (for training and inference).
 
-We have experience in the following areas:
+We have extensive experience in the following areas:
 
 * image classification
 * object detection
