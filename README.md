@@ -16,6 +16,8 @@ Currently, a [github action](https://github.com/waikato-datamining/waikato-datam
 
 * Nikola (>= 8.0.3)
 * ghp-import2
+* Markdown (<3.4)
+* ruamel.yaml (for metadata support in galleries)
 
 
 ### Installation

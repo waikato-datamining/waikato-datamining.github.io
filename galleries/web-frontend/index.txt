@@ -1,0 +1,3 @@
+.. title: S3000 Web frontend
+
+Screenshots of our `S3000 <link://slug/s3000>`__ framework for processing spectral data.

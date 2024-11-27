@@ -16,7 +16,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "University of Waikato"  # (translatable)
+BLOG_AUTHOR = "Applied Machine Learning Group, University of Waikato"  # (translatable)
 BLOG_TITLE = "Data mining"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
@@ -25,7 +25,7 @@ SITE_URL = "https://www.data-mining.co.nz/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
 BLOG_EMAIL = "fracpete@waikato.ac.nz"
-BLOG_DESCRIPTION = "Commercial data mining activity at the University of Waikato"  # (translatable)
+BLOG_DESCRIPTION = "Commercial AI at the University of Waikato"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -141,25 +141,15 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/news/", "News"),
         ("/expertise/", "Expertise"),
+        ("/services/", "Services"),
+        ("/s3000/", "Products"),
+        ("/resources/", "Resources"),
         ((
-          ("/what-we-offer/", "What we offer"),
-          ("/s3000/", "S3000"),
-          ), "Services"),
-        ((
-          ("/software/", "Software"),
-          ("/docker-for-data-scientists/", "Docker for Data Scientists"),
-          ("/docker-images/", "Docker images"),
-          ("/applied-deep-learning/", "Applied Deep Learning"),
-          ("https://waikato-llm.github.io/audio-dataset-converter-examples/", "audio-dataset-converter examples"),
-          ("/image-dataset-converter-examples/", "image-dataset-converter examples"),
-          ("https://waikato-llm.github.io/llm-dataset-converter-examples/", "llm-dataset-converter examples"),
-          ("https://spectral-datasets.github.io/", "Spectral datasets"),
-          ), "Resources"),
-        ((
-          ("/people/", "People"),
-          ("/clients/", "Clients"),
-          ("/contact/", "Contact"),
-          ), "About"),
+          ("/about/", "About us"),
+          ("/team/", "Meet the Team"),
+          ("/clients/", "Our Clients"),
+          ("/contact/", "Contact us"),
+          ), "Who we are"),
     ),
 }
 
@@ -1232,7 +1222,7 @@ SHOW_SOURCELINK = False
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = '<link href="../assets/css/custom.css" rel="stylesheet" type="text/css">'
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)

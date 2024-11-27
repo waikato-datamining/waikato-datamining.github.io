@@ -1,35 +1,65 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2024-07-16 14:52:00 UTC+12:00
+.. date: 2024-11-25 14:52:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
 .. description: 
 .. type: text
-
-
-The following images are available from `Docker Hub <https://hub.docker.com/u/waikatodatamining>`__
-(`tutorial <https://www.data-mining.co.nz/applied-deep-learning/>`__):
-
-For some of the frameworks, we have tutorials available on how to use them in practice. This includes data
-preparation, training and making predictions.
-
-`https://www.data-mining.co.nz/applied-deep-learning/ <https://www.data-mining.co.nz/applied-deep-learning/>`__
+.. hidetitle: True
 
 
 .. raw:: html
 
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/resources">Resources</a></li>
+        <li class="breadcrumb-item"><a href="/software">Software</a></li>
+        <li class="breadcrumb-item"><a href="/docker-images">Docker images</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Docker Hub images</li>
+      </ol>
+    </nav>
+
+    <p>The following images are available from <a href="https://hub.docker.com/u/waikatodatamining">Docker Hub</a>:</p>
+
     <p>Click on one of the domain buttons to see the relevant frameworks and images:</p>
+
+    <!-- ------- -->
+    <!-- buttons -->
+    <!-- ------- -->
+
+    <div data-toggle="buttons">
+      <div class="mb-1">
+        <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#image-classification" aria-expanded="false" aria-controls="image-classification">
+          Image classification
+        </button>
+        <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#object-detection" aria-expanded="false" aria-controls="object-detection">
+          Object detection
+        </button>
+        <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#image-segmentation" aria-expanded="false" aria-controls="image-segmentation">
+          Image segmentation
+        </button>
+        <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#instance-segmentation" aria-expanded="false" aria-controls="instance-segmentation">
+          Instance segmentation
+        </button>
+      </div>
+      <div class="mb-1">
+        <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#large-language-models" aria-expanded="false" aria-controls="large-language-models">
+          Large language models (LLM)
+        </button>
+        <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#speech-to-text" aria-expanded="false" aria-controls="speech-to-text">
+          Speech-to-text (STT)
+        </button>
+        <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#text-classification" aria-expanded="false" aria-controls="text-classification">
+          Text classification
+        </button>
+      </div>
+    </div>
 
     <!-- -------------------- -->
     <!-- image classification -->
     <!-- -------------------- -->
 
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#image-classification" aria-expanded="false" aria-controls="image-classification">
-        Image classification
-      </button>
-    </p>
     <div class="collapse" id="image-classification">
       <div class="card card-body">
         <ul>
@@ -127,11 +157,6 @@ preparation, training and making predictions.
     <!-- object detection -->
     <!-- ---------------- -->
 
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#object-detection" aria-expanded="false" aria-controls="object-detection">
-        Object detection
-      </button>
-    </p>
     <div class="collapse" id="object-detection">
       <div class="card card-body">
         <ul>
@@ -281,11 +306,6 @@ preparation, training and making predictions.
     <!-- image segmentation -->
     <!-- ------------------ -->
 
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#image-segmentation" aria-expanded="false" aria-controls="image-segmentation">
-        Image segmentation
-      </button>
-    </p>
     <div class="collapse" id="image-segmentation">
       <div class="card card-body">
         <ul>
@@ -367,11 +387,6 @@ preparation, training and making predictions.
     <!-- instance segmentation -->
     <!-- --------------------- -->
 
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#instance-segmentation" aria-expanded="false" aria-controls="instance-segmentation">
-        Instance segmentation
-      </button>
-    </p>
     <div class="collapse" id="instance-segmentation">
       <div class="card card-body">
         <ul>
@@ -431,11 +446,6 @@ preparation, training and making predictions.
     <!-- large language models (LLM) -->
     <!-- --------------------------- -->
 
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#large-language-models" aria-expanded="false" aria-controls="large-language-models">
-        Large language models (LLM)
-      </button>
-    </p>
     <div class="collapse" id="large-language-models">
       <div class="card card-body">
         <ul>
@@ -491,11 +501,6 @@ preparation, training and making predictions.
     <!-- speech-to-text (STT) -->
     <!-- -------------------- -->
 
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#speech-to-text" aria-expanded="false" aria-controls="speech-to-text">
-        Speech-to-text (STT)
-      </button>
-    </p>
     <div class="collapse" id="speech-to-text">
       <div class="card card-body">
         <ul>
@@ -520,11 +525,6 @@ preparation, training and making predictions.
     <!-- text classification -->
     <!-- ------------------- -->
 
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#text-classification" aria-expanded="false" aria-controls="text-classification">
-        Text classification
-      </button>
-    </p>
     <div class="collapse" id="text-classification">
       <div class="card card-body">
         <ul>
@@ -541,3 +541,7 @@ preparation, training and making predictions.
       </div>
     </div>
 
+   <p/>
+
+
+For some of the frameworks, we have tutorials available on how to use them in practice. This includes data preparation, training and making predictions. Check out our `Applied Deep Learning </applied-deep-learning/>`__ site for more details.

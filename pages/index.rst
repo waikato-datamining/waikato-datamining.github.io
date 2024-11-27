@@ -1,32 +1,85 @@
 .. title: Welcome
 .. slug: index
-.. date: 2024-11-20 10:37:00 UTC+13:00
+.. date: 2024-11-26 10:37:00 UTC+13:00
 .. tags: 
 .. category: 
 .. link: 
 .. description: 
 .. type: text
+.. hidetitle: True
 
-.. image:: /images/uow.jpg
-   :height: 100px
-   :alt: University of Waikato crest
-   :align: right
+.. raw:: html
 
-The `Machine Learning Group <https://www.cs.waikato.ac.nz/ml/>`__ at the `University of Waikato <https://www.cs.waikato.ac.nz/>`__ 
-helped shape the open-source community in the machine learning space with its well-known machine 
-learning workbench `WEKA <https://www.cs.waikato.ac.nz/ml/weka/>`__. 
-WEKA was mainly aimed at batch-processing, though it also had some support for incremental learning and
-processing of data. Later on, `MOA <https://moa.cms.waikato.ac.nz/>`__ was developed to provide
-an optimized framework for data stream learning, which has become very popular in the open-source
-community.
 
-Since the mid 2000s, the **Applied Machine Learning Group** has been active in the commercial space,
-offering not only general machine learning consulting, but also software for processing spectral data 
-(managing data, building models, making predictions, tying into business processes). During that
-time, in order to prototype machine learning applications faster, the `ADAMS <https://adams.cms.waikato.ac.nz/>`__
-framework was born. ADAMS consists of more powerful data science tools than WEKA had to offer and
-a workflow engine for automating machine learning tasks that can be integrated into business processes.
+    <div class="card-group">
+      <div class="row row-cols-1">
 
-Artificial Intelligence (AI), or to be more precise `Deep Learning <https://en.wikipedia.org/wiki/Deep_learning>`__, 
-has been adopted as another tool for solving challenging problems successfully across data domains (e.g., spectral data, image processing).
-Deep Learning techniques can complement more traditional machine learning ones and we choose the most appropriate one based on the constraints of a project.
+        <div class="col mb-4">
+          <div class="card h-100 shadow bg-light">
+            <div class="card-body">
+              <h3 class="card-title">Embracing AI</h3>
+              <div class="row">
+                <div class="col-lg-8 mb-4">
+                  <div>
+                    <p class="lead">Utilizing artificial intelligence (AI) in your organization can lead to higher productivity and efficiency.</p>
+                    <p class="lead">We have extensive experience dealing with spectral data, hyperspectral data, computer vision and large language models (LLMs).</p>
+                    <a href="/expertise" class="btn btn-primary">Our Expertise</a>
+                    <a href="/services" class="btn btn-primary">Our Services</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div>
+                    <img alt="Artificial intelligence icon" class="align-right" src="../images/pexels-tara-winstead-8386440.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100 shadow bg-light">
+            <div class="card-body">
+              <h3 class="card-title">Spectral data</h3>
+              <div class="row">
+                <div class="col-lg-4 mb-4">
+                  <div>
+                    <img alt="Greenhouse" class="align-right" src="../images/pexels-nc-farm-bureau-mark-2886937.jpg">
+                  </div>
+                </div>
+                <div class="col-lg-8 mb-4">
+                  <div>
+                    <p class="lead">We are working with environmental laboratories internationally that use our S3000 software to process spectral data generated from plant and soil samples.</p>
+                    <p class="lead">Our flexible software gives the client fine-grained control over modeling and integrates easily into existing business processes.</p>
+                    <a href="/s3000" class="btn btn-primary">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100 shadow bg-light">
+            <div class="card-body">
+              <h3 class="card-title">Ready to talk?</h3>
+              <div class="row">
+                <div class="col-lg-8 mb-4">
+                  <div>
+                    <p class="lead">Give us a few details and we will quickly respond.</p>
+                    <p class="lead">You can email <strong>Peter Reutemann</strong> at <em>fracpete@waikato.ac.nz</em></p>
+                    <p class="lead">Or <strong>Dale Fletcher</strong> at <em>dale.fletcher@waikato.ac.nz</em></p>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div>
+                    <img alt="Conversation icon" class="align-right" src="../images/pexels-padrinan-1591062.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
