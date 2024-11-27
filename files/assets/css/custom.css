@@ -46,7 +46,7 @@ a:hover {
   width: 100%;
   max-width: 200px;
 }
-.image-block:hover img {
+.hover-shadow figure:hover img {
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
@@ -63,7 +63,7 @@ a:hover {
   width: 100%;
   max-width: 200px;
 }
-.hover-shadow figure:hover img {
+.image-block:hover img {
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
