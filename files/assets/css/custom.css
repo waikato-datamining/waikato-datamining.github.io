@@ -46,6 +46,23 @@ a:hover {
   width: 100%;
   max-width: 200px;
 }
+.image-block:hover img {
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  width: 100%;
+  max-width: 200px;
+}
+
+/* shadow when hovering over gallery img. */
+.image-block img {
+	opacity: 1;
+  width: 100%;
+  max-width: 200px;
+}
 .hover-shadow figure:hover img {
   -o-transition:.3s;
   -ms-transition:.3s;
