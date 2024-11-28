@@ -25,6 +25,7 @@
                     <p class="lead">We have extensive experience dealing with spectral data, hyperspectral data, computer vision and large language models (LLMs).</p>
                     <a href="/expertise" class="btn btn-primary">Our Expertise</a>
                     <a href="/services" class="btn btn-primary">Our Services</a>
+                    <a href="/team" class="btn btn-primary">Our Team</a>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-4">
