@@ -27,7 +27,7 @@
 
         <div class="col mb-4">
           <div class="card h-100 shadow">
-            <div class="card-header d-flex justify-content-between align-items-center">In-house Registry</div>
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">In-house Registry</h3></div><img src="/images/adams_logo_no_text.png" height="24"/></div>
             <div class="card-body d-flex flex-column">
               <p class="card-text">The Docker images are hosted on campus on our own infrastructure, with any base images cached here as well. From within New Zealand, this could result in faster downloads.</p>
               <a href="/docker-images-inhouse/" class="btn btn-primary stretched-link mt-auto">More...</a>
@@ -37,7 +37,7 @@
 
         <div class="col mb-4">
           <div class="card h-100 shadow">
-            <div class="card-header d-flex justify-content-between align-items-center">Docker Hub</div>
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Docker Hub</h3></div><img src="/images/adams_logo_no_text.png" height="24"/></div>
             <div class="card-body d-flex flex-column">
               <p class="card-text">Using Docker's <a href="https://hub.docker.com/">hosting facility</a>, this approach will give you access to our Docker images anywhere in the world.</p>
               <a href="/docker-images-dockerhub/" class="btn btn-primary stretched-link mt-auto">More...</a>
