@@ -11,9 +11,17 @@
   background-color: #005885;
   border-color: #005885;
 }
-.btn-primary:not(:disabled):not(.disabled):active {
+.btn-primary:focus {
   background-color: #005885;
-  border-color: #0087cc;
+  border-color: #005885;
+}
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: #002e46;
+  border-color: #002e46;
+}
+.btn-primary:not(:disabled):not(.disabled).active:hover {
+  background-color: #004162;
+  border-color: #004162;
 }
 
 /* titles */
