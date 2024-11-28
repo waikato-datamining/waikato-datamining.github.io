@@ -16,7 +16,7 @@
         <li class="breadcrumb-item"><a href="/resources">Resources</a></li>
         <li class="breadcrumb-item"><a href="/software">Software</a></li>
         <li class="breadcrumb-item"><a href="/docker-images">Docker images</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Docker Hub images</li>
+        <li class="breadcrumb-item active" aria-current="page">Docker Hub</li>
       </ol>
     </nav>
 
