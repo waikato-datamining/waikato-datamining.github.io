@@ -1,0 +1,7 @@
+---
+name: lims_collect.png
+caption: LIMS outputs spectra/co-variables via files/webservice and receives the predictions back via files/webservice
+---
+name: lims_conversion.png
+caption: LIMS outputs spectra for two different instruments, with "instrument 1" passing through a conversion first
+---
