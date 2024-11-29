@@ -1,0 +1,3 @@
+.. title: Use cases
+
+Use case diagrams of how `S3000 <link://slug/s3000>`__ can interact with your business processes, e.g., LIMS.

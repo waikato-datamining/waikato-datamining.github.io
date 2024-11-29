@@ -30,28 +30,21 @@ benefits:
 .. raw:: html
 
     <div class="card-group">
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
 
         <div class="col mb-4">
           <div class="card h-100 shadow">
-            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Platform</h3></div><img src="/images/3018534_ambience_context_fix_framework_options_icon.png" height="24"/></div>
-            <div class="card-body">
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Use Cases</h3></div><img src="/images/1564501_business_chart_dashboard_graph_icon.png" height="24"/></div>
+            <div class="card-body d-flex flex-column">
               <p class="card-text">
                 <ul>
-                  <li>Open-source, cross-platform code base written in Java</i>
-                  <li>Extensible plugin-architecture for client-specific customizations</i>
-                  <li>Easy integration into existing business processes</i>
-                  <li>Ability to add custom tasks via external ADAMS workflows</i>
-                  <li>Scripting support via <a href="https://groovy-lang.org/">Groovy</a></i>
-                  <li>Java frontend for configuration models and tasks</i>
-                  <li>Web frontend for basic administrative and monitoring tasks</i>
-                  <li>24/7 operation of prediction backend</i>
+                  <li>Calibrations built from in-house data</i>
+                  <li>Integration into business processes, e.g., in-house LIMS</i>
+                  <li>Data fusion support, e.g., NIR+XRF</i>
+                  <li>Instrument conversions, between models or manufacturers</li>
                 </ul>
               </p>
-              <div class="text-center">
-                <a href="/galleries/java-frontend" class="btn btn-primary">Java frontend</a>
-                <a href="/galleries/web-frontend" class="btn btn-primary">Web frontend</a>
-              </div>
+              <p class="text-center"><a href="/galleries/use-cases" class="btn btn-primary">Diagrams</a></p>
             </div>
           </div>
         </div>
@@ -62,30 +55,13 @@ benefits:
             <div class="card-body d-flex flex-column">
               <p class="card-text">
                 <ul>
-                  <li>Unlimited number of models</i>
+                  <li>Unlimited number of calibrations</i>
                   <li>Unlimited number of import tasks</i>
-                  <li>Automated/scheduled training possible</i>
+                  <li>Automated/scheduled training</i>
                   <li>Provenance for tracing samples through the system</i>
                   <li>Flag unreliable predictions</i>
-                  <li>Generate PDF report for models (settings/performance)</i>
+                  <li>Generate PDF report from settings and performance of calibrations</i>
                   <li>Export of parameter settings for accreditation purposes</i>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-4">
-          <div class="card h-100 shadow">
-            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Data</h3></div><img src="/images/10131953_data_line_icon.png" height="24"/></div>
-            <div class="card-body d-flex flex-column">
-              <p class="card-text">
-                <ul>
-                  <li>Incorporate wet chemistry co-variables to improve models</i>
-                  <li>Supports common spectral file formats like CAL, JCamp-DX, NIR, Opus, SPA, SPC, spreadsheet-based, Unscrambler</i>
-                  <li>Supports data retrieval from databases like MS SQL Server, MySQL, PostgreSQL via <a href=""https://en.wikipedia.org/wiki/Java_Database_Connectivity>JDBC</a></i>
-                  <li>Data fusion support (e.g., for NIR+XRF)</i>
-                  <li>Instrument conversions (e.g., between manufacturers)</li>
                 </ul>
               </p>
             </div>
@@ -98,12 +74,60 @@ benefits:
             <div class="card-body d-flex flex-column">
               <p class="card-text">
                 <ul>
-                  <li>Tailored support contract</i>
-                  <li>Expert assistance for set up and ongoing support</i>
-                  <li>Training</i>
+                  <li>Expert assistance for set up</i>
+                  <li>Tailored contract for ongoing support</i>
+                  <li>Training of staff</i>
                   <li>Documentation of customizations</i>
+                  <li>Calibration optimizations</i>
                   <li>Stability and reliability of provider</i>
                 </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Platform</h3></div><img src="/images/3018534_ambience_context_fix_framework_options_icon.png" height="24"/></div>
+            <div class="card-body">
+              <p class="card-text">
+                <ul>
+                  <li>Open-source, cross-platform code base written in Java</i>
+                  <li>Extensible plugin-architecture for client-specific customizations</i>
+                  <li>Ability to add custom tasks via external ADAMS workflows</i>
+                  <li>Scripting support via <a href="https://groovy-lang.org/">Groovy</a></i>
+                  <li>Java frontend: configuration of calibrations and tasks</i>
+                  <li>Web frontend: administrative and monitoring tasks</i>
+                  <li>24/7 operation of prediction backend</i>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Data</h3></div><img src="/images/10131953_data_line_icon.png" height="24"/></div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text">
+                <ul>
+                  <li>Incorporate wet chemistry co-variables to improve calibrations</i>
+                  <li>Supports common spectral file formats like CAL, JCamp-DX, NIR, Opus, SPA, SPC, spreadsheet-based, Unscrambler</i>
+                  <li>Supports data retrieval from databases like MS SQL Server, MySQL, PostgreSQL via <a href=""https://en.wikipedia.org/wiki/Java_Database_Connectivity>JDBC</a></i>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Screenshots</h3></div><img src="/images/9111027_screenshot_icon.png" height="24"/></div>
+            <div class="card-body">
+              <p class="card-text">
+                <p>Example configuration:</p>
+                <p><a href="/galleries/java-frontend" class="btn btn-primary">Java frontend</a></p>
+                <p><a href="/galleries/web-frontend" class="btn btn-primary">Web frontend</a></p>
               </p>
             </div>
           </div>
