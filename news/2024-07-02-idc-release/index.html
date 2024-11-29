@@ -10,7 +10,8 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="https://www.data-mining.co.nz/news/2024-07-02-idc-release/">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Waikato">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Applied Machine Learning Group, University of Waikato">
 <link rel="prev" href="../2024-06-18-fast-opex/" title="fast-opex released" type="text/html">
 <link rel="next" href="../2024-07-05-ldc-release/" title="llm-dataset-converter release" type="text/html">
 <meta property="og:site_name" content="Data mining">
@@ -49,33 +50,23 @@ bg-dark
                 </li>
 <li class="nav-item">
 <a href="../../expertise/" class="nav-link">Expertise</a>
+                </li>
+<li class="nav-item">
+<a href="../../services/" class="nav-link">Services</a>
+                </li>
+<li class="nav-item">
+<a href="../../s3000/" class="nav-link">Products</a>
+                </li>
+<li class="nav-item">
+<a href="../../resources/" class="nav-link">Resources</a>
             </li>
 <li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who we are</a>
             <div class="dropdown-menu">
-                    <a href="../../what-we-offer/" class="dropdown-item">What we offer</a>
-                    <a href="../../s3000/" class="dropdown-item">S3000</a>
-            </div>
-            </li>
-<li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-            <div class="dropdown-menu">
-                    <a href="../../software/" class="dropdown-item">Software</a>
-                    <a href="../../docker-for-data-scientists/" class="dropdown-item">Docker for Data Scientists</a>
-                    <a href="../../docker-images/" class="dropdown-item">Docker images</a>
-                    <a href="../../applied-deep-learning/" class="dropdown-item">Applied Deep Learning</a>
-                    <a href="https://waikato-llm.github.io/audio-dataset-converter-examples/" class="dropdown-item">audio-dataset-converter examples</a>
-                    <a href="../../image-dataset-converter-examples/" class="dropdown-item">image-dataset-converter examples</a>
-                    <a href="https://waikato-llm.github.io/llm-dataset-converter-examples/" class="dropdown-item">llm-dataset-converter examples</a>
-                    <a href="https://spectral-datasets.github.io/" class="dropdown-item">Spectral datasets</a>
-            </div>
-            </li>
-<li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-            <div class="dropdown-menu">
-                    <a href="../../people/" class="dropdown-item">People</a>
-                    <a href="../../clients/" class="dropdown-item">Clients</a>
-                    <a href="../../contact/" class="dropdown-item">Contact</a>
+                    <a href="../../about/" class="dropdown-item">About us</a>
+                    <a href="../../team/" class="dropdown-item">Meet the Team</a>
+                    <a href="../../clients/" class="dropdown-item">Our Clients</a>
+                    <a href="../../contact/" class="dropdown-item">Contact us</a>
             </div>
 
                 
@@ -96,7 +87,7 @@ bg-dark
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    University of Waikato
+                    Applied Machine Learning Group, University of Waikato
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -112,11 +103,10 @@ bg-dark
 and, apart from fixing bugs, we also keep adding useful stuff.</p>
 <p>The version of the <cite>image-dataset-converter-all</cite> library stands now at <strong>0.0.3</strong>.</p>
 <p>Since version 0.0.2 the following changes occurred:</p>
-<ul>
+<ul class="simple">
 <li>
 <p>image-dataset-converter (core library):</p>
-<blockquote>
-<ul class="simple">
+<ul>
 <li><p>switched to the <cite>fast-opex</cite> library</p></li>
 <li><p>helper method <cite>from_indexedpng</cite> was using incorrect label index (off by 1)</p></li>
 <li><p><cite>Data.save_image</cite> method now ensures that source/target files exist before calling <cite>os.path.samefile</cite></p></li>
@@ -127,7 +117,6 @@ and, apart from fixing bugs, we also keep adding useful stuff.</p>
 <li><p>the bluechannel/grayscale/indexed-png image segmentation readers/writers can use a value other than 0 now for the background</p></li>
 <li><p><cite>split</cite> filter has been renamed to <cite>split-records</cite></p></li>
 </ul>
-</blockquote>
 </li>
 <li><p>image-dataset-converter-imgaug: added <cite>find-contours</cite> filter for turning blobs in image segmentation annotations into object detection polygons.</p></li>
 <li><p>image-dataset-converter-imgvis:  added <cite>add-center-overlay-od</cite> overlay filter</p></li>
@@ -145,7 +134,7 @@ and, apart from fixing bugs, we also keep adding useful stuff.</p>
                 <a href="../2024-07-05-ldc-release/" rel="next" title="llm-dataset-converter release">Next post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
-            Contents © 2024         <a href="mailto:fracpete@waikato.ac.nz">University of Waikato</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2024 Applied Machine Learning Group, University of Waikato - <a href="../../contact">Contact Us</a> - Generated with <a href="https://getnikola.com" rel="nofollow">Nikola</a>
             
             
         </footer>

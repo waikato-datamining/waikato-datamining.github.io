@@ -10,7 +10,8 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://www.data-mining.co.nz/s3000/">
-<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Waikato">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Applied Machine Learning Group, University of Waikato">
 <meta property="og:site_name" content="Data mining">
 <meta property="og:title" content="S3000">
 <meta property="og:url" content="https://www.data-mining.co.nz/s3000/">
@@ -18,9 +19,9 @@
 spectroscopy (NIR, MIR,
 LIBS or
 XRF).
-Instead of using calibrations that the NIR manufact">
+Instead of using calibrations that the manufacturer">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2022-12-16T10:00:00+13:00">
+<meta property="article:published_time" content="2024-11-26T15:00:00+13:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -47,33 +48,23 @@ bg-dark
                 </li>
 <li class="nav-item">
 <a href="../expertise/" class="nav-link">Expertise</a>
+                </li>
+<li class="nav-item">
+<a href="../services/" class="nav-link">Services</a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">Products <span class="sr-only">(active)</span></a>
+                </li>
+<li class="nav-item">
+<a href="../resources/" class="nav-link">Resources</a>
             </li>
 <li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who we are</a>
             <div class="dropdown-menu">
-                    <a href="../what-we-offer/" class="dropdown-item">What we offer</a>
-                    <a href="." class="dropdown-item active">S3000 <span class="sr-only">(active)</span></a>
-            </div>
-            </li>
-<li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-            <div class="dropdown-menu">
-                    <a href="../software/" class="dropdown-item">Software</a>
-                    <a href="../docker-for-data-scientists/" class="dropdown-item">Docker for Data Scientists</a>
-                    <a href="../docker-images/" class="dropdown-item">Docker images</a>
-                    <a href="../applied-deep-learning/" class="dropdown-item">Applied Deep Learning</a>
-                    <a href="https://waikato-llm.github.io/audio-dataset-converter-examples/" class="dropdown-item">audio-dataset-converter examples</a>
-                    <a href="../image-dataset-converter-examples/" class="dropdown-item">image-dataset-converter examples</a>
-                    <a href="https://waikato-llm.github.io/llm-dataset-converter-examples/" class="dropdown-item">llm-dataset-converter examples</a>
-                    <a href="https://spectral-datasets.github.io/" class="dropdown-item">Spectral datasets</a>
-            </div>
-            </li>
-<li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-            <div class="dropdown-menu">
-                    <a href="../people/" class="dropdown-item">People</a>
-                    <a href="../clients/" class="dropdown-item">Clients</a>
-                    <a href="../contact/" class="dropdown-item">Contact</a>
+                    <a href="../about/" class="dropdown-item">About us</a>
+                    <a href="../team/" class="dropdown-item">Meet the Team</a>
+                    <a href="../clients/" class="dropdown-item">Our Clients</a>
+                    <a href="../contact/" class="dropdown-item">Contact us</a>
             </div>
 
                 
@@ -90,42 +81,177 @@ bg-dark
         
         
         
-<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">S3000</a></h1>
-
-        
-
-    </header><div class="e-content entry-content" itemprop="articleBody text">
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header></header><div class="e-content entry-content" itemprop="articleBody text">
     <p>Our commercial S3000 software is aimed at environmental laboratories that analyze soil and plant samples using
 spectroscopy (<a class="reference external" href="https://en.wikipedia.org/wiki/Near-infrared_spectroscopy">NIR</a>, MIR,
 <a class="reference external" href="https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy">LIBS</a> or
 <a class="reference external" href="https://en.wikipedia.org/wiki/X-ray_fluorescence">XRF</a>).</p>
-<p>Instead of using calibrations that the NIR manufacturers sell with their instruments, our system offers a bigger
+<p>Instead of using calibrations that the manufacturers sell with their instruments, our system offers a bigger
 range of pre-processing techniques and sophisticated algorithms (due to our background in machine learning).</p>
-<p>S3000 is based on our <a class="reference external" href="https://adams.cms.waikato.ac.nz/">ADAMS</a> workflow software and offers the following
+<p>The software is based on our <a class="reference external" href="https://adams.cms.waikato.ac.nz/">ADAMS</a> workflow software and offers the following
 benefits:</p>
-<ul class="simple">
-<li><p>cross-platform (Linux, Windows, Mac)</p></li>
-<li><p>easy to extend plugin-architecture for client-specific customizations</p></li>
-<li><p>easy integration into existing business processes</p></li>
-<li><p>can make use of co-variables determined in the lab to improve models</p></li>
-<li><p>automated/scheduled training possible</p></li>
-<li><p>can generate PDF report for models, incl. parameter settings and performance (useful for accreditation)</p></li>
-<li><p>can flag unreliable predictions</p></li>
-<li><p>supports common spectral file formats (CAL, JCamp-DX, NIR, Opus, SPA, SPC, spreadsheet-based, Unscrambler)</p></li>
-<li><p>supports data retrieval from databases via <a class="reference external" href="https://en.wikipedia.org/wiki/Java_Database_Connectivity">JDBC</a></p></li>
-<li><p>offers provenance, i.e., tracing samples as they go through the system</p></li>
-<li><p>(optional) web-interface for basic administrative and monitoring tasks</p></li>
-<li><p>unlimited number of models</p></li>
-<li><p>unlimited number of import tasks</p></li>
-<li><p>ability to add custom tasks via external ADAMS workflows</p></li>
-<li><p>scripting support via <a class="reference external" href="https://groovy-lang.org/">Groovy</a></p></li>
-<li><p>data fusion support (e.g., for NIR+XRF)</p></li>
+<!-- Notes on bootstrap:
+- "card h-100" - makes the cards to 100% height of parent
+- "row-cols-sm-1" - on small screen use one column (-md-/medium, -lg-/large, -xl-/extra-large)
+- "mb-4" - sets margin/bottom to 4
+- "card-body d-flex flex-column" - ensures that all columns are same height
+- source: https://stackoverflow.com/a/48406823/4698227 -->
+<div class="card-group">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+
+    <div class="col mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-header d-flex justify-content-between align-items-center">
+<div><h4 class="display-5">Use Cases</h4></div>
+<img src="../images/1564501_business_chart_dashboard_graph_icon.png" height="24">
+</div>
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">
+            </p>
+<ul>
+<li>Calibrations built from in-house data
+              </li>
+<li>Integration into business processes, e.g., in-house LIMS
+              </li>
+<li>Data fusion support, e.g., NIR+XRF
+              </li>
+<li>Instrument conversions, between models or manufacturers</li>
+            </ul>
+<p class="text-center"><a href="../galleries/use-cases" class="btn btn-primary">Diagrams</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-header d-flex justify-content-between align-items-center">
+<div><h4 class="display-5">Operation</h4></div>
+<img src="../images/2362211_aim_goal_mission_object_objective_icon.png" height="24">
+</div>
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">
+            </p>
+<ul>
+<li>Unlimited number of calibrations
+              </li>
+<li>Unlimited number of import tasks
+              </li>
+<li>Automated/scheduled training
+              </li>
+<li>Provenance for tracing samples through the system
+              </li>
+<li>Flag unreliable predictions
+              </li>
+<li>Generate PDF report from settings and performance of calibrations
+              </li>
+<li>Export of parameter settings for accreditation purposes
+            </li>
 </ul>
 </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-header d-flex justify-content-between align-items-center">
+<div><h4 class="display-5">Support</h4></div>
+<img src="../images/9054987_bx_support_icon.png" height="24">
+</div>
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">
+            </p>
+<ul>
+<li>Expert assistance for set up
+              </li>
+<li>Tailored contract for ongoing support
+              </li>
+<li>Training of staff
+              </li>
+<li>Documentation of customizations
+              </li>
+<li>Calibration optimizations
+              </li>
+<li>Stability and reliability of provider
+            </li>
+</ul>
+</div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-header d-flex justify-content-between align-items-center">
+<div><h4 class="display-5">Platform</h4></div>
+<img src="../images/3018534_ambience_context_fix_framework_options_icon.png" height="24">
+</div>
+        <div class="card-body">
+          <p class="card-text">
+            </p>
+<ul>
+<li>Open-source, cross-platform code base written in Java
+              </li>
+<li>Extensible plugin-architecture for client-specific customizations
+              </li>
+<li>Ability to add custom tasks via external ADAMS workflows
+              </li>
+<li>Scripting support via <a href="https://groovy-lang.org/">Groovy</a>
+              </li>
+<li>Java frontend: configuration of calibrations and tasks
+              </li>
+<li>Web frontend: administrative and monitoring tasks
+              </li>
+<li>24/7 operation of prediction backend
+            </li>
+</ul>
+</div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-header d-flex justify-content-between align-items-center">
+<div><h4 class="display-5">Data</h4></div>
+<img src="../images/10131953_data_line_icon.png" height="24">
+</div>
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">
+            </p>
+<ul>
+<li>Incorporate wet chemistry co-variables to improve calibrations
+              </li>
+<li>Supports common spectral file formats like CAL, JCamp-DX, NIR, Opus, SPA, SPC, spreadsheet-based, Unscrambler
+              </li>
+<li>Supports data retrieval from databases like MS SQL Server, MySQL, PostgreSQL via <a href="." https:>JDBC</a>
+            </li>
+</ul>
+</div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-header d-flex justify-content-between align-items-center">
+<div><h4 class="display-5">Screenshots</h4></div>
+<img src="../images/9111027_screenshot_icon.png" height="24">
+</div>
+        <div class="card-body">
+          <p class="card-text">
+            </p>
+<p>Example configuration:</p>
+            <p><a href="../galleries/java-frontend" class="btn btn-primary">Java frontend</a></p>
+            <p><a href="../galleries/web-frontend" class="btn btn-primary">Web frontend</a></p>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
     
 
 </article><!--End of body content--><footer id="footer">
-            Contents © 2024         <a href="mailto:fracpete@waikato.ac.nz">University of Waikato</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2024 Applied Machine Learning Group, University of Waikato - <a href="../contact">Contact Us</a> - Generated with <a href="https://getnikola.com" rel="nofollow">Nikola</a>
             
             
         </footer>
