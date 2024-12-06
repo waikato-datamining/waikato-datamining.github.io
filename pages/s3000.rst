@@ -82,6 +82,7 @@ benefits:
                   <li>Stability and reliability of provider</i>
                 </ul>
               </p>
+              <p class="text-center"><a href="/contact" class="btn btn-primary">Contact us</a></p>
             </div>
           </div>
         </div>
