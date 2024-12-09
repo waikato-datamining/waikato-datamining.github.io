@@ -950,7 +950,88 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date} {author} - <a href="/contact">Contact us</a> - Generated with <a href="https://getnikola.com" rel="nofollow">Nikola</a>'
+#CONTENT_FOOTER = 'Contents &copy; {date} {author} - <a href="/contact">Contact us</a> - Generated with <a href="https://getnikola.com" rel="nofollow">Nikola</a>'
+CONTENT_FOOTER = '''
+<footer id="footer" class="footer-1">
+
+    <div class="main-footer widgets-dark typo-light">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title">AML Group<span></span></h5>
+                        <p>The Applied Machine Learning Group offers consulting and products in the commercial machine learning space. Operating out of the <a href="https://waikato.ac.nz/">University of Waikato</a></p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Quick Links<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <a href="/news/">News</a>
+                            </li>
+                            <li>
+                                <a href="/expertise/">Expertise</a>
+                            </li>
+                            <li>
+                                <a href="/services/">Services</a>
+                            </li>
+                            <li>
+                                <a href="/s3000/">Products</a>
+                            </li>
+                            <li>
+                                <a href="/resources/">Resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Who we are<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <a href="/about/">About us</a>
+                            </li>
+                            <li>
+                                <a href="/team/">Meet the team</a>
+                            </li>
+                            <li>
+                                <a href="/clients/">Out Clients</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Contact us<span></span></h5>
+                        <ul>
+                            <li><a href="https://profiles.waikato.ac.nz/peter.reutemann">Peter Reutemann</a><br/>fracpete@waikato.ac.nz<p/>
+                            <li><a href="https://profiles.waikato.ac.nz/dale.fletcher">Dale Fletcher</a><br/>dale.fletcher@waikato.ac.nz
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; {date} {author}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+'''
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
