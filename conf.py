@@ -1001,7 +1001,7 @@ CONTENT_FOOTER = '''
                                 <a href="/team/">Meet the team</a>
                             </li>
                             <li>
-                                <a href="/clients/">Out Clients</a>
+                                <a href="/clients/">Our Clients</a>
                             </li>
                         </ul>
                     </div>
