@@ -1,6 +1,6 @@
 .. title: llm-dataset-converter release
 .. slug: 2025-01-07-ldc-release
-.. date: 2025-01-07 13:02:00 UTC+13:00
+.. date: 2025-01-07 10:20:00 UTC+13:00
 .. tags: release
 .. category: software
 .. link: 
