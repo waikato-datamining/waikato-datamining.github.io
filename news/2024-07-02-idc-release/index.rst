@@ -7,7 +7,7 @@
 .. description: 
 .. type: text
 
-Out `image-dataset-converter <https://github.com/waikato-datamining/image-dataset-converter>`__ library keeps evolving
+Our `image-dataset-converter <https://github.com/waikato-datamining/image-dataset-converter>`__ library keeps evolving
 and, apart from fixing bugs, we also keep adding useful stuff.
 
 The version of the `image-dataset-converter-all` library stands now at **0.0.3**.
