@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 17 Jan 2025 02:06:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Yolov10 Docker images available</title><link>https://www.data-mining.co.nz/news/2024-07-16-yolov10-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for the latest &lt;a class="reference external" href="https://github.com/THU-MIG/yolov10"&gt;Yolov10&lt;/a&gt; code base are now available.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 05 Feb 2025 04:20:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PaddleSeg 2.1.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-02-05-paddleseg-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg"&gt;PaddleSeg&lt;/a&gt;
+image segmentation framework, using the 2.10.0 release of PaddleSeg (code base as of 2024-11-06):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddleseg/tree/main/2.10.0_cuda11.8"&gt;CUDA 11.8&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddleseg/tree/main/2.10.0_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-05-paddleseg-docker/</guid><pubDate>Wed, 05 Feb 2025 04:02:00 GMT</pubDate></item><item><title>Yolov10 Docker images available</title><link>https://www.data-mining.co.nz/news/2024-07-16-yolov10-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for the latest &lt;a class="reference external" href="https://github.com/THU-MIG/yolov10"&gt;Yolov10&lt;/a&gt; code base are now available.&lt;/p&gt;
 &lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10"&gt;github.com/waikato-datamining/pytorch/tree/master/yolov10&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
@@ -123,23 +128,4 @@ and is now available via the following &lt;a class="reference external" href="ht
 &lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.7.0_cuda11.1_finetune-gpt2xl_20220924&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-28-finetune-gpt2xl-docker/</guid><pubDate>Mon, 28 Aug 2023 03:53:00 GMT</pubDate></item><item><title>Segment-Anything in High Quality Docker images available</title><link>https://www.data-mining.co.nz/news/2023-08-28-sam-hq-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/SysCV/sam-hq"&gt;Segment-Anything in High Quality&lt;/a&gt; (SAM-HQ) are now available.&lt;/p&gt;
-&lt;p&gt;Just like &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-04-20-sam-docker/"&gt;SAM&lt;/a&gt;, SAM-HQ is a great tool for aiding a human annotating images for image segmentation or object detection, as it can determine
-a relatively good outline of an object based on either a point or a box. Only pre-trained models are available.&lt;/p&gt;
-&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything-hq"&gt;github.com/waikato-datamining/pytorch/tree/master/segment-anything-hq&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam-hq:2023-08-17_cuda11.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam-hq:2023-08-17_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam-hq:2023-08-17_cuda11.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-sam-hq:2023-08-17_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-28-sam-hq-docker/</guid><pubDate>Mon, 28 Aug 2023 03:16:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-08-28-finetune-gpt2xl-docker/</guid><pubDate>Mon, 28 Aug 2023 03:53:00 GMT</pubDate></item></channel></rss>
