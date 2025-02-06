@@ -14,3 +14,6 @@ image segmentation framework, using the 2.10.0 release of PaddleSeg (code base a
 * `CUDA 11.8 <https://github.com/waikato-datamining/paddleseg/tree/main/2.10.0_cuda11.8>`__
 * `CPU <https://github.com/waikato-datamining/paddleseg/tree/main/2.10.0_cpu>`__
 
+A tutorial is available from here:
+
+`https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/ <https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/>`__
