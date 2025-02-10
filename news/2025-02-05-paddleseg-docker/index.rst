@@ -1,4 +1,4 @@
-.. title: PaddleSeg 2.1.0 Docker images available
+.. title: PaddleSeg 2.10.0 Docker images available
 .. slug: 2025-02-05-paddleseg-docker
 .. date: 2025-02-05 17:02:00 UTC+13:00
 .. tags: release
