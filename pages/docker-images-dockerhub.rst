@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2025-01-25 14:57:00 UTC+13:00
+.. date: 2025-02-10 14:45:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -107,6 +107,19 @@
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/blob/master/1.2.0_cpu">MMPretrain 1.2.0, PyTorch 1.11 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmpretrain:1.2.0_cpu</span></code></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>PyTorch/PaddleClas</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/blob/master/2.6.0_cuda11.8">PaddleClas 2.6.0, PyTorch 2.5.1 and CUDA 11.8</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/paddleclas:2.6.0_cuda11.8</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/blob/master/2.6.0_cpu">PaddleClas 2.6.0, PyTorch 1.11.0 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/paddleclas:2.6.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
