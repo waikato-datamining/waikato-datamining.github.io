@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2025-02-10 14:45:00 UTC+13:00
+.. date: 2025-02-18 11:14:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -79,14 +79,6 @@
           <li>
             <p>PyTorch/MMClassification</p>
             <ul>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.23.1_cuda11.1">MMClassification 0.23.1, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmclassification:0.23.1_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.23.1_cpu">MMClassification 0.23.1, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmclassification:0.23.1_cpu</span></code></p>
-              </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.25.0_cuda11.1">MMClassification 0.25.0, PyTorch 1.9 and CUDA 11.1</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmclassification:0.25.0_cuda11.1</span></code></p>
@@ -177,61 +169,12 @@
             <p>PyTorch/MMDetection</p>
             <ul>
               <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/tree/master/2020-03-01">MMDetection 2020-03-01, PyTorch 1.3 and CUDA 10.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2020-03-01</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0">MMDetection 2.16.0, PyTorch 1.6 and CUDA 10.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.16.0</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0_cuda11.1">MMDetection 2.16.0, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.16.0_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.16.0_cpu">MMDetection 2.16.0, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.16.0_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.18.1_cuda11.1">MMDetection 2.18.1, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.18.1_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.18.1_cpu">MMDetection 2.18.1, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.18.1_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.24.1_cuda11.1">MMDetection 2.24.1, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.24.1_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.24.1_cpu">MMDetection 2.24.1, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.24.1_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.27.0_cuda11.1">MMDetection 2.27.0, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.27.0_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/2.27.0_cpu">MMDetection 2.27.0, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:2.27.0_cpu</span></code></p>
-              </li>
-              <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/3.1.0_cuda11.3">MMDetection 3.1.0, PyTorch 1.12 and CUDA 11.3</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:3.1.0_cuda11.3</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/3.1.0_cpu">MMDetection 3.1.0, PyTorch 1.12 and CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmdetection:3.1.0_cpu</span></code></p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>Tensorflow</p>
-            <ul>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31">Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/tf_object_detection:1.14.0_2019-08-31</span></code></p>
               </li>
             </ul>
           </li>
@@ -251,30 +194,6 @@
           <li>
             <p>PyTorch/Yolov5</p>
             <ul>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-01-21_cpu">Yolov5 2022-01-21, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-01-21_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-01-21_cuda11.1">Yolov5 2022-01-21, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-01-21_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-05-31_cpu">Yolov5 2022-05-31, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-05-31_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-05-31_cuda11.1">Yolov5 2022-05-31, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-05-31_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-09-29_cpu">Yolov5 2022-09-29, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-09-29_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-09-29_cuda11.1">Yolov5 2022-09-29, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-09-29_cuda11.1</span></code></p>
-              </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cpu">Yolov5 2022-11-05, CPU</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-11-05_cpu</span></code></p>
@@ -339,34 +258,6 @@
             <p>PyTorch</p>
             <ul>
               <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segmentation_models/0.2.1">Segmentation Models 0.2.1, PyTorch 1.9.0, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/segmentation_models:0.2.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.25.0_cuda11.1">MMSegmentation 0.25.0, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.25.0_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.25.0_cpu">MMSegmentation 0.25.0, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.25.0_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.30.0_cuda11.1">MMSegmentation 0.30.0, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.30.0_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/0.30.0_cpu">MMSegmentation 0.30.0, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:0.30.0_cpu</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/1.1.0_cuda11.1">MMSegmentation 1.1.0, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:1.1.0_cuda11.1</span></code></p>
-              </li>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/1.1.0_cpu">MMSegmentation 1.1.0, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:1.1.0_cpu</span></code></p>
-              </li>
-              <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/1.2.2-3_cuda11.3">MMSegmentation 1.2.2, PyTorch 1.11.0 and CUDA 11.3</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:1.2.2-3_cuda11.3</span></code></p>
               </li>
@@ -423,10 +314,6 @@
             <p>PyTorch/Detectron2</p>
             <ul>
               <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.3">Detectron2 0.3, PyTorch 1.6, CUDA 10.1</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/detectron2:0.3</span></code></p>
-              </li>
-              <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.5">Detectron2 0.5, PyTorch 1.9, CUDA 11.1</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/detectron2:0.5</span></code></p>
               </li>
@@ -455,15 +342,6 @@
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cuda11.1">Yolov5 2022-11-05, CUDA 11.1</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-11-05_cuda11.1</span></code></p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>Tensorflow/Object Detection API</p>
-            <ul>
-              <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/object_detection/1.14.0_2019-08-31">Tensorflow 1.14, Object Detection API 2019-08-31, CUDA 10.0</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/tf_object_detection:1.14.0_2019-08-31</span></code></p>
               </li>
             </ul>
           </li>
