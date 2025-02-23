@@ -198,6 +198,19 @@
             </ul>
           </li>
           <li>
+            <p>PyTorch/PaddleDetection</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cpu">PaddleDetection 2.8.0, CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddledetection:2.8.0_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cuda11.8">PaddleDetection 2.8.0, CUDA 11.8</a></p>
+                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddledetection:2.8.0_cuda11.8</span></code></p>
+              </li>
+            </ul>
+          </li>
+          <li>
             <p>PyTorch/Yolov5</p>
             <ul>
               <li>

@@ -79,7 +79,30 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-05-28-faster-whisper/" class="u-url">Faster Whisper 1.0.2 (speech-to-text)</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-06-18-fast-opex/" class="u-url">fast-opex released</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2024-06-18-fast-opex/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-06-18T16:51:00+12:00" itemprop="datePublished" title="2024-06-18 16:51">2024-06-18 16:51</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>The OPEX (<a class="reference external" href="https://github.com/WaikatoLink2020/objdet-predictions-exchange-format">Object Predictions EXchange</a>)
+format features heavily in our docker images for storing/broadcasting predictions. However, last week I noticed
+that it incurs quite a significant speed penalty due to its use of JSON schema under the hood.
+Since we want to be as fast as possible at prediction time, I sat down and rewrote the library using very basic
+(but fast) checks and released it under the name <strong>fast-opex</strong>. The new library works as a drop-in replacement, i.e.,
+you only have to switch from installing <strong>opex</strong> to <strong>fast-opex</strong>.</p>
+<p>To further speed things up, the new library can take advantage of the blazingly fast
+<a class="reference external" href="https://github.com/ijl/orjson">orjson</a> JSON library. The orjson library only needs to be present in the
+environment and it will be used automatically.</p>
+<p>If you are interested in a speed comparison, then head over to the following repository:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/opex-comparison">https://github.com/waikato-datamining/opex-comparison</a></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-05-28-faster-whisper/" class="u-url">Faster Whisper 1.0.2 (speech-to-text)</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
