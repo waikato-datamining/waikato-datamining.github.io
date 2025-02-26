@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about software)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_software.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Feb 2025 04:13:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-01-13-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about software)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_software.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 26 Feb 2025 07:14:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
+is now available: &lt;strong&gt;0.0.7&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
+&lt;p&gt;The most notably changes are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;added support for the &lt;a class="reference external" href="https://github.com/wkentaro/labelme"&gt;labelme&lt;/a&gt; tool with the
+&lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-labelme"&gt;image-dataset-converter-labelme&lt;/a&gt; library,
+specifically for the image classification, object detection and instance segmentation JSON file formats&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added support for &lt;a class="reference external" href="https://github.com/PaddlePaddle"&gt;PaddlePaddle&lt;/a&gt; frameworks
+with the &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-paddle"&gt;image-dataset-converter-paddle&lt;/a&gt; library,
+specifically for &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas"&gt;image classification&lt;/a&gt;,
+&lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;object detection/instance segmentation&lt;/a&gt;
+and &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg"&gt;image segmentation&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</guid><pubDate>Wed, 26 Feb 2025 07:06:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-01-13-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
 is now available: &lt;strong&gt;0.0.6&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
 &lt;p&gt;The most notably changes are:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -87,20 +99,4 @@ called &lt;em&gt;gifr&lt;/em&gt;:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;image segmentation&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;object detection/instance segmentation&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;text generation&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</guid><pubDate>Fri, 03 Nov 2023 01:00:00 GMT</pubDate></item><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Over the last couple of months, we have been working on a little command-line tool that
-allows you to convert LLM datasets from one format into another, appropriately called
-&lt;cite&gt;llm-dataset-converter&lt;/cite&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;https://github.com/waikato-llm/llm-dataset-converter&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;With the first release (0.0.1), you can not only load data from and save to in various formats
-(csv/tsv, text, json, jsonlines, parquet). The tool lets you define pipelines using the following format:&lt;/p&gt;
-&lt;p&gt;&lt;cite&gt;reader [filter [filter ...]] [writer]&lt;/cite&gt;&lt;/p&gt;
-&lt;p&gt;Each component in the pipeline comes with its own set of command-line parameters. You can even &lt;em&gt;tee&lt;/em&gt; off
-records and process them differently (e.g., writing the same data to different output formats).&lt;/p&gt;
-&lt;p&gt;The library also has other tools, for downloading files or datasets from huggingface or combining text files.&lt;/p&gt;
-&lt;p&gt;In order to make building such pipeline-oriented tools simpler to develop, we created a base library
-that manages the handling of plugins (and, if necessary, their compatibility) called &lt;cite&gt;seppl&lt;/cite&gt;
-(&lt;em&gt;Simple Entry Point PipeLines&lt;/em&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/seppl"&gt;https://github.com/waikato-datamining/seppl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Thanks to seppl, the llm-dataset-converter library can be easily extended with additional modules, as it uses
-a dynamic approach to locating plugins: you only need to define in what modules to look for what superclass
-(like &lt;cite&gt;Reader&lt;/cite&gt;, &lt;cite&gt;Filter&lt;/cite&gt;, &lt;cite&gt;Writer&lt;/cite&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-10-27-ldc-release/</guid><pubDate>Thu, 26 Oct 2023 20:47:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</guid><pubDate>Fri, 03 Nov 2023 01:00:00 GMT</pubDate></item></channel></rss>

@@ -78,7 +78,32 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-24-paddleclas-docker/" class="u-url">PaddleDetection 2.8.0 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-26-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-02-26-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-02-26T20:06:00+13:00" itemprop="datePublished" title="2025-02-26 20:06">2025-02-26 20:06</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.0.7</strong>. Docker images have been deployed as well.</p>
+<p>The most notably changes are:</p>
+<ul class="simple">
+<li><p>added support for the <a class="reference external" href="https://github.com/wkentaro/labelme">labelme</a> tool with the
+<a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-labelme">image-dataset-converter-labelme</a> library,
+specifically for the image classification, object detection and instance segmentation JSON file formats</p></li>
+<li><p>added support for <a class="reference external" href="https://github.com/PaddlePaddle">PaddlePaddle</a> frameworks
+with the <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-paddle">image-dataset-converter-paddle</a> library,
+specifically for <a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas">image classification</a>,
+<a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection">object detection/instance segmentation</a>
+and <a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg">image segmentation</a>.</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-24-paddleclas-docker/" class="u-url">PaddleDetection 2.8.0 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
@@ -266,41 +291,6 @@ longer required to double quote the input to avoid bash expansion. Additional li
 added as well where appropriate.</p>
 <p>The <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all">llm-dataset-converter-all</a> meta-library now stands at version 0.0.2.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-02-idc-release/" class="u-url">image-dataset-converter release</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2024-07-02-idc-release/" rel="bookmark">
-            <time class="published dt-published" datetime="2024-07-02T09:56:00+12:00" itemprop="datePublished" title="2024-07-02 09:56">2024-07-02 09:56</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter">image-dataset-converter</a> library keeps evolving
-and, apart from fixing bugs, we also keep adding useful stuff.</p>
-<p>The version of the <cite>image-dataset-converter-all</cite> library stands now at <strong>0.0.3</strong>.</p>
-<p>Since version 0.0.2 the following changes occurred:</p>
-<ul class="simple">
-<li>
-<p>image-dataset-converter (core library):</p>
-<ul>
-<li><p>switched to the <cite>fast-opex</cite> library</p></li>
-<li><p>helper method <cite>from_indexedpng</cite> was using incorrect label index (off by 1)</p></li>
-<li><p><cite>Data.save_image</cite> method now ensures that source/target files exist before calling <cite>os.path.samefile</cite></p></li>
-<li><p>requiring seppl&gt;=0.2.6 now</p></li>
-<li><p>readers now support default globs, allowing the user to just specify directories as input (and the default glob gets appended)</p></li>
-<li><p>the <cite>to-yolo-od</cite> writer now has an option for predefined labels (for enforcing label order)</p></li>
-<li><p>the <cite>to-yolo-od</cite> writer now stores the labels/labels_cvs files in the respective output folders rather than using an absolute file name</p></li>
-<li><p>the bluechannel/grayscale/indexed-png image segmentation readers/writers can use a value other than 0 now for the background</p></li>
-<li><p><cite>split</cite> filter has been renamed to <cite>split-records</cite></p></li>
-</ul>
-</li>
-<li><p>image-dataset-converter-imgaug: added <cite>find-contours</cite> filter for turning blobs in image segmentation annotations into object detection polygons.</p></li>
-<li><p>image-dataset-converter-imgvis:  added <cite>add-center-overlay-od</cite> overlay filter</p></li>
-<li><p>image-dataset-converter-pdf (new module): adds support for PDF, like extracting images from PDF and compiling PDF from images</p></li>
-</ul>
-</div>
     </article>
 </div>
 

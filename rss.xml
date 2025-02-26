@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Feb 2025 04:13:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PaddleDetection 2.8.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-02-24-paddleclas-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;PaddleDetection&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 26 Feb 2025 07:14:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
+is now available: &lt;strong&gt;0.0.7&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
+&lt;p&gt;The most notably changes are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;added support for the &lt;a class="reference external" href="https://github.com/wkentaro/labelme"&gt;labelme&lt;/a&gt; tool with the
+&lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-labelme"&gt;image-dataset-converter-labelme&lt;/a&gt; library,
+specifically for the image classification, object detection and instance segmentation JSON file formats&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added support for &lt;a class="reference external" href="https://github.com/PaddlePaddle"&gt;PaddlePaddle&lt;/a&gt; frameworks
+with the &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-paddle"&gt;image-dataset-converter-paddle&lt;/a&gt; library,
+specifically for &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas"&gt;image classification&lt;/a&gt;,
+&lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;object detection/instance segmentation&lt;/a&gt;
+and &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg"&gt;image segmentation&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</guid><pubDate>Wed, 26 Feb 2025 07:06:00 GMT</pubDate></item><item><title>PaddleDetection 2.8.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-02-24-paddleclas-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;PaddleDetection&lt;/a&gt;
 image classification framework, using the 2.8.0 release of PaddleDetection (code base as of 2024-11-06):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cuda11.8"&gt;CUDA 11.8&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -68,25 +80,4 @@ it has its origins in the &lt;a class="reference external" href="https://github.
 The support for default globs means that the user only has to supply the directory, i.e., in a bash shell it is no
 longer required to double quote the input to avoid bash expansion. Additional libraries had support for default globs
 added as well where appropriate.&lt;/p&gt;
-&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all"&gt;llm-dataset-converter-all&lt;/a&gt; meta-library now stands at version 0.0.2.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-05-ldc-release/</guid><pubDate>Fri, 05 Jul 2024 01:02:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-07-02-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter"&gt;image-dataset-converter&lt;/a&gt; library keeps evolving
-and, apart from fixing bugs, we also keep adding useful stuff.&lt;/p&gt;
-&lt;p&gt;The version of the &lt;cite&gt;image-dataset-converter-all&lt;/cite&gt; library stands now at &lt;strong&gt;0.0.3&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Since version 0.0.2 the following changes occurred:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;image-dataset-converter (core library):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;switched to the &lt;cite&gt;fast-opex&lt;/cite&gt; library&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;helper method &lt;cite&gt;from_indexedpng&lt;/cite&gt; was using incorrect label index (off by 1)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;cite&gt;Data.save_image&lt;/cite&gt; method now ensures that source/target files exist before calling &lt;cite&gt;os.path.samefile&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;requiring seppl&amp;gt;=0.2.6 now&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;readers now support default globs, allowing the user to just specify directories as input (and the default glob gets appended)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;the &lt;cite&gt;to-yolo-od&lt;/cite&gt; writer now has an option for predefined labels (for enforcing label order)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;the &lt;cite&gt;to-yolo-od&lt;/cite&gt; writer now stores the labels/labels_cvs files in the respective output folders rather than using an absolute file name&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;the bluechannel/grayscale/indexed-png image segmentation readers/writers can use a value other than 0 now for the background&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;cite&gt;split&lt;/cite&gt; filter has been renamed to &lt;cite&gt;split-records&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;image-dataset-converter-imgaug: added &lt;cite&gt;find-contours&lt;/cite&gt; filter for turning blobs in image segmentation annotations into object detection polygons.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;image-dataset-converter-imgvis:  added &lt;cite&gt;add-center-overlay-od&lt;/cite&gt; overlay filter&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;image-dataset-converter-pdf (new module): adds support for PDF, like extracting images from PDF and compiling PDF from images&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-02-idc-release/</guid><pubDate>Mon, 01 Jul 2024 21:56:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all"&gt;llm-dataset-converter-all&lt;/a&gt; meta-library now stands at version 0.0.2.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-05-ldc-release/</guid><pubDate>Fri, 05 Jul 2024 01:02:00 GMT</pubDate></item></channel></rss>
