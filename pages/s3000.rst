@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2024-11-26 15:00:00 UTC+13:00
+.. date: 2025-03-04 16:17:00 UTC+13:00
 .. tags: 
 .. category: software
 .. link: 
@@ -55,7 +55,7 @@ benefits:
             <div class="card-body d-flex flex-column">
               <p class="card-text">
                 <ul>
-                  <li>Unlimited number of calibrations</i>
+                  <li>Unlimited number of calibrations (Weka/Python)</i>
                   <li>Unlimited number of import tasks</i>
                   <li>Automated/scheduled training</i>
                   <li>Provenance for tracing samples through the system</i>
