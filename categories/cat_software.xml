@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about software)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_software.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 04 Mar 2025 03:19:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about software)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_software.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 05 Mar 2025 00:41:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>S3000 Python support</title><link>https://www.data-mining.co.nz/news/2025-03-04-s3000-python-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Our commercial offering for environmental laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, now has official
+support for custom Python models. Being a Java application, S3000 historically relied on Weka for its modeling.
+However, with the integration of &lt;a class="reference external" href="https://github.com/ninia/jep"&gt;Jep&lt;/a&gt; (Java Embedded Python) in ADAMS, it is now
+possible to use scikit-learn or deep learning libraries for training models and making predictions.&lt;/p&gt;
+&lt;p&gt;In order to make this work, ADAMS needs to launch from the context of an activated virtual Python environment
+that contains all the required Python libraries and then use the &lt;cite&gt;JepRegressor&lt;/cite&gt; Weka meta-classifier to define
+the relevant code for training and making predictions. Due to Java serialization not being applicable to Python objects,
+these scripts must implement the relevant serialization/deserialization themselves, e.g., via pickle.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-03-04-s3000-python-support/</guid><pubDate>Tue, 04 Mar 2025 04:07:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
 is now available: &lt;strong&gt;0.0.7&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
 &lt;p&gt;The most notably changes are:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -78,25 +85,4 @@ simplified how plugins are being located at runtime and development time.&lt;/p&
 &lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/image-dataset-converter-examples/"&gt;https://www.data-mining.co.nz/image-dataset-converter-examples/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-05-06-idc-release/</guid><pubDate>Mon, 06 May 2024 04:12:00 GMT</pubDate></item><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-05-06-ldc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Version 0.2.3 of our &lt;em&gt;llm-dataset-converter&lt;/em&gt; library is now available.&lt;/p&gt;
 &lt;p&gt;Quite a number of changes have happened since the first release last year, like xtuner support,
 so check out the full change log here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/blob/main/CHANGES.rst"&gt;https://github.com/waikato-llm/llm-dataset-converter/blob/main/CHANGES.rst&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-05-06-ldc-release/</guid><pubDate>Mon, 06 May 2024 01:36:00 GMT</pubDate></item><item><title>gifr release</title><link>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A lot of our Docker images allow the user to make predictions in two ways: using simple
-file-polling or via a &lt;a class="reference external" href="https://redis.io/"&gt;Redis&lt;/a&gt; backend. File-polling is great for
-testing, but unsuitable for a production system due to wear-and-tear on SSDs.&lt;/p&gt;
-&lt;p&gt;Initially, I developed a really simple library for sending and receiving data via Redis,
-called &lt;em&gt;simple-redis-helper&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/fracpete/simple-redis-helper"&gt;https://github.com/fracpete/simple-redis-helper&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;With this library you get some command-line tools for broadcasting, listening, etc. Sufficient
-for someone who is comfortable with the command-line (or especially when logged in remotely
-via terminal), but not so great for your clients.&lt;/p&gt;
-&lt;p&gt;Now, there is the brilliant &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; library that was specifically
-developed for such scenarios: to create easy to use and great looking interfaces for your machine
-learning models.&lt;/p&gt;
-&lt;p&gt;The last couple of days, I have put together a new library that is tailored to our Docker images
-called &lt;em&gt;gifr&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/gifr"&gt;https://github.com/waikato-datamining/gifr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;With the first release, the following types of models are supported:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;image classification&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;image segmentation&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;object detection/instance segmentation&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;text generation&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-03-gifr-release/</guid><pubDate>Fri, 03 Nov 2023 01:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/blob/main/CHANGES.rst"&gt;https://github.com/waikato-llm/llm-dataset-converter/blob/main/CHANGES.rst&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-05-06-ldc-release/</guid><pubDate>Mon, 06 May 2024 01:36:00 GMT</pubDate></item></channel></rss>

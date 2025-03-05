@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 04 Mar 2025 03:19:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PaddleDetection 2.8.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-02-24-paddleclas-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;PaddleDetection&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 05 Mar 2025 00:41:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SpeciesNet 4.0.1 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-03-05-speciesnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/google/cameratrapai"&gt;SpeciesNet&lt;/a&gt;
+network that &lt;a class="reference external" href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/"&gt;Google announced on March 3rd, 2025&lt;/a&gt;:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/speciesnet/tree/main/4.0.1_cuda12.1"&gt;CUDA 12.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/speciesnet/tree/main/4.0.1_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below is an example on how to use these images (on Linux or on Windows under WSL2).&lt;/p&gt;
+&lt;p&gt;Prerequisites:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;create a directory for your output eg "speciesnet"&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;in that directory create the following sub-directories&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;cache&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;config&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;data&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;output&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Processing data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;copy the images that you want to analyze into the "speciesnet/data" directory&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;from the "speciesnet" directory launch the appropriate docker image in interactive mode&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;CPU:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;docker run --rm --gpus=all --shm-size 8G --net=host \
+  -u $(id -u):$(id -g) -e USER=$USER \
+  -v `pwd`:/workspace \
+  -v `pwd`/cache:/.cache \
+  -v `pwd`/config:/.config \
+  -v `pwd`/cache:/.torch \
+  -it waikatodatamining/speciesnet:4.0.1_cpu&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;CUDA:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;docker run --rm --gpus=all --shm-size 8G --net=host \
+  -u $(id -u):$(id -g) -e USER=$USER \
+  -v `pwd`:/workspace \
+  -v `pwd`/cache:/.cache \
+  -v `pwd`/config:/.config \
+  -v `pwd`/cache:/.torch \
+  -it waikatodatamining/speciesnet:4.0.1_cuda21.1&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;run the following script to process your images:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;speciesnet_run_model \
+    --folders "/workspace/data" \
+    --predictions_json "/workspace/output/predictions.json"&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or, if you want to run the individual steps separately:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;speciesnet_run_model --detector_only \
+    --folders "/workspace/data" \
+    --predictions_json "/workspace/output/detections.json"
+speciesnet_run_model --classifier_only \
+    --folders "/workspace/data" \
+    --detections_json "/workspace/output/detections.json" \
+    --predictions_json "/workspace/output/classifications.json"
+speciesnet_run_model --ensemble_only \
+    --folders "/workspace/data" \
+    --detections_json "/workspace/output/detections.json" \
+    --classifications_json "/workspace/output/classifications.json" \
+    --predictions_json "/workspace/output/predictions.json"&lt;/pre&gt;
+&lt;p&gt;On your host system, the "speciesnet/output" directory will then contain the generated .json file(s), with
+"predictions.json" containing all the relevant information (classification and bbox).&lt;/p&gt;
+&lt;p&gt;For more information on the json output format:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format"&gt;https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-03-05-speciesnet-docker/</guid><pubDate>Wed, 05 Mar 2025 00:21:00 GMT</pubDate></item><item><title>PaddleDetection 2.8.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-02-24-paddleclas-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;PaddleDetection&lt;/a&gt;
 image classification framework, using the 2.8.0 release of PaddleDetection (code base as of 2024-11-06):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cuda11.8"&gt;CUDA 11.8&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -108,24 +174,4 @@ for sequence classification into a docker image to make it easy for building suc
 Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; received an interface for text
 classification (&lt;cite&gt;gifr-textclass&lt;/cite&gt;) in version 0.0.3.&lt;/p&gt;
 &lt;p&gt;The &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; library
-obtained native support for text classification formats with version 0.1.1.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</guid><pubDate>Thu, 15 Feb 2024 03:46:00 GMT</pubDate></item><item><title>Llama-2 Docker images available</title><link>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Llama-2, despite &lt;a class="reference external" href="https://blog.opensource.org/metas-llama-2-license-is-not-open-source/"&gt;not actually being open-source as advertised&lt;/a&gt;,
-is a very powerful large language model (LLM), which can also be fine-tuned with custom data. With
-version &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.0.3"&gt;v0.0.3&lt;/a&gt;
-of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; Python library,
-it is now possible to generate data in &lt;a class="reference external" href="https://jsonlines.org/"&gt;jsonlines&lt;/a&gt; format that the new
-&lt;a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/master/4.31.0_cuda11.7_llama2"&gt;Docker images&lt;/a&gt;
-for Llama-2 can consume:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Of course, you can use these Docker images in conjunction with our &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-11-03-gifr-release/"&gt;gifr&lt;/a&gt;
-Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; interfaces as well (&lt;cite&gt;gifr-textgen&lt;/cite&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2023-11-10-llama2-docker/</guid><pubDate>Fri, 10 Nov 2023 03:33:00 GMT</pubDate></item></channel></rss>
+obtained native support for text classification formats with version 0.1.1.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-15-text-classification-support/</guid><pubDate>Thu, 15 Feb 2024 03:46:00 GMT</pubDate></item></channel></rss>
