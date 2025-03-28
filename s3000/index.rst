@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2025-03-28 16:53:00 UTC+13:00
+.. date: 2025-03-28 16:59:00 UTC+13:00
 .. tags: 
 .. category: software
 .. link: 
@@ -15,6 +15,9 @@ and manure using spectroscopy (`NIR <https://en.wikipedia.org/wiki/Near-infrared
 
 Instead of using calibrations that the manufacturers sell with their instruments, our system offers a bigger
 range of pre-processing techniques and sophisticated algorithms (due to our background in machine learning).
+
+Any calibrations that you build using your own data will continue being your intellectual property (IP).
+With the system operating on-premise, your data will stay safe as well.
 
 The software is based on our `ADAMS <https://adams.cms.waikato.ac.nz/>`__ workflow software and offers the following
 benefits:
