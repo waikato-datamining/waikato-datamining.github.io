@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2025-03-04 16:17:00 UTC+13:00
+.. date: 2025-03-28 16:53:00 UTC+13:00
 .. tags: 
 .. category: software
 .. link: 
@@ -8,8 +8,8 @@
 .. type: text
 .. hidetitle: True
 
-Our commercial S3000 software is aimed at environmental laboratories that analyze soil and plant samples using
-spectroscopy (`NIR <https://en.wikipedia.org/wiki/Near-infrared_spectroscopy>`__, MIR,
+Our commercial S3000 software is aimed at environmental laboratories that analyze samples such as soil, plant, feed
+and manure using spectroscopy (`NIR <https://en.wikipedia.org/wiki/Near-infrared_spectroscopy>`__, MIR,
 `LIBS <https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy>`__ or
 `XRF <https://en.wikipedia.org/wiki/X-ray_fluorescence>`__).
 
