@@ -60,6 +60,7 @@ benefits:
                 <ul>
                   <li>Unlimited number of calibrations (Weka/Python)</i>
                   <li>Unlimited number of import tasks</i>
+                  <li>No additional cost in making predictions</i>
                   <li>Automated/scheduled training</i>
                   <li>Provenance for tracing samples through the system</i>
                   <li>Flag unreliable predictions</i>
