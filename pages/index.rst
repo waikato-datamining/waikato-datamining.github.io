@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-lg-8 mb-4">
                   <div>
-                    <p class="lead">We are working with environmental laboratories internationally that use our S3000 software to process spectral data generated from plant, soil, feed and manure samples.</p>
+                    <p class="lead">We are working with laboratories internationally that use our S3000 software to process spectral data generated from plant, soil, feed and manure samples.</p>
                     <p class="lead">Our flexible software gives the client fine-grained control over modeling and integrates easily into existing business processes.</p>
                     <a href="/s3000" class="btn btn-primary">Learn more</a>
                   </div>

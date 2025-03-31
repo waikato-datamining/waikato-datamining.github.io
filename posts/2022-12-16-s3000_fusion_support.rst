@@ -7,7 +7,7 @@
 .. description: 
 .. type: text
 
-Our commercial offering for environmental laboratories, `S3000 <link://slug/s3000>`__, now has official data
+Our commercial offering for laboratories, `S3000 <link://slug/s3000>`__, now has official data
 fusion support. With this in place, labs can now take advantage of combining data generated from the
 same sample using multiple instruments (e.g., `NIR <https://en.wikipedia.org/wiki/Near-infrared_spectroscopy>`__
 and `XRF <https://en.wikipedia.org/wiki/X-ray_fluorescence>`__) to improve accuracy of their models.
