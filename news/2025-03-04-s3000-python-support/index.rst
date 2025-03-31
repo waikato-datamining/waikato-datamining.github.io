@@ -7,7 +7,7 @@
 .. description: 
 .. type: text
 
-Our commercial offering for environmental laboratories, `S3000 <link://slug/s3000>`__, now has official
+Our commercial offering for laboratories, `S3000 <link://slug/s3000>`__, now has official
 support for custom Python models. Being a Java application, S3000 historically relied on Weka for its modeling.
 However, with the integration of `Jep <https://github.com/ninia/jep>`__ (Java Embedded Python) in ADAMS, it is now
 possible to use scikit-learn or deep learning libraries for training models and making predictions.

@@ -8,7 +8,7 @@
 .. type: text
 .. hidetitle: True
 
-Our commercial S3000 software is aimed at environmental laboratories that analyze samples such as soil, plant, feed
+Our commercial S3000 software is aimed at laboratories that analyze samples such as soil, plant, feed
 and manure using spectroscopy (`NIR <https://en.wikipedia.org/wiki/Near-infrared_spectroscopy>`__, MIR,
 `LIBS <https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy>`__ or
 `XRF <https://en.wikipedia.org/wiki/X-ray_fluorescence>`__).
