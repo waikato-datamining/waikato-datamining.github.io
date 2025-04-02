@@ -4,29 +4,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Use cases | Data mining</title>
+<title>image-dataset-converter release | Data mining</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
-<link rel="canonical" href="https://www.data-mining.co.nz/galleries/use-cases/">
+<link rel="canonical" href="https://www.data-mining.co.nz/news/2025-04-03-idc-release/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<style type="text/css">
-    #gallery_container {
-        position: relative;
-    }
-    .image-block {
-        position: absolute;
-    }
-</style>
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<meta name="author" content="Applied Machine Learning Group, University of Waikato">
+<link rel="prev" href="../2025-03-05-speciesnet-docker/" title="SpeciesNet 4.0.1 Docker images available" type="text/html">
+<link rel="next" href="../2025-04-03-s3000-rest-support/" title="S3000 REST webservice support" type="text/html">
 <meta property="og:site_name" content="Data mining">
-<meta property="og:title" content="Use cases">
-<meta property="og:url" content="https://www.data-mining.co.nz/galleries/use-cases/">
-<meta property="og:description" content="Use case diagrams of how S3000 can interact with your business processes, e.g., LIMS.">
+<meta property="og:title" content="image-dataset-converter release">
+<meta property="og:url" content="https://www.data-mining.co.nz/news/2025-04-03-idc-release/">
+<meta property="og:description" content="A new release of our image-dataset-converter-all library
+is now available: 0.0.11. Docker images have been deployed as well.
+The most notably changes since 0.0.7 are:
+
+support for placeholders is now ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2025-04-02T21:46:14Z">
+<meta property="article:published_time" content="2025-04-03T10:23:00+13:00">
+<meta property="article:tag" content="release">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -49,7 +47,7 @@ bg-dark
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="navbar-nav mr-auto">
 <li class="nav-item">
-<a href="../../news/" class="nav-link">News</a>
+<a href="../" class="nav-link">News</a>
                 </li>
 <li class="nav-item">
 <a href="../../expertise/" class="nav-link">Expertise</a>
@@ -86,33 +84,50 @@ bg-dark
         
         
         
-    
-<nav class="breadcrumbs"><ul class="breadcrumb">
-<li class="breadcrumb-item"><a href="../">galleries</a></li>
-                <li class="breadcrumb-item active">Use cases</li>
-</ul></nav><h1>Use cases</h1>
-    <p>
-        </p>
-<p>Use case diagrams of how <a class="reference external" href="../../s3000/">S3000</a> can interact with your business processes, e.g., LIMS.</p>
-    
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">image-dataset-converter release</a></h1>
 
-<div id="gallery_container"></div>
-<noscript>
-<ul class="thumbnails">
-<li>
-<a href="lims_collect.png" class="thumbnail image-reference" title="LIMS outputs spectra/co-variables via files/webservice and receives the predictions back via files/webservice">
-            <img src="lims_collect.thumbnail.png" alt="LIMS outputs spectra/co-variables via files/webservice and receives the predictions back via files/webservice" loading="lazy"></a>
-        </li>
-<li>
-<a href="lims_conversion.png" class="thumbnail image-reference" title='LIMS outputs spectra for two different instruments, with "instrument 1" passing through a conversion first'>
-            <img src="lims_conversion.thumbnail.png" alt='LIMS outputs spectra for two different instruments, with "instrument 1" passing through a conversion first' loading="lazy"></a>
-</li>
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2025-04-03T10:23:00+13:00" itemprop="datePublished" title="2025-04-03 10:23">2025-04-03 10:23</time></a>
+            </p>
+            
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.0.11</strong>. Docker images have been deployed as well.</p>
+<p>The most notably changes since 0.0.7 are:</p>
+<ul class="simple">
+<li><p>support for placeholders is now available for readers/writers, which can be used in constructing input/output
+files/folders, including predefined ones available (<cite>{CWD}</cite>, <cite>{HOME}</cite>, <cite>{TMP}</cite>), input-based ones
+(e.g., <cite>{INPUT_PATH}</cite>, <cite>{INPUT_NAMEEXT}</cite>), user-defined ones (supplied to tools, e.g., via the <cite>-p/--placeholders</cite>
+option of the <cite>idc-convert</cite> tool) and run-time ones (set with the <cite>set-placeholder</cite> filter)</p></li>
+<li><p>added the <cite>--resume_from</cite> option to applicable readers, which allows resuming the pipeline from the
+file matching the supplied glob, e.g., <cite>*/012345.jpg</cite></p></li>
+<li><p>the new <cite>from-multi</cite> reader and <cite>to-multi</cite> writer simplify the combining of datasets (from potentially
+different formats) and output in multiple formats respectively</p></li>
+<li><p>writers that can split the incoming stream into subsets had the new <cite>--split_group</cite> option added, which
+allows keeping samples together within subsets using a regular expression, e.g., when dealing with
+images that were split into sub-grids or augmented with flipping/rotating</p></li>
 </ul>
-</noscript>
-
-        <!--End of body content-->
-
-        <footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
+</div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/release/" rel="tag">release</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2025-03-05-speciesnet-docker/" rel="prev" title="SpeciesNet 4.0.1 Docker images available">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2025-04-03-s3000-rest-support/" rel="next" title="S3000 REST webservice support">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
 
         <div class="container">
             <div class="row">
@@ -131,7 +146,7 @@ bg-dark
 </h5>
                         <ul class="thumbnail-widget">
 <li>
-                                <a href="../../news/">News</a>
+                                <a href="../">News</a>
                             </li>
                             <li>
                                 <a href="../../expertise/">Expertise</a>
@@ -201,12 +216,7 @@ bg-dark
 </div>
 
 
-        <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/justified-layout.min.js"></script><script src="../../assets/js/gallery.min.js"></script><script>
-var jsonContent = [{"height": 108, "size": {"h": 108, "w": 180}, "title": "LIMS outputs spectra/co-variables via files/webservice and receives the predictions back via files/webservice", "url": "lims_collect.png", "url_thumb": "lims_collect.thumbnail.png", "width": 180}, {"height": 108, "size": {"h": 108, "w": 180}, "title": "LIMS outputs spectra for two different instruments, with \"instrument 1\" passing through a conversion first", "url": "lims_conversion.png", "url_thumb": "lims_conversion.thumbnail.png", "width": 180}];
-var thumbnailSize = 180;
-renderGallery(jsonContent, thumbnailSize);
-window.addEventListener('resize', function(){renderGallery(jsonContent, thumbnailSize)});
-</script><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});

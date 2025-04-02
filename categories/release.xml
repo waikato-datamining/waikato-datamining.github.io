@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 31 Mar 2025 03:40:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SpeciesNet 4.0.1 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-03-05-speciesnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/google/cameratrapai"&gt;SpeciesNet&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 02 Apr 2025 21:46:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>S3000 REST webservice support</title><link>https://www.data-mining.co.nz/news/2025-04-03-s3000-rest-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;While our commercial framework for laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, had support for
+making predictions via &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Web_service"&gt;webservices&lt;/a&gt; for a long time,
+that was limited to asynchronous ones: a webservice endpoint receives data coming in and, once the
+predictions have been generated, the results get forwarded to another webservice.&lt;/p&gt;
+&lt;p&gt;With recent changes to the codebase, it is now possible to offer synchronous &lt;a class="reference external" href="https://en.wikipedia.org/wiki/REST"&gt;REST webservices&lt;/a&gt;
+as well. In order to reduce latency as much as possible, provenance logging under the hood
+has been modified to have a much higher throughput that no longer impacts the speed of the predictions.&lt;/p&gt;
+&lt;p&gt;Thanks to the plugin architecture of S3000, customer-specific webservices can be implemented and deployed
+with minimal effort.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-04-03-s3000-rest-support/</guid><pubDate>Wed, 02 Apr 2025 21:35:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-04-03-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
+is now available: &lt;strong&gt;0.0.11&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
+&lt;p&gt;The most notably changes since 0.0.7 are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;support for placeholders is now available for readers/writers, which can be used in constructing input/output
+files/folders, including predefined ones available (&lt;cite&gt;{CWD}&lt;/cite&gt;, &lt;cite&gt;{HOME}&lt;/cite&gt;, &lt;cite&gt;{TMP}&lt;/cite&gt;), input-based ones
+(e.g., &lt;cite&gt;{INPUT_PATH}&lt;/cite&gt;, &lt;cite&gt;{INPUT_NAMEEXT}&lt;/cite&gt;), user-defined ones (supplied to tools, e.g., via the &lt;cite&gt;-p/--placeholders&lt;/cite&gt;
+option of the &lt;cite&gt;idc-convert&lt;/cite&gt; tool) and run-time ones (set with the &lt;cite&gt;set-placeholder&lt;/cite&gt; filter)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added the &lt;cite&gt;--resume_from&lt;/cite&gt; option to applicable readers, which allows resuming the pipeline from the
+file matching the supplied glob, e.g., &lt;cite&gt;*/012345.jpg&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the new &lt;cite&gt;from-multi&lt;/cite&gt; reader and &lt;cite&gt;to-multi&lt;/cite&gt; writer simplify the combining of datasets (from potentially
+different formats) and output in multiple formats respectively&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;writers that can split the incoming stream into subsets had the new &lt;cite&gt;--split_group&lt;/cite&gt; option added, which
+allows keeping samples together within subsets using a regular expression, e.g., when dealing with
+images that were split into sub-grids or augmented with flipping/rotating&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-04-03-idc-release/</guid><pubDate>Wed, 02 Apr 2025 21:23:00 GMT</pubDate></item><item><title>SpeciesNet 4.0.1 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-03-05-speciesnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/google/cameratrapai"&gt;SpeciesNet&lt;/a&gt;
 network that &lt;a class="reference external" href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/"&gt;Google announced on March 3rd, 2025&lt;/a&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/speciesnet/tree/main/4.0.1_cuda12.1"&gt;CUDA 12.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -121,30 +144,4 @@ released December 20th.&lt;/p&gt;
 &lt;p&gt;With the additional release of &lt;a class="reference external" href="https://github.com/waikato-llm/ldc-gitingest"&gt;ldc_gitingest&lt;/a&gt;
 for converting git repositories (local or remote) into pretrain text files, we also made a new release of our
 &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all"&gt;llm_dataset_converter_all&lt;/a&gt; meta-library. The newest
-version here is 0.0.4. A new Docker image is available as well.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-01-07-ldc-release/</guid><pubDate>Mon, 06 Jan 2025 21:20:00 GMT</pubDate></item><item><title>Yolov10 Docker images available</title><link>https://www.data-mining.co.nz/news/2024-07-16-yolov10-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for the latest &lt;a class="reference external" href="https://github.com/THU-MIG/yolov10"&gt;Yolov10&lt;/a&gt; code base are now available.&lt;/p&gt;
-&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10"&gt;github.com/waikato-datamining/pytorch/tree/master/yolov10&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov10:2024-06-23_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-11-05_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolov10:2024-06-23_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolov5:2022-11-05_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The tutorial on &lt;em&gt;object detection&lt;/em&gt; is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/"&gt;www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-16-yolov10-docker/</guid><pubDate>Tue, 16 Jul 2024 02:51:00 GMT</pubDate></item><item><title>audio-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2024-07-05-adc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Today marks the first public release of our &lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter"&gt;audio-dataset-converter&lt;/a&gt;
-library and it various additional dependent libraries.
-Just like &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter"&gt;image-dataset-converter&lt;/a&gt;,
-it has its origins in the &lt;a class="reference external" href="https://github.com/waikato-ufdl/wai-annotations"&gt;wai.annotations&lt;/a&gt; library.&lt;/p&gt;
-&lt;p&gt;Of course, there is also a meta-library that combines all the libraries:
-&lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter-all"&gt;audio-dataset-converter-all&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Check out the examples site:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://waikato-llm.github.io/audio-dataset-converter-examples/"&gt;https://waikato-llm.github.io/audio-dataset-converter-examples/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-05-adc-release/</guid><pubDate>Fri, 05 Jul 2024 01:07:00 GMT</pubDate></item></channel></rss>
+version here is 0.0.4. A new Docker image is available as well.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-01-07-ldc-release/</guid><pubDate>Mon, 06 Jan 2025 21:20:00 GMT</pubDate></item></channel></rss>

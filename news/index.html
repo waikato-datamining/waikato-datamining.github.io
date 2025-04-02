@@ -78,7 +78,56 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-05-speciesnet-docker/" class="u-url">SpeciesNet 4.0.1 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-04-03-s3000-rest-support/" class="u-url">S3000 REST webservice support</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-04-03-s3000-rest-support/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-04-03T10:35:00+13:00" itemprop="datePublished" title="2025-04-03 10:35">2025-04-03 10:35</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>While our commercial framework for laboratories, <a class="reference external" href="../s3000/">S3000</a>, had support for
+making predictions via <a class="reference external" href="https://en.wikipedia.org/wiki/Web_service">webservices</a> for a long time,
+that was limited to asynchronous ones: a webservice endpoint receives data coming in and, once the
+predictions have been generated, the results get forwarded to another webservice.</p>
+<p>With recent changes to the codebase, it is now possible to offer synchronous <a class="reference external" href="https://en.wikipedia.org/wiki/REST">REST webservices</a>
+as well. In order to reduce latency as much as possible, provenance logging under the hood
+has been modified to have a much higher throughput that no longer impacts the speed of the predictions.</p>
+<p>Thanks to the plugin architecture of S3000, customer-specific webservices can be implemented and deployed
+with minimal effort.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-04-03-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-04-03-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-04-03T10:23:00+13:00" itemprop="datePublished" title="2025-04-03 10:23">2025-04-03 10:23</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.0.11</strong>. Docker images have been deployed as well.</p>
+<p>The most notably changes since 0.0.7 are:</p>
+<ul class="simple">
+<li><p>support for placeholders is now available for readers/writers, which can be used in constructing input/output
+files/folders, including predefined ones available (<cite>{CWD}</cite>, <cite>{HOME}</cite>, <cite>{TMP}</cite>), input-based ones
+(e.g., <cite>{INPUT_PATH}</cite>, <cite>{INPUT_NAMEEXT}</cite>), user-defined ones (supplied to tools, e.g., via the <cite>-p/--placeholders</cite>
+option of the <cite>idc-convert</cite> tool) and run-time ones (set with the <cite>set-placeholder</cite> filter)</p></li>
+<li><p>added the <cite>--resume_from</cite> option to applicable readers, which allows resuming the pipeline from the
+file matching the supplied glob, e.g., <cite>*/012345.jpg</cite></p></li>
+<li><p>the new <cite>from-multi</cite> reader and <cite>to-multi</cite> writer simplify the combining of datasets (from potentially
+different formats) and output in multiple formats respectively</p></li>
+<li><p>writers that can split the incoming stream into subsets had the new <cite>--split_group</cite> option added, which
+allows keeping samples together within subsets using a regular expression, e.g., when dealing with
+images that were split into sub-grids or augmented with flipping/rotating</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-05-speciesnet-docker/" class="u-url">SpeciesNet 4.0.1 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
@@ -308,54 +357,6 @@ released December 20th.</p>
 for converting git repositories (local or remote) into pretrain text files, we also made a new release of our
 <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all">llm_dataset_converter_all</a> meta-library. The newest
 version here is 0.0.4. A new Docker image is available as well.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-11-29-website-revamped/" class="u-url">Website revamped</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2024-11-29-website-revamped/" rel="bookmark">
-            <time class="published dt-published" datetime="2024-11-29T20:51:00+13:00" itemprop="datePublished" title="2024-11-29 20:51">2024-11-29 20:51</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Long overdue, but finally here: the revamp of our data-mining.co.nz website is now finally done!</p>
-<p>With a refreshed look, better navigation and more information than ever.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-07-16-yolov10-docker/" class="u-url">Yolov10 Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2024-07-16-yolov10-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2024-07-16T14:51:00+12:00" itemprop="datePublished" title="2024-07-16 14:51">2024-07-16 14:51</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Docker images for the latest <a class="reference external" href="https://github.com/THU-MIG/yolov10">Yolov10</a> code base are now available.</p>
-<p>The code used by the docker images is available from here:</p>
-<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10">github.com/waikato-datamining/pytorch/tree/master/yolov10</a></p>
-<p>The tags for the images are as follows:</p>
-<ul class="simple">
-<li>
-<p>In-house registry:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov10:2024-06-23_cuda11.7</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-11-05_cpu</span></code></p></li>
-</ul>
-</li>
-<li>
-<p>Docker hub:</p>
-<ul>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov10:2024-06-23_cuda11.7</span></code></p></li>
-<li><p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolov5:2022-11-05_cpu</span></code></p></li>
-</ul>
-</li>
-</ul>
-<p>The tutorial on <em>object detection</em> is available from here:</p>
-<p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/">www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/</a></p>
     </div>
     </article>
 </div>
