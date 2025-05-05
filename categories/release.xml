@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 02 Apr 2025 21:46:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>S3000 REST webservice support</title><link>https://www.data-mining.co.nz/news/2025-04-03-s3000-rest-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;While our commercial framework for laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, had support for
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about release)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/release.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 05 May 2025 04:10:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>djl-arff release</title><link>https://www.data-mining.co.nz/news/2025-05-02-djl-arff-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://djl.ai/"&gt;Deep Java Library (DJL)&lt;/a&gt; is an open source library to build and deploy deep learning in Java,
+developed by Amazon.com. Besides the usual image models, it also offers some basic support for tabular data.
+Since its input is limited to CSV files, I decided to add support for &lt;a class="reference external" href="https://waikato.github.io/weka-wiki/formats_and_processing/arff/"&gt;Weka ARFF files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The result of this effort is the &lt;cite&gt;djl-arff&lt;/cite&gt; library:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/djl-arff/"&gt;https://github.com/waikato-datamining/djl-arff/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-05-02-djl-arff-release/</guid><pubDate>Thu, 01 May 2025 23:23:00 GMT</pubDate></item><item><title>BitNet Docker image available</title><link>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker image is available for Microsoft's &lt;a class="reference external" href="https://github.com/microsoft/BitNet"&gt;BitNet&lt;/a&gt; small language
+model (SLM):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/bitnet/blob/main/2025-04-30_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below is an example on how to use these images (on Linux or on Windows under WSL2).&lt;/p&gt;
+&lt;p&gt;Prerequisites:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;create a directory for your models and output eg "bitnet"&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;in that directory create the following sub-directories&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;cache&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;triton&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;models&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;logs&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Interacting with the language model:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;from the "bitnet" directory launch the docker image in interactive mode:&lt;/p&gt;
+&lt;aside class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 23)&lt;/p&gt;
+&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;dl class="simple"&gt;
+&lt;dt&gt;docker run --shm-size 8G --net=host &lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;-u $(id -u):$(id -g) -e USER=$USER -v &lt;cite&gt;pwd&lt;/cite&gt;:/workspace -v &lt;cite&gt;pwd&lt;/cite&gt;/cache:/.cache -v &lt;cite&gt;pwd&lt;/cite&gt;/triton:/.triton -it waikatodatamining/bitnet:2025-05-30_cpu&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;as a one-off, download the &lt;em&gt;BitNet-b1.58-2B-4T&lt;/em&gt; model from within the Docker container:&lt;/p&gt;
+&lt;aside class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 32)&lt;/p&gt;
+&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;dl class="simple"&gt;
+&lt;dt&gt;huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf &lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;--local-dir /workspace/models/BitNet-b1.58-2B-4T&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;once the model is in place, you can interact with with it:&lt;/p&gt;
+&lt;aside class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 38)&lt;/p&gt;
+&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;dl class="simple"&gt;
+&lt;dt&gt;bitnet_run_inference &lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;-m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -p "You are a helpful assistant" -n 1024 -cnv&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</guid><pubDate>Wed, 30 Apr 2025 04:59:00 GMT</pubDate></item><item><title>S3000 REST webservice support</title><link>https://www.data-mining.co.nz/news/2025-04-03-s3000-rest-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;While our commercial framework for laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, had support for
 making predictions via &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Web_service"&gt;webservices&lt;/a&gt; for a long time,
 that was limited to asynchronous ones: a webservice endpoint receives data coming in and, once the
 predictions have been generated, the results get forwarded to another webservice.&lt;/p&gt;
@@ -131,17 +188,4 @@ image segmentation framework, using the 2.10.0 release of PaddleSeg (code base a
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddleseg/tree/main/2.10.0_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A tutorial is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/"&gt;https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-05-paddleseg-docker/</guid><pubDate>Wed, 05 Feb 2025 04:02:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-01-13-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
-is now available: &lt;strong&gt;0.0.6&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
-&lt;p&gt;The most notably changes are:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;using 90% as default quality for JPEG images now as a good compromise between quality and size (PIL uses 75% by default),
-this can be overridden with environment variable &lt;cite&gt;IDC_JPEG_QUALITY&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added methods to idc.api module: &lt;cite&gt;jpeg_quality()&lt;/cite&gt;, &lt;cite&gt;array_to_image(...)&lt;/cite&gt;, &lt;cite&gt;empty_image(...)&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;numpy is limited to &amp;lt;2.0.0 to avoid issues with the imgaug library&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-01-13-idc-release/</guid><pubDate>Sun, 12 Jan 2025 20:31:00 GMT</pubDate></item><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-01-07-ldc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Version 0.2.5 of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm_dataset_converter&lt;/a&gt; library was
-released December 20th.&lt;/p&gt;
-&lt;p&gt;With the additional release of &lt;a class="reference external" href="https://github.com/waikato-llm/ldc-gitingest"&gt;ldc_gitingest&lt;/a&gt;
-for converting git repositories (local or remote) into pretrain text files, we also made a new release of our
-&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all"&gt;llm_dataset_converter_all&lt;/a&gt; meta-library. The newest
-version here is 0.0.4. A new Docker image is available as well.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-01-07-ldc-release/</guid><pubDate>Mon, 06 Jan 2025 21:20:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/"&gt;https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-05-paddleseg-docker/</guid><pubDate>Wed, 05 Feb 2025 04:02:00 GMT</pubDate></item></channel></rss>

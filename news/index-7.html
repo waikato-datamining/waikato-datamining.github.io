@@ -79,7 +79,46 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-11-29-website-revamped/" class="u-url">Website revamped</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-01-13-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-01-13-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-01-13T09:31:00+13:00" itemprop="datePublished" title="2025-01-13 09:31">2025-01-13 09:31</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.0.6</strong>. Docker images have been deployed as well.</p>
+<p>The most notably changes are:</p>
+<ul class="simple">
+<li><p>using 90% as default quality for JPEG images now as a good compromise between quality and size (PIL uses 75% by default),
+this can be overridden with environment variable <cite>IDC_JPEG_QUALITY</cite></p></li>
+<li><p>added methods to idc.api module: <cite>jpeg_quality()</cite>, <cite>array_to_image(...)</cite>, <cite>empty_image(...)</cite></p></li>
+<li><p>numpy is limited to &lt;2.0.0 to avoid issues with the imgaug library</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-01-07-ldc-release/" class="u-url">llm-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-01-07-ldc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-01-07T10:20:00+13:00" itemprop="datePublished" title="2025-01-07 10:20">2025-01-07 10:20</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Version 0.2.5 of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm_dataset_converter</a> library was
+released December 20th.</p>
+<p>With the additional release of <a class="reference external" href="https://github.com/waikato-llm/ldc-gitingest">ldc_gitingest</a>
+for converting git repositories (local or remote) into pretrain text files, we also made a new release of our
+<a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all">llm_dataset_converter_all</a> meta-library. The newest
+version here is 0.0.4. A new Docker image is available as well.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024-11-29-website-revamped/" class="u-url">Website revamped</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato

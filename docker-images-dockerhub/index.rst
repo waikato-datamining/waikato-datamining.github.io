@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2025-02-18 11:14:00 UTC+13:00
+.. date: 2025-05-05 16:08:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -369,6 +369,15 @@
     <div class="collapse" id="large-language-models">
       <div class="card card-body">
         <ul>
+          <li>
+            <p>BitNet</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-llm/bitnet/tree/main/2025-04-30_cpu">BitNet 2025-04-30, CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/bitnet:2025-05-30_cpu</span></code></p>
+              </li>
+            </ul>
+          </li>
           <li>
             <p>Falcontune</p>
             <ul>
