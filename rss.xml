@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 05 May 2025 04:10:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>djl-arff release</title><link>https://www.data-mining.co.nz/news/2025-05-02-djl-arff-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://djl.ai/"&gt;Deep Java Library (DJL)&lt;/a&gt; is an open source library to build and deploy deep learning in Java,
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 05 May 2025 04:32:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>djl-arff release</title><link>https://www.data-mining.co.nz/news/2025-05-02-djl-arff-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://djl.ai/"&gt;Deep Java Library (DJL)&lt;/a&gt; is an open source library to build and deploy deep learning in Java,
 developed by Amazon.com. Besides the usual image models, it also offers some basic support for tabular data.
 Since its input is limited to CSV files, I decided to add support for &lt;a class="reference external" href="https://waikato.github.io/weka-wiki/formats_and_processing/arff/"&gt;Weka ARFF files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The result of this effort is the &lt;cite&gt;djl-arff&lt;/cite&gt; library:&lt;/p&gt;
@@ -24,37 +24,23 @@ model (SLM):&lt;/p&gt;
 &lt;p&gt;Interacting with the language model:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;from the "bitnet" directory launch the docker image in interactive mode:&lt;/p&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 23)&lt;/p&gt;
-&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;dl class="simple"&gt;
-&lt;dt&gt;docker run --shm-size 8G --net=host &lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;-u $(id -u):$(id -g) -e USER=$USER -v &lt;cite&gt;pwd&lt;/cite&gt;:/workspace -v &lt;cite&gt;pwd&lt;/cite&gt;/cache:/.cache -v &lt;cite&gt;pwd&lt;/cite&gt;/triton:/.triton -it waikatodatamining/bitnet:2025-05-30_cpu&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;pre class="literal-block"&gt;docker run --shm-size 8G --net=host \
+    -u $(id -u):$(id -g) -e USER=$USER \
+    -v `pwd`:/workspace \
+    -v `pwd`/cache:/.cache \
+    -v `pwd`/triton:/.triton \
+    -it waikatodatamining/bitnet:2025-05-30_cpu&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;as a one-off, download the &lt;em&gt;BitNet-b1.58-2B-4T&lt;/em&gt; model from within the Docker container:&lt;/p&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 32)&lt;/p&gt;
-&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;dl class="simple"&gt;
-&lt;dt&gt;huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf &lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;--local-dir /workspace/models/BitNet-b1.58-2B-4T&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;pre class="literal-block"&gt;huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf \
+    --local-dir /workspace/models/BitNet-b1.58-2B-4T&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;once the model is in place, you can interact with with it:&lt;/p&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 38)&lt;/p&gt;
-&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;dl class="simple"&gt;
-&lt;dt&gt;bitnet_run_inference &lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;-m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -p "You are a helpful assistant" -n 1024 -cnv&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;pre class="literal-block"&gt;bitnet_run_inference \
+    -m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \
+    -p "You are a helpful assistant" \
+    -n 1024 \
+    -cnv&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</guid><pubDate>Wed, 30 Apr 2025 04:59:00 GMT</pubDate></item><item><title>S3000 REST webservice support</title><link>https://www.data-mining.co.nz/news/2025-04-03-s3000-rest-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;While our commercial framework for laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, had support for
 making predictions via &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Web_service"&gt;webservices&lt;/a&gt; for a long time,

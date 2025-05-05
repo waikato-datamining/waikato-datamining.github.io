@@ -29,23 +29,23 @@ Interacting with the language model:
 
 * from the "bitnet" directory launch the docker image in interactive mode::
 
-  docker run --shm-size 8G --net=host \
-      -u $(id -u):$(id -g) -e USER=$USER \
-      -v `pwd`:/workspace \
-      -v `pwd`/cache:/.cache \
-      -v `pwd`/triton:/.triton \
-      -it waikatodatamining/bitnet:2025-05-30_cpu
+    docker run --shm-size 8G --net=host \
+        -u $(id -u):$(id -g) -e USER=$USER \
+        -v `pwd`:/workspace \
+        -v `pwd`/cache:/.cache \
+        -v `pwd`/triton:/.triton \
+        -it waikatodatamining/bitnet:2025-05-30_cpu
 
 * as a one-off, download the *BitNet-b1.58-2B-4T* model from within the Docker container::
 
-  huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf \
-      --local-dir /workspace/models/BitNet-b1.58-2B-4T
+    huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf \
+        --local-dir /workspace/models/BitNet-b1.58-2B-4T
 
 
 * once the model is in place, you can interact with with it::
 
-  bitnet_run_inference \
-      -m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \
-      -p "You are a helpful assistant" \
-      -n 1024 \
-      -cnv
+    bitnet_run_inference \
+        -m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \
+        -p "You are a helpful assistant" \
+        -n 1024 \
+        -cnv

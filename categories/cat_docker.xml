@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 05 May 2025 04:10:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>BitNet Docker image available</title><link>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker image is available for Microsoft's &lt;a class="reference external" href="https://github.com/microsoft/BitNet"&gt;BitNet&lt;/a&gt; small language
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 05 May 2025 04:32:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>BitNet Docker image available</title><link>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker image is available for Microsoft's &lt;a class="reference external" href="https://github.com/microsoft/BitNet"&gt;BitNet&lt;/a&gt; small language
 model (SLM):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/bitnet/blob/main/2025-04-30_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -20,37 +20,23 @@ model (SLM):&lt;/p&gt;
 &lt;p&gt;Interacting with the language model:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;from the "bitnet" directory launch the docker image in interactive mode:&lt;/p&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 23)&lt;/p&gt;
-&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;dl class="simple"&gt;
-&lt;dt&gt;docker run --shm-size 8G --net=host &lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;-u $(id -u):$(id -g) -e USER=$USER -v &lt;cite&gt;pwd&lt;/cite&gt;:/workspace -v &lt;cite&gt;pwd&lt;/cite&gt;/cache:/.cache -v &lt;cite&gt;pwd&lt;/cite&gt;/triton:/.triton -it waikatodatamining/bitnet:2025-05-30_cpu&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;pre class="literal-block"&gt;docker run --shm-size 8G --net=host \
+    -u $(id -u):$(id -g) -e USER=$USER \
+    -v `pwd`:/workspace \
+    -v `pwd`/cache:/.cache \
+    -v `pwd`/triton:/.triton \
+    -it waikatodatamining/bitnet:2025-05-30_cpu&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;as a one-off, download the &lt;em&gt;BitNet-b1.58-2B-4T&lt;/em&gt; model from within the Docker container:&lt;/p&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 32)&lt;/p&gt;
-&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;dl class="simple"&gt;
-&lt;dt&gt;huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf &lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;--local-dir /workspace/models/BitNet-b1.58-2B-4T&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;pre class="literal-block"&gt;huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf \
+    --local-dir /workspace/models/BitNet-b1.58-2B-4T&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;once the model is in place, you can interact with with it:&lt;/p&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;, line 38)&lt;/p&gt;
-&lt;p&gt;Literal block expected; none found.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;dl class="simple"&gt;
-&lt;dt&gt;bitnet_run_inference &lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;-m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -p "You are a helpful assistant" -n 1024 -cnv&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;pre class="literal-block"&gt;bitnet_run_inference \
+    -m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \
+    -p "You are a helpful assistant" \
+    -n 1024 \
+    -cnv&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</guid><pubDate>Wed, 30 Apr 2025 04:59:00 GMT</pubDate></item><item><title>SpeciesNet 4.0.1 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-03-05-speciesnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/google/cameratrapai"&gt;SpeciesNet&lt;/a&gt;
 network that &lt;a class="reference external" href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/"&gt;Google announced on March 3rd, 2025&lt;/a&gt;:&lt;/p&gt;
