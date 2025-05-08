@@ -58,7 +58,7 @@ benefits:
             <div class="card-body d-flex flex-column">
               <p class="card-text">
                 <ul>
-                  <li>Unlimited number of calibrations (Weka/Python)</i>
+                  <li>Unlimited number of calibrations (<a href="https://ml.cms.waikato.ac.nz/weka/">Weka</a>/Python/<a href="https://djl.ai/">DJL</a>)</i>
                   <li>Unlimited number of import tasks</i>
                   <li>No additional cost in making predictions</i>
                   <li>Automated/scheduled training</i>
