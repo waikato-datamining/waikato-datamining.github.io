@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2025-03-28 16:59:00 UTC+13:00
+.. date: 2025-05-09 11:51:00 UTC+12:00
 .. tags: 
 .. category: software
 .. link: 
@@ -9,7 +9,8 @@
 .. hidetitle: True
 
 Our commercial S3000 software is aimed at laboratories that analyze samples such as soil, plant, feed
-and manure using spectroscopy (`NIR <https://en.wikipedia.org/wiki/Near-infrared_spectroscopy>`__, MIR,
+and manure using spectroscopy (`NIR <https://en.wikipedia.org/wiki/Near-infrared_spectroscopy>`__,
+`MIR <https://en.wikipedia.org/wiki/Infrared_spectroscopy>`__,
 `LIBS <https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy>`__ or
 `XRF <https://en.wikipedia.org/wiki/X-ray_fluorescence>`__).
 
@@ -43,7 +44,7 @@ benefits:
                 <ul>
                   <li>Calibrations built from in-house data</i>
                   <li>Integration into business processes, e.g., in-house LIMS</i>
-                  <li>Data fusion support, e.g., NIR+XRF</i>
+                  <li><a href="https://en.wikipedia.org/wiki/Data_fusion">Data fusion</a> support, e.g., NIR+XRF</i>
                   <li>Instrument conversions, between models or manufacturers</li>
                 </ul>
               </p>
