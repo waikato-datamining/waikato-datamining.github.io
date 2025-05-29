@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2025-05-05 16:08:00 UTC+12:00
+.. date: 2025-05-29 19:50:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -279,12 +279,12 @@
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/mmsegmentation:1.2.2-3_cpu</span></code></p>
               </li>
               <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/paddleseg/blob/master/2.10.0_cuda11.8">PaddleSeg 2.10.0, PyTorch 2.5.1 and CUDA 11.8</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/paddleseg:2.10.0_cuda11.8</span></code></p>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/paddleseg/blob/master/2.10.0-3_cuda11.8">PaddleSeg 2.10.0, PyTorch 2.7.0 and CUDA 11.8</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/paddleseg:2.10.0-3_cuda11.8</span></code></p>
               </li>
               <li>
-                <p><a class="reference external" href="https://github.com/waikato-datamining/paddleseg/blob/master/2.10.0_cpu">PaddleSeg 2.10.0, PyTorch 1.11.0 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatamining/paddleseg:2.10.0_cpu</span></code></p>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/paddleseg/blob/master/2.10.0-3_cpu">PaddleSeg 2.10.0, PyTorch 2.7.0 and CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/paddleseg:2.10.0-3_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr/0.1.2_cuda11.1">DEXTR 0.1.2, PyTorch 1.10.0 and CUDA 11.1</a></p>
