@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2025-05-09 11:51:00 UTC+12:00
+.. date: 2025-06-25 16:51:00 UTC+12:00
 .. tags: 
 .. category: software
 .. link: 
@@ -134,6 +134,8 @@ benefits:
                 <p>Example configuration:</p>
                 <p><a href="/galleries/java-frontend" class="btn btn-primary">Java frontend</a></p>
                 <p><a href="/galleries/web-frontend" class="btn btn-primary">Web frontend</a></p>
+                <p>Comparison of calibration methods:</p>
+                <a class="reference external image-reference" href="../images/methods.png"><figure><img alt="Comparison of spectral data analysis methods" class="align-right" src="../images/methods.png"></figure></a>
               </p>
             </div>
           </div>
