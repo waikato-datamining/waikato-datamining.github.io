@@ -87,6 +87,16 @@
 
         <div class="col mb-4">
           <div class="card h-100 shadow">
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">spectral-data-converter</h3></div><img src="/images/spectrum.png" height="24"/></div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text">Processing spectral data using command-line pipelines is easy and allows for convenient automation of processes. Conversion between formats is just one use-case, you can also clean and preprocess data, as well as build and apply scikit-learn models.</p>
+              <a href="/spectral-data-converter-examples/" class="btn btn-primary stretched-link mt-auto">More...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100 shadow">
             <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Github</h3></div><img src="/images/211904_social_github_icon.png" height="24"/></div>
             <div class="card-body d-flex flex-column">
               <p class="card-text">Github organizations that encompass our code repositories, including libraries and Docker images:</p>
