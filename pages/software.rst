@@ -101,6 +101,7 @@
             <div class="card-body d-flex flex-column">
               <p class="card-text">Github organizations that encompass our code repositories, including libraries and Docker images:</p>
               <a href="https://github.com/waikato-datamining/" class="btn btn-primary mt-auto">waikato-datamining</a>
+              <p/>
               <a href="https://github.com/waikato-llm/" class="btn btn-primary mt-auto">waikato-llm</a>
             </div>
           </div>
