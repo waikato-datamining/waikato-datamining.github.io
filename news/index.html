@@ -78,7 +78,113 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-06-27-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-07-11-sdc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-07-11T11:23:00+12:00" itemprop="datePublished" title="2025-07-11 11:23">2025-07-11 11:23</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all">spectral-data-converter-all</a> library
+is now available: <strong>0.0.2</strong>. Docker images have been deployed as well.</p>
+<p>This release contains couple of major of changes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/directio/">support for direct I/O</a>: most readers/writers can operate on file-like objects now as well</p></li>
+<li><p><a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/zip/">reading from/writing to ZIP files</a>: <cite>from-zip</cite>, <cite>to-zip</cite></p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-07-11-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-07-11T10:23:00+12:00" itemprop="datePublished" title="2025-07-11 10:23">2025-07-11 10:23</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.0.12</strong>. Docker images have been deployed as well.</p>
+<p>The most notably changes since 0.0.11 are:</p>
+<ul class="simple">
+<li><p>dropped numpy&lt;2.0.0 restriction</p></li>
+<li><p>added grayscale-to-binary filter</p></li>
+<li><p>fix: sort-pixels, rgb-to-grayscale filters</p></li>
+<li><p>the rename filter now supports lower/upper case placeholders of name and extension as well</p></li>
+<li><p>requiring seppl&gt;=0.2.17 now for skippable plugin support and avoiding deprecated use of pkg_resources</p></li>
+<li><p>added any-to-rgb filter for turning binary/grayscale images back into RGB ones</p></li>
+<li><p>added label-to-metadata filter for transferring labels into meta-data</p></li>
+<li><p>added metadata-to-placeholder filter for transferring meta-data into placeholders</p></li>
+<li><p>added basic support for images with associated depth information: DepthData, DepthInformation</p></li>
+<li><p>added depth-to-grayscale filter for converting depth information to grayscale image</p></li>
+<li><p>added depth information readers from-grayscale-dp, from-numpy-dp, from-csv-dp and from-pfm-dp</p></li>
+<li><p>added depth information writers to-grayscale-dp, to-numpy-dp, to-csv-dp and to-pfm-dp</p></li>
+<li><p>added apply-ext-mask filter to applying external PNG masks to image containers (image and/or annotations)</p></li>
+<li><p>added apply-label-mask filter for applying image segmentation label masks to their base images</p></li>
+<li><p>added label-present-ic and label-present-is that ensure that certain label(s) are present or otherwise discard the image</p></li>
+<li><p>filter label-present was renamed to label-present-od but keeping label-present as alias for the time being</p></li>
+<li><p>fix: imgseg_to_bluechannel, imgseg_to_indexedpng and imgseg_to_grayscale now handle overlapping pixels correctly, no longer adding them up and introducing additional labels</p></li>
+<li><p>discard-by-name filter can use names of files in specified paths now as well</p></li>
+<li><p>fixed the construction of the error messages in the pyfunc reader/filter/writer classes</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-ldc-release/" class="u-url">llm-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-07-11-ldc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-07-11T09:20:00+12:00" itemprop="datePublished" title="2025-07-11 09:20">2025-07-11 09:20</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Version <strong>0.2.7</strong> of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm_dataset_converter</a> library has
+been release. New release of ldc_doc, ldc_docx, ldc_faster_whisper, ldc_google, ldc_openai, ldc_pdf and ldc_tint
+have been made available as well.</p>
+<p>The meta-library that combines all the libraries now stands at version <strong>0.0.6</strong>:</p>
+<p><a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all">llm-dataset-converter-all</a></p>
+<p>A new Docker image is available as well:</p>
+<p><a class="reference external" href="https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags">https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags</a></p>
+<p>This release is mostly a maintenance release, but still had some useful additions:</p>
+<ul class="simple">
+<li><p>added <cite>set-placeholder</cite> filter for dynamically setting (temporary) placeholders at runtime</p></li>
+<li><p>added <cite>remove-strings</cite> filter that just removes sub-strings</p></li>
+<li><p>added <cite>strip-strings</cite> filter for stripping whitespaces from start/end of strings</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-10-adc-release/" class="u-url">audio-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-07-10-adc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-07-10T13:07:00+12:00" itemprop="datePublished" title="2025-07-10 13:07">2025-07-10 13:07</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter">audio-dataset-converter</a>
+library and it various additional dependent libraries is out.</p>
+<p>The meta-library that combines all the libraries now stands at version <strong>0.0.3</strong>:</p>
+<p><a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter-all">audio-dataset-converter-all</a></p>
+<p>A new Docker image is available as well:</p>
+<p><a class="reference external" href="https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags">https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags</a></p>
+<p>Notable changes:</p>
+<ul class="simple">
+<li><p>improved support for placeholders via the <cite>set-placeholder</cite> and <cite>metadata-to-placeholder</cite> filters</p></li>
+<li><p>added <cite>from-multi</cite> and <cite>to-multi</cite> for combining multiple readers/writers</p></li>
+<li><p>added the <cite>--resume_from</cite> option to readers to allow resuming the processing from a specific file</p></li>
+<li><p>added the <cite>--split_group</cite> option ti writers: a regular expression with a single group used for keeping
+items in the same split, e.g., for identifying the base name of a file or the ID</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-06-27-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
@@ -306,94 +412,6 @@ speciesnet_run_model --ensemble_only \
 "predictions.json" containing all the relevant information (classification and bbox).</p>
 <p>For more information on the json output format:</p>
 <p><a class="reference external" href="https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format">https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format</a></p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-04-s3000-python-support/" class="u-url">S3000 Python support</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-03-04-s3000-python-support/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-03-04T17:07:00+13:00" itemprop="datePublished" title="2025-03-04 17:07">2025-03-04 17:07</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Our commercial offering for laboratories, <a class="reference external" href="../s3000/">S3000</a>, now has official
-support for custom Python models. Being a Java application, S3000 historically relied on Weka for its modeling.
-However, with the integration of <a class="reference external" href="https://github.com/ninia/jep">Jep</a> (Java Embedded Python) in ADAMS, it is now
-possible to use scikit-learn or deep learning libraries for training models and making predictions.</p>
-<p>In order to make this work, ADAMS needs to launch from the context of an activated virtual Python environment
-that contains all the required Python libraries and then use the <cite>JepRegressor</cite> Weka meta-classifier to define
-the relevant code for training and making predictions. Due to Java serialization not being applicable to Python objects,
-these scripts must implement the relevant serialization/deserialization themselves, e.g., via pickle.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-26-idc-release/" class="u-url">image-dataset-converter release</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-02-26-idc-release/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-02-26T20:06:00+13:00" itemprop="datePublished" title="2025-02-26 20:06">2025-02-26 20:06</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
-is now available: <strong>0.0.7</strong>. Docker images have been deployed as well.</p>
-<p>The most notably changes are:</p>
-<ul class="simple">
-<li><p>added support for the <a class="reference external" href="https://github.com/wkentaro/labelme">labelme</a> tool with the
-<a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-labelme">image-dataset-converter-labelme</a> library,
-specifically for the image classification, object detection and instance segmentation JSON file formats</p></li>
-<li><p>added support for <a class="reference external" href="https://github.com/PaddlePaddle">PaddlePaddle</a> frameworks
-with the <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-paddle">image-dataset-converter-paddle</a> library,
-specifically for <a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas">image classification</a>,
-<a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection">object detection/instance segmentation</a>
-and <a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg">image segmentation</a>.</p></li>
-</ul>
-</div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-24-paddleclas-docker/" class="u-url">PaddleDetection 2.8.0 Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-02-24-paddleclas-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-02-24T17:11:00+13:00" itemprop="datePublished" title="2025-02-24 17:11">2025-02-24 17:11</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>First Docker images are available for the <a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection">PaddleDetection</a>
-image classification framework, using the 2.8.0 release of PaddleDetection (code base as of 2024-11-06):</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cuda11.8">CUDA 11.8</a></p></li>
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cpu">CPU</a></p></li>
-</ul>
-<p>The following tutorials are available:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/paddledetection/">Object detection</a></p></li>
-<li><p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/instance_segmentation/paddledetection/">Instance segmentation</a></p></li>
-</ul>
-</div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-10-paddleclas-docker/" class="u-url">PaddleClas 2.6.0 Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-02-10-paddleclas-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-02-10T15:30:00+13:00" itemprop="datePublished" title="2025-02-10 15:30">2025-02-10 15:30</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>First Docker images are available for the <a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas">PaddleClas</a>
-image classification framework, using the 2.6.0 release of PaddleClas (code base as of 2024-11-06):</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/tree/main/2.6.0_cuda11.8">CUDA 11.8</a></p></li>
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/tree/main/2.6.0_cpu">CPU</a></p></li>
-</ul>
-<p>A tutorial is available from here:</p>
-<p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_classification/paddleclas/">https://www.data-mining.co.nz/applied-deep-learning/image_classification/paddleclas/</a></p>
     </div>
     </article>
 </div>

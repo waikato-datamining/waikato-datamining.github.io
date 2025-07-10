@@ -79,7 +79,95 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-05-paddleseg-docker/" class="u-url">PaddleSeg 2.10.0 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-04-s3000-python-support/" class="u-url">S3000 Python support</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-03-04-s3000-python-support/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-03-04T17:07:00+13:00" itemprop="datePublished" title="2025-03-04 17:07">2025-03-04 17:07</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Our commercial offering for laboratories, <a class="reference external" href="../s3000/">S3000</a>, now has official
+support for custom Python models. Being a Java application, S3000 historically relied on Weka for its modeling.
+However, with the integration of <a class="reference external" href="https://github.com/ninia/jep">Jep</a> (Java Embedded Python) in ADAMS, it is now
+possible to use scikit-learn or deep learning libraries for training models and making predictions.</p>
+<p>In order to make this work, ADAMS needs to launch from the context of an activated virtual Python environment
+that contains all the required Python libraries and then use the <cite>JepRegressor</cite> Weka meta-classifier to define
+the relevant code for training and making predictions. Due to Java serialization not being applicable to Python objects,
+these scripts must implement the relevant serialization/deserialization themselves, e.g., via pickle.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-26-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-02-26-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-02-26T20:06:00+13:00" itemprop="datePublished" title="2025-02-26 20:06">2025-02-26 20:06</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.0.7</strong>. Docker images have been deployed as well.</p>
+<p>The most notably changes are:</p>
+<ul class="simple">
+<li><p>added support for the <a class="reference external" href="https://github.com/wkentaro/labelme">labelme</a> tool with the
+<a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-labelme">image-dataset-converter-labelme</a> library,
+specifically for the image classification, object detection and instance segmentation JSON file formats</p></li>
+<li><p>added support for <a class="reference external" href="https://github.com/PaddlePaddle">PaddlePaddle</a> frameworks
+with the <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-paddle">image-dataset-converter-paddle</a> library,
+specifically for <a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas">image classification</a>,
+<a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection">object detection/instance segmentation</a>
+and <a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg">image segmentation</a>.</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-24-paddleclas-docker/" class="u-url">PaddleDetection 2.8.0 Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-02-24-paddleclas-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-02-24T17:11:00+13:00" itemprop="datePublished" title="2025-02-24 17:11">2025-02-24 17:11</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>First Docker images are available for the <a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection">PaddleDetection</a>
+image classification framework, using the 2.8.0 release of PaddleDetection (code base as of 2024-11-06):</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cuda11.8">CUDA 11.8</a></p></li>
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cpu">CPU</a></p></li>
+</ul>
+<p>The following tutorials are available:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/paddledetection/">Object detection</a></p></li>
+<li><p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/instance_segmentation/paddledetection/">Instance segmentation</a></p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-10-paddleclas-docker/" class="u-url">PaddleClas 2.6.0 Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-02-10-paddleclas-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-02-10T15:30:00+13:00" itemprop="datePublished" title="2025-02-10 15:30">2025-02-10 15:30</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>First Docker images are available for the <a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas">PaddleClas</a>
+image classification framework, using the 2.6.0 release of PaddleClas (code base as of 2024-11-06):</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/tree/main/2.6.0_cuda11.8">CUDA 11.8</a></p></li>
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/tree/main/2.6.0_cpu">CPU</a></p></li>
+</ul>
+<p>A tutorial is available from here:</p>
+<p><a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_classification/paddleclas/">https://www.data-mining.co.nz/applied-deep-learning/image_classification/paddleclas/</a></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-02-05-paddleseg-docker/" class="u-url">PaddleSeg 2.10.0 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato

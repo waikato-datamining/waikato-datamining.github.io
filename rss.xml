@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 27 Jun 2025 04:54:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-06-27-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;The first release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 10 Jul 2025 23:59:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
+is now available: &lt;strong&gt;0.0.2&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
+&lt;p&gt;This release contains couple of major of changes:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/directio/"&gt;support for direct I/O&lt;/a&gt;: most readers/writers can operate on file-like objects now as well&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/zip/"&gt;reading from/writing to ZIP files&lt;/a&gt;: &lt;cite&gt;from-zip&lt;/cite&gt;, &lt;cite&gt;to-zip&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-11-sdc-release/</guid><pubDate>Thu, 10 Jul 2025 23:23:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
+is now available: &lt;strong&gt;0.0.12&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
+&lt;p&gt;The most notably changes since 0.0.11 are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;dropped numpy&amp;lt;2.0.0 restriction&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added grayscale-to-binary filter&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;fix: sort-pixels, rgb-to-grayscale filters&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the rename filter now supports lower/upper case placeholders of name and extension as well&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;requiring seppl&amp;gt;=0.2.17 now for skippable plugin support and avoiding deprecated use of pkg_resources&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added any-to-rgb filter for turning binary/grayscale images back into RGB ones&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added label-to-metadata filter for transferring labels into meta-data&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added metadata-to-placeholder filter for transferring meta-data into placeholders&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added basic support for images with associated depth information: DepthData, DepthInformation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added depth-to-grayscale filter for converting depth information to grayscale image&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added depth information readers from-grayscale-dp, from-numpy-dp, from-csv-dp and from-pfm-dp&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added depth information writers to-grayscale-dp, to-numpy-dp, to-csv-dp and to-pfm-dp&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added apply-ext-mask filter to applying external PNG masks to image containers (image and/or annotations)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added apply-label-mask filter for applying image segmentation label masks to their base images&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added label-present-ic and label-present-is that ensure that certain label(s) are present or otherwise discard the image&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;filter label-present was renamed to label-present-od but keeping label-present as alias for the time being&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;fix: imgseg_to_bluechannel, imgseg_to_indexedpng and imgseg_to_grayscale now handle overlapping pixels correctly, no longer adding them up and introducing additional labels&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;discard-by-name filter can use names of files in specified paths now as well&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;fixed the construction of the error messages in the pyfunc reader/filter/writer classes&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-11-idc-release/</guid><pubDate>Thu, 10 Jul 2025 22:23:00 GMT</pubDate></item><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-ldc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Version &lt;strong&gt;0.2.7&lt;/strong&gt; of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm_dataset_converter&lt;/a&gt; library has
+been release. New release of ldc_doc, ldc_docx, ldc_faster_whisper, ldc_google, ldc_openai, ldc_pdf and ldc_tint
+have been made available as well.&lt;/p&gt;
+&lt;p&gt;The meta-library that combines all the libraries now stands at version &lt;strong&gt;0.0.6&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all"&gt;llm-dataset-converter-all&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A new Docker image is available as well:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags"&gt;https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This release is mostly a maintenance release, but still had some useful additions:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;set-placeholder&lt;/cite&gt; filter for dynamically setting (temporary) placeholders at runtime&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;remove-strings&lt;/cite&gt; filter that just removes sub-strings&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;strip-strings&lt;/cite&gt; filter for stripping whitespaces from start/end of strings&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-11-ldc-release/</guid><pubDate>Thu, 10 Jul 2025 21:20:00 GMT</pubDate></item><item><title>audio-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-10-adc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter"&gt;audio-dataset-converter&lt;/a&gt;
+library and it various additional dependent libraries is out.&lt;/p&gt;
+&lt;p&gt;The meta-library that combines all the libraries now stands at version &lt;strong&gt;0.0.3&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter-all"&gt;audio-dataset-converter-all&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A new Docker image is available as well:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags"&gt;https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Notable changes:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;improved support for placeholders via the &lt;cite&gt;set-placeholder&lt;/cite&gt; and &lt;cite&gt;metadata-to-placeholder&lt;/cite&gt; filters&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;from-multi&lt;/cite&gt; and &lt;cite&gt;to-multi&lt;/cite&gt; for combining multiple readers/writers&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added the &lt;cite&gt;--resume_from&lt;/cite&gt; option to readers to allow resuming the processing from a specific file&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added the &lt;cite&gt;--split_group&lt;/cite&gt; option ti writers: a regular expression with a single group used for keeping
+items in the same split, e.g., for identifying the base name of a file or the ID&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-10-adc-release/</guid><pubDate>Thu, 10 Jul 2025 01:07:00 GMT</pubDate></item><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-06-27-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;The first release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
 is now available: &lt;strong&gt;0.0.1&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
 &lt;p&gt;This library allows you to define and run processing pipelines on the command-line, e.g., for:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -141,40 +195,4 @@ speciesnet_run_model --ensemble_only \
 &lt;p&gt;On your host system, the "speciesnet/output" directory will then contain the generated .json file(s), with
 "predictions.json" containing all the relevant information (classification and bbox).&lt;/p&gt;
 &lt;p&gt;For more information on the json output format:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format"&gt;https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-03-05-speciesnet-docker/</guid><pubDate>Wed, 05 Mar 2025 00:21:00 GMT</pubDate></item><item><title>S3000 Python support</title><link>https://www.data-mining.co.nz/news/2025-03-04-s3000-python-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Our commercial offering for laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, now has official
-support for custom Python models. Being a Java application, S3000 historically relied on Weka for its modeling.
-However, with the integration of &lt;a class="reference external" href="https://github.com/ninia/jep"&gt;Jep&lt;/a&gt; (Java Embedded Python) in ADAMS, it is now
-possible to use scikit-learn or deep learning libraries for training models and making predictions.&lt;/p&gt;
-&lt;p&gt;In order to make this work, ADAMS needs to launch from the context of an activated virtual Python environment
-that contains all the required Python libraries and then use the &lt;cite&gt;JepRegressor&lt;/cite&gt; Weka meta-classifier to define
-the relevant code for training and making predictions. Due to Java serialization not being applicable to Python objects,
-these scripts must implement the relevant serialization/deserialization themselves, e.g., via pickle.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-03-04-s3000-python-support/</guid><pubDate>Tue, 04 Mar 2025 04:07:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
-is now available: &lt;strong&gt;0.0.7&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
-&lt;p&gt;The most notably changes are:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;added support for the &lt;a class="reference external" href="https://github.com/wkentaro/labelme"&gt;labelme&lt;/a&gt; tool with the
-&lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-labelme"&gt;image-dataset-converter-labelme&lt;/a&gt; library,
-specifically for the image classification, object detection and instance segmentation JSON file formats&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added support for &lt;a class="reference external" href="https://github.com/PaddlePaddle"&gt;PaddlePaddle&lt;/a&gt; frameworks
-with the &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-paddle"&gt;image-dataset-converter-paddle&lt;/a&gt; library,
-specifically for &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas"&gt;image classification&lt;/a&gt;,
-&lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;object detection/instance segmentation&lt;/a&gt;
-and &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg"&gt;image segmentation&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</guid><pubDate>Wed, 26 Feb 2025 07:06:00 GMT</pubDate></item><item><title>PaddleDetection 2.8.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-02-24-paddleclas-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;PaddleDetection&lt;/a&gt;
-image classification framework, using the 2.8.0 release of PaddleDetection (code base as of 2024-11-06):&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cuda11.8"&gt;CUDA 11.8&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The following tutorials are available:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/paddledetection/"&gt;Object detection&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/instance_segmentation/paddledetection/"&gt;Instance segmentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-24-paddleclas-docker/</guid><pubDate>Mon, 24 Feb 2025 04:11:00 GMT</pubDate></item><item><title>PaddleClas 2.6.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2025-02-10-paddleclas-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas"&gt;PaddleClas&lt;/a&gt;
-image classification framework, using the 2.6.0 release of PaddleClas (code base as of 2024-11-06):&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddleclas/tree/main/2.6.0_cuda11.8"&gt;CUDA 11.8&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddleclas/tree/main/2.6.0_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A tutorial is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_classification/paddleclas/"&gt;https://www.data-mining.co.nz/applied-deep-learning/image_classification/paddleclas/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-10-paddleclas-docker/</guid><pubDate>Mon, 10 Feb 2025 02:30:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format"&gt;https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-03-05-speciesnet-docker/</guid><pubDate>Wed, 05 Mar 2025 00:21:00 GMT</pubDate></item></channel></rss>
