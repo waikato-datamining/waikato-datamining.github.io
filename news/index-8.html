@@ -79,7 +79,56 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-05-speciesnet-docker/" class="u-url">SpeciesNet 4.0.1 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-04-03-s3000-rest-support/" class="u-url">S3000 REST webservice support</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-04-03-s3000-rest-support/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-04-03T10:35:00+13:00" itemprop="datePublished" title="2025-04-03 10:35">2025-04-03 10:35</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>While our commercial framework for laboratories, <a class="reference external" href="../s3000/">S3000</a>, had support for
+making predictions via <a class="reference external" href="https://en.wikipedia.org/wiki/Web_service">webservices</a> for a long time,
+that was limited to asynchronous ones: a webservice endpoint receives data coming in and, once the
+predictions have been generated, the results get forwarded to another webservice.</p>
+<p>With recent changes to the codebase, it is now possible to offer synchronous <a class="reference external" href="https://en.wikipedia.org/wiki/REST">REST webservices</a>
+as well. In order to reduce latency as much as possible, provenance logging under the hood
+has been modified to have a much higher throughput that no longer impacts the speed of the predictions.</p>
+<p>Thanks to the plugin architecture of S3000, customer-specific webservices can be implemented and deployed
+with minimal effort.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-04-03-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-04-03-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-04-03T10:23:00+13:00" itemprop="datePublished" title="2025-04-03 10:23">2025-04-03 10:23</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.0.11</strong>. Docker images have been deployed as well.</p>
+<p>The most notably changes since 0.0.7 are:</p>
+<ul class="simple">
+<li><p>support for placeholders is now available for readers/writers, which can be used in constructing input/output
+files/folders, including predefined ones available (<cite>{CWD}</cite>, <cite>{HOME}</cite>, <cite>{TMP}</cite>), input-based ones
+(e.g., <cite>{INPUT_PATH}</cite>, <cite>{INPUT_NAMEEXT}</cite>), user-defined ones (supplied to tools, e.g., via the <cite>-p/--placeholders</cite>
+option of the <cite>idc-convert</cite> tool) and run-time ones (set with the <cite>set-placeholder</cite> filter)</p></li>
+<li><p>added the <cite>--resume_from</cite> option to applicable readers, which allows resuming the pipeline from the
+file matching the supplied glob, e.g., <cite>*/012345.jpg</cite></p></li>
+<li><p>the new <cite>from-multi</cite> reader and <cite>to-multi</cite> writer simplify the combining of datasets (from potentially
+different formats) and output in multiple formats respectively</p></li>
+<li><p>writers that can split the incoming stream into subsets had the new <cite>--split_group</cite> option added, which
+allows keeping samples together within subsets using a regular expression, e.g., when dealing with
+images that were split into sub-grids or augmented with flipping/rotating</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-05-speciesnet-docker/" class="u-url">SpeciesNet 4.0.1 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
