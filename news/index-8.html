@@ -5,12 +5,14 @@
 <meta charset="utf-8">
 <meta name="description" content="Commercial AI at the University of Waikato">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posts for year 2025 | Data mining</title>
+<title>Data mining (old posts, page 8) | Data mining</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
-<link rel="canonical" href="https://www.data-mining.co.nz/2025/">
+<link rel="canonical" href="https://www.data-mining.co.nz/news/index-8.html">
+<link rel="prev" href="." type="text/html">
+<link rel="next" href="index-7.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -34,7 +36,7 @@ bg-dark
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="navbar-nav mr-auto">
 <li class="nav-item">
-<a href="../news/" class="nav-link">News</a>
+<a href="." class="nav-link">News</a>
                 </li>
 <li class="nav-item">
 <a href="../expertise/" class="nav-link">Expertise</a>
@@ -71,63 +73,104 @@ bg-dark
         
         
         
-<article class="listpage"><header><h1>Posts for year 2025</h1>
-    </header><ul class="postlist">
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-05-speciesnet-docker/" class="u-url">SpeciesNet 4.0.1 Docker images available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-03-05-speciesnet-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-03-05T13:21:00+13:00" itemprop="datePublished" title="2025-03-05 13:21">2025-03-05 13:21</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>First Docker images are available for the <a class="reference external" href="https://github.com/google/cameratrapai">SpeciesNet</a>
+network that <a class="reference external" href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/">Google announced on March 3rd, 2025</a>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/speciesnet/tree/main/4.0.1_cuda12.1">CUDA 12.1</a></p></li>
+<li><p><a class="reference external" href="https://github.com/waikato-datamining/speciesnet/tree/main/4.0.1_cpu">CPU</a></p></li>
+</ul>
+<p>Below is an example on how to use these images (on Linux or on Windows under WSL2).</p>
+<p>Prerequisites:</p>
+<ul class="simple">
+<li><p>create a directory for your output eg "speciesnet"</p></li>
 <li>
-<time class="listdate" datetime="2025-10-31T15:45:00+13:00" title="2025-10-31 15:45">2025-10-31 15:45</time><a href="../news/2025-10-31-idc-release/" class="listtitle">image-dataset-converter release</a>
+<p>in that directory create the following sub-directories</p>
+<ul>
+<li><p>cache</p></li>
+<li><p>config</p></li>
+<li><p>data</p></li>
+<li><p>output</p></li>
+</ul>
 </li>
-        <li>
-<time class="listdate" datetime="2025-07-11T11:23:00+12:00" title="2025-07-11 11:23">2025-07-11 11:23</time><a href="../news/2025-07-11-sdc-release/" class="listtitle">spectral-data-converter release</a>
+</ul>
+<p>Processing data:</p>
+<ul>
+<li><p>copy the images that you want to analyze into the "speciesnet/data" directory</p></li>
+<li>
+<p>from the "speciesnet" directory launch the appropriate docker image in interactive mode</p>
+<ul>
+<li>
+<p>CPU:</p>
+<pre class="literal-block">docker run --rm --gpus=all --shm-size 8G --net=host \
+  -u $(id -u):$(id -g) -e USER=$USER \
+  -v `pwd`:/workspace \
+  -v `pwd`/cache:/.cache \
+  -v `pwd`/config:/.config \
+  -v `pwd`/cache:/.torch \
+  -it waikatodatamining/speciesnet:4.0.1_cpu</pre>
 </li>
-        <li>
-<time class="listdate" datetime="2025-07-11T10:23:00+12:00" title="2025-07-11 10:23">2025-07-11 10:23</time><a href="../news/2025-07-11-idc-release/" class="listtitle">image-dataset-converter release</a>
+<li>
+<p>CUDA:</p>
+<pre class="literal-block">docker run --rm --gpus=all --shm-size 8G --net=host \
+  -u $(id -u):$(id -g) -e USER=$USER \
+  -v `pwd`:/workspace \
+  -v `pwd`/cache:/.cache \
+  -v `pwd`/config:/.config \
+  -v `pwd`/cache:/.torch \
+  -it waikatodatamining/speciesnet:4.0.1_cuda21.1</pre>
 </li>
-        <li>
-<time class="listdate" datetime="2025-07-11T09:20:00+12:00" title="2025-07-11 09:20">2025-07-11 09:20</time><a href="../news/2025-07-11-ldc-release/" class="listtitle">llm-dataset-converter release</a>
+</ul>
 </li>
-        <li>
-<time class="listdate" datetime="2025-07-10T13:07:00+12:00" title="2025-07-10 13:07">2025-07-10 13:07</time><a href="../news/2025-07-10-adc-release/" class="listtitle">audio-dataset-converter release</a>
+<li>
+<p>run the following script to process your images:</p>
+<pre class="literal-block">speciesnet_run_model \
+    --folders "/workspace/data" \
+    --predictions_json "/workspace/output/predictions.json"</pre>
 </li>
-        <li>
-<time class="listdate" datetime="2025-06-27T10:23:00+12:00" title="2025-06-27 10:23">2025-06-27 10:23</time><a href="../news/2025-06-27-sdc-release/" class="listtitle">spectral-data-converter release</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-05-02T11:23:00+12:00" title="2025-05-02 11:23">2025-05-02 11:23</time><a href="../news/2025-05-02-djl-arff-release/" class="listtitle">djl-arff release</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-04-30T16:59:00+12:00" title="2025-04-30 16:59">2025-04-30 16:59</time><a href="../news/2025-04-30-bitnet-docker/" class="listtitle">BitNet Docker image available</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-04-03T10:35:00+13:00" title="2025-04-03 10:35">2025-04-03 10:35</time><a href="../news/2025-04-03-s3000-rest-support/" class="listtitle">S3000 REST webservice support</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-04-03T10:23:00+13:00" title="2025-04-03 10:23">2025-04-03 10:23</time><a href="../news/2025-04-03-idc-release/" class="listtitle">image-dataset-converter release</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-03-05T13:21:00+13:00" title="2025-03-05 13:21">2025-03-05 13:21</time><a href="../news/2025-03-05-speciesnet-docker/" class="listtitle">SpeciesNet 4.0.1 Docker images available</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-03-04T17:07:00+13:00" title="2025-03-04 17:07">2025-03-04 17:07</time><a href="../news/2025-03-04-s3000-python-support/" class="listtitle">S3000 Python support</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-02-26T20:06:00+13:00" title="2025-02-26 20:06">2025-02-26 20:06</time><a href="../news/2025-02-26-idc-release/" class="listtitle">image-dataset-converter release</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-02-24T17:11:00+13:00" title="2025-02-24 17:11">2025-02-24 17:11</time><a href="../news/2025-02-24-paddleclas-docker/" class="listtitle">PaddleDetection 2.8.0 Docker images available</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-02-10T15:30:00+13:00" title="2025-02-10 15:30">2025-02-10 15:30</time><a href="../news/2025-02-10-paddleclas-docker/" class="listtitle">PaddleClas 2.6.0 Docker images available</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-02-05T17:02:00+13:00" title="2025-02-05 17:02">2025-02-05 17:02</time><a href="../news/2025-02-05-paddleseg-docker/" class="listtitle">PaddleSeg 2.10.0 Docker images available</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-01-13T09:31:00+13:00" title="2025-01-13 09:31">2025-01-13 09:31</time><a href="../news/2025-01-13-idc-release/" class="listtitle">image-dataset-converter release</a>
-</li>
-        <li>
-<time class="listdate" datetime="2025-01-07T10:20:00+13:00" title="2025-01-07 10:20">2025-01-07 10:20</time><a href="../news/2025-01-07-ldc-release/" class="listtitle">llm-dataset-converter release</a>
-</li>
-    </ul></article><!--End of body content--><footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
+</ul>
+<p>Or, if you want to run the individual steps separately:</p>
+<pre class="literal-block">speciesnet_run_model --detector_only \
+    --folders "/workspace/data" \
+    --predictions_json "/workspace/output/detections.json"
+speciesnet_run_model --classifier_only \
+    --folders "/workspace/data" \
+    --detections_json "/workspace/output/detections.json" \
+    --predictions_json "/workspace/output/classifications.json"
+speciesnet_run_model --ensemble_only \
+    --folders "/workspace/data" \
+    --detections_json "/workspace/output/detections.json" \
+    --classifications_json "/workspace/output/classifications.json" \
+    --predictions_json "/workspace/output/predictions.json"</pre>
+<p>On your host system, the "speciesnet/output" directory will then contain the generated .json file(s), with
+"predictions.json" containing all the relevant information (classification and bbox).</p>
+<p>For more information on the json output format:</p>
+<p><a class="reference external" href="https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format">https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format</a></p>
+    </div>
+    </article>
+</div>
+
+        <ul class="pager postindexpager clearfix">
+<li class="previous"><a href="." rel="prev">Newer posts</a></li>
+            <li class="next"><a href="index-7.html" rel="next">Older posts</a></li>
+        </ul>
+<!--End of body content--><footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
 
         <div class="container">
             <div class="row">
@@ -146,7 +189,7 @@ bg-dark
 </h5>
                         <ul class="thumbnail-widget">
 <li>
-                                <a href="../news/">News</a>
+                                <a href=".">News</a>
                             </li>
                             <li>
                                 <a href="../expertise/">Expertise</a>

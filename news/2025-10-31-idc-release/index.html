@@ -4,26 +4,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>spectral-data-converter release | Data mining</title>
+<title>image-dataset-converter release | Data mining</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
-<link rel="canonical" href="https://www.data-mining.co.nz/news/2025-07-11-sdc-release/">
+<link rel="canonical" href="https://www.data-mining.co.nz/news/2025-10-31-idc-release/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
 <meta name="author" content="Applied Machine Learning Group, University of Waikato">
-<link rel="prev" href="../2025-07-11-idc-release/" title="image-dataset-converter release" type="text/html">
-<link rel="next" href="../2025-10-31-idc-release/" title="image-dataset-converter release" type="text/html">
+<link rel="prev" href="../2025-07-11-sdc-release/" title="spectral-data-converter release" type="text/html">
 <meta property="og:site_name" content="Data mining">
-<meta property="og:title" content="spectral-data-converter release">
-<meta property="og:url" content="https://www.data-mining.co.nz/news/2025-07-11-sdc-release/">
-<meta property="og:description" content="A new release of our spectral-data-converter-all library
-is now available: 0.0.2. Docker images have been deployed as well.
-This release contains couple of major of changes:
-
-support for direct I/O: m">
+<meta property="og:title" content="image-dataset-converter release">
+<meta property="og:url" content="https://www.data-mining.co.nz/news/2025-10-31-idc-release/">
+<meta property="og:description" content="A new release of our image-dataset-converter-all library
+is now available: 0.1.0. Docker images have been deployed as well.
+This release represents a major overhaul under the hood and lots of new func">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2025-07-11T11:23:00+12:00">
+<meta property="article:published_time" content="2025-10-31T15:45:00+13:00">
 <meta property="article:tag" content="release">
 </head>
 <body>
@@ -84,7 +81,7 @@ bg-dark
         
         
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">spectral-data-converter release</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">image-dataset-converter release</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
@@ -92,7 +89,7 @@ bg-dark
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
-            <time class="published dt-published" datetime="2025-07-11T11:23:00+12:00" itemprop="datePublished" title="2025-07-11 11:23">2025-07-11 11:23</time></a>
+            <time class="published dt-published" datetime="2025-10-31T15:45:00+13:00" itemprop="datePublished" title="2025-10-31 15:45">2025-10-31 15:45</time></a>
             </p>
             
 
@@ -100,12 +97,40 @@ bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all">spectral-data-converter-all</a> library
-is now available: <strong>0.0.2</strong>. Docker images have been deployed as well.</p>
-<p>This release contains couple of major of changes:</p>
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.1.0</strong>. Docker images have been deployed as well.</p>
+<p>This release represents a major overhaul under the hood and lots of new functionality has been added as well.
+With this release it is now possible to write more complex/integrated/reactive pipelines with the added I/O and
+email plugins.</p>
+<p>The most notably changes since 0.0.12 are:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/directio/">support for direct I/O</a>: most readers/writers can operate on file-like objects now as well</p></li>
-<li><p><a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/zip/">reading from/writing to ZIP files</a>: <cite>from-zip</cite>, <cite>to-zip</cite></p></li>
+<li><p>a new release of <cite>seppl</cite> allows for filters that support m-to-n not just 1-to-1 conversions</p></li>
+<li><p>added <cite>list-to-sequence</cite> stream filter that forwards list items one by one</p></li>
+<li><p>common code among the image-dataset-converter, audio-dataset-converter and spectral-data-converter libraries
+has been extracted and moved into separate libraries to reduce duplication: <cite>kasperl</cite>, <cite>kasperl_redis</cite></p></li>
+<li><p>the new <cite>kasperl_plots</cite> library adds basic support for terminal plots (textual and graphical) and matplotlib ones</p></li>
+<li><p>the filters <cite>tee</cite>, <cite>trigger</cite> and <cite>sub-process</cite> support conditional execution based on meta-data evaluations now,
+as well as loading their sub-pipeline from a file to break up large pipelines into smaller, logical chunks</p></li>
+<li><p>added <cite>block</cite>, <cite>stop</cite> filters for controlling the flow of data (via meta-data conditions)</p></li>
+<li><p>the <cite>idc-exec</cite> tool now uses all trailing arguments as the pipeline to execute multiple times rather than as a single
+argument to a flag; alternatively, the pipeline can be loaded from a file</p></li>
+<li><p>the <cite>idc-convert</cite> tool can load a pipeline from a file now as well</p></li>
+<li><p>added the <cite>text-file</cite> and <cite>csv-file</cite> generators that work off files to populate the variable(s)</p></li>
+<li><p>the readers <cite>from-grayscale-dp</cite>, <cite>from-indexed-png-is</cite>, <cite>from-blue-channel-is</cite> and <cite>from-grayscale-is</cite> now
+support reading only the annotations</p></li>
+<li><p>added <cite>from-text-file</cite> reader and <cite>to-text-file</cite> writer</p></li>
+<li><p>added a number of I/O related plugins: <cite>list-files</cite>, <cite>move-files</cite>, <cite>delete-files</cite>, <cite>copy-files</cite>, <cite>watch-dir</cite></p></li>
+<li><p>added email support with <cite>get-email</cite> reader and <cite>send-email</cite> writer</p></li>
+<li><p>added <cite>console</cite> writer for outputting the data on stdout that is coming through</p></li>
+<li><p>added <cite>count-specks</cite> filter that adds counts of small objects to meta-data</p></li>
+<li><p>added support for caching plugins via <cite>IDC_CLASS_CACHE</cite> environment variable</p></li>
+<li><p>added <cite>is-to-od</cite> filter that generates object detection annotations from contours determined in image segmentation layers</p></li>
+<li><p>added <cite>to-metadata</cite> writer that outputs the meta-data of an image</p></li>
+<li><p>added <cite>attach-metadata</cite> filter that loads meta-data from a directory and attaches it to the data passing through</p></li>
+<li><p>added <cite>load-data</cite> filter to turn file names into data containers</p></li>
+<li><p>added <cite>annotation-to-storage</cite> and <cite>annotation-from-storage</cite> filters</p></li>
+<li><p>added <cite>delete-storage</cite> filter for removing objects from internal storage</p></li>
+<li><p>annotation data is now being type-checked when setting it</p></li>
 </ul>
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
@@ -113,10 +138,7 @@ is now available: <strong>0.0.2</strong>. Docker images have been deployed as we
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../2025-07-11-idc-release/" rel="prev" title="image-dataset-converter release">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../2025-10-31-idc-release/" rel="next" title="image-dataset-converter release">Next post</a>
+                <a href="../2025-07-11-sdc-release/" rel="prev" title="spectral-data-converter release">Previous post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
 

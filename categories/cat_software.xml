@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about software)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_software.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 31 Oct 2025 02:46:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about software)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_software.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 31 Oct 2025 03:03:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-10-31-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
+is now available: &lt;strong&gt;0.1.0&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
+&lt;p&gt;This release represents a major overhaul under the hood and lots of new functionality has been added as well.
+With this release it is now possible to write more complex/integrated/reactive pipelines with the added I/O and
+email plugins.&lt;/p&gt;
+&lt;p&gt;The most notably changes since 0.0.12 are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;a new release of &lt;cite&gt;seppl&lt;/cite&gt; allows for filters that support m-to-n not just 1-to-1 conversions&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;list-to-sequence&lt;/cite&gt; stream filter that forwards list items one by one&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;common code among the image-dataset-converter, audio-dataset-converter and spectral-data-converter libraries
+has been extracted and moved into separate libraries to reduce duplication: &lt;cite&gt;kasperl&lt;/cite&gt;, &lt;cite&gt;kasperl_redis&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the new &lt;cite&gt;kasperl_plots&lt;/cite&gt; library adds basic support for terminal plots (textual and graphical) and matplotlib ones&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the filters &lt;cite&gt;tee&lt;/cite&gt;, &lt;cite&gt;trigger&lt;/cite&gt; and &lt;cite&gt;sub-process&lt;/cite&gt; support conditional execution based on meta-data evaluations now,
+as well as loading their sub-pipeline from a file to break up large pipelines into smaller, logical chunks&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;block&lt;/cite&gt;, &lt;cite&gt;stop&lt;/cite&gt; filters for controlling the flow of data (via meta-data conditions)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the &lt;cite&gt;idc-exec&lt;/cite&gt; tool now uses all trailing arguments as the pipeline to execute multiple times rather than as a single
+argument to a flag; alternatively, the pipeline can be loaded from a file&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the &lt;cite&gt;idc-convert&lt;/cite&gt; tool can load a pipeline from a file now as well&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added the &lt;cite&gt;text-file&lt;/cite&gt; and &lt;cite&gt;csv-file&lt;/cite&gt; generators that work off files to populate the variable(s)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the readers &lt;cite&gt;from-grayscale-dp&lt;/cite&gt;, &lt;cite&gt;from-indexed-png-is&lt;/cite&gt;, &lt;cite&gt;from-blue-channel-is&lt;/cite&gt; and &lt;cite&gt;from-grayscale-is&lt;/cite&gt; now
+support reading only the annotations&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;from-text-file&lt;/cite&gt; reader and &lt;cite&gt;to-text-file&lt;/cite&gt; writer&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added a number of I/O related plugins: &lt;cite&gt;list-files&lt;/cite&gt;, &lt;cite&gt;move-files&lt;/cite&gt;, &lt;cite&gt;delete-files&lt;/cite&gt;, &lt;cite&gt;copy-files&lt;/cite&gt;, &lt;cite&gt;watch-dir&lt;/cite&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added email support with &lt;cite&gt;get-email&lt;/cite&gt; reader and &lt;cite&gt;send-email&lt;/cite&gt; writer&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;console&lt;/cite&gt; writer for outputting the data on stdout that is coming through&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;count-specks&lt;/cite&gt; filter that adds counts of small objects to meta-data&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added support for caching plugins via &lt;cite&gt;IDC_CLASS_CACHE&lt;/cite&gt; environment variable&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;is-to-od&lt;/cite&gt; filter that generates object detection annotations from contours determined in image segmentation layers&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;to-metadata&lt;/cite&gt; writer that outputs the meta-data of an image&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;attach-metadata&lt;/cite&gt; filter that loads meta-data from a directory and attaches it to the data passing through&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;load-data&lt;/cite&gt; filter to turn file names into data containers&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;annotation-to-storage&lt;/cite&gt; and &lt;cite&gt;annotation-from-storage&lt;/cite&gt; filters&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;added &lt;cite&gt;delete-storage&lt;/cite&gt; filter for removing objects from internal storage&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;annotation data is now being type-checked when setting it&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-10-31-idc-release/</guid><pubDate>Fri, 31 Oct 2025 02:45:00 GMT</pubDate></item><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
 is now available: &lt;strong&gt;0.0.2&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
 &lt;p&gt;This release contains couple of major of changes:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -97,16 +131,4 @@ possible to use scikit-learn or deep learning libraries for training models and 
 &lt;p&gt;In order to make this work, ADAMS needs to launch from the context of an activated virtual Python environment
 that contains all the required Python libraries and then use the &lt;cite&gt;JepRegressor&lt;/cite&gt; Weka meta-classifier to define
 the relevant code for training and making predictions. Due to Java serialization not being applicable to Python objects,
-these scripts must implement the relevant serialization/deserialization themselves, e.g., via pickle.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-03-04-s3000-python-support/</guid><pubDate>Tue, 04 Mar 2025 04:07:00 GMT</pubDate></item><item><title>image-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all"&gt;image-dataset-converter-all&lt;/a&gt; library
-is now available: &lt;strong&gt;0.0.7&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
-&lt;p&gt;The most notably changes are:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;added support for the &lt;a class="reference external" href="https://github.com/wkentaro/labelme"&gt;labelme&lt;/a&gt; tool with the
-&lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-labelme"&gt;image-dataset-converter-labelme&lt;/a&gt; library,
-specifically for the image classification, object detection and instance segmentation JSON file formats&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added support for &lt;a class="reference external" href="https://github.com/PaddlePaddle"&gt;PaddlePaddle&lt;/a&gt; frameworks
-with the &lt;a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-paddle"&gt;image-dataset-converter-paddle&lt;/a&gt; library,
-specifically for &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleClas"&gt;image classification&lt;/a&gt;,
-&lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleDetection"&gt;object detection/instance segmentation&lt;/a&gt;
-and &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleSeg"&gt;image segmentation&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-26-idc-release/</guid><pubDate>Wed, 26 Feb 2025 07:06:00 GMT</pubDate></item></channel></rss>
+these scripts must implement the relevant serialization/deserialization themselves, e.g., via pickle.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-03-04-s3000-python-support/</guid><pubDate>Tue, 04 Mar 2025 04:07:00 GMT</pubDate></item></channel></rss>

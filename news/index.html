@@ -11,7 +11,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://www.data-mining.co.nz/news/">
-<link rel="next" href="index-7.html" type="text/html">
+<link rel="next" href="index-8.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -78,7 +78,54 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-10-31-idc-release/" class="u-url">image-dataset-converter release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-10-31-idc-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-10-31T15:45:00+13:00" itemprop="datePublished" title="2025-10-31 15:45">2025-10-31 15:45</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
+is now available: <strong>0.1.0</strong>. Docker images have been deployed as well.</p>
+<p>This release represents a major overhaul under the hood and lots of new functionality has been added as well.
+With this release it is now possible to write more complex/integrated/reactive pipelines with the added I/O and
+email plugins.</p>
+<p>The most notably changes since 0.0.12 are:</p>
+<ul class="simple">
+<li><p>a new release of <cite>seppl</cite> allows for filters that support m-to-n not just 1-to-1 conversions</p></li>
+<li><p>added <cite>list-to-sequence</cite> stream filter that forwards list items one by one</p></li>
+<li><p>common code among the image-dataset-converter, audio-dataset-converter and spectral-data-converter libraries
+has been extracted and moved into separate libraries to reduce duplication: <cite>kasperl</cite>, <cite>kasperl_redis</cite></p></li>
+<li><p>the new <cite>kasperl_plots</cite> library adds basic support for terminal plots (textual and graphical) and matplotlib ones</p></li>
+<li><p>the filters <cite>tee</cite>, <cite>trigger</cite> and <cite>sub-process</cite> support conditional execution based on meta-data evaluations now,
+as well as loading their sub-pipeline from a file to break up large pipelines into smaller, logical chunks</p></li>
+<li><p>added <cite>block</cite>, <cite>stop</cite> filters for controlling the flow of data (via meta-data conditions)</p></li>
+<li><p>the <cite>idc-exec</cite> tool now uses all trailing arguments as the pipeline to execute multiple times rather than as a single
+argument to a flag; alternatively, the pipeline can be loaded from a file</p></li>
+<li><p>the <cite>idc-convert</cite> tool can load a pipeline from a file now as well</p></li>
+<li><p>added the <cite>text-file</cite> and <cite>csv-file</cite> generators that work off files to populate the variable(s)</p></li>
+<li><p>the readers <cite>from-grayscale-dp</cite>, <cite>from-indexed-png-is</cite>, <cite>from-blue-channel-is</cite> and <cite>from-grayscale-is</cite> now
+support reading only the annotations</p></li>
+<li><p>added <cite>from-text-file</cite> reader and <cite>to-text-file</cite> writer</p></li>
+<li><p>added a number of I/O related plugins: <cite>list-files</cite>, <cite>move-files</cite>, <cite>delete-files</cite>, <cite>copy-files</cite>, <cite>watch-dir</cite></p></li>
+<li><p>added email support with <cite>get-email</cite> reader and <cite>send-email</cite> writer</p></li>
+<li><p>added <cite>console</cite> writer for outputting the data on stdout that is coming through</p></li>
+<li><p>added <cite>count-specks</cite> filter that adds counts of small objects to meta-data</p></li>
+<li><p>added support for caching plugins via <cite>IDC_CLASS_CACHE</cite> environment variable</p></li>
+<li><p>added <cite>is-to-od</cite> filter that generates object detection annotations from contours determined in image segmentation layers</p></li>
+<li><p>added <cite>to-metadata</cite> writer that outputs the meta-data of an image</p></li>
+<li><p>added <cite>attach-metadata</cite> filter that loads meta-data from a directory and attaches it to the data passing through</p></li>
+<li><p>added <cite>load-data</cite> filter to turn file names into data containers</p></li>
+<li><p>added <cite>annotation-to-storage</cite> and <cite>annotation-from-storage</cite> filters</p></li>
+<li><p>added <cite>delete-storage</cite> filter for removing objects from internal storage</p></li>
+<li><p>annotation data is now being type-checked when setting it</p></li>
+</ul>
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
@@ -329,95 +376,11 @@ allows keeping samples together within subsets using a regular expression, e.g.,
 images that were split into sub-grids or augmented with flipping/rotating</p></li>
 </ul>
 </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-03-05-speciesnet-docker/" class="u-url">SpeciesNet 4.0.1 Docker images available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-03-05-speciesnet-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-03-05T13:21:00+13:00" itemprop="datePublished" title="2025-03-05 13:21">2025-03-05 13:21</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>First Docker images are available for the <a class="reference external" href="https://github.com/google/cameratrapai">SpeciesNet</a>
-network that <a class="reference external" href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/">Google announced on March 3rd, 2025</a>:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/speciesnet/tree/main/4.0.1_cuda12.1">CUDA 12.1</a></p></li>
-<li><p><a class="reference external" href="https://github.com/waikato-datamining/speciesnet/tree/main/4.0.1_cpu">CPU</a></p></li>
-</ul>
-<p>Below is an example on how to use these images (on Linux or on Windows under WSL2).</p>
-<p>Prerequisites:</p>
-<ul class="simple">
-<li><p>create a directory for your output eg "speciesnet"</p></li>
-<li>
-<p>in that directory create the following sub-directories</p>
-<ul>
-<li><p>cache</p></li>
-<li><p>config</p></li>
-<li><p>data</p></li>
-<li><p>output</p></li>
-</ul>
-</li>
-</ul>
-<p>Processing data:</p>
-<ul>
-<li><p>copy the images that you want to analyze into the "speciesnet/data" directory</p></li>
-<li>
-<p>from the "speciesnet" directory launch the appropriate docker image in interactive mode</p>
-<ul>
-<li>
-<p>CPU:</p>
-<pre class="literal-block">docker run --rm --gpus=all --shm-size 8G --net=host \
-  -u $(id -u):$(id -g) -e USER=$USER \
-  -v `pwd`:/workspace \
-  -v `pwd`/cache:/.cache \
-  -v `pwd`/config:/.config \
-  -v `pwd`/cache:/.torch \
-  -it waikatodatamining/speciesnet:4.0.1_cpu</pre>
-</li>
-<li>
-<p>CUDA:</p>
-<pre class="literal-block">docker run --rm --gpus=all --shm-size 8G --net=host \
-  -u $(id -u):$(id -g) -e USER=$USER \
-  -v `pwd`:/workspace \
-  -v `pwd`/cache:/.cache \
-  -v `pwd`/config:/.config \
-  -v `pwd`/cache:/.torch \
-  -it waikatodatamining/speciesnet:4.0.1_cuda21.1</pre>
-</li>
-</ul>
-</li>
-<li>
-<p>run the following script to process your images:</p>
-<pre class="literal-block">speciesnet_run_model \
-    --folders "/workspace/data" \
-    --predictions_json "/workspace/output/predictions.json"</pre>
-</li>
-</ul>
-<p>Or, if you want to run the individual steps separately:</p>
-<pre class="literal-block">speciesnet_run_model --detector_only \
-    --folders "/workspace/data" \
-    --predictions_json "/workspace/output/detections.json"
-speciesnet_run_model --classifier_only \
-    --folders "/workspace/data" \
-    --detections_json "/workspace/output/detections.json" \
-    --predictions_json "/workspace/output/classifications.json"
-speciesnet_run_model --ensemble_only \
-    --folders "/workspace/data" \
-    --detections_json "/workspace/output/detections.json" \
-    --classifications_json "/workspace/output/classifications.json" \
-    --predictions_json "/workspace/output/predictions.json"</pre>
-<p>On your host system, the "speciesnet/output" directory will then contain the generated .json file(s), with
-"predictions.json" containing all the relevant information (classification and bbox).</p>
-<p>For more information on the json output format:</p>
-<p><a class="reference external" href="https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format">https://github.com/google/cameratrapai/tree/main?tab=readme-ov-file#output-format</a></p>
-    </div>
     </article>
 </div>
 
         <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-7.html" rel="next">Older posts</a></li>
+<li class="next"><a href="index-8.html" rel="next">Older posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
 
