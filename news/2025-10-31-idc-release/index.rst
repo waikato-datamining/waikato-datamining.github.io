@@ -14,6 +14,8 @@ This release represents a major overhaul under the hood and lots of new function
 With this release it is now possible to write more complex/integrated/reactive pipelines with the added I/O and
 email plugins.
 
+It is always worth checking out the `examples <https://www.data-mining.co.nz/image-dataset-converter-examples/>`__.
+
 The most notably changes since 0.0.12 are:
 
 * a new release of `seppl` allows for filters that support m-to-n not just 1-to-1 conversions
