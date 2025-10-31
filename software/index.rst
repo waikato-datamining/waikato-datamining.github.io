@@ -47,10 +47,10 @@
 
         <div class="col mb-4">
           <div class="card h-100 shadow">
-            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Docker images</h3></div><img src="/images/8666171_docker_icon.png" height="24"/></div>
+            <div class="card-header d-flex justify-content-between align-items-center"><div><h3 class="display-5">Docker Hub images</h3></div><img src="/images/8666171_docker_icon.png" height="24"/></div>
             <div class="card-body d-flex flex-column">
               <p class="card-text">Most of the software that we employ for our projects is open source. Therefore, the Docker images that we maintain for these projects (including extensions/enhancements) are publicly available and ready for you to use.</p>
-              <a href="/docker-images/" class="btn btn-primary stretched-link mt-auto">More...</a>
+              <a href="/docker-images-dockerhub/" class="btn btn-primary stretched-link mt-auto">More...</a>
             </div>
           </div>
         </div>
