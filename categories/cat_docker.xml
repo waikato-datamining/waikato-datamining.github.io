@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 31 Oct 2025 07:48:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>BitNet Docker image available</title><link>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker image is available for Microsoft's &lt;a class="reference external" href="https://github.com/microsoft/BitNet"&gt;BitNet&lt;/a&gt; small language
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 04 Nov 2025 07:51:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PaddleX Docker Image release</title><link>https://www.data-mining.co.nz/news/2025-11-04-paddlex-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;The first Docker images for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleX"&gt;PaddleX&lt;/a&gt; framework are now available:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddlex"&gt;https://github.com/waikato-datamining/paddlex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;According to the project's website:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;PaddleX 3.0 is a low-code development tool for AI models built on the PaddlePaddle framework. It integrates
+numerous ready-to-use pre-trained models, enabling full-process development from model training to inference,
+supporting a variety of mainstream hardware both domestic and international, and aiding AI developers in industrial
+practice.&lt;/em&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-11-04-paddlex-release/</guid><pubDate>Tue, 04 Nov 2025 07:43:00 GMT</pubDate></item><item><title>BitNet Docker image available</title><link>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker image is available for Microsoft's &lt;a class="reference external" href="https://github.com/microsoft/BitNet"&gt;BitNet&lt;/a&gt; small language
 model (SLM):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/bitnet/blob/main/2025-04-30_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -171,26 +177,4 @@ framework, using the 1.2.0 release of MMPretrain (code base as of 2024-01-05):&l
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/tree/master/1.2.0_cuda11.1"&gt;CUDA 11.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/tree/master/1.2.0_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NB:&lt;/strong&gt; MMPretrain is the successor of MMClassification, which can be used for image classification.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-03-14-mmpretrain-docker/</guid><pubDate>Wed, 13 Mar 2024 22:55:00 GMT</pubDate></item><item><title>XTuner Docker images available</title><link>https://www.data-mining.co.nz/news/2024-02-27-xtuner-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;&lt;a class="reference external" href="https://github.com/InternLM/xtuner"&gt;XTuner&lt;/a&gt; is an efficient, flexible and full-featured toolkit for fine-tuning
-large models (InternLM, Llama, Baichuan, Qwen, ChatGLM) and released under the Apache 2.0 license. The advantage
-of this framework is that it is not tied down to a specific LLM architecture, but supports multiple ones out of the box.
-With the just released version &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter/releases/tag/v0.2.0"&gt;v0.2.0&lt;/a&gt;
-of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm-dataset-converter&lt;/a&gt; Python library,
-you can read and write the XTuner JSON format (and apply the usual filtering, of course).&lt;/p&gt;
-&lt;p&gt;Here are the newly added image tags:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:2024-02-19_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-xtuner:2024-02-19_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Of course, you can use these Docker images in conjunction with our &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2023-11-03-gifr-release/"&gt;gifr&lt;/a&gt;
-Python library for &lt;a class="reference external" href="https://www.gradio.app/"&gt;gradio&lt;/a&gt; interfaces as well (&lt;cite&gt;gifr-textgen&lt;/cite&gt;). Just now we released
-version 0.0.4 of the library, which is more flexible in regards to text generation: it can now support send and receive
-the conversation history and also parse JSON responses.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-02-27-xtuner-docker/</guid><pubDate>Tue, 27 Feb 2024 03:40:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;NB:&lt;/strong&gt; MMPretrain is the successor of MMClassification, which can be used for image classification.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-03-14-mmpretrain-docker/</guid><pubDate>Wed, 13 Mar 2024 22:55:00 GMT</pubDate></item></channel></rss>

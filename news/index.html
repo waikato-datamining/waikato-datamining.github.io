@@ -78,7 +78,26 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-10-31-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-11-04-paddlex-release/" class="u-url">PaddleX Docker Image release</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-11-04-paddlex-release/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-11-04T20:43:00+13:00" itemprop="datePublished" title="2025-11-04 20:43">2025-11-04 20:43</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>The first Docker images for the <a class="reference external" href="https://github.com/PaddlePaddle/PaddleX">PaddleX</a> framework are now available:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/paddlex">https://github.com/waikato-datamining/paddlex</a></p>
+<p>According to the project's website:</p>
+<p><em>PaddleX 3.0 is a low-code development tool for AI models built on the PaddlePaddle framework. It integrates
+numerous ready-to-use pre-trained models, enabling full-process development from model training to inference,
+supporting a variety of mainstream hardware both domestic and international, and aiding AI developers in industrial
+practice.</em></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-10-31-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
@@ -306,62 +325,6 @@ Since its input is limited to CSV files, I decided to add support for <a class="
 <p>The result of this effort is the <cite>djl-arff</cite> library:</p>
 <p><a class="reference external" href="https://github.com/waikato-datamining/djl-arff/">https://github.com/waikato-datamining/djl-arff/</a></p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-04-30-bitnet-docker/" class="u-url">BitNet Docker image available</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-04-30-bitnet-docker/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-04-30T16:59:00+12:00" itemprop="datePublished" title="2025-04-30 16:59">2025-04-30 16:59</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>First Docker image is available for Microsoft's <a class="reference external" href="https://github.com/microsoft/BitNet">BitNet</a> small language
-model (SLM):</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/waikato-llm/bitnet/blob/main/2025-04-30_cpu">CPU</a></p></li>
-</ul>
-<p>Below is an example on how to use these images (on Linux or on Windows under WSL2).</p>
-<p>Prerequisites:</p>
-<ul class="simple">
-<li><p>create a directory for your models and output eg "bitnet"</p></li>
-<li>
-<p>in that directory create the following sub-directories</p>
-<ul>
-<li><p>cache</p></li>
-<li><p>triton</p></li>
-<li><p>models</p></li>
-<li><p>logs</p></li>
-</ul>
-</li>
-</ul>
-<p>Interacting with the language model:</p>
-<ul>
-<li>
-<p>from the "bitnet" directory launch the docker image in interactive mode:</p>
-<pre class="literal-block">docker run --shm-size 8G --net=host \
-    -u $(id -u):$(id -g) -e USER=$USER \
-    -v `pwd`:/workspace \
-    -v `pwd`/cache:/.cache \
-    -v `pwd`/triton:/.triton \
-    -it waikatodatamining/bitnet:2025-05-30_cpu</pre>
-</li>
-<li>
-<p>as a one-off, download the <em>BitNet-b1.58-2B-4T</em> model from within the Docker container:</p>
-<pre class="literal-block">huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf \
-    --local-dir /workspace/models/BitNet-b1.58-2B-4T</pre>
-</li>
-<li>
-<p>once the model is in place, you can interact with with it:</p>
-<pre class="literal-block">bitnet_run_inference \
-    -m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \
-    -p "You are a helpful assistant" \
-    -n 1024 \
-    -cnv</pre>
-</li>
-</ul>
-</div>
     </article>
 </div>
 

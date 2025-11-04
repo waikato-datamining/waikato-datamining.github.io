@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Fri, 31 Oct 2025 07:48:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-10-31-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Tue, 04 Nov 2025 07:51:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PaddleX Docker Image release</title><link>https://www.data-mining.co.nz/news/2025-11-04-paddlex-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;The first Docker images for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleX"&gt;PaddleX&lt;/a&gt; framework are now available:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddlex"&gt;https://github.com/waikato-datamining/paddlex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;According to the project's website:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;PaddleX 3.0 is a low-code development tool for AI models built on the PaddlePaddle framework. It integrates
+numerous ready-to-use pre-trained models, enabling full-process development from model training to inference,
+supporting a variety of mainstream hardware both domestic and international, and aiding AI developers in industrial
+practice.&lt;/em&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-11-04-paddlex-release/</guid><pubDate>Tue, 04 Nov 2025 07:43:00 GMT</pubDate></item><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-10-31-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
 is now available: &lt;strong&gt;0.1.0&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
 &lt;p&gt;Just like with the &lt;a class="reference external" href="https://www.data-mining.co.nz/news/2025-10-31-idc-release/"&gt;image-dataset-converter-all&lt;/a&gt;, this release benefits from
 the major overhaul under the hood and the integration of the &lt;cite&gt;kasperl&lt;/cite&gt; libraries.&lt;/p&gt;
@@ -110,43 +116,4 @@ is now available: &lt;strong&gt;0.0.1&lt;/strong&gt;. Docker images have been de
 developed by Amazon.com. Besides the usual image models, it also offers some basic support for tabular data.
 Since its input is limited to CSV files, I decided to add support for &lt;a class="reference external" href="https://waikato.github.io/weka-wiki/formats_and_processing/arff/"&gt;Weka ARFF files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The result of this effort is the &lt;cite&gt;djl-arff&lt;/cite&gt; library:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/djl-arff/"&gt;https://github.com/waikato-datamining/djl-arff/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-05-02-djl-arff-release/</guid><pubDate>Thu, 01 May 2025 23:23:00 GMT</pubDate></item><item><title>BitNet Docker image available</title><link>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker image is available for Microsoft's &lt;a class="reference external" href="https://github.com/microsoft/BitNet"&gt;BitNet&lt;/a&gt; small language
-model (SLM):&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/bitnet/blob/main/2025-04-30_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Below is an example on how to use these images (on Linux or on Windows under WSL2).&lt;/p&gt;
-&lt;p&gt;Prerequisites:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;create a directory for your models and output eg "bitnet"&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;in that directory create the following sub-directories&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;cache&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;triton&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;models&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;logs&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Interacting with the language model:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;from the "bitnet" directory launch the docker image in interactive mode:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;docker run --shm-size 8G --net=host \
-    -u $(id -u):$(id -g) -e USER=$USER \
-    -v `pwd`:/workspace \
-    -v `pwd`/cache:/.cache \
-    -v `pwd`/triton:/.triton \
-    -it waikatodatamining/bitnet:2025-05-30_cpu&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;as a one-off, download the &lt;em&gt;BitNet-b1.58-2B-4T&lt;/em&gt; model from within the Docker container:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf \
-    --local-dir /workspace/models/BitNet-b1.58-2B-4T&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;once the model is in place, you can interact with with it:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;bitnet_run_inference \
-    -m /workspace/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \
-    -p "You are a helpful assistant" \
-    -n 1024 \
-    -cnv&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-04-30-bitnet-docker/</guid><pubDate>Wed, 30 Apr 2025 04:59:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/djl-arff/"&gt;https://github.com/waikato-datamining/djl-arff/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-05-02-djl-arff-release/</guid><pubDate>Thu, 01 May 2025 23:23:00 GMT</pubDate></item></channel></rss>
