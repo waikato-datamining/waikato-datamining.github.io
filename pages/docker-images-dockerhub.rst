@@ -242,6 +242,19 @@
               </li>
             </ul>
           </li>
+          <li>
+            <p>PyTorch/Yolo26</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolo26/8.4.16_cpu">Yolo26 8.4.16, CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolo26:8.4.16_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolo26/8.4.16_cuda12.6">Yolo26 8.4.16, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/pytorch-yolo26:8.4.16_cuda12.6</span></code></p>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
