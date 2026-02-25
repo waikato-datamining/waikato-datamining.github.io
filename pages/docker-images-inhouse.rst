@@ -26,7 +26,7 @@
 
     <p>When pulling images, you need to ensure that you are using the following prefix (the pull commands do not show this, due to using a reverse proxy):</p>
 
-    <pre>public.aml-repo.cms.waikato.ac.nz:443/</pre>
+    <pre>harbor.cms.waikato.ac.nz/public/</pre>
 
     <p>Click on one of the domain buttons to see the relevant frameworks and images:</p>
 
@@ -74,11 +74,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0">PyTorch 1.6.0, CUDA 10.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-image-classification:1.6</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-image-classification:1.6</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/image-classification/docker/1.6.0_cpu">PyTorch 1.6.0, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-image-classification:1.6_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-image-classification:1.6_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -87,11 +87,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.25.0_cuda11.1">MMClassification 0.25.0, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmclassification:0.25.0_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmclassification:0.25.0_cuda11.1</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmclassification/blob/master/0.25.0_cpu">MMClassification 0.25.0, PyTorch 1.9 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmclassification:0.25.0_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmclassification:0.25.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -100,11 +100,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/blob/master/1.2.0_cuda11.1">MMPretrain 1.2.0, PyTorch 1.9 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmpretrain:1.2.0_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmpretrain:1.2.0_cuda11.1</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/blob/master/1.2.0_cpu">MMPretrain 1.2.0, PyTorch 1.11 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmpretrain:1.2.0_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmpretrain:1.2.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -113,11 +113,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/blob/master/2.6.0_cuda11.8">PaddleClas 2.6.0, PyTorch 2.5.1 and CUDA 11.8</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddleclas:2.6.0_cuda11.8</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/paddle/paddleclas:2.6.0_cuda11.8</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/paddleclas/blob/master/2.6.0_cpu">PaddleClas 2.6.0, PyTorch 1.11.0 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddleclas:2.6.0_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/paddle/paddleclas:2.6.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -126,11 +126,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14">Tensorflow 1.14, CUDA 10.0</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_image_classification:1.14</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tf_image_classification:1.14</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14_cpu">Tensorflow 1.14, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_image_classification:1.14_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tf_image_classification:1.14_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -139,11 +139,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3">2.4.3, CUDA 11.0</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tflite_model_maker:2.4.3</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu">2.4.3, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tflite_model_maker:2.4.3_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -152,11 +152,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cuda11.1">2.9.1, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_image_classification2:2.9.1_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tf_image_classification2:2.9.1_cuda11.1</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification2/2.9.1_cpu">2.9.1, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tf_image_classification2:2.9.1_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tf_image_classification2:2.9.1_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -176,11 +176,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/3.1.0_cuda11.1">MMDetection 3.1.0, PyTorch 1.12 and CUDA 11.3</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:3.1.0_cuda11.3</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmdetection:3.1.0_cuda11.3</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmdetection/blob/master/3.1.0_cpu">MMDetection 3.1.0, PyTorch 1.12 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmdetection:3.1.0_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmdetection:3.1.0_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -189,11 +189,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3">2.4.3, CUDA 11.0</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tflite_model_maker:2.4.3</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/tflite_model_maker/docker/2.4.3_cpu">2.4.3, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/tflite_model_maker:2.4.3_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/tflite_model_maker:2.4.3_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -202,11 +202,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cpu">PaddleDetection 2.8.0, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddledetection:2.8.0_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/paddle/paddledetection:2.8.0_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/paddledetection/tree/main/2.8.0_cuda11.8">PaddleDetection 2.8.0, CUDA 11.8</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddledetection:2.8.0_cuda11.8</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/paddle/paddledetection:2.8.0_cuda11.8</span></code></p>
               </li>
             </ul>
           </li>
@@ -215,11 +215,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cpu">Yolov5 2022-11-05, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-11-05_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov5:2022-11-05_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cuda11.1">Yolov5 2022-11-05, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-11-05_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov5:2022-11-05_cuda11.1</span></code></p>
               </li>
             </ul>
           </li>
@@ -228,11 +228,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov7/2022-10-08_cpu">Yolov7 2022-10-08, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov7:2022-10-08_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov7:2022-10-08_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov7/2022-10-08_cuda11.1">Yolov7 2022-10-08, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov7:2022-10-08_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov7:2022-10-08_cuda11.1</span></code></p>
               </li>
             </ul>
           </li>
@@ -241,11 +241,24 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10/2024-06-23_cpu">Yolov10 2024-06-23, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch-yolov10:2024-06-23_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch-yolov10:2024-06-23_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10/2024-06-23_cuda11.7">Yolov10 2024-06-23, CUDA 11.7</a></p>
-                <p><code class="docutils literal"><span class="pre">waikatodatpublic.aml-repo.cms.waikato.ac.nz:443amining/pytorch-yolov10:2024-06-23_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch-yolov10:2024-06-23_cuda11.1</span></code></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>PyTorch/Yolo26</p>
+            <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolo26/8.4.16_cpu">Yolo26 8.4.16, CPU</a></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolo26:8.4.16_cpu</span></code></p>
+              </li>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolo26/8.4.16_cuda12.6">Yolo26 8.4.16, CUDA 11.7</a></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolo26:8.4.16_cuda12.6</span></code></p>
               </li>
             </ul>
           </li>
@@ -265,11 +278,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras/1.14.0_0.3.0">image-segmentation-keras 0.3.0, Tensorflow 1.14, CUDA 10.0</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image-segmentation-keras:1.14.0_0.3.0</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/image-segmentation-keras:1.14.0_0.3.0</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image-segmentation-keras/2.4.1_0.3.0">image-segmentation-keras 0.3.0, Tensorflow 2.4.1, CUDA 11.0</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/tensorflow/image-segmentation-keras:2.4.1_0.3.0</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/tensorflow/image-segmentation-keras:2.4.1_0.3.0</span></code></p>
               </li>
             </ul>
           </li>
@@ -278,43 +291,43 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/1.2.2-3_cuda11.3">MMSegmentation 1.2.2, PyTorch 1.11.0 and CUDA 11.3</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmsegmentation:1.2.2-3_cuda11.3</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmsegmentation:1.2.2-3_cuda11.3</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/mmsegmentation/blob/master/1.2.2-3_cpu">MMSegmentation 1.2.2, PyTorch 1.11.0 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmsegmentation:1.2.2-3_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/open-mmlab/mmsegmentation:1.2.2-3_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/paddleseg/blob/master/2.10.0-3_cuda11.8">PaddleSeg 2.10.0, PyTorch 2.7.0 and CUDA 11.8</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddleseg:2.10.0-3_cuda11.8</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/paddle/paddleseg:2.10.0-3_cuda11.8</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/paddleseg/blob/master/2.10.0-3_cpu">PaddleSeg 2.10.0, PyTorch 2.7.0 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/paddle/paddleseg:2.10.0-3_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/paddle/paddleseg:2.10.0-3_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr/0.1.2_cuda11.1">DEXTR 0.1.2, PyTorch 1.10.0 and CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-dextr:0.1.2_cuda11.1</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/dextr/0.1.2_cpu">DEXTR 0.1.2, PyTorch 1.9.1 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-dextr:0.1.2_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-dextr:0.1.2_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything/2023-04-16_cuda11.6">Segment-Anything Model 2023-04-16, PyTorch 1.13.0 and CUDA 11.6</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cuda11.6</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-sam:2023-04-16_cuda11.6</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything/2023-04-16_cpu">Segment-Anything Model 2023-04-16, PyTorch 1.9.1 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam:2023-04-16_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-sam:2023-04-16_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything-hq/2023-08-17_cuda11.6">Segment-Anything in High Quality 2023-08-17, PyTorch 1.13.0 and CUDA 11.6</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam-hq:2023-08-17_cuda11.6</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-sam-hq:2023-08-17_cuda11.6</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/segment-anything-hq/2023-08-17_cpu">Segment-Anything in High Quality 2023-08-17, PyTorch 1.9.1 and CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-sam-hq:2023-08-17_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-sam-hq:2023-08-17_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -334,11 +347,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.5">Detectron2 0.5, PyTorch 1.9, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.5</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/detectron2:0.5</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/0.6">Detectron2 0.6, PyTorch 1.9, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/detectron2:0.6</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/detectron2:0.6</span></code></p>
               </li>
             </ul>
           </li>
@@ -347,7 +360,7 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/yolact/tree/master/yolactpp-2020-02-11">YOLACT++ 2020-02-11, PyTorch 1.2, CUDA 10.0</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/yolact/yolactpp:2020-02-11</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/yolact/yolactpp:2020-02-11</span></code></p>
               </li>
             </ul>
           </li>
@@ -356,11 +369,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cpu">Yolov5 2022-11-05, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-11-05_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov5:2022-11-05_cpu</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov5/2022-11-05_cuda11.1">Yolov5 2022-11-05, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-11-05_cuda11.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov5:2022-11-05_cuda11.1</span></code></p>
               </li>
             </ul>
           </li>
@@ -380,7 +393,7 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/bitnet/tree/main/2025-04-30_cpu">BitNet 2025-04-30, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/llm/bitnet:2025-05-30_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/llm/bitnet:2025-05-30_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -389,7 +402,7 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/main/4.31.0_cuda11.7_falcontune_20230618">Falcontune 20230618, CUDA 11.7</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618</span></code></p>
               </li>
             </ul>
           </li>
@@ -398,7 +411,7 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/main/4.7.0_cuda11.1_finetune-gpt2xl_20220924">finetune-gpt2xl 20220924, CUDA 11.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.7.0_cuda11.1_finetune-gpt2xl_20220924</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.7.0_cuda11.1_finetune-gpt2xl_20220924</span></code></p>
               </li>
             </ul>
           </li>
@@ -407,7 +420,7 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/main/4.31.0_cuda11.7_llama2">Falcontune 20230618, CUDA 11.7</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2</span></code></p>
               </li>
             </ul>
           </li>
@@ -416,15 +429,15 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/xtuner/tree/main/2024-02-19_cuda11.7">XTuner 2024-02-19, CUDA 11.7</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-xtuner:2024-02-19_cuda11.7</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/xtuner/tree/main/0.1.15_cuda11.7">XTuner 0.1.15, CUDA 11.7</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:0.1.15_cuda11.7</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-xtuner:0.1.15_cuda11.7</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/xtuner/tree/main/0.1.18_cuda11.7">XTuner 0.1.18, CUDA 11.7</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:0.1.18_cuda11.7</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-xtuner:0.1.18_cuda11.7</span></code></p>
               </li>
             </ul>
           </li>
@@ -444,11 +457,11 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cuda12.1">Faster Whisper 1.0.2, CUDA 12.1</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/python-faster-whisper:1.0.2_cuda12.1</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/python-faster-whisper:1.0.2_cuda12.1</span></code></p>
               </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/whisper/tree/main/faster-whisper-1.0.2_cpu">Faster Whisper 1.0.2, CPU</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/python-faster-whisper:1.0.2_cpu</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/python-faster-whisper:1.0.2_cpu</span></code></p>
               </li>
             </ul>
           </li>
@@ -468,7 +481,7 @@
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-llm/huggingface_transformers/tree/main/4.36.0_cuda11.7_classification">Huggingface 4.36.0, CUDA 11.7</a></p>
-                <p><code class="docutils literal"><span class="pre">public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification</span></code></p>
+                <p><code class="docutils literal"><span class="pre">harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification</span></code></p>
               </li>
             </ul>
           </li>
