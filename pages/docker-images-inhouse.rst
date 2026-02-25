@@ -1,6 +1,6 @@
 .. title: In-house Docker images
 .. slug: docker-images-inhouse
-.. date: 2025-05-29 19:50:00 UTC+12:00
+.. date: 2026-02-26 11:50:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -20,13 +20,7 @@
       </ol>
     </nav>
 
-    <p>In order to access these images from our <a href="https://aml-repo.cms.waikato.ac.nz/#browse/browse:docker-public">in-house registry</a>, you need to log in using the following credentials:</p>
-
-    <pre>docker login -u public -p public public.aml-repo.cms.waikato.ac.nz:443</pre>
-
-    <p>When pulling images, you need to ensure that you are using the following prefix (the pull commands do not show this, due to using a reverse proxy):</p>
-
-    <pre>harbor.cms.waikato.ac.nz/public/</pre>
+    <p>Here are images available from our <a href="harbor.cms.waikato.ac.nz/public/">In-house registry</a>.</p>
 
     <p>Click on one of the domain buttons to see the relevant frameworks and images:</p>
 
@@ -122,7 +116,6 @@
             </ul>
           </li>
           <li>
-            <p>Tensorflow (using our <a class="reference external" href="https://pypi.org/project/wai.tfimageclass/">wai.tfimageclass</a> Python library)</p>
             <ul>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/tensorflow/tree/master/image_classification/docker/1.14">Tensorflow 1.14, CUDA 10.0</a></p>

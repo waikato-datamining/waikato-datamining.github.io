@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2025-05-29 19:50:00 UTC+12:00
+.. date: 2026-02-26 11:50:00 UTC+12:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -19,7 +19,7 @@
       </ol>
     </nav>
 
-    <p>The following images are available from <a href="https://hub.docker.com/u/waikatodatamining">Docker Hub</a>:</p>
+    <p>Here are images available from <a href="https://hub.docker.com/u/waikatodatamining">Docker Hub</a> presence.</p>
 
     <p>Click on one of the domain buttons to see the relevant frameworks and images:</p>
 
