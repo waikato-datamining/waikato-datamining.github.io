@@ -18,5 +18,5 @@ The code used by the docker images is available from here:
 
 The tags for the images are as follows:
 
-* In-house registry: ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov5:2022-01-21_cuda11.1``
+* In-house registry: ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov5:2022-01-21_cuda11.1``
 * Docker hub: ``waikatodatamining/pytorch-yolov5:2022-01-21_cuda11.1``

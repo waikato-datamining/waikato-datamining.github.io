@@ -15,7 +15,7 @@ for sequence classification into a docker image to make it easy for building suc
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.36.0_cuda11.7_classification``
 
 * Docker hub:
 

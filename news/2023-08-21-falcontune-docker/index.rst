@@ -13,7 +13,7 @@ is now available via the following `docker images <https://github.com/waikato-da
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_falcontune_20230618``
 
 * Docker hub:
 

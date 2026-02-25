@@ -13,7 +13,7 @@ and is now available via the following `docker images <https://github.com/waikat
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.7.0_cuda11.1_finetune-gpt2xl_20220924``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.7.0_cuda11.1_finetune-gpt2xl_20220924``
 
 * Docker hub:
 
