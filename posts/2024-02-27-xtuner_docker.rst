@@ -18,7 +18,7 @@ Here are the newly added image tags:
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:2024-02-19_cuda11.7``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-xtuner:2024-02-19_cuda11.7``
 
 * Docker hub:
 

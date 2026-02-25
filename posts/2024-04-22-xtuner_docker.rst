@@ -11,7 +11,7 @@ Docker images for `XTuner <https://github.com/InternLM/xtuner>`__ 0.1.18 are now
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-xtuner:0.1.18_cuda11.7``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-xtuner:0.1.18_cuda11.7``
 
 * Docker hub:
 

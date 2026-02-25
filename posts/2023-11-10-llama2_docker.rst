@@ -17,7 +17,7 @@ for Llama-2 can consume:
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-huggingface-transformers:4.31.0_cuda11.7_llama2``
 
 * Docker hub:
 

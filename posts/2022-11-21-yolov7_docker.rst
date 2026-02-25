@@ -18,8 +18,8 @@ The tags for the images are as follows:
 
 * In-house registry:
 
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov7:2022-10-08_cuda11.1``
-  * ``public.aml-repo.cms.waikato.ac.nz:443/pytorch/pytorch-yolov7:2022-10-08_cpu``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov7:2022-10-08_cuda11.1``
+  * ``harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov7:2022-10-08_cpu``
 
 * Docker hub:
 
