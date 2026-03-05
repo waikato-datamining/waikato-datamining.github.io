@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2026 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 25 Feb 2026 23:01:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PaddleX Docker Image release</title><link>https://www.data-mining.co.nz/news/2025-11-04-paddlex-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;The first Docker images for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleX"&gt;PaddleX&lt;/a&gt; framework are now available:&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2026 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 05 Mar 2026 22:10:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Yolo26 Docker images available</title><link>https://www.data-mining.co.nz/news/2026-02-26-yolo26-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/ultralytics/ultralytics/"&gt;Yolo26&lt;/a&gt; are now available.&lt;/p&gt;
+&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolo26"&gt;github.com/waikato-datamining/pytorch/tree/master/yolo26&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolo26:8.4.16_cuda12.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolo26:8.4.16_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolo26:8.4.16_cuda12.6&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolo26:8.4.16_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The tutorial on &lt;em&gt;object detection&lt;/em&gt; is available from here:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolo26/"&gt;www.data-mining.co.nz/applied-deep-learning/object_detection/yolo26/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2026-02-26-yolo26-docker/</guid><pubDate>Wed, 25 Feb 2026 23:51:00 GMT</pubDate></item><item><title>PaddleX Docker Image release</title><link>https://www.data-mining.co.nz/news/2025-11-04-paddlex-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;The first Docker images for the &lt;a class="reference external" href="https://github.com/PaddlePaddle/PaddleX"&gt;PaddleX&lt;/a&gt; framework are now available:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddlex"&gt;https://github.com/waikato-datamining/paddlex&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;According to the project's website:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;PaddleX 3.0 is a low-code development tool for AI models built on the PaddlePaddle framework. It integrates
@@ -171,10 +190,4 @@ image segmentation framework, using the 2.10.0 release of PaddleSeg (code base a
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;XTuner 0.1.18 now supports the just released llama-3 models (e.g.,
-&lt;a class="reference external" href="https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct"&gt;Meta-Llama-3-8B-Instruct&lt;/a&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-04-22-xtuner-docker/</guid><pubDate>Sun, 21 Apr 2024 23:27:00 GMT</pubDate></item><item><title>MMPretrain 1.2.0 Docker images available</title><link>https://www.data-mining.co.nz/news/2024-03-14-mmpretrain-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;First Docker images are available for the &lt;a class="reference external" href="https://github.com/open-mmlab/mmpretrain"&gt;MMPretrain&lt;/a&gt;
-framework, using the 1.2.0 release of MMPretrain (code base as of 2024-01-05):&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/tree/master/1.2.0_cuda11.1"&gt;CUDA 11.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/mmpretrain/tree/master/1.2.0_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NB:&lt;/strong&gt; MMPretrain is the successor of MMClassification, which can be used for image classification.&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-03-14-mmpretrain-docker/</guid><pubDate>Wed, 13 Mar 2024 22:55:00 GMT</pubDate></item></channel></rss>
+&lt;a class="reference external" href="https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct"&gt;Meta-Llama-3-8B-Instruct&lt;/a&gt;).&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-04-22-xtuner-docker/</guid><pubDate>Sun, 21 Apr 2024 23:27:00 GMT</pubDate></item></channel></rss>
