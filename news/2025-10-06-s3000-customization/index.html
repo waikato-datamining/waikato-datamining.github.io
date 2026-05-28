@@ -4,29 +4,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Use cases | Data mining</title>
+<title>S3000 Customization | Data mining</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
-<link rel="canonical" href="https://www.data-mining.co.nz/galleries/use-cases/">
+<link rel="canonical" href="https://www.data-mining.co.nz/news/2025-10-06-s3000-customization/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<style type="text/css">
-    #gallery_container {
-        position: relative;
-    }
-    .image-block {
-        position: absolute;
-    }
-</style>
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<meta name="author" content="Applied Machine Learning Group, University of Waikato">
+<link rel="prev" href="../2025-07-11-sdc-release/" title="spectral-data-converter release" type="text/html">
+<link rel="next" href="../2025-10-31-idc-release/" title="image-dataset-converter release" type="text/html">
 <meta property="og:site_name" content="Data mining">
-<meta property="og:title" content="Use cases">
-<meta property="og:url" content="https://www.data-mining.co.nz/galleries/use-cases/">
-<meta property="og:description" content="Use case diagrams of how S3000 can interact with your business processes, e.g., LIMS.">
+<meta property="og:title" content="S3000 Customization">
+<meta property="og:url" content="https://www.data-mining.co.nz/news/2025-10-06-s3000-customization/">
+<meta property="og:description" content="Out of the box, our S3000 software comes with predefined workflow generator
+plugins that can be configured to suit a customer's needs. However, sometimes it is necessary to further
+refine that configu">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2026-05-28T03:05:52Z">
+<meta property="article:published_time" content="2025-10-06T15:43:00+12:00">
+<meta property="article:tag" content="update">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -49,7 +45,7 @@ bg-dark
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="navbar-nav mr-auto">
 <li class="nav-item">
-<a href="../../news/" class="nav-link">News</a>
+<a href="../" class="nav-link">News</a>
                 </li>
 <li class="nav-item">
 <a href="../../expertise/" class="nav-link">Expertise</a>
@@ -86,33 +82,41 @@ bg-dark
         
         
         
-    
-<nav class="breadcrumbs"><ul class="breadcrumb">
-<li class="breadcrumb-item"><a href="../">galleries</a></li>
-                <li class="breadcrumb-item active">Use cases</li>
-</ul></nav><h1>Use cases</h1>
-    <p>
-        </p>
-<p>Use case diagrams of how <a class="reference external" href="../../s3000/">S3000</a> can interact with your business processes, e.g., LIMS.</p>
-    
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">S3000 Customization</a></h1>
 
-<div id="gallery_container"></div>
-<noscript>
-<ul class="thumbnails">
-<li>
-<a href="lims_collect.png" class="thumbnail image-reference" title="LIMS outputs spectra/co-variables via files/webservice and receives the predictions back via files/webservice">
-            <img src="lims_collect.thumbnail.png" alt="LIMS outputs spectra/co-variables via files/webservice and receives the predictions back via files/webservice" loading="lazy"></a>
-        </li>
-<li>
-<a href="lims_conversion.png" class="thumbnail image-reference" title='LIMS outputs spectra for two different instruments, with "instrument 1" passing through a conversion first'>
-            <img src="lims_conversion.thumbnail.png" alt='LIMS outputs spectra for two different instruments, with "instrument 1" passing through a conversion first' loading="lazy"></a>
-</li>
-</ul>
-</noscript>
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2025-10-06T15:43:00+12:00" itemprop="datePublished" title="2025-10-06 15:43">2025-10-06 15:43</time></a>
+            </p>
+            
 
-        <!--End of body content-->
+        </div>
+        
 
-        <footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Out of the box, our <a class="reference external" href="../../s3000/">S3000</a> software comes with predefined workflow generator
+plugins that can be configured to suit a customer's needs. However, sometimes it is necessary to further
+refine that configuration, e.g., when generating statistics during training runs.
+In order not to overload the generator plugins with even more options, or create customized generators,
+the notion of <em>config tags</em> has been introduced. Generators that support such customization will
+state so in their help screen and list the supported <em>tags</em>. These tags can then be customized in
+the <em>ConfigTags.props</em> properties file.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/update/" rel="tag">update</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2025-07-11-sdc-release/" rel="prev" title="spectral-data-converter release">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2025-10-31-idc-release/" rel="next" title="image-dataset-converter release">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><footer id="footer" class="footer-1"><div class="main-footer widgets-dark typo-light">
 
         <div class="container">
             <div class="row">
@@ -131,7 +135,7 @@ bg-dark
 </h5>
                         <ul class="thumbnail-widget">
 <li>
-                                <a href="../../news/">News</a>
+                                <a href="../">News</a>
                             </li>
                             <li>
                                 <a href="../../expertise/">Expertise</a>
@@ -201,12 +205,7 @@ bg-dark
 </div>
 
 
-        <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/justified-layout.min.js"></script><script src="../../assets/js/gallery.min.js"></script><script>
-var jsonContent = [{"height": 108, "size": {"h": 108, "w": 180}, "title": "LIMS outputs spectra/co-variables via files/webservice and receives the predictions back via files/webservice", "url": "lims_collect.png", "url_thumb": "lims_collect.thumbnail.png", "width": 180}, {"height": 108, "size": {"h": 108, "w": 180}, "title": "LIMS outputs spectra for two different instruments, with \"instrument 1\" passing through a conversion first", "url": "lims_conversion.png", "url_thumb": "lims_conversion.thumbnail.png", "width": 180}];
-var thumbnailSize = 180;
-renderGallery(jsonContent, thumbnailSize);
-window.addEventListener('resize', function(){renderGallery(jsonContent, thumbnailSize)});
-</script><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});

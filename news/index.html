@@ -78,7 +78,58 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2026-02-26-yolo26-docker/" class="u-url">Yolo26 Docker images available</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2026-05-28-s3000-pod-support/" class="u-url">S3000 Pod Support</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2026-05-28-s3000-pod-support/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-05-28T13:51:00+12:00" itemprop="datePublished" title="2026-05-28 13:51">2026-05-28 13:51</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Typically, our commercial framework for laboratories, <a class="reference external" href="../s3000/">S3000</a>, combines training
+of models/cleaners/evaluators/etc and generating predictions on the same server. But that was mostly due
+to S3000 instances starting out with a small number of models, not because it was a requirement.
+Especially for mission-critical systems that output predictions 24/7, it makes sense to have a separate
+grunty server for training the models and then one or more light-weight servers that serve the predictions.</p>
+<p>However, copying the versioned directory structures from the training directory across to other servers
+is not particularly efficient and it is easy to make mistakes. Especially, if one has to update the setups
+and/or components as well.</p>
+<p>In order to speed up deployments of new models or simply make replacing only a few models easier, S3000
+introduces the concept of <strong>Pods</strong>. A <strong>Pod</strong> is a self-contained zip file that combines all the serialized
+models like classifier and evaluators plus a JSON configuration file describing the pod. Prediction generators
+that are Pod-aware will then read these Pod files and their configuration to generate a prediction workflow
+on-the-fly which will then load the models into internal storage, ready to be used.</p>
+<p>Currently, only <em>SIMPLE</em> components are supported and <em>FUSION</em> will be added at a later stage.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2026-05-05-s3000-html-support/" class="u-url">S3000 HTML Support</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2026-05-05-s3000-html-support/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-05-05T16:10:00+12:00" itemprop="datePublished" title="2026-05-05 16:10">2026-05-05 16:10</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>During training runs, our commercial framework for laboratories, <a class="reference external" href="../s3000/">S3000</a>, can
+output cross-validation statistics, which include summary statistics, spreadsheets and plots.
+Up till now, the plots were PNG image files, making it easy to include them in reports or quickly scan
+the model performances.</p>
+<img alt="Simple scatter plot of actual vs predicted" height="600" src="../images/output_model_statistics-png-c-model-actvspred.png" width="800"><p>A while ago, support for kernel-density estimate (KDE) plots was introduced, which can tell a better story
+for datasets with a lot of data points. The default scatter plot for actual vs predicted can be replaced
+using the <em>ConfigTags.props</em> file, e.g., with this KDE setup:</p>
+<pre class="literal-block">output_model_statistics#chart=adams.gui.visualization.jfreechart.chart.DensityScatterPlot -label-x actual -label-y predicted -mode KDE -generator "adams.gui.visualization.core.BiColorGenerator -first-color #0000ff -second-color #ffc800 -alpha 127"</pre>
+<img alt="Kernel-density estimate plot of actual vs predicted" height="600" src="../images/output_model_statistics-png-kde-c-model-actvspred.png" width="800"><p>However, static plots make it easy to spot outliers, but much harder to identify them. ADAMS introduced the generation
+of self-contained HTML plots in the WEKA Investigator, which can now be used in S3000 as well when outputting model
+statistics. The following <em>ConfigTags.props</em> entry will</p>
+<pre class="literal-block">output_model_statistics#html=adams.flow.transformer.actualvspredictedprocessor.ClassifierErrorsKernelDensityEstimate -circle-size 10</pre>
+<img alt="Kernel-density estimate plot of actual vs predicted in HTML" height="382" src="../images/output_model_statistics-html-kde-c-model-actvspred.png" width="800">
+</div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2026-02-26-yolo26-docker/" class="u-url">Yolo26 Docker images available</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
@@ -213,6 +264,25 @@ support reading only the annotations</p></li>
 <li><p>annotation data is now being type-checked when setting it</p></li>
 </ul>
 </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-10-06-s3000-customization/" class="u-url">S3000 Customization</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2025-10-06-s3000-customization/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-10-06T15:43:00+12:00" itemprop="datePublished" title="2025-10-06 15:43">2025-10-06 15:43</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Out of the box, our <a class="reference external" href="../s3000/">S3000</a> software comes with predefined workflow generator
+plugins that can be configured to suit a customer's needs. However, sometimes it is necessary to further
+refine that configuration, e.g., when generating statistics during training runs.
+In order not to overload the generator plugins with even more options, or create customized generators,
+the notion of <em>config tags</em> has been introduced. Generators that support such customization will
+state so in their help screen and list the supported <em>tags</em>. These tags can then be customized in
+the <em>ConfigTags.props</em> properties file.</p>
+    </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
@@ -268,80 +338,6 @@ is now available: <strong>0.0.12</strong>. Docker images have been deployed as w
 <li><p>fixed the construction of the error messages in the pyfunc reader/filter/writer classes</p></li>
 </ul>
 </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-ldc-release/" class="u-url">llm-dataset-converter release</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-07-11-ldc-release/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-07-11T09:20:00+12:00" itemprop="datePublished" title="2025-07-11 09:20">2025-07-11 09:20</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>Version <strong>0.2.7</strong> of our <a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter">llm_dataset_converter</a> library has
-been release. New release of ldc_doc, ldc_docx, ldc_faster_whisper, ldc_google, ldc_openai, ldc_pdf and ldc_tint
-have been made available as well.</p>
-<p>The meta-library that combines all the libraries now stands at version <strong>0.0.6</strong>:</p>
-<p><a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all">llm-dataset-converter-all</a></p>
-<p>A new Docker image is available as well:</p>
-<p><a class="reference external" href="https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags">https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags</a></p>
-<p>This release is mostly a maintenance release, but still had some useful additions:</p>
-<ul class="simple">
-<li><p>added <cite>set-placeholder</cite> filter for dynamically setting (temporary) placeholders at runtime</p></li>
-<li><p>added <cite>remove-strings</cite> filter that just removes sub-strings</p></li>
-<li><p>added <cite>strip-strings</cite> filter for stripping whitespaces from start/end of strings</p></li>
-</ul>
-</div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-10-adc-release/" class="u-url">audio-dataset-converter release</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-07-10-adc-release/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-07-10T13:07:00+12:00" itemprop="datePublished" title="2025-07-10 13:07">2025-07-10 13:07</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>A new release of our <a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter">audio-dataset-converter</a>
-library and it various additional dependent libraries is out.</p>
-<p>The meta-library that combines all the libraries now stands at version <strong>0.0.3</strong>:</p>
-<p><a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter-all">audio-dataset-converter-all</a></p>
-<p>A new Docker image is available as well:</p>
-<p><a class="reference external" href="https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags">https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags</a></p>
-<p>Notable changes:</p>
-<ul class="simple">
-<li><p>improved support for placeholders via the <cite>set-placeholder</cite> and <cite>metadata-to-placeholder</cite> filters</p></li>
-<li><p>added <cite>from-multi</cite> and <cite>to-multi</cite> for combining multiple readers/writers</p></li>
-<li><p>added the <cite>--resume_from</cite> option to readers to allow resuming the processing from a specific file</p></li>
-<li><p>added the <cite>--split_group</cite> option ti writers: a regular expression with a single group used for keeping
-items in the same split, e.g., for identifying the base name of a file or the ID</p></li>
-</ul>
-</div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-06-27-sdc-release/" class="u-url">spectral-data-converter release</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-06-27-sdc-release/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-06-27T10:23:00+12:00" itemprop="datePublished" title="2025-06-27 10:23">2025-06-27 10:23</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>The first release of our <a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all">spectral-data-converter-all</a> library
-is now available: <strong>0.0.1</strong>. Docker images have been deployed as well.</p>
-<p>This library allows you to define and run processing pipelines on the command-line, e.g., for:</p>
-<ul class="simple">
-<li><p>converting data from one format into another (e.g., OPUS to NIR)</p></li>
-<li><p>clean the data (e.g., IQR)</p></li>
-<li><p>transform the data (e.g., SIMPLS, PLS1, standardize)</p></li>
-<li><p>build and apply scikit-learn models</p></li>
-</ul>
-<p>You can find examples for various scenarios here:</p>
-<p><a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/">data-mining.co.nz/spectral-data-converter-examples/</a></p>
-    </div>
     </article>
 </div>
 

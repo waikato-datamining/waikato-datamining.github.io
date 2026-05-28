@@ -1,7 +1,7 @@
 .. title: S3000 REST webservice support
 .. slug: 2025-04-03-s3000-rest-support
 .. date: 2025-04-03 10:35:00 UTC+13:00
-.. tags: release
+.. tags: update
 .. category: software
 .. link: 
 .. description: 

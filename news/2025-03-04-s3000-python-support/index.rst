@@ -1,7 +1,7 @@
 .. title: S3000 Python support
 .. slug: 2025-03-04-s3000-python-support
 .. date: 2025-03-04 17:07:00 UTC+13:00
-.. tags: release
+.. tags: update
 .. category: software
 .. link: 
 .. description: 

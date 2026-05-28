@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2026 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 05 Mar 2026 22:10:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Yolo26 Docker images available</title><link>https://www.data-mining.co.nz/news/2026-02-26-yolo26-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/ultralytics/ultralytics/"&gt;Yolo26&lt;/a&gt; are now available.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining</title><link>https://www.data-mining.co.nz/</link><description>Commercial AI at the University of Waikato</description><atom:link href="https://www.data-mining.co.nz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2026 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Thu, 28 May 2026 03:06:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>S3000 Pod Support</title><link>https://www.data-mining.co.nz/news/2026-05-28-s3000-pod-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Typically, our commercial framework for laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, combines training
+of models/cleaners/evaluators/etc and generating predictions on the same server. But that was mostly due
+to S3000 instances starting out with a small number of models, not because it was a requirement.
+Especially for mission-critical systems that output predictions 24/7, it makes sense to have a separate
+grunty server for training the models and then one or more light-weight servers that serve the predictions.&lt;/p&gt;
+&lt;p&gt;However, copying the versioned directory structures from the training directory across to other servers
+is not particularly efficient and it is easy to make mistakes. Especially, if one has to update the setups
+and/or components as well.&lt;/p&gt;
+&lt;p&gt;In order to speed up deployments of new models or simply make replacing only a few models easier, S3000
+introduces the concept of &lt;strong&gt;Pods&lt;/strong&gt;. A &lt;strong&gt;Pod&lt;/strong&gt; is a self-contained zip file that combines all the serialized
+models like classifier and evaluators plus a JSON configuration file describing the pod. Prediction generators
+that are Pod-aware will then read these Pod files and their configuration to generate a prediction workflow
+on-the-fly which will then load the models into internal storage, ready to be used.&lt;/p&gt;
+&lt;p&gt;Currently, only &lt;em&gt;SIMPLE&lt;/em&gt; components are supported and &lt;em&gt;FUSION&lt;/em&gt; will be added at a later stage.&lt;/p&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2026-05-28-s3000-pod-support/</guid><pubDate>Thu, 28 May 2026 01:51:00 GMT</pubDate></item><item><title>S3000 HTML Support</title><link>https://www.data-mining.co.nz/news/2026-05-05-s3000-html-support/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;During training runs, our commercial framework for laboratories, &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt;, can
+output cross-validation statistics, which include summary statistics, spreadsheets and plots.
+Up till now, the plots were PNG image files, making it easy to include them in reports or quickly scan
+the model performances.&lt;/p&gt;
+&lt;img alt="Simple scatter plot of actual vs predicted" height="600" src="https://www.data-mining.co.nz/images/output_model_statistics-png-c-model-actvspred.png" width="800"&gt;
+&lt;p&gt;A while ago, support for kernel-density estimate (KDE) plots was introduced, which can tell a better story
+for datasets with a lot of data points. The default scatter plot for actual vs predicted can be replaced
+using the &lt;em&gt;ConfigTags.props&lt;/em&gt; file, e.g., with this KDE setup:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;output_model_statistics#chart=adams.gui.visualization.jfreechart.chart.DensityScatterPlot -label-x actual -label-y predicted -mode KDE -generator "adams.gui.visualization.core.BiColorGenerator -first-color #0000ff -second-color #ffc800 -alpha 127"&lt;/pre&gt;
+&lt;img alt="Kernel-density estimate plot of actual vs predicted" height="600" src="https://www.data-mining.co.nz/images/output_model_statistics-png-kde-c-model-actvspred.png" width="800"&gt;
+&lt;p&gt;However, static plots make it easy to spot outliers, but much harder to identify them. ADAMS introduced the generation
+of self-contained HTML plots in the WEKA Investigator, which can now be used in S3000 as well when outputting model
+statistics. The following &lt;em&gt;ConfigTags.props&lt;/em&gt; entry will&lt;/p&gt;
+&lt;pre class="literal-block"&gt;output_model_statistics#html=adams.flow.transformer.actualvspredictedprocessor.ClassifierErrorsKernelDensityEstimate -circle-size 10&lt;/pre&gt;
+&lt;img alt="Kernel-density estimate plot of actual vs predicted in HTML" height="382" src="https://www.data-mining.co.nz/images/output_model_statistics-html-kde-c-model-actvspred.png" width="800"&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2026-05-05-s3000-html-support/</guid><pubDate>Tue, 05 May 2026 04:10:00 GMT</pubDate></item><item><title>Yolo26 Docker images available</title><link>https://www.data-mining.co.nz/news/2026-02-26-yolo26-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for &lt;a class="reference external" href="https://github.com/ultralytics/ultralytics/"&gt;Yolo26&lt;/a&gt; are now available.&lt;/p&gt;
 &lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolo26"&gt;github.com/waikato-datamining/pytorch/tree/master/yolo26&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
@@ -67,7 +94,13 @@ support reading only the annotations&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;added &lt;cite&gt;annotation-to-storage&lt;/cite&gt; and &lt;cite&gt;annotation-from-storage&lt;/cite&gt; filters&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;added &lt;cite&gt;delete-storage&lt;/cite&gt; filter for removing objects from internal storage&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;annotation data is now being type-checked when setting it&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-10-31-idc-release/</guid><pubDate>Fri, 31 Oct 2025 02:45:00 GMT</pubDate></item><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-10-31-idc-release/</guid><pubDate>Fri, 31 Oct 2025 02:45:00 GMT</pubDate></item><item><title>S3000 Customization</title><link>https://www.data-mining.co.nz/news/2025-10-06-s3000-customization/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Out of the box, our &lt;a class="reference external" href="https://www.data-mining.co.nz/s3000/"&gt;S3000&lt;/a&gt; software comes with predefined workflow generator
+plugins that can be configured to suit a customer's needs. However, sometimes it is necessary to further
+refine that configuration, e.g., when generating statistics during training runs.
+In order not to overload the generator plugins with even more options, or create customized generators,
+the notion of &lt;em&gt;config tags&lt;/em&gt; has been introduced. Generators that support such customization will
+state so in their help screen and list the supported &lt;em&gt;tags&lt;/em&gt;. These tags can then be customized in
+the &lt;em&gt;ConfigTags.props&lt;/em&gt; properties file.&lt;/p&gt;</description><category>update</category><guid>https://www.data-mining.co.nz/news/2025-10-06-s3000-customization/</guid><pubDate>Mon, 06 Oct 2025 03:43:00 GMT</pubDate></item><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
 is now available: &lt;strong&gt;0.0.2&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
 &lt;p&gt;This release contains couple of major of changes:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -96,39 +129,4 @@ is now available: &lt;strong&gt;0.0.12&lt;/strong&gt;. Docker images have been d
 &lt;li&gt;&lt;p&gt;fix: imgseg_to_bluechannel, imgseg_to_indexedpng and imgseg_to_grayscale now handle overlapping pixels correctly, no longer adding them up and introducing additional labels&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;discard-by-name filter can use names of files in specified paths now as well&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;fixed the construction of the error messages in the pyfunc reader/filter/writer classes&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-11-idc-release/</guid><pubDate>Thu, 10 Jul 2025 22:23:00 GMT</pubDate></item><item><title>llm-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-11-ldc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Version &lt;strong&gt;0.2.7&lt;/strong&gt; of our &lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter"&gt;llm_dataset_converter&lt;/a&gt; library has
-been release. New release of ldc_doc, ldc_docx, ldc_faster_whisper, ldc_google, ldc_openai, ldc_pdf and ldc_tint
-have been made available as well.&lt;/p&gt;
-&lt;p&gt;The meta-library that combines all the libraries now stands at version &lt;strong&gt;0.0.6&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/llm-dataset-converter-all"&gt;llm-dataset-converter-all&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A new Docker image is available as well:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags"&gt;https://hub.docker.com/r/waikatodatamining/llm-dataset-converter/tags&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This release is mostly a maintenance release, but still had some useful additions:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;added &lt;cite&gt;set-placeholder&lt;/cite&gt; filter for dynamically setting (temporary) placeholders at runtime&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added &lt;cite&gt;remove-strings&lt;/cite&gt; filter that just removes sub-strings&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added &lt;cite&gt;strip-strings&lt;/cite&gt; filter for stripping whitespaces from start/end of strings&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-11-ldc-release/</guid><pubDate>Thu, 10 Jul 2025 21:20:00 GMT</pubDate></item><item><title>audio-dataset-converter release</title><link>https://www.data-mining.co.nz/news/2025-07-10-adc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new release of our &lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter"&gt;audio-dataset-converter&lt;/a&gt;
-library and it various additional dependent libraries is out.&lt;/p&gt;
-&lt;p&gt;The meta-library that combines all the libraries now stands at version &lt;strong&gt;0.0.3&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-llm/audio-dataset-converter-all"&gt;audio-dataset-converter-all&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A new Docker image is available as well:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags"&gt;https://hub.docker.com/r/waikatodatamining/audio-dataset-converter/tags&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Notable changes:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;improved support for placeholders via the &lt;cite&gt;set-placeholder&lt;/cite&gt; and &lt;cite&gt;metadata-to-placeholder&lt;/cite&gt; filters&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added &lt;cite&gt;from-multi&lt;/cite&gt; and &lt;cite&gt;to-multi&lt;/cite&gt; for combining multiple readers/writers&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added the &lt;cite&gt;--resume_from&lt;/cite&gt; option to readers to allow resuming the processing from a specific file&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;added the &lt;cite&gt;--split_group&lt;/cite&gt; option ti writers: a regular expression with a single group used for keeping
-items in the same split, e.g., for identifying the base name of a file or the ID&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-10-adc-release/</guid><pubDate>Thu, 10 Jul 2025 01:07:00 GMT</pubDate></item><item><title>spectral-data-converter release</title><link>https://www.data-mining.co.nz/news/2025-06-27-sdc-release/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;The first release of our &lt;a class="reference external" href="https://github.com/waikato-datamining/spectral-data-converter-all"&gt;spectral-data-converter-all&lt;/a&gt; library
-is now available: &lt;strong&gt;0.0.1&lt;/strong&gt;. Docker images have been deployed as well.&lt;/p&gt;
-&lt;p&gt;This library allows you to define and run processing pipelines on the command-line, e.g., for:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;converting data from one format into another (e.g., OPUS to NIR)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;clean the data (e.g., IQR)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;transform the data (e.g., SIMPLS, PLS1, standardize)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;build and apply scikit-learn models&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can find examples for various scenarios here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/"&gt;data-mining.co.nz/spectral-data-converter-examples/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-06-27-sdc-release/</guid><pubDate>Thu, 26 Jun 2025 22:23:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-07-11-idc-release/</guid><pubDate>Thu, 10 Jul 2025 22:23:00 GMT</pubDate></item></channel></rss>
