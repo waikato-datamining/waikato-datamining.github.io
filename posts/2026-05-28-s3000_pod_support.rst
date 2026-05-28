@@ -2,7 +2,7 @@
 .. slug: 2026-05-28-s3000-pod-support
 .. date: 2026-05-28 13:51:00 UTC+12:00
 .. tags: update
-.. category: docker
+.. category: software
 .. link:
 .. description:
 .. type: text
