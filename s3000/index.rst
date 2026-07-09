@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2025-06-25 16:51:00 UTC+12:00
+.. date: 2026-07-09 16:05:00 UTC+12:00
 .. tags: 
 .. category: software
 .. link: 
@@ -120,6 +120,7 @@ benefits:
                   <li>Incorporate wet chemistry co-variables to improve calibrations</i>
                   <li>Supports common spectral file formats like CAL, JCamp-DX, NIR, Opus, SPA, SPC, spreadsheet-based, Unscrambler</i>
                   <li>Supports data retrieval from databases like MS SQL Server, MySQL, PostgreSQL via <a href=""https://en.wikipedia.org/wiki/Java_Database_Connectivity>JDBC</a></i>
+                  <li>Supports file-polling, <a href="https://en.wikipedia.org/wiki/REST">REST webservices</a>, email-processing at prediction time</i>
                 </ul>
               </p>
             </div>
