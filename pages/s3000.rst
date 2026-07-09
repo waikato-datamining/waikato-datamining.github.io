@@ -1,6 +1,6 @@
 .. title: S3000
 .. slug: s3000
-.. date: 2025-06-25 16:51:00 UTC+12:00
+.. date: 2026-07-09 16:05:00 UTC+12:00
 .. tags: 
 .. category: software
 .. link: 
