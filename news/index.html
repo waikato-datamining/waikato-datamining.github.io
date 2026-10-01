@@ -78,7 +78,22 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2026-05-28-s3000-pod-support/" class="u-url">S3000 Pod Support</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2026-10-02-detectron2-docker/" class="u-url">Detectron2 2026-10-02 Docker image available</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Applied Machine Learning Group, University of Waikato
+            </span></p>
+            <p class="dateline">
+            <a href="2026-10-02-detectron2-docker/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-10-02T10:32:00+13:00" itemprop="datePublished" title="2026-10-02 10:32">2026-10-02 10:32</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>A new Docker image for building models with version 2026-10-02 of <a class="reference external" href="https://github.com/facebookresearch/detectron2">Detectron2</a> is available:</p>
+<p>More information on the Docker image is available from Github:</p>
+<p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/2026-10-02">github.com/waikato-datamining/pytorch/tree/master/detectron2/2026-10-02</a></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2026-05-28-s3000-pod-support/" class="u-url">S3000 Pod Support</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Applied Machine Learning Group, University of Waikato
@@ -300,42 +315,6 @@ is now available: <strong>0.0.2</strong>. Docker images have been deployed as we
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/directio/">support for direct I/O</a>: most readers/writers can operate on file-like objects now as well</p></li>
 <li><p><a class="reference external" href="https://www.data-mining.co.nz/spectral-data-converter-examples/zip/">reading from/writing to ZIP files</a>: <cite>from-zip</cite>, <cite>to-zip</cite></p></li>
-</ul>
-</div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025-07-11-idc-release/" class="u-url">image-dataset-converter release</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Applied Machine Learning Group, University of Waikato
-            </span></p>
-            <p class="dateline">
-            <a href="2025-07-11-idc-release/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-07-11T10:23:00+12:00" itemprop="datePublished" title="2025-07-11 10:23">2025-07-11 10:23</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>A new release of our <a class="reference external" href="https://github.com/waikato-datamining/image-dataset-converter-all">image-dataset-converter-all</a> library
-is now available: <strong>0.0.12</strong>. Docker images have been deployed as well.</p>
-<p>The most notably changes since 0.0.11 are:</p>
-<ul class="simple">
-<li><p>dropped numpy&lt;2.0.0 restriction</p></li>
-<li><p>added grayscale-to-binary filter</p></li>
-<li><p>fix: sort-pixels, rgb-to-grayscale filters</p></li>
-<li><p>the rename filter now supports lower/upper case placeholders of name and extension as well</p></li>
-<li><p>requiring seppl&gt;=0.2.17 now for skippable plugin support and avoiding deprecated use of pkg_resources</p></li>
-<li><p>added any-to-rgb filter for turning binary/grayscale images back into RGB ones</p></li>
-<li><p>added label-to-metadata filter for transferring labels into meta-data</p></li>
-<li><p>added metadata-to-placeholder filter for transferring meta-data into placeholders</p></li>
-<li><p>added basic support for images with associated depth information: DepthData, DepthInformation</p></li>
-<li><p>added depth-to-grayscale filter for converting depth information to grayscale image</p></li>
-<li><p>added depth information readers from-grayscale-dp, from-numpy-dp, from-csv-dp and from-pfm-dp</p></li>
-<li><p>added depth information writers to-grayscale-dp, to-numpy-dp, to-csv-dp and to-pfm-dp</p></li>
-<li><p>added apply-ext-mask filter to applying external PNG masks to image containers (image and/or annotations)</p></li>
-<li><p>added apply-label-mask filter for applying image segmentation label masks to their base images</p></li>
-<li><p>added label-present-ic and label-present-is that ensure that certain label(s) are present or otherwise discard the image</p></li>
-<li><p>filter label-present was renamed to label-present-od but keeping label-present as alias for the time being</p></li>
-<li><p>fix: imgseg_to_bluechannel, imgseg_to_indexedpng and imgseg_to_grayscale now handle overlapping pixels correctly, no longer adding them up and introducing additional labels</p></li>
-<li><p>discard-by-name filter can use names of files in specified paths now as well</p></li>
-<li><p>fixed the construction of the error messages in the pyfunc reader/filter/writer classes</p></li>
 </ul>
 </div>
     </article>
