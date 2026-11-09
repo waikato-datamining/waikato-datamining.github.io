@@ -1,6 +1,6 @@
 .. title: Docker Hub images
 .. slug: docker-images-dockerhub
-.. date: 2026-10-02 10:33:00 UTC+13:00
+.. date: 2026-11-10 10:20:00 UTC+13:00
 .. tags: docker
 .. category: software
 .. link: 
@@ -338,6 +338,10 @@
           <li>
             <p>PyTorch/Detectron2</p>
             <ul>
+              <li>
+                <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/2026-10-27">Detectron2 2026-10-27, PyTorch 2.10, CUDA 12.6</a></p>
+                <p><code class="docutils literal"><span class="pre">waikatodatamining/detectron2:2026-10-27</span></code></p>
+              </li>
               <li>
                 <p><a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/2026-10-02">Detectron2 2026-10-02, PyTorch 2.10, CUDA 12.6</a></p>
                 <p><code class="docutils literal"><span class="pre">waikatodatamining/detectron2:2026-10-02</span></code></p>
