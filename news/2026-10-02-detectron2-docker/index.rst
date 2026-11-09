@@ -7,7 +7,7 @@
 .. description: 
 .. type: text
 
-A new Docker image for building models with version 2026-10-02 of `Detectron2 <https://github.com/facebookresearch/detectron2>`__ is available:
+A new Docker image for building models with version 2026-10-02 of `Detectron2 <https://github.com/facebookresearch/detectron2>`__ is available.
 
 More information on the Docker image is available from Github:
 
