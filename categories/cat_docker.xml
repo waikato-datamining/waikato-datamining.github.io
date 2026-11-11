@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2026 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Mon, 09 Nov 2026 21:23:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Detectron2 2026-10-27 Docker image available</title><link>https://www.data-mining.co.nz/news/2026-11-10-detectron2-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new Docker image for building models with version 2026-10-27 of &lt;a class="reference external" href="https://github.com/facebookresearch/detectron2"&gt;Detectron2&lt;/a&gt; is available.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data mining (Posts about docker)</title><link>https://www.data-mining.co.nz/</link><description></description><atom:link href="https://www.data-mining.co.nz/categories/cat_docker.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2026 &lt;a href="mailto:fracpete@waikato.ac.nz"&gt;Applied Machine Learning Group, University of Waikato&lt;/a&gt; </copyright><lastBuildDate>Wed, 11 Nov 2026 01:12:30 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Yolo26 Docker images with slicing available</title><link>https://www.data-mining.co.nz/news/2026-11-11-yolo26-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;New Docker images for &lt;a class="reference external" href="https://github.com/ultralytics/ultralytics/"&gt;Yolo26&lt;/a&gt; are now available, which now
+offer support for slicing via the &lt;a class="reference external" href="https://github.com/obss/sahi"&gt;sahi&lt;/a&gt; library.&lt;/p&gt;
+&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolo26"&gt;github.com/waikato-datamining/pytorch/tree/master/yolo26&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolo26:8.4.16_cuda12.6-2&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolo26:8.4.16_cpu-2&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2026-11-11-yolo26-docker/</guid><pubDate>Wed, 11 Nov 2026 01:09:00 GMT</pubDate></item><item><title>Detectron2 2026-10-27 Docker image available</title><link>https://www.data-mining.co.nz/news/2026-11-10-detectron2-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new Docker image for building models with version 2026-10-27 of &lt;a class="reference external" href="https://github.com/facebookresearch/detectron2"&gt;Detectron2&lt;/a&gt; is available.&lt;/p&gt;
 &lt;p&gt;This image now offers the ability to slice the image internally and combine the annotations again before outputting the predictions.&lt;/p&gt;
 &lt;p&gt;More information on the Docker image is available from Github:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/detectron2/2026-10-27"&gt;github.com/waikato-datamining/pytorch/tree/master/detectron2/2026-10-27&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2026-11-10-detectron2-docker/</guid><pubDate>Mon, 09 Nov 2026 21:20:00 GMT</pubDate></item><item><title>Detectron2 2026-10-02 Docker image available</title><link>https://www.data-mining.co.nz/news/2026-10-02-detectron2-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;A new Docker image for building models with version 2026-10-02 of &lt;a class="reference external" href="https://github.com/facebookresearch/detectron2"&gt;Detectron2&lt;/a&gt; is available.&lt;/p&gt;
@@ -158,23 +170,4 @@ image segmentation framework, using the 2.10.0 release of PaddleSeg (code base a
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/paddleseg/tree/main/2.10.0_cpu"&gt;CPU&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A tutorial is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/"&gt;https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-05-paddleseg-docker/</guid><pubDate>Wed, 05 Feb 2025 04:02:00 GMT</pubDate></item><item><title>Yolov10 Docker images available</title><link>https://www.data-mining.co.nz/news/2024-07-16-yolov10-docker/</link><dc:creator>Applied Machine Learning Group, University of Waikato</dc:creator><description>&lt;p&gt;Docker images for the latest &lt;a class="reference external" href="https://github.com/THU-MIG/yolov10"&gt;Yolov10&lt;/a&gt; code base are now available.&lt;/p&gt;
-&lt;p&gt;The code used by the docker images is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/waikato-datamining/pytorch/tree/master/yolov10"&gt;github.com/waikato-datamining/pytorch/tree/master/yolov10&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The tags for the images are as follows:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;In-house registry:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov10:2024-06-23_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;harbor.cms.waikato.ac.nz/public/pytorch/pytorch-yolov5:2022-11-05_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Docker hub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolov10:2024-06-23_cuda11.7&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;waikatodatamining/pytorch-yolov5:2022-11-05_cpu&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The tutorial on &lt;em&gt;object detection&lt;/em&gt; is available from here:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/"&gt;www.data-mining.co.nz/applied-deep-learning/object_detection/yolov10/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2024-07-16-yolov10-docker/</guid><pubDate>Tue, 16 Jul 2024 02:51:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a class="reference external" href="https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/"&gt;https://www.data-mining.co.nz/applied-deep-learning/image_segmentation/paddleseg/&lt;/a&gt;&lt;/p&gt;</description><category>release</category><guid>https://www.data-mining.co.nz/news/2025-02-05-paddleseg-docker/</guid><pubDate>Wed, 05 Feb 2025 04:02:00 GMT</pubDate></item></channel></rss>
